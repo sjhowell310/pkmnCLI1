@@ -1,66 +1,31 @@
 import random
 import math
+import json
 
-def calcHPStat(poke, hpiv, basetotal):
-	level = 100
-	ev = poke["baseStats"]["hp"]*65535 / basetotal
-	hp = math.floor(((((poke["baseStats"]["hp"] + hpiv) * 2) + (math.floor((math.ceil(ev**0.5))/(4))))*(level))/(100)) + level + 10
-	return hp
+with open("data/gen1moves.json") as pdex:
+	g1moves = json.load(pdex)
 
-poke = {
-		"baseStats": {
-			"atk": 20,
-			"def": 15,
-			"hp": 25,
-			"spa": 105,
-			"spd": 105,
-			"spe": 90
-		},
-		"heightm": 0.9,
-		"inherit": True,
-		"learnset": [
-			"mimic",
-			"bide",
-			"rest",
-			"rage",
-			"counter",
-			"dreameater",
-			"skullbash",
-			"lightscreen",
-			"metronome",
-			"doubleedge",
-			"submission",
-			"psywave",
-			"takedown",
-			"psychic",
-			"swift",
-			"seismictoss",
-			"thunderwave",
-			"reflect",
-			"substitute",
-			"triattack"
-		],
-		"name": "Abra",
-		"types": [
-			"Psychic"
-		],
-		"weightkg": 19.5
-	}
+	with open("data/moves.json") as pdex:
+		allmoves = json.load(pdex)
+	out = []
+	for moves in allmoves.keys():
+		for keys in allmoves[moves]:
+			if keys not in out:
+				out.append(keys)
 
-IVs = [int(15 * random.random()) for i in range(4)]
-hpiv  = ""
-for i in range(4):
-	hpiv += str(bin(IVs[i]))[-1]
-print(IVs, int(hpiv, 2))
-HPiv = int(hpiv, 2)
-totalBase = 0
-for key in poke["baseStats"].keys():
-	if key != "spd":
-		totalBase += poke["baseStats"][key]
-		print(totalBase)
+	for moves in g1moves.keys():
+		for keys in g1moves[moves]:
+			if keys not in out:
+				out.append(keys)
 
+	print(sorted(out), len(out))
 
+	out2 = []
+	for moves in allmoves.keys():
+		if "secondary" in allmoves[moves] and allmoves[moves]["secondary"] != None:
+			for keys in allmoves[moves]["secondary"].keys():
+				if keys not in out2:
+					out2.append(keys)
 
+	print(sorted(out2), len(out2))
 
-
-print(calcHPStat(poke, HPiv, totalBase))

@@ -1,7 +1,7 @@
 import random
 import math
 import moves
-setup party setup in trainer module
+
 class Pokemon():
 
 	level = 100
@@ -17,7 +17,7 @@ class Pokemon():
 		self.ivs = self.calcIVs()
 		self.evs = self.calcEVs()
 		self.statHP , self.statAtk, self. statDef, self.statSpa, self.statSpe =  self.calcStats(self.ivs, self.evs)
-		# self.moves = setMoves(poke, learnset)
+		self.movenames, self.moves = self.setMoves(poke)
 
 			
 	def calcIVs(self):
@@ -50,8 +50,27 @@ class Pokemon():
 
 		return hp, attack, defense, special, speed
 
-	def setMoves(self, poke, learnset):
-		pass
+	def setMoves(self, poke):
+		names, out = [],[]
+		print("Choose 4 of the following moves from the learnset: (Up to once each)")
+		if len(poke["learnset"]) > 0:
+			for move in sorted(poke["learnset"]):
+				print(move)
+		else:
+			print("No learnset")
+			return ["struggle"], [moves.Move("struggle")]
+		for i in range(4):
+			if len(out) != len(poke["learnset"]):
+				movename = ""
+				while(movename not in poke["learnset"] or movename in names):
+					movename = input("Trainer, please enter your choice of move for {name})\n".format(name = self.name))
+					movename = movename.lower()
+				print("You chose {move} as {pkmn}'s #{num} move!".format(move = movename.capitalize(), pkmn = self.name, num = len(out) + 1))
+				out.append(moves.Move(movename))
+				names.append(movename)
+		return names, out
+	
+
 
 	def getStats(self):
 		return self.statHP, self.statAtk, self. statDef, self.statSpa, self.statSpe
