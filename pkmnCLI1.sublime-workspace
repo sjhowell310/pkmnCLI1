@@ -1,0 +1,1448 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"move",
+				"movename"
+			],
+			[
+				"cal",
+				"calcEVs"
+			],
+			[
+				"ran",
+				"random"
+			],
+			[
+				"get",
+				"getBase"
+			],
+			[
+				"Ca",
+				"calcIVs"
+			],
+			[
+				"bas",
+				"baseTot"
+			],
+			[
+				"base",
+				"baseHP"
+			],
+			[
+				"ba",
+				"baseHP"
+			],
+			[
+				"Base",
+				"baseStats"
+			],
+			[
+				"gen1",
+				"gen1dex"
+			],
+			[
+				"jso",
+				"jsonout"
+			],
+			[
+				"gen",
+				"gen1dex"
+			],
+			[
+				"learnse",
+				"learnset"
+			],
+			[
+				"Batt",
+				"BattleStatuses"
+			],
+			[
+				"Battle",
+				"BattleMovedex"
+			],
+			[
+				"fo",
+				"forin\tfor … in … done"
+			],
+			[
+				"B",
+				"BattleMovedex"
+			],
+			[
+				"moves",
+				"movesetdict"
+			],
+			[
+				"m",
+				"movesetdict"
+			],
+			[
+				"pok",
+				"pokedex"
+			],
+			[
+				"test",
+				"testtext"
+			],
+			[
+				"poke",
+				"pokedict"
+			],
+			[
+				"trip",
+				"trip_revenue"
+			],
+			[
+				"cheap",
+				"cheapest_driver_price"
+			],
+			[
+				"price",
+				"price_for_driver"
+			],
+			[
+				"pric",
+				"price_for_driver"
+			],
+			[
+				"chea",
+				"cheapest_driver_price"
+			],
+			[
+				"driver",
+				"driver_time"
+			],
+			[
+				"c",
+				"calculate_shipping_cost"
+			],
+			[
+				"shi",
+				"shipping_rate"
+			],
+			[
+				"to",
+				"to_long"
+			],
+			[
+				"from",
+				"from_long"
+			],
+			[
+				"are",
+				"arepas_place"
+			],
+			[
+				"new",
+				"new_installment"
+			],
+			[
+				"arepa",
+				"arepas_end"
+			],
+			[
+				"ava",
+				"available_menus"
+			],
+			[
+				"k",
+				"kids"
+			],
+			[
+				"dinn",
+				"dinner"
+			],
+			[
+				"bru",
+				"brunch"
+			],
+			[
+				"sal",
+				"salumeria"
+			],
+			[
+				"ear",
+				"early_bird"
+			],
+			[
+				"end",
+				"end_time"
+			],
+			[
+				"start",
+				"start_time"
+			],
+			[
+				"kids",
+				"kids_end"
+			],
+			[
+				"dinne",
+				"dinner_start"
+			],
+			[
+				"dinner",
+				"dinner_name"
+			],
+			[
+				"ea",
+				"early_bird_end"
+			],
+			[
+				"brunch",
+				"brunch_end"
+			],
+			[
+				"brun",
+				"brunch_items"
+			],
+			[
+				"boss",
+				"boss_message"
+			],
+			[
+				"com",
+				"compromised_users"
+			],
+			[
+				"compo",
+				"compromised_users_file"
+			],
+			[
+				"passwor",
+				"password_file"
+			],
+			[
+				"player",
+				"player_to_points"
+			],
+			[
+				"player_to_",
+				"player_to_points"
+			],
+			[
+				"brownie",
+				"brownie_points"
+			],
+			[
+				"point",
+				"point_total"
+			],
+			[
+				"letter",
+				"letter_to_points"
+			],
+			[
+				"lette",
+				"letter_to_points"
+			],
+			[
+				"the",
+				"thread_sold_split"
+			],
+			[
+				"thre",
+				"thread_sold_split"
+			],
+			[
+				"thread",
+				"thread_sold_split"
+			],
+			[
+				"tran",
+				"transactions_clean"
+			],
+			[
+				"dail",
+				"daily_transactions_split"
+			],
+			[
+				"daily",
+				"daily_transactions_split"
+			],
+			[
+				"split",
+				"split_daily_sales"
+			],
+			[
+				"averag",
+				"average_daily_revenue"
+			],
+			[
+				"pizza",
+				"pizzas"
+			],
+			[
+				"la",
+				"last_semester_gradebook"
+			],
+			[
+				"grade",
+				"gradebook"
+			],
+			[
+				"find",
+				"find_cheapest_shipping"
+			],
+			[
+				"pre",
+				"premium_ground_shipping"
+			],
+			[
+				"train",
+				"train_distance"
+			],
+			[
+				"tra",
+				"train_distance"
+			],
+			[
+				"tr",
+				"train_acceleration"
+			],
+			[
+				"bomb",
+				"bomb_energy"
+			],
+			[
+				"bom",
+				"bomb_mass"
+			],
+			[
+				"f",
+				"f_temp"
+			],
+			[
+				"customer",
+				"customer_one_total"
+			],
+			[
+				"cu",
+				"customer_one_itemization"
+			],
+			[
+				"lux",
+				"luxurious_lamp_description"
+			],
+			[
+				"custom",
+				"customer_one_total"
+			],
+			[
+				"lov",
+				"lovely_loveseat_description"
+			],
+			[
+				"cust",
+				"customer_one_itemization"
+			],
+			[
+				"cus",
+				"customer_one_total"
+			],
+			[
+				"section",
+				"section\tsection"
+			],
+			[
+				"energy",
+				"energyav"
+			],
+			[
+				"for",
+				"for\tfor"
+			],
+			[
+				"print",
+				"printData"
+			],
+			[
+				"data",
+				"dataFile"
+			],
+			[
+				"temp",
+				"tempSteps"
+			],
+			[
+				"tempM",
+				"tempMin"
+			],
+			[
+				"e",
+				"Eav2"
+			],
+			[
+				"ener",
+				"energysqav"
+			],
+			[
+				"fin",
+				"fintemperature"
+			],
+			[
+				"init",
+				"inittemperature"
+			],
+			[
+				"prin",
+				"printalloy"
+			],
+			[
+				"pos",
+				"position2"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"metr",
+				"metropolis"
+			],
+			[
+				"allo",
+				"alloy-"
+			],
+			[
+				"all",
+				"alloy"
+			],
+			[
+				"initial",
+				"initialised"
+			],
+			[
+				"porp",
+				"proportion"
+			],
+			[
+				"tem",
+				"temperature"
+			],
+			[
+				"i",
+				"if\tIf Condition"
+			],
+			[
+				"in",
+				"inc\t#include \"…\""
+			],
+			[
+				"st",
+				"stdio.h\tstandard header"
+			],
+			[
+				"re",
+				"regionsSpoken"
+			],
+			[
+				"word",
+				"wordOrder"
+			],
+			[
+				"cl",
+				"cl\tclass"
+			],
+			[
+				"number",
+				"numbers"
+			],
+			[
+				"clas",
+				"class"
+			],
+			[
+				"de",
+				"desertIslandPlaylist"
+			],
+			[
+				"dea",
+				"default"
+			],
+			[
+				"contin",
+				"continent"
+			],
+			[
+				"mot",
+				"monthlyPayment"
+			],
+			[
+				"int",
+				"interest"
+			],
+			[
+				"month",
+				"monthlyBalance"
+			],
+			[
+				"down",
+				"downPayment"
+			],
+			[
+				"inte",
+				"interestRate"
+			],
+			[
+				"loan",
+				"loanLength"
+			],
+			[
+				"per",
+				"performTask"
+			],
+			[
+				"noun",
+				"noun6"
+			],
+			[
+				"name",
+				"name2"
+			],
+			[
+				"adjective",
+				"adjective3"
+			],
+			[
+				"nou",
+				"noun4"
+			],
+			[
+				"ad",
+				"adjective2"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/newPython3.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"Basic Builder - PdfLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Python 3/Python3.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python 3/Python3.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Python 3/Python3.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Python3.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python 3/Python3.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Python 3/Python3.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python 3/Python3.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Python 3/Python3.sublime-build",
+					""
+				],
+				[
+					"Packages/User/newPython3.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/newPython3.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/newPython3.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/newPython3.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"open",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"refre",
+				"Project: Refresh Folders"
+			],
+			[
+				"brack",
+				"BracketHighlighter: Settings"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"syn",
+				"Set Syntax: NPM JSON"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"packages",
+				"Package Control: List Packages"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"op",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"opn",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"panel",
+				"Find: Show Results Panel"
+			],
+			[
+				"python",
+				"Build With: Python3"
+			],
+			[
+				"new",
+				"Build: New Build System"
+			],
+			[
+				"ope",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"while",
+				"Snippet: Do While Loop"
+			],
+			[
+				"sni",
+				"Snippet: Do While Loop"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"snippe",
+				"Snippet: #ifndef … #define … #endif"
+			],
+			[
+				"class",
+				"Snippet: class"
+			],
+			[
+				"main",
+				"Snippet: method (main)"
+			],
+			[
+				"snippet",
+				"Snippet: import"
+			],
+			[
+				"util",
+				"Snippet: java.util."
+			],
+			[
+				"switch",
+				"Snippet: switch"
+			],
+			[
+				"print",
+				"Snippet: println"
+			],
+			[
+				"prin",
+				"Snippet: println"
+			],
+			[
+				"tab",
+				"View: Toggle Tabs"
+			],
+			[
+				"public",
+				"Snippet: public"
+			],
+			[
+				"snipp",
+				"Snippet: class"
+			],
+			[
+				"htmlboi",
+				"Snippet: htmlboiler"
+			],
+			[
+				"insall",
+				"Package Control: Install Package"
+			],
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"syntax script",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntax json",
+				"Set Syntax: NPM JSON"
+			],
+			[
+				"termi",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"termin",
+				"Preferences: Terminus Settings"
+			],
+			[
+				"linter",
+				"Terminus Utilities: Generate User Theme"
+			],
+			[
+				"syntax",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"close",
+				"Terminus: Close"
+			],
+			[
+				"ui",
+				"UI: Select Color Scheme"
+			],
+			[
+				"syntax java",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"font",
+				"Set Syntax: Font"
+			],
+			[
+				"side",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colo",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"setting",
+				"Preferences: Settings"
+			],
+			[
+				"build",
+				"Build: New Build System"
+			],
+			[
+				"side bar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Sort Lines"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 182.0,
+		"history":
+		[
+			"quit()",
+			"restart",
+			"help"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/stephen/Documents/coding/python3/pkmnCLI1"
+	],
+	"file_history":
+	[
+		"/home/stephen/Documents/coding/python3/pokemonmodel/README.md",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemon.py",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/trainer.py",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/setupproj/config.py",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/arena.py",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/moves.py",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/startbattle.py",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/rbyinfo.txt",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/config.py",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/workshop.py",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/learnsets.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/dexwithmovesandtypes.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/gen1moves.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/moves.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/gen1moves.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemon-showdown-master/data/typechart.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/gen1pokedex.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/pokedex.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/pokedex.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/learnsets.js",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/gen1pokedex.js",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/setup.py",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/start.py",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/gen1typechart.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/makegen1learnset.py",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/gen1moves.js",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/formats-data.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/typechart.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/formats-data.js",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/typechart.js",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/statuses.js",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/pokedex.js",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/moves.js",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/typechart.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/gen1.js",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemon.json-master/moves.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemon.json-master/README.md",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/gen1typechart.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/*.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/rulesets.js",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/scripts.js",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/random-teams.js",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/gen1pokedex.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/statuses.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/scripts.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/rulesets.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/README.md",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/random-teams.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/moves.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/formats-data.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemon-showdown-master/data/moves.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/converttojs.sh",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemonbattle.sh",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/moves3.js",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/main.py",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemon.json-master/pokedex.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemon-showdown-master/data/learnsets.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemon-showdown-master/data/mods/gen3/moves.js",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemon-showdown-master/data/mods/gen3/moves.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/cleandata.py",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/data/mypokedex.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemon-showdown-master/data/mods/gen3/moves.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemon-showdown-master/data/mods/vgc17/learnsets.ts",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemon.json-master/test.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemon.json-master/items.json",
+		"/home/stephen/Documents/coding/python3/pokemonmodel/pokemon.json-master/trainer.py",
+		"/home/stephen/Documents/codecademyprojects/python3/thenile/test.py",
+		"/home/stephen/Documents/codecademyprojects/python3/thenile/nile.py",
+		"/home/stephen/Documents/codecademyprojects/python3/thenile/script.py",
+		"/home/stephen/Documents/codecademyprojects/python3/pokemon_starting/pokemon.py",
+		"/home/stephen/Documents/codecademyprojects/python3/bastafazoolin/script.py",
+		"/home/stephen/Documents/codecademyprojects/python3/hackingthefender/script.py",
+		"/home/stephen/Documents/codecademyprojects/python3/hackingthefender/compromised_users.txt",
+		"/home/stephen/Documents/codecademyprojects/python3/scrabble/script.py",
+		"/home/stephen/Documents/codecademyprojects/python3/hackingthefender/passwords.csv",
+		"/home/stephen/Documents/codecademyprojects/python3/threadshed/script.py",
+		"/home/stephen/Documents/codecademyprojects/python3/carlysclippers/script.py",
+		"/home/stephen/.cache/.fr-MODRLn/__MACOSX/._Reggie_Linear_Regression_Solution.ipynb",
+		"/home/stephen/.cache/.fr-zQjlHf/__MACOSX/._Reggie_Linear_Regression_Skeleton.ipynb",
+		"/home/stephen/Documents/codecademyprojects/python3/lensslice/script.py",
+		"/home/stephen/Documents/codecademyprojects/python3/pythongradebook/script.py",
+		"/home/stephen/Documents/codecademyprojects/python3/salsshipping/checker.py",
+		"/home/stephen/PycharmProjects/graphing/venv/lib/python3.5/site-packages/numpy/lib/tests/data/python3.npy",
+		"/home/stephen/Documents/codecademyprojects/python3/salsshipping/script.py",
+		"/home/stephen/Documents/codecademyprojects/python3/lovelyloveseats/script.py",
+		"/home/stephen/Documents/codecademyprojects/python3/gettingreadyforphysicsclass/script.py",
+		"/home/stephen/.config/sublime-text-3/Packages/User/newPython3.sublime-build",
+		"/home/stephen/Documents/codecademyprojects/python3/salsshipping/dummy.html",
+		"/home/stephen/Documents/coding/C/lattice/module.c",
+		"/home/stephen/Documents/latexprojects/python2projects/python2projects.tex",
+		"/home/stephen/Documents/latexprojects/python2projects/pythonprojects.txt",
+		"/home/stephen/Documents/kcl/4th Year/Project/report/fermi-sjhowell-msci-report.tex",
+		"/home/stephen/Documents/latexprojects/python2projects/python2projects.log",
+		"/home/stephen/Documents/latexprojects/python2projects/python2projects.pdf",
+		"/home/stephen/Documents/coding/java/AlloyLattice/alldata/allenergyandspecheatgraph.py",
+		"/home/stephen/Documents/coding/java/AlloyLattice/alldata/Lattice.java",
+		"/home/stephen/Documents/coding/java/AlloyLattice/restart/basic2dgraph.py",
+		"/home/stephen/Documents/coding/java/AlloyLattice/restart/Lattice.java",
+		"/home/stephen/Documents/coding/java/AlloyLattice/alldata/output/000.csv",
+		"/home/stephen/Documents/coding/java/AlloyLattice/alldata/buildandrun.sh",
+		"/home/stephen/Documents/coding/java/AlloyLattice/alldata/output/2020-05-22.csv",
+		"/home/stephen/Documents/coding/java/AlloyLattice/restart/buildandrun.sh",
+		"/home/stephen/Documents/coding/C/lattice/specificheatfromrawC.pdf",
+		"/home/stephen/Documents/coding/C/lattice/module.h",
+		"/home/stephen/Documents/AlloyLattice/basic2dgraph.py",
+		"/home/stephen/Documents/AlloyLattice/src/jgraphin.py",
+		"/home/stephen/Documents/coding/C/lattice/main.c",
+		"/home/stephen/Documents/AlloyLattice/src/Lattice.java",
+		"/home/stephen/Documents/coding/C/lattice/cleardataandrun",
+		"/home/stephen/Documents/AlloyLattice/isingdata2020-05-20.csv",
+		"/home/stephen/Documents/AlloyLattice/src/output/0.5800000000000001.csv",
+		"/home/stephen/Documents/AlloyLattice/isingdata2020-05-19.csv",
+		"/home/stephen/Documents/AlloyLattice/src/isingdata1.0.csv",
+		"/home/stephen/Documents/AlloyLattice/src/3.500000000000002.csv",
+		"/home/stephen/Documents/AlloyLattice/src/alltogetherx10.pdf",
+		"/home/stephen/Documents/AlloyLattice/src/isingdata4.884999999999917.csv",
+		"/home/stephen/Documents/AlloyLattice/src/specificheatfromrawC.pdf",
+		"/home/stephen/Documents/AlloyLattice/isingdata.csv",
+		"/home/stephen/Documents/AlloyLattice/src/isingdata3.0.csv",
+		"/home/stephen/Documents/coding/C/lattice/graphin.py",
+		"/home/stephen/.config/sublime-text-3/Packages/User/Python3.sublime-build",
+		"/home/stephen/.config/sublime-text-3/Packages/User/mybuild.sublime-build",
+		"/home/stephen/.config/sublime-text-3/Cache/zzz A File Icon zzz/aliases/Plain Text (Buildpacks).sublime-syntax.cache",
+		"/home/stephen/Documents/coding/C/lattice/5.0000.csv",
+		"/home/stephen/Documents/coding/C/lattice/4.5440.csv",
+		"/home/stephen/Documents/coding/sjhowell0468/lattice/lattice.h",
+		"/home/stephen/Documents/coding/sjhowell0468/lattice/lattice.c",
+		"/home/stephen/Documents/coding/sjhowell0468/lattice/main.c"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"",
+			"pokemon-showdown-master",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"dex",
+			"type",
+			"atk",
+			"self.level",
+			"true",
+			"damageTaken",
+			"0",
+			"0 NOT 0.",
+			"0",
+			"1",
+			"Fairy: ",
+			"Normal",
+			"bite",
+			"deda",
+			"dade",
+			"dada",
+			"rapidstrike",
+			"rapidfire",
+			"rapid",
+			"megax",
+			"megay",
+			"dark",
+			"steel",
+			"priority: 1",
+			"mega",
+			"key[\"name\"][\"english\"]",
+			"desc",
+			"inherit",
+			":",
+			",",
+			"{",
+			"wrap",
+			"\"3L1\"",
+			")"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"speed",
+			"spec",
+			"attack",
+			"def",
+			"level",
+			"True",
+			"1.0",
+			"0.5",
+			"",
+			"key[\"id\"]",
+			"\"desc\"",
+			"\"inherit\"",
+			"\":",
+			":\"",
+			",\"",
+			"{\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 68.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.405823497504,
+			0.740274879368,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.Terminus":
+	{
+		"height": 225.0
+	},
+	"output.Terminus 10":
+	{
+		"height": 124.0
+	},
+	"output.Terminus 11":
+	{
+		"height": 124.0
+	},
+	"output.Terminus 2":
+	{
+		"height": 277.0
+	},
+	"output.Terminus 3":
+	{
+		"height": 479.0
+	},
+	"output.Terminus 4":
+	{
+		"height": 350.0
+	},
+	"output.Terminus 5":
+	{
+		"height": 270.0
+	},
+	"output.Terminus 6":
+	{
+		"height": 194.0
+	},
+	"output.Terminus 7":
+	{
+		"height": 124.0
+	},
+	"output.Terminus 8":
+	{
+		"height": 357.0
+	},
+	"output.Terminus 9":
+	{
+		"height": 124.0
+	},
+	"output.exec":
+	{
+		"height": 249.0
+	},
+	"output.find_results":
+	{
+		"height": 1006.0
+	},
+	"output.latextools":
+	{
+		"height": 404.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pkmnCLI1.sublime-project",
+	"replace":
+	{
+		"height": 114.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 248.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

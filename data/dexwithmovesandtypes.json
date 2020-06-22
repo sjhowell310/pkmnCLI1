@@ -1,0 +1,5888 @@
+{
+	"abra": {
+		"baseStats": {
+			"atk": 20,
+			"def": 15,
+			"hp": 25,
+			"spa": 105,
+			"spd": 105,
+			"spe": 90
+		},
+		"heightm": 0.9,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"rest",
+			"rage",
+			"counter",
+			"dreameater",
+			"skullbash",
+			"lightscreen",
+			"metronome",
+			"doubleedge",
+			"submission",
+			"psywave",
+			"takedown",
+			"psychic",
+			"swift",
+			"seismictoss",
+			"thunderwave",
+			"reflect",
+			"substitute",
+			"triattack"
+		],
+		"name": "Abra",
+		"types": [
+			"Psychic"
+		],
+		"weightkg": 19.5
+	},
+	"aerodactyl": {
+		"baseStats": {
+			"atk": 105,
+			"def": 65,
+			"hp": 80,
+			"spa": 60,
+			"spd": 60,
+			"spe": 130
+		},
+		"heightm": 1.8,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"rest",
+			"dragonrage",
+			"whirlwind",
+			"fly",
+			"rockslide",
+			"wingattack",
+			"earthquake",
+			"razorwind",
+			"fireblast",
+			"doubleedge",
+			"takedown",
+			"swift",
+			"reflect",
+			"bite",
+			"substitute",
+			"rockthrow",
+			"roar",
+			"hyperbeam",
+			"rage"
+		],
+		"name": "Aerodactyl",
+		"types": [
+			"Rock",
+			"Flying"
+		],
+		"weightkg": 59
+	},
+	"alakazam": {
+		"baseStats": {
+			"atk": 50,
+			"def": 45,
+			"hp": 55,
+			"spa": 135,
+			"spd": 135,
+			"spe": 120
+		},
+		"heightm": 1.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"submission",
+			"rest",
+			"dig",
+			"counter",
+			"rage",
+			"dreameater",
+			"skullbash",
+			"lightscreen",
+			"metronome",
+			"doubleedge",
+			"psywave",
+			"takedown",
+			"psychic",
+			"swift",
+			"seismictoss",
+			"thunderwave",
+			"reflect",
+			"disable",
+			"hyperbeam",
+			"substitute",
+			"recover",
+			"triattack",
+			"nightshade"
+		],
+		"name": "Alakazam",
+		"types": [
+			"Psychic"
+		],
+		"weightkg": 48
+	},
+	"arbok": {
+		"baseStats": {
+			"atk": 85,
+			"def": 69,
+			"hp": 60,
+			"spa": 65,
+			"spd": 65,
+			"spe": 80
+		},
+		"heightm": 3.5,
+		"inherit": True,
+		"learnset": [
+			"glare",
+			"acid",
+			"mimic",
+			"bide",
+			"haze",
+			"doubleedge",
+			"rest",
+			"dig",
+			"bind",
+			"hyperbeam",
+			"wrap",
+			"rockslide",
+			"bite",
+			"substitute",
+			"fissure",
+			"skullbash",
+			"takedown",
+			"rage",
+			"earthquake",
+			"poisonsting"
+		],
+		"name": "Arbok",
+		"types": [
+			"Poison"
+		],
+		"weightkg": 65
+	},
+	"arcanine": {
+		"baseStats": {
+			"atk": 110,
+			"def": 80,
+			"hp": 90,
+			"spa": 80,
+			"spd": 80,
+			"spe": 95
+		},
+		"heightm": 1.9,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"skullbash",
+			"rest",
+			"dig",
+			"dragonrage",
+			"solarbeam",
+			"firespin",
+			"fireblast",
+			"doubleedge",
+			"takedown",
+			"swift",
+			"reflect",
+			"bite",
+			"substitute",
+			"roar",
+			"hyperbeam",
+			"rage"
+		],
+		"name": "Arcanine",
+		"types": [
+			"Fire"
+		],
+		"weightkg": 155
+	},
+	"articuno": {
+		"baseStats": {
+			"atk": 85,
+			"def": 100,
+			"hp": 90,
+			"spa": 125,
+			"spd": 125,
+			"spe": 85
+		},
+		"heightm": 1.7,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"haze",
+			"bide",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"hyperbeam",
+			"swift",
+			"fly",
+			"roar",
+			"substitute",
+			"takedown",
+			"whirlwind",
+			"rage",
+			"mist",
+			"bubblebeam",
+			"blizzard",
+			"gust",
+			"razorwind"
+		],
+		"name": "Articuno",
+		"types": [
+			"Ice",
+			"Flying"
+		],
+		"weightkg": 55.4
+	},
+	"beedrill": {
+		"baseStats": {
+			"atk": 80,
+			"def": 40,
+			"hp": 65,
+			"spa": 45,
+			"spd": 45,
+			"spe": 75
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"skullbash",
+			"rest",
+			"reflect",
+			"twineedle",
+			"swift",
+			"substitute",
+			"takedown",
+			"pinmissile",
+			"solarbeam",
+			"hyperbeam",
+			"focusenergy",
+			"furyattack",
+			"rage"
+		],
+		"name": "Beedrill",
+		"types": [
+			"Bug",
+			"Poison"
+		],
+		"weightkg": 29.5
+	},
+	"bellsprout": {
+		"baseStats": {
+			"atk": 75,
+			"def": 35,
+			"hp": 50,
+			"spa": 70,
+			"spd": 70,
+			"spe": 40
+		},
+		"heightm": 0.7,
+		"inherit": True,
+		"learnset": [
+			"acid",
+			"mimic",
+			"bide",
+			"razorleaf",
+			"doubleedge",
+			"rest",
+			"growth",
+			"bind",
+			"reflect",
+			"wrap",
+			"takedown",
+			"substitute",
+			"solarbeam",
+			"rage",
+			"stunspore"
+		],
+		"name": "Bellsprout",
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"weightkg": 4
+	},
+	"blastoise": {
+		"baseStats": {
+			"atk": 83,
+			"def": 100,
+			"hp": 79,
+			"spa": 85,
+			"spd": 85,
+			"spe": 78
+		},
+		"heightm": 1.6,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"submission",
+			"rest",
+			"dig",
+			"counter",
+			"bubble",
+			"substitute",
+			"fissure",
+			"rockslide",
+			"reflect",
+			"skullbash",
+			"defensecurl",
+			"blizzard",
+			"doubleedge",
+			"seismictoss",
+			"bite",
+			"earthquake",
+			"roar",
+			"hyperbeam",
+			"takedown",
+			"rage",
+			"bubblebeam"
+		],
+		"name": "Blastoise",
+		"types": [
+			"Water"
+		],
+		"weightkg": 85.5
+	},
+	"bulbasaur": {
+		"baseStats": {
+			"atk": 49,
+			"def": 49,
+			"hp": 45,
+			"spa": 65,
+			"spd": 65,
+			"spe": 45
+		},
+		"heightm": 0.7,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"razorleaf",
+			"razorwind",
+			"skullbash",
+			"rest",
+			"growth",
+			"sludge",
+			"defensecurl",
+			"lightscreen",
+			"petaldance",
+			"solarbeam",
+			"leechseed",
+			"amnesia",
+			"doubleedge",
+			"bind",
+			"reflect",
+			"substitute",
+			"takedown",
+			"rage"
+		],
+		"name": "Bulbasaur",
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"weightkg": 6.9
+	},
+	"butterfree": {
+		"baseStats": {
+			"atk": 45,
+			"def": 50,
+			"hp": 60,
+			"spa": 80,
+			"spd": 80,
+			"spe": 70
+		},
+		"heightm": 1.1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"razorwind",
+			"rest",
+			"gust",
+			"whirlwind",
+			"dreameater",
+			"solarbeam",
+			"doubleedge",
+			"psywave",
+			"takedown",
+			"psychic",
+			"swift",
+			"reflect",
+			"hyperbeam",
+			"substitute",
+			"rage",
+			"stunspore"
+		],
+		"name": "Butterfree",
+		"types": [
+			"Bug",
+			"Flying"
+		],
+		"weightkg": 32
+	},
+	"caterpie": {
+		"baseStats": {
+			"atk": 30,
+			"def": 35,
+			"hp": 45,
+			"spa": 20,
+			"spd": 20,
+			"spe": 45
+		},
+		"heightm": 0.3,
+		"inherit": True,
+		"learnset": [],
+		"name": "Caterpie",
+		"types": [
+			"Bug"
+		],
+		"weightkg": 2.9
+	},
+	"chansey": {
+		"baseStats": {
+			"atk": 5,
+			"def": 5,
+			"hp": 250,
+			"spa": 105,
+			"spd": 105,
+			"spe": 50
+		},
+		"heightm": 1.1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"bubblebeam",
+			"submission",
+			"rest",
+			"skullbash",
+			"counter",
+			"rage",
+			"dreameater",
+			"solarbeam",
+			"rockslide",
+			"minimize",
+			"defensecurl",
+			"lightscreen",
+			"thunder",
+			"blizzard",
+			"fireblast",
+			"metronome",
+			"doubleedge",
+			"psywave",
+			"psychic",
+			"seismictoss",
+			"doubleslap",
+			"thunderwave",
+			"reflect",
+			"takedown",
+			"earthquake",
+			"hyperbeam",
+			"softboiled",
+			"triattack"
+		],
+		"name": "Chansey",
+		"types": [
+			"Normal"
+		],
+		"weightkg": 34.6
+	},
+	"charizard": {
+		"baseStats": {
+			"atk": 84,
+			"def": 78,
+			"hp": 78,
+			"spa": 85,
+			"spd": 85,
+			"spe": 100
+		},
+		"heightm": 1.7,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"slash",
+			"submission",
+			"rest",
+			"dig",
+			"dragonrage",
+			"counter",
+			"fly",
+			"wingattack",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"defensecurl",
+			"solarbeam",
+			"firespin",
+			"fireblast",
+			"doubleedge",
+			"roar",
+			"seismictoss",
+			"reflect",
+			"takedown",
+			"earthquake",
+			"swift",
+			"hyperbeam",
+			"rage",
+			"furyswipes"
+		],
+		"name": "Charizard",
+		"types": [
+			"Fire",
+			"Flying"
+		],
+		"weightkg": 90.5
+	},
+	"charmander": {
+		"baseStats": {
+			"atk": 52,
+			"def": 43,
+			"hp": 39,
+			"spa": 50,
+			"spd": 50,
+			"spe": 65
+		},
+		"heightm": 0.6,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"slash",
+			"submission",
+			"rest",
+			"dig",
+			"dragonrage",
+			"wingattack",
+			"counter",
+			"rockslide",
+			"skullbash",
+			"defensecurl",
+			"firespin",
+			"fireblast",
+			"furyswipes",
+			"doubleedge",
+			"swift",
+			"seismictoss",
+			"reflect",
+			"takedown",
+			"bite",
+			"rage"
+		],
+		"name": "Charmander",
+		"types": [
+			"Fire"
+		],
+		"weightkg": 8.5
+	},
+	"charmeleon": {
+		"baseStats": {
+			"atk": 64,
+			"def": 58,
+			"hp": 58,
+			"spa": 65,
+			"spd": 65,
+			"spe": 80
+		},
+		"heightm": 1.1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"slash",
+			"submission",
+			"rest",
+			"dig",
+			"dragonrage",
+			"counter",
+			"rockslide",
+			"skullbash",
+			"defensecurl",
+			"firespin",
+			"fireblast",
+			"furyswipes",
+			"doubleedge",
+			"reflect",
+			"takedown",
+			"swift",
+			"seismictoss",
+			"substitute",
+			"rage"
+		],
+		"name": "Charmeleon",
+		"types": [
+			"Fire"
+		],
+		"weightkg": 19
+	},
+	"clefable": {
+		"baseStats": {
+			"atk": 70,
+			"def": 73,
+			"hp": 95,
+			"spa": 85,
+			"spd": 85,
+			"spe": 60
+		},
+		"heightm": 1.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"bubblebeam",
+			"submission",
+			"rest",
+			"skullbash",
+			"counter",
+			"rage",
+			"dreameater",
+			"solarbeam",
+			"psywave",
+			"minimize",
+			"defensecurl",
+			"lightscreen",
+			"amnesia",
+			"thunder",
+			"blizzard",
+			"fireblast",
+			"metronome",
+			"doubleedge",
+			"reflect",
+			"dig",
+			"psychic",
+			"seismictoss",
+			"doubleslap",
+			"thunderwave",
+			"takedown",
+			"hyperbeam",
+			"softboiled",
+			"triattack"
+		],
+		"name": "Clefable",
+		"types": [
+			"Fairy"
+		],
+		"weightkg": 40
+	},
+	"clefairy": {
+		"baseStats": {
+			"atk": 45,
+			"def": 48,
+			"hp": 70,
+			"spa": 60,
+			"spd": 60,
+			"spe": 35
+		},
+		"heightm": 0.6,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"submission",
+			"rest",
+			"skullbash",
+			"counter",
+			"rage",
+			"dreameater",
+			"solarbeam",
+			"bubblebeam",
+			"minimize",
+			"defensecurl",
+			"lightscreen",
+			"amnesia",
+			"thunder",
+			"blizzard",
+			"fireblast",
+			"metronome",
+			"doubleedge",
+			"reflect",
+			"dig",
+			"psychic",
+			"seismictoss",
+			"doubleslap",
+			"thunderwave",
+			"takedown",
+			"psywave",
+			"softboiled",
+			"triattack"
+		],
+		"name": "Clefairy",
+		"types": [
+			"Fairy"
+		],
+		"weightkg": 7.5
+	},
+	"cloyster": {
+		"baseStats": {
+			"atk": 95,
+			"def": 180,
+			"hp": 50,
+			"spa": 85,
+			"spd": 85,
+			"spe": 70
+		},
+		"heightm": 1.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"twineedle",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"takedown",
+			"pinmissile",
+			"rage",
+			"swift",
+			"spikecannon",
+			"explosion",
+			"clamp",
+			"selfdestruct",
+			"substitute",
+			"bubblebeam",
+			"aurorabeam",
+			"hyperbeam",
+			"lightscreen",
+			"triattack",
+			"blizzard"
+		],
+		"name": "Cloyster",
+		"types": [
+			"Water",
+			"Ice"
+		],
+		"weightkg": 132.5
+	},
+	"cubone": {
+		"baseStats": {
+			"atk": 50,
+			"def": 95,
+			"hp": 50,
+			"spa": 40,
+			"spd": 40,
+			"spe": 35
+		},
+		"heightm": 0.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"counter",
+			"bide",
+			"bubblebeam",
+			"submission",
+			"rest",
+			"swift",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"earthquake",
+			"blizzard",
+			"fireblast",
+			"doubleedge",
+			"dig",
+			"seismictoss",
+			"bonemerang",
+			"doublekick",
+			"takedown",
+			"thrash",
+			"substitute",
+			"focusenergy",
+			"rage"
+		],
+		"name": "Cubone",
+		"types": [
+			"Ground"
+		],
+		"weightkg": 6.5
+	},
+	"dewgong": {
+		"baseStats": {
+			"atk": 70,
+			"def": 80,
+			"hp": 90,
+			"spa": 95,
+			"spd": 95,
+			"spe": 70
+		},
+		"heightm": 1.7,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"rest",
+			"horndrill",
+			"takedown",
+			"hyperbeam",
+			"aurorabeam",
+			"bubblebeam",
+			"skullbash",
+			"substitute",
+			"rage",
+			"blizzard"
+		],
+		"name": "Dewgong",
+		"types": [
+			"Water",
+			"Ice"
+		],
+		"weightkg": 120
+	},
+	"diglett": {
+		"baseStats": {
+			"atk": 55,
+			"def": 25,
+			"hp": 10,
+			"spa": 45,
+			"spd": 45,
+			"spe": 95
+		},
+		"heightm": 0.2,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"slash",
+			"doubleedge",
+			"rest",
+			"dig",
+			"sandattack",
+			"furyswipes",
+			"substitute",
+			"fissure",
+			"takedown",
+			"rage",
+			"rockslide",
+			"earthquake"
+		],
+		"name": "Diglett",
+		"types": [
+			"Ground"
+		],
+		"weightkg": 0.8
+	},
+	"ditto": {
+		"baseStats": {
+			"atk": 48,
+			"def": 48,
+			"hp": 48,
+			"spa": 48,
+			"spd": 48,
+			"spe": 48
+		},
+		"heightm": 0.3,
+		"inherit": True,
+		"learnset": [
+			"transform"
+		],
+		"name": "Ditto",
+		"types": [
+			"Normal"
+		],
+		"weightkg": 4
+	},
+	"dodrio": {
+		"baseStats": {
+			"atk": 110,
+			"def": 70,
+			"hp": 60,
+			"spa": 60,
+			"spd": 60,
+			"spe": 100
+		},
+		"heightm": 1.8,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"hyperbeam",
+			"swift",
+			"rage",
+			"whirlwind",
+			"fly",
+			"jumpkick",
+			"takedown",
+			"thrash",
+			"substitute",
+			"skullbash",
+			"furyattack",
+			"triattack",
+			"mirrormove"
+		],
+		"name": "Dodrio",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"weightkg": 85.2
+	},
+	"doduo": {
+		"baseStats": {
+			"atk": 85,
+			"def": 45,
+			"hp": 35,
+			"spa": 35,
+			"spd": 35,
+			"spe": 75
+		},
+		"heightm": 1.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"haze",
+			"swift",
+			"whirlwind",
+			"fly",
+			"jumpkick",
+			"takedown",
+			"thrash",
+			"substitute",
+			"skullbash",
+			"furyattack",
+			"rage",
+			"triattack",
+			"mirrormove"
+		],
+		"name": "Doduo",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"weightkg": 39.2
+	},
+	"dragonair": {
+		"baseStats": {
+			"atk": 84,
+			"def": 65,
+			"hp": 61,
+			"spa": 70,
+			"spd": 70,
+			"spe": 70
+		},
+		"heightm": 4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"thunderwave",
+			"doubleedge",
+			"skullbash",
+			"rest",
+			"dragonrage",
+			"fireblast",
+			"bind",
+			"takedown",
+			"swift",
+			"wrap",
+			"substitute",
+			"reflect",
+			"bubblebeam",
+			"hyperbeam",
+			"lightscreen",
+			"horndrill",
+			"rage",
+			"thunder",
+			"blizzard"
+		],
+		"name": "Dragonair",
+		"types": [
+			"Dragon"
+		],
+		"weightkg": 16.5
+	},
+	"dragonite": {
+		"baseStats": {
+			"atk": 134,
+			"def": 95,
+			"hp": 91,
+			"spa": 100,
+			"spd": 100,
+			"spe": 80
+		},
+		"heightm": 2.2,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"horndrill",
+			"bide",
+			"razorwind",
+			"rest",
+			"dragonrage",
+			"fly",
+			"rockslide",
+			"bubblebeam",
+			"skullbash",
+			"lightscreen",
+			"wingattack",
+			"thunder",
+			"earthquake",
+			"blizzard",
+			"fireblast",
+			"thunderwave",
+			"doubleedge",
+			"reflect",
+			"bind",
+			"takedown",
+			"swift",
+			"wrap",
+			"roar",
+			"hyperbeam",
+			"substitute",
+			"rage",
+			"mist"
+		],
+		"name": "Dragonite",
+		"types": [
+			"Dragon",
+			"Flying"
+		],
+		"weightkg": 210
+	},
+	"dratini": {
+		"baseStats": {
+			"atk": 64,
+			"def": 45,
+			"hp": 41,
+			"spa": 50,
+			"spd": 50,
+			"spe": 50
+		},
+		"heightm": 1.8,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"thunderwave",
+			"haze",
+			"doubleedge",
+			"skullbash",
+			"thunder",
+			"rest",
+			"dragonrage",
+			"fireblast",
+			"bind",
+			"takedown",
+			"swift",
+			"wrap",
+			"substitute",
+			"reflect",
+			"bubblebeam",
+			"hyperbeam",
+			"lightscreen",
+			"rage",
+			"mist",
+			"blizzard"
+		],
+		"name": "Dratini",
+		"types": [
+			"Dragon"
+		],
+		"weightkg": 3.3
+	},
+	"drowzee": {
+		"baseStats": {
+			"atk": 48,
+			"def": 45,
+			"hp": 60,
+			"spa": 90,
+			"spd": 90,
+			"spe": 42
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"submission",
+			"rest",
+			"counter",
+			"rage",
+			"skullbash",
+			"lightscreen",
+			"metronome",
+			"doubleedge",
+			"psywave",
+			"takedown",
+			"dreameater",
+			"psychic",
+			"seismictoss",
+			"thunderwave",
+			"reflect",
+			"disable",
+			"substitute",
+			"triattack"
+		],
+		"name": "Drowzee",
+		"types": [
+			"Psychic"
+		],
+		"weightkg": 32.4
+	},
+	"dugtrio": {
+		"baseStats": {
+			"atk": 80,
+			"def": 50,
+			"hp": 35,
+			"spa": 70,
+			"spd": 70,
+			"spe": 120
+		},
+		"heightm": 0.7,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"slash",
+			"doubleedge",
+			"rest",
+			"dig",
+			"sandattack",
+			"hyperbeam",
+			"furyswipes",
+			"substitute",
+			"fissure",
+			"takedown",
+			"rage",
+			"rockslide",
+			"triattack",
+			"earthquake"
+		],
+		"name": "Dugtrio",
+		"types": [
+			"Ground"
+		],
+		"weightkg": 33.3
+	},
+	"eevee": {
+		"baseStats": {
+			"atk": 55,
+			"def": 50,
+			"hp": 55,
+			"spa": 65,
+			"spd": 65,
+			"spe": 55
+		},
+		"heightm": 0.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"skullbash",
+			"rest",
+			"dig",
+			"reflect",
+			"sandattack",
+			"swift",
+			"doublekick",
+			"bite",
+			"substitute",
+			"focusenergy",
+			"takedown",
+			"rage"
+		],
+		"name": "Eevee",
+		"types": [
+			"Normal"
+		],
+		"weightkg": 6.5
+	},
+	"ekans": {
+		"baseStats": {
+			"atk": 60,
+			"def": 44,
+			"hp": 35,
+			"spa": 40,
+			"spd": 40,
+			"spe": 55
+		},
+		"heightm": 2,
+		"inherit": True,
+		"learnset": [
+			"glare",
+			"acid",
+			"mimic",
+			"bide",
+			"haze",
+			"doubleedge",
+			"rest",
+			"dig",
+			"bind",
+			"wrap",
+			"rockslide",
+			"bite",
+			"disable",
+			"substitute",
+			"fissure",
+			"skullbash",
+			"takedown",
+			"rage",
+			"earthquake",
+			"poisonsting"
+		],
+		"name": "Ekans",
+		"types": [
+			"Poison"
+		],
+		"weightkg": 6.9
+	},
+	"electabuzz": {
+		"baseStats": {
+			"atk": 83,
+			"def": 57,
+			"hp": 65,
+			"spa": 85,
+			"spd": 85,
+			"spe": 105
+		},
+		"heightm": 1.1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"skullbash",
+			"submission",
+			"psywave",
+			"rest",
+			"reflect",
+			"takedown",
+			"counter",
+			"swift",
+			"psychic",
+			"seismictoss",
+			"metronome",
+			"rage",
+			"thunderwave",
+			"hyperbeam",
+			"substitute",
+			"lightscreen",
+			"thunder"
+		],
+		"name": "Electabuzz",
+		"types": [
+			"Electric"
+		],
+		"weightkg": 30
+	},
+	"electrode": {
+		"baseStats": {
+			"atk": 50,
+			"def": 70,
+			"hp": 60,
+			"spa": 80,
+			"spd": 80,
+			"spe": 140
+		},
+		"heightm": 1.2,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"rest",
+			"reflect",
+			"rage",
+			"thunderwave",
+			"explosion",
+			"sonicboom",
+			"lightscreen",
+			"substitute",
+			"swift",
+			"skullbash",
+			"hyperbeam",
+			"selfdestruct",
+			"takedown",
+			"thunder"
+		],
+		"name": "Electrode",
+		"types": [
+			"Electric"
+		],
+		"weightkg": 66.6
+	},
+	"exeggcute": {
+		"baseStats": {
+			"atk": 40,
+			"def": 80,
+			"hp": 60,
+			"spa": 60,
+			"spd": 60,
+			"spe": 40
+		},
+		"heightm": 0.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"absorb",
+			"doubleedge",
+			"solarbeam",
+			"psywave",
+			"rest",
+			"barrage",
+			"reflect",
+			"psychic",
+			"takedown",
+			"explosion",
+			"dreameater",
+			"selfdestruct",
+			"substitute",
+			"lightscreen",
+			"rage",
+			"leechseed",
+			"stunspore"
+		],
+		"name": "Exeggcute",
+		"types": [
+			"Grass",
+			"Psychic"
+		],
+		"weightkg": 2.5
+	},
+	"exeggutor": {
+		"baseStats": {
+			"atk": 95,
+			"def": 85,
+			"hp": 95,
+			"spa": 125,
+			"spd": 125,
+			"spe": 55
+		},
+		"heightm": 2,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"rest",
+			"barrage",
+			"hyperbeam",
+			"dreameater",
+			"selfdestruct",
+			"lightscreen",
+			"solarbeam",
+			"leechseed",
+			"absorb",
+			"doubleedge",
+			"psywave",
+			"explosion",
+			"psychic",
+			"reflect",
+			"substitute",
+			"stomp",
+			"takedown",
+			"rage",
+			"stunspore"
+		],
+		"name": "Exeggutor",
+		"types": [
+			"Grass",
+			"Psychic"
+		],
+		"weightkg": 120
+	},
+	"farfetchd": {
+		"baseStats": {
+			"atk": 65,
+			"def": 55,
+			"hp": 52,
+			"spa": 58,
+			"spd": 58,
+			"spe": 60
+		},
+		"heightm": 0.8,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"razorleaf",
+			"slash",
+			"razorwind",
+			"skullbash",
+			"rest",
+			"whirlwind",
+			"fly",
+			"doubleedge",
+			"swift",
+			"sandattack",
+			"reflect",
+			"substitute",
+			"focusenergy",
+			"takedown",
+			"furyattack",
+			"gust",
+			"rage",
+			"mirrormove"
+		],
+		"name": "Farfetch\u2019d",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"weightkg": 15
+	},
+	"fearow": {
+		"baseStats": {
+			"atk": 90,
+			"def": 65,
+			"hp": 65,
+			"spa": 61,
+			"spd": 61,
+			"spe": 100
+		},
+		"heightm": 1.2,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"razorwind",
+			"doubleedge",
+			"rest",
+			"takedown",
+			"hyperbeam",
+			"swift",
+			"rage",
+			"fly",
+			"substitute",
+			"focusenergy",
+			"furyattack",
+			"whirlwind",
+			"triattack",
+			"mirrormove"
+		],
+		"name": "Fearow",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"weightkg": 38
+	},
+	"flareon": {
+		"baseStats": {
+			"atk": 130,
+			"def": 60,
+			"hp": 65,
+			"spa": 110,
+			"spd": 110,
+			"spe": 65
+		},
+		"heightm": 0.9,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"skullbash",
+			"doublekick",
+			"rest",
+			"dig",
+			"swift",
+			"rage",
+			"firespin",
+			"fireblast",
+			"doubleedge",
+			"reflect",
+			"takedown",
+			"sandattack",
+			"bite",
+			"substitute",
+			"roar",
+			"hyperbeam",
+			"focusenergy"
+		],
+		"name": "Flareon",
+		"types": [
+			"Fire"
+		],
+		"weightkg": 25
+	},
+	"gastly": {
+		"baseStats": {
+			"atk": 35,
+			"def": 30,
+			"hp": 30,
+			"spa": 100,
+			"spd": 100,
+			"spe": 80
+		},
+		"heightm": 1.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"nightshade",
+			"dreameater",
+			"selfdestruct",
+			"thunder",
+			"explosion",
+			"haze",
+			"psywave",
+			"rest",
+			"psychic",
+			"disable",
+			"substitute",
+			"rage"
+		],
+		"name": "Gastly",
+		"types": [
+			"Ghost",
+			"Poison"
+		],
+		"weightkg": 0.1
+	},
+	"gengar": {
+		"baseStats": {
+			"atk": 65,
+			"def": 60,
+			"hp": 60,
+			"spa": 130,
+			"spd": 130,
+			"spe": 110
+		},
+		"heightm": 1.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"counter",
+			"bide",
+			"rest",
+			"haze",
+			"nightshade",
+			"rage",
+			"explosion",
+			"dreameater",
+			"skullbash",
+			"selfdestruct",
+			"thunder",
+			"metronome",
+			"doubleedge",
+			"submission",
+			"psywave",
+			"psychic",
+			"seismictoss",
+			"disable",
+			"hyperbeam",
+			"substitute",
+			"takedown"
+		],
+		"name": "Gengar",
+		"types": [
+			"Ghost",
+			"Poison"
+		],
+		"weightkg": 40.5
+	},
+	"geodude": {
+		"baseStats": {
+			"atk": 80,
+			"def": 100,
+			"hp": 40,
+			"spa": 30,
+			"spd": 30,
+			"spe": 20
+		},
+		"heightm": 0.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"submission",
+			"dig",
+			"fireblast",
+			"rest",
+			"counter",
+			"sandattack",
+			"takedown",
+			"metronome",
+			"rage",
+			"substitute",
+			"explosion",
+			"seismictoss",
+			"fissure",
+			"defensecurl",
+			"selfdestruct",
+			"rockthrow",
+			"rockslide",
+			"earthquake"
+		],
+		"name": "Geodude",
+		"types": [
+			"Rock",
+			"Ground"
+		],
+		"weightkg": 20
+	},
+	"gloom": {
+		"baseStats": {
+			"atk": 65,
+			"def": 70,
+			"hp": 60,
+			"spa": 85,
+			"spd": 85,
+			"spe": 40
+		},
+		"heightm": 0.8,
+		"inherit": True,
+		"learnset": [
+			"acid",
+			"mimic",
+			"bide",
+			"razorleaf",
+			"absorb",
+			"doubleedge",
+			"rest",
+			"growth",
+			"rage",
+			"takedown",
+			"substitute",
+			"reflect",
+			"stunspore",
+			"petaldance",
+			"solarbeam"
+		],
+		"name": "Gloom",
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"weightkg": 8.6
+	},
+	"golbat": {
+		"baseStats": {
+			"atk": 80,
+			"def": 70,
+			"hp": 75,
+			"spa": 75,
+			"spd": 75,
+			"spe": 90
+		},
+		"heightm": 1.6,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"haze",
+			"bide",
+			"absorb",
+			"doubleedge",
+			"rest",
+			"takedown",
+			"rage",
+			"fly",
+			"bite",
+			"substitute",
+			"swift",
+			"superfang",
+			"hyperbeam",
+			"wingattack",
+			"whirlwind",
+			"razorwind"
+		],
+		"name": "Golbat",
+		"types": [
+			"Poison",
+			"Flying"
+		],
+		"weightkg": 55
+	},
+	"goldeen": {
+		"baseStats": {
+			"atk": 67,
+			"def": 60,
+			"hp": 45,
+			"spa": 50,
+			"spd": 50,
+			"spe": 63
+		},
+		"heightm": 0.6,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"rest",
+			"horndrill",
+			"haze",
+			"swift",
+			"rage",
+			"substitute",
+			"bubblebeam",
+			"skullbash",
+			"takedown",
+			"furyattack",
+			"blizzard"
+		],
+		"name": "Goldeen",
+		"types": [
+			"Water"
+		],
+		"weightkg": 15
+	},
+	"golduck": {
+		"baseStats": {
+			"atk": 82,
+			"def": 78,
+			"hp": 80,
+			"spa": 80,
+			"spd": 80,
+			"spe": 85
+		},
+		"heightm": 1.7,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"submission",
+			"rest",
+			"dig",
+			"counter",
+			"substitute",
+			"skullbash",
+			"lightscreen",
+			"amnesia",
+			"blizzard",
+			"furyswipes",
+			"doubleedge",
+			"swift",
+			"psychic",
+			"seismictoss",
+			"disable",
+			"hyperbeam",
+			"takedown",
+			"rage"
+		],
+		"name": "Golduck",
+		"types": [
+			"Water"
+		],
+		"weightkg": 76.6
+	},
+	"golem": {
+		"baseStats": {
+			"atk": 110,
+			"def": 130,
+			"hp": 80,
+			"spa": 55,
+			"spd": 55,
+			"spe": 45
+		},
+		"heightm": 1.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"submission",
+			"rest",
+			"dig",
+			"counter",
+			"fissure",
+			"rockslide",
+			"defensecurl",
+			"selfdestruct",
+			"earthquake",
+			"explosion",
+			"fireblast",
+			"metronome",
+			"doubleedge",
+			"takedown",
+			"seismictoss",
+			"sandattack",
+			"substitute",
+			"rockthrow",
+			"roar",
+			"hyperbeam",
+			"rage"
+		],
+		"name": "Golem",
+		"types": [
+			"Rock",
+			"Ground"
+		],
+		"weightkg": 300
+	},
+	"graveler": {
+		"baseStats": {
+			"atk": 95,
+			"def": 115,
+			"hp": 55,
+			"spa": 45,
+			"spd": 45,
+			"spe": 35
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"submission",
+			"dig",
+			"fireblast",
+			"rest",
+			"counter",
+			"sandattack",
+			"takedown",
+			"metronome",
+			"rage",
+			"substitute",
+			"explosion",
+			"seismictoss",
+			"fissure",
+			"defensecurl",
+			"selfdestruct",
+			"rockthrow",
+			"rockslide",
+			"earthquake"
+		],
+		"name": "Graveler",
+		"types": [
+			"Rock",
+			"Ground"
+		],
+		"weightkg": 105
+	},
+	"grimer": {
+		"baseStats": {
+			"atk": 80,
+			"def": 50,
+			"hp": 80,
+			"spa": 40,
+			"spd": 40,
+			"spe": 25
+		},
+		"heightm": 0.9,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"fireblast",
+			"haze",
+			"bide",
+			"dig",
+			"rest",
+			"explosion",
+			"sludge",
+			"disable",
+			"minimize",
+			"substitute",
+			"selfdestruct",
+			"rage",
+			"rockslide",
+			"thunder"
+		],
+		"name": "Grimer",
+		"types": [
+			"Poison"
+		],
+		"weightkg": 30
+	},
+	"growlithe": {
+		"baseStats": {
+			"atk": 70,
+			"def": 45,
+			"hp": 55,
+			"spa": 50,
+			"spd": 50,
+			"spe": 60
+		},
+		"heightm": 0.7,
+		"inherit": True,
+		"learnset": [
+			"fireblast",
+			"mimic",
+			"bide",
+			"doubleedge",
+			"rest",
+			"dig",
+			"dragonrage",
+			"doublekick",
+			"reflect",
+			"swift",
+			"takedown",
+			"bite",
+			"substitute",
+			"skullbash",
+			"roar",
+			"thrash",
+			"rage",
+			"firespin"
+		],
+		"name": "Growlithe",
+		"types": [
+			"Fire"
+		],
+		"weightkg": 19
+	},
+	"gyarados": {
+		"baseStats": {
+			"atk": 125,
+			"def": 79,
+			"hp": 95,
+			"spa": 100,
+			"spd": 100,
+			"spe": 81
+		},
+		"heightm": 6.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"rest",
+			"dragonrage",
+			"skullbash",
+			"thunder",
+			"earthquake",
+			"blizzard",
+			"fireblast",
+			"thunderwave",
+			"doubleedge",
+			"reflect",
+			"bind",
+			"takedown",
+			"thrash",
+			"bite",
+			"roar",
+			"hyperbeam",
+			"substitute",
+			"rage"
+		],
+		"name": "Gyarados",
+		"types": [
+			"Water",
+			"Flying"
+		],
+		"weightkg": 235
+	},
+	"haunter": {
+		"baseStats": {
+			"atk": 50,
+			"def": 45,
+			"hp": 45,
+			"spa": 115,
+			"spd": 115,
+			"spe": 95
+		},
+		"heightm": 1.6,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"nightshade",
+			"dreameater",
+			"selfdestruct",
+			"thunder",
+			"explosion",
+			"psywave",
+			"rest",
+			"psychic",
+			"substitute",
+			"rage"
+		],
+		"name": "Haunter",
+		"types": [
+			"Ghost",
+			"Poison"
+		],
+		"weightkg": 0.1
+	},
+	"hitmonchan": {
+		"baseStats": {
+			"atk": 105,
+			"def": 79,
+			"hp": 50,
+			"spa": 35,
+			"spd": 35,
+			"spe": 76
+		},
+		"heightm": 1.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"skullbash",
+			"submission",
+			"rest",
+			"counter",
+			"rockslide",
+			"metronome",
+			"doubleedge",
+			"takedown",
+			"swift",
+			"seismictoss",
+			"dizzypunch",
+			"earthquake",
+			"cometpunch",
+			"substitute",
+			"focusenergy",
+			"rage"
+		],
+		"name": "Hitmonchan",
+		"types": [
+			"Fighting"
+		],
+		"weightkg": 50.2
+	},
+	"hitmonlee": {
+		"baseStats": {
+			"atk": 120,
+			"def": 53,
+			"hp": 50,
+			"spa": 35,
+			"spd": 35,
+			"spe": 87
+		},
+		"heightm": 1.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"counter",
+			"bide",
+			"submission",
+			"rest",
+			"highjumpkick",
+			"rockslide",
+			"skullbash",
+			"metronome",
+			"doubleedge",
+			"doublekick",
+			"takedown",
+			"swift",
+			"seismictoss",
+			"jumpkick",
+			"earthquake",
+			"substitute",
+			"focusenergy",
+			"rage"
+		],
+		"name": "Hitmonlee",
+		"types": [
+			"Fighting"
+		],
+		"weightkg": 49.8
+	},
+	"horsea": {
+		"baseStats": {
+			"atk": 40,
+			"def": 70,
+			"hp": 30,
+			"spa": 70,
+			"spd": 70,
+			"spe": 60
+		},
+		"heightm": 0.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"razorwind",
+			"doubleedge",
+			"bubble",
+			"dragonrage",
+			"rest",
+			"takedown",
+			"swift",
+			"substitute",
+			"disable",
+			"bubblebeam",
+			"skullbash",
+			"aurorabeam",
+			"focusenergy",
+			"rage",
+			"blizzard"
+		],
+		"name": "Horsea",
+		"types": [
+			"Water"
+		],
+		"weightkg": 8
+	},
+	"hypno": {
+		"baseStats": {
+			"atk": 73,
+			"def": 70,
+			"hp": 85,
+			"spa": 115,
+			"spd": 115,
+			"spe": 67
+		},
+		"heightm": 1.6,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"psychic",
+			"bide",
+			"submission",
+			"rest",
+			"counter",
+			"rage",
+			"skullbash",
+			"lightscreen",
+			"metronome",
+			"doubleedge",
+			"psywave",
+			"takedown",
+			"dreameater",
+			"seismictoss",
+			"thunderwave",
+			"reflect",
+			"disable",
+			"hyperbeam",
+			"substitute",
+			"triattack"
+		],
+		"name": "Hypno",
+		"types": [
+			"Psychic"
+		],
+		"weightkg": 75.6
+	},
+	"ivysaur": {
+		"baseStats": {
+			"atk": 62,
+			"def": 63,
+			"hp": 60,
+			"spa": 80,
+			"spd": 80,
+			"spe": 60
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"razorleaf",
+			"doubleedge",
+			"rest",
+			"growth",
+			"bind",
+			"reflect",
+			"substitute",
+			"takedown",
+			"leechseed",
+			"defensecurl",
+			"solarbeam",
+			"lightscreen",
+			"amnesia",
+			"rage"
+		],
+		"name": "Ivysaur",
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"weightkg": 13
+	},
+	"jigglypuff": {
+		"baseStats": {
+			"atk": 45,
+			"def": 20,
+			"hp": 115,
+			"spa": 25,
+			"spd": 25,
+			"spe": 20
+		},
+		"heightm": 0.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"bubblebeam",
+			"skullbash",
+			"submission",
+			"rest",
+			"counter",
+			"rage",
+			"dreameater",
+			"selfdestruct",
+			"defensecurl",
+			"lightscreen",
+			"solarbeam",
+			"thunder",
+			"blizzard",
+			"fireblast",
+			"doubleedge",
+			"psywave",
+			"reflect",
+			"takedown",
+			"dig",
+			"psychic",
+			"seismictoss",
+			"doubleslap",
+			"thunderwave",
+			"disable",
+			"triattack"
+		],
+		"name": "Jigglypuff",
+		"types": [
+			"Normal",
+			"Fairy"
+		],
+		"weightkg": 5.5
+	},
+	"jolteon": {
+		"baseStats": {
+			"atk": 65,
+			"def": 60,
+			"hp": 65,
+			"spa": 110,
+			"spd": 110,
+			"spe": 130
+		},
+		"heightm": 0.8,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doublekick",
+			"rest",
+			"dig",
+			"skullbash",
+			"pinmissile",
+			"lightscreen",
+			"thunder",
+			"takedown",
+			"doubleedge",
+			"reflect",
+			"swift",
+			"sandattack",
+			"thunderwave",
+			"bite",
+			"substitute",
+			"roar",
+			"hyperbeam",
+			"focusenergy",
+			"rage"
+		],
+		"name": "Jolteon",
+		"types": [
+			"Electric"
+		],
+		"weightkg": 24.5
+	},
+	"jynx": {
+		"baseStats": {
+			"atk": 50,
+			"def": 35,
+			"hp": 65,
+			"spa": 95,
+			"spd": 95,
+			"spe": 95
+		},
+		"heightm": 1.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"bubblebeam",
+			"rest",
+			"counter",
+			"dreameater",
+			"skullbash",
+			"lightscreen",
+			"rage",
+			"blizzard",
+			"metronome",
+			"doubleedge",
+			"submission",
+			"psywave",
+			"takedown",
+			"psychic",
+			"seismictoss",
+			"doubleslap",
+			"reflect",
+			"thrash",
+			"hyperbeam"
+		],
+		"name": "Jynx",
+		"types": [
+			"Ice",
+			"Psychic"
+		],
+		"weightkg": 40.6
+	},
+	"kabuto": {
+		"baseStats": {
+			"atk": 80,
+			"def": 90,
+			"hp": 30,
+			"spa": 45,
+			"spd": 45,
+			"spe": 55
+		},
+		"heightm": 0.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"absorb",
+			"reflect",
+			"doubleedge",
+			"rest",
+			"dig",
+			"sandattack",
+			"substitute",
+			"rockthrow",
+			"bubblebeam",
+			"aurorabeam",
+			"takedown",
+			"rage",
+			"rockslide",
+			"slash",
+			"blizzard"
+		],
+		"name": "Kabuto",
+		"types": [
+			"Rock",
+			"Water"
+		],
+		"weightkg": 11.5
+	},
+	"kabutops": {
+		"baseStats": {
+			"atk": 115,
+			"def": 105,
+			"hp": 60,
+			"spa": 70,
+			"spd": 70,
+			"spe": 80
+		},
+		"heightm": 1.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"slash",
+			"razorwind",
+			"submission",
+			"rest",
+			"dig",
+			"rockslide",
+			"skullbash",
+			"blizzard",
+			"takedown",
+			"absorb",
+			"doubleedge",
+			"seismictoss",
+			"sandattack",
+			"reflect",
+			"substitute",
+			"rockthrow",
+			"hyperbeam",
+			"rage",
+			"bubblebeam"
+		],
+		"name": "Kabutops",
+		"types": [
+			"Rock",
+			"Water"
+		],
+		"weightkg": 40.5
+	},
+	"kadabra": {
+		"baseStats": {
+			"atk": 35,
+			"def": 30,
+			"hp": 40,
+			"spa": 120,
+			"spd": 120,
+			"spe": 105
+		},
+		"heightm": 1.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"psychic",
+			"bide",
+			"submission",
+			"rest",
+			"dig",
+			"counter",
+			"dreameater",
+			"skullbash",
+			"lightscreen",
+			"metronome",
+			"doubleedge",
+			"psywave",
+			"takedown",
+			"swift",
+			"seismictoss",
+			"thunderwave",
+			"reflect",
+			"disable",
+			"substitute",
+			"recover",
+			"rage",
+			"triattack",
+			"nightshade"
+		],
+		"name": "Kadabra",
+		"types": [
+			"Psychic"
+		],
+		"weightkg": 56.5
+	},
+	"kakuna": {
+		"baseStats": {
+			"atk": 25,
+			"def": 50,
+			"hp": 45,
+			"spa": 25,
+			"spd": 25,
+			"spe": 35
+		},
+		"heightm": 0.6,
+		"inherit": True,
+		"learnset": [],
+		"name": "Kakuna",
+		"types": [
+			"Bug",
+			"Poison"
+		],
+		"weightkg": 10
+	},
+	"kangaskhan": {
+		"baseStats": {
+			"atk": 95,
+			"def": 80,
+			"hp": 105,
+			"spa": 40,
+			"spd": 40,
+			"spe": 90
+		},
+		"heightm": 2.2,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"submission",
+			"rest",
+			"counter",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"bubblebeam",
+			"solarbeam",
+			"thunder",
+			"blizzard",
+			"doubleedge",
+			"fireblast",
+			"cometpunch",
+			"takedown",
+			"roar",
+			"dig",
+			"seismictoss",
+			"dizzypunch",
+			"bite",
+			"disable",
+			"earthquake",
+			"stomp",
+			"hyperbeam",
+			"focusenergy",
+			"rage"
+		],
+		"name": "Kangaskhan",
+		"types": [
+			"Normal"
+		],
+		"weightkg": 80
+	},
+	"kingler": {
+		"baseStats": {
+			"atk": 130,
+			"def": 115,
+			"hp": 55,
+			"spa": 50,
+			"spd": 50,
+			"spe": 75
+		},
+		"heightm": 1.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"dig",
+			"takedown",
+			"rage",
+			"substitute",
+			"guillotine",
+			"rockslide",
+			"crabhammer",
+			"bubblebeam",
+			"rest",
+			"bubble",
+			"hyperbeam",
+			"amnesia",
+			"stomp",
+			"blizzard"
+		],
+		"name": "Kingler",
+		"types": [
+			"Water"
+		],
+		"weightkg": 60
+	},
+	"koffing": {
+		"baseStats": {
+			"atk": 65,
+			"def": 95,
+			"hp": 40,
+			"spa": 60,
+			"spd": 60,
+			"spe": 35
+		},
+		"heightm": 0.6,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"haze",
+			"bide",
+			"psywave",
+			"rest",
+			"fireblast",
+			"explosion",
+			"sludge",
+			"substitute",
+			"selfdestruct",
+			"rage",
+			"thunder"
+		],
+		"name": "Koffing",
+		"types": [
+			"Poison"
+		],
+		"weightkg": 1
+	},
+	"krabby": {
+		"baseStats": {
+			"atk": 105,
+			"def": 90,
+			"hp": 30,
+			"spa": 25,
+			"spd": 25,
+			"spe": 50
+		},
+		"heightm": 0.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"bubble",
+			"dig",
+			"rest",
+			"haze",
+			"takedown",
+			"substitute",
+			"guillotine",
+			"crabhammer",
+			"bubblebeam",
+			"amnesia",
+			"rage",
+			"stomp",
+			"rockslide",
+			"slash",
+			"blizzard",
+			"doubleedge"
+		],
+		"name": "Krabby",
+		"types": [
+			"Water"
+		],
+		"weightkg": 6.5
+	},
+	"lapras": {
+		"baseStats": {
+			"atk": 85,
+			"def": 80,
+			"hp": 130,
+			"spa": 95,
+			"spd": 95,
+			"spe": 60
+		},
+		"heightm": 2.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"rest",
+			"dragonrage",
+			"horndrill",
+			"dreameater",
+			"fissure",
+			"reflect",
+			"skullbash",
+			"solarbeam",
+			"thunder",
+			"blizzard",
+			"doubleedge",
+			"psywave",
+			"takedown",
+			"psychic",
+			"roar",
+			"aurorabeam",
+			"hyperbeam",
+			"substitute",
+			"rage",
+			"mist",
+			"bubblebeam"
+		],
+		"name": "Lapras",
+		"types": [
+			"Water",
+			"Ice"
+		],
+		"weightkg": 220
+	},
+	"lickitung": {
+		"baseStats": {
+			"atk": 55,
+			"def": 75,
+			"hp": 90,
+			"spa": 60,
+			"spd": 60,
+			"spe": 30
+		},
+		"heightm": 1.2,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"submission",
+			"rest",
+			"dig",
+			"counter",
+			"dreameater",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"defensecurl",
+			"solarbeam",
+			"amnesia",
+			"thunder",
+			"blizzard",
+			"acid",
+			"fireblast",
+			"doubleedge",
+			"bind",
+			"seismictoss",
+			"wrap",
+			"takedown",
+			"thrash",
+			"disable",
+			"earthquake",
+			"stomp",
+			"hyperbeam",
+			"substitute",
+			"rage"
+		],
+		"name": "Lickitung",
+		"types": [
+			"Normal"
+		],
+		"weightkg": 65.5
+	},
+	"machamp": {
+		"baseStats": {
+			"atk": 130,
+			"def": 80,
+			"hp": 90,
+			"spa": 65,
+			"spd": 65,
+			"spe": 55
+		},
+		"heightm": 1.6,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"submission",
+			"rest",
+			"dig",
+			"counter",
+			"karatechop",
+			"substitute",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"lightscreen",
+			"fireblast",
+			"metronome",
+			"doubleedge",
+			"takedown",
+			"seismictoss",
+			"earthquake",
+			"hyperbeam",
+			"focusenergy",
+			"rage"
+		],
+		"name": "Machamp",
+		"types": [
+			"Fighting"
+		],
+		"weightkg": 130
+	},
+	"machoke": {
+		"baseStats": {
+			"atk": 100,
+			"def": 70,
+			"hp": 80,
+			"spa": 50,
+			"spd": 50,
+			"spe": 45
+		},
+		"heightm": 1.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"submission",
+			"rest",
+			"dig",
+			"counter",
+			"karatechop",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"lightscreen",
+			"earthquake",
+			"fireblast",
+			"metronome",
+			"doubleedge",
+			"takedown",
+			"seismictoss",
+			"substitute",
+			"focusenergy",
+			"rage"
+		],
+		"name": "Machoke",
+		"types": [
+			"Fighting"
+		],
+		"weightkg": 70.5
+	},
+	"machop": {
+		"baseStats": {
+			"atk": 80,
+			"def": 50,
+			"hp": 70,
+			"spa": 35,
+			"spd": 35,
+			"spe": 35
+		},
+		"heightm": 0.8,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"submission",
+			"rest",
+			"dig",
+			"counter",
+			"karatechop",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"lightscreen",
+			"earthquake",
+			"fireblast",
+			"metronome",
+			"doubleedge",
+			"takedown",
+			"seismictoss",
+			"substitute",
+			"focusenergy",
+			"rage"
+		],
+		"name": "Machop",
+		"types": [
+			"Fighting"
+		],
+		"weightkg": 19.5
+	},
+	"magikarp": {
+		"baseStats": {
+			"atk": 10,
+			"def": 55,
+			"hp": 20,
+			"spa": 20,
+			"spd": 20,
+			"spe": 80
+		},
+		"heightm": 0.9,
+		"inherit": True,
+		"learnset": [],
+		"name": "Magikarp",
+		"types": [
+			"Water"
+		],
+		"weightkg": 10
+	},
+	"magmar": {
+		"baseStats": {
+			"atk": 95,
+			"def": 57,
+			"hp": 65,
+			"spa": 85,
+			"spd": 85,
+			"spe": 93
+		},
+		"heightm": 1.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"doubleedge",
+			"submission",
+			"psywave",
+			"rest",
+			"fireblast",
+			"takedown",
+			"counter",
+			"psychic",
+			"seismictoss",
+			"metronome",
+			"rage",
+			"hyperbeam",
+			"skullbash",
+			"firespin"
+		],
+		"name": "Magmar",
+		"types": [
+			"Fire"
+		],
+		"weightkg": 44.5
+	},
+	"magnemite": {
+		"baseStats": {
+			"atk": 35,
+			"def": 70,
+			"hp": 25,
+			"spa": 95,
+			"spd": 95,
+			"spe": 45
+		},
+		"heightm": 0.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"takedown",
+			"swift",
+			"rage",
+			"thunderwave",
+			"explosion",
+			"sonicboom",
+			"substitute",
+			"lightscreen",
+			"thunder"
+		],
+		"name": "Magnemite",
+		"types": [
+			"Electric",
+			"Steel"
+		],
+		"weightkg": 6
+	},
+	"magneton": {
+		"baseStats": {
+			"atk": 60,
+			"def": 95,
+			"hp": 50,
+			"spa": 120,
+			"spd": 120,
+			"spe": 70
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"takedown",
+			"swift",
+			"rage",
+			"thunderwave",
+			"explosion",
+			"sonicboom",
+			"triattack",
+			"hyperbeam",
+			"substitute",
+			"lightscreen",
+			"thunder"
+		],
+		"name": "Magneton",
+		"types": [
+			"Electric",
+			"Steel"
+		],
+		"weightkg": 60
+	},
+	"mankey": {
+		"baseStats": {
+			"atk": 80,
+			"def": 35,
+			"hp": 40,
+			"spa": 35,
+			"spd": 35,
+			"spe": 70
+		},
+		"heightm": 0.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"counter",
+			"bide",
+			"submission",
+			"rest",
+			"furyswipes",
+			"substitute",
+			"rockslide",
+			"skullbash",
+			"defensecurl",
+			"karatechop",
+			"thunder",
+			"metronome",
+			"doubleedge",
+			"dig",
+			"swift",
+			"seismictoss",
+			"thrash",
+			"earthquake",
+			"focusenergy",
+			"takedown",
+			"rage"
+		],
+		"name": "Mankey",
+		"types": [
+			"Fighting"
+		],
+		"weightkg": 28
+	},
+	"marowak": {
+		"baseStats": {
+			"atk": 80,
+			"def": 110,
+			"hp": 60,
+			"spa": 50,
+			"spd": 50,
+			"spe": 45
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"submission",
+			"rest",
+			"dig",
+			"swift",
+			"counter",
+			"substitute",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"earthquake",
+			"blizzard",
+			"fireblast",
+			"doubleedge",
+			"takedown",
+			"seismictoss",
+			"bonemerang",
+			"thrash",
+			"hyperbeam",
+			"focusenergy",
+			"rage"
+		],
+		"name": "Marowak",
+		"types": [
+			"Ground"
+		],
+		"weightkg": 45
+	},
+	"meowth": {
+		"baseStats": {
+			"atk": 45,
+			"def": 35,
+			"hp": 40,
+			"spa": 40,
+			"spd": 40,
+			"spe": 90
+		},
+		"heightm": 0.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"rest",
+			"dig",
+			"rage",
+			"dreameater",
+			"skullbash",
+			"defensecurl",
+			"petaldance",
+			"amnesia",
+			"thunder",
+			"slash",
+			"furyswipes",
+			"doubleedge",
+			"takedown",
+			"swift",
+			"bite",
+			"substitute"
+		],
+		"name": "Meowth",
+		"types": [
+			"Normal"
+		],
+		"weightkg": 4.2
+	},
+	"metapod": {
+		"baseStats": {
+			"atk": 20,
+			"def": 55,
+			"hp": 50,
+			"spa": 25,
+			"spd": 25,
+			"spe": 30
+		},
+		"heightm": 0.7,
+		"inherit": True,
+		"learnset": [],
+		"name": "Metapod",
+		"types": [
+			"Bug"
+		],
+		"weightkg": 9.9
+	},
+	"mew": {
+		"baseStats": {
+			"atk": 100,
+			"def": 100,
+			"hp": 100,
+			"spa": 100,
+			"spd": 100,
+			"spe": 100
+		},
+		"heightm": 0.4,
+		"inherit": True,
+		"learnset": [
+			"counter",
+			"bubblebeam",
+			"lightscreen",
+			"blizzard",
+			"metronome",
+			"doubleedge",
+			"psywave",
+			"psychic",
+			"dragonrage",
+			"mimic",
+			"horndrill",
+			"razorwind",
+			"submission",
+			"transform",
+			"rage",
+			"whirlwind",
+			"substitute",
+			"fissure",
+			"amnesia",
+			"bind",
+			"pinmissile",
+			"swift",
+			"reflect",
+			"superfang",
+			"skullbash",
+			"rest",
+			"dig",
+			"dreameater",
+			"defensecurl",
+			"earthquake",
+			"firespin",
+			"roar",
+			"softboiled",
+			"triattack",
+			"fireblast",
+			"bide",
+			"nightshade",
+			"fly",
+			"rockslide",
+			"selfdestruct",
+			"solarbeam",
+			"thunder",
+			"takedown",
+			"explosion",
+			"seismictoss",
+			"thunderwave",
+			"hyperbeam",
+			"focusenergy"
+		],
+		"name": "Mew",
+		"types": [
+			"Psychic"
+		],
+		"weightkg": 4
+	},
+	"mewtwo": {
+		"baseStats": {
+			"atk": 110,
+			"def": 90,
+			"hp": 106,
+			"spa": 154,
+			"spd": 154,
+			"spe": 130
+		},
+		"heightm": 2,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"rest",
+			"submission",
+			"rage",
+			"counter",
+			"dreameater",
+			"selfdestruct",
+			"rockslide",
+			"bubblebeam",
+			"skullbash",
+			"solarbeam",
+			"lightscreen",
+			"amnesia",
+			"thunder",
+			"earthquake",
+			"blizzard",
+			"fireblast",
+			"metronome",
+			"doubleedge",
+			"psywave",
+			"reflect",
+			"swift",
+			"psychic",
+			"seismictoss",
+			"thunderwave",
+			"takedown",
+			"disable",
+			"triattack",
+			"hyperbeam",
+			"recover",
+			"mist"
+		],
+		"name": "Mewtwo",
+		"types": [
+			"Psychic"
+		],
+		"weightkg": 122
+	},
+	"missingno": {
+		"baseStats": {
+			"atk": 136,
+			"def": 0,
+			"hp": 33,
+			"spa": 6,
+			"spd": 6,
+			"spe": 29
+		},
+		"heightm": 3,
+		"inherit": True,
+		"learnset": [
+			"thunderwave",
+			"triattack",
+			"substitute",
+			"fissure",
+			"razorwind",
+			"doubleedge",
+			"bubblebeam",
+			"submission",
+			"rest",
+			"takedown",
+			"rage",
+			"psychic",
+			"fly",
+			"thunder",
+			"seismictoss",
+			"earthquake",
+			"blizzard"
+		],
+		"name": "MissingNo.",
+		"types": [
+			"Bird",
+			"Normal"
+		],
+		"weightkg": 1590.8
+	},
+	"moltres": {
+		"baseStats": {
+			"atk": 100,
+			"def": 90,
+			"hp": 90,
+			"spa": 125,
+			"spd": 125,
+			"spe": 90
+		},
+		"heightm": 2,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"fireblast",
+			"bide",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"swift",
+			"rage",
+			"fly",
+			"takedown",
+			"substitute",
+			"whirlwind",
+			"roar",
+			"solarbeam",
+			"hyperbeam",
+			"wingattack",
+			"firespin",
+			"razorwind"
+		],
+		"name": "Moltres",
+		"types": [
+			"Fire",
+			"Flying"
+		],
+		"weightkg": 60
+	},
+	"mrmime": {
+		"baseStats": {
+			"atk": 45,
+			"def": 65,
+			"hp": 40,
+			"spa": 100,
+			"spd": 100,
+			"spe": 90
+		},
+		"heightm": 1.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"counter",
+			"bide",
+			"substitute",
+			"submission",
+			"rest",
+			"rage",
+			"dreameater",
+			"skullbash",
+			"lightscreen",
+			"solarbeam",
+			"thunder",
+			"psywave",
+			"metronome",
+			"doubleedge",
+			"takedown",
+			"psychic",
+			"seismictoss",
+			"doubleslap",
+			"thunderwave",
+			"reflect",
+			"hyperbeam"
+		],
+		"name": "Mr. Mime",
+		"types": [
+			"Psychic",
+			"Fairy"
+		],
+		"weightkg": 54.5
+	},
+	"muk": {
+		"baseStats": {
+			"atk": 105,
+			"def": 75,
+			"hp": 105,
+			"spa": 65,
+			"spd": 65,
+			"spe": 50
+		},
+		"heightm": 1.2,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"fireblast",
+			"bide",
+			"rest",
+			"dig",
+			"haze",
+			"rage",
+			"explosion",
+			"sludge",
+			"rockslide",
+			"disable",
+			"minimize",
+			"hyperbeam",
+			"substitute",
+			"selfdestruct",
+			"thunder"
+		],
+		"name": "Muk",
+		"types": [
+			"Poison"
+		],
+		"weightkg": 30
+	},
+	"nidoking": {
+		"baseStats": {
+			"atk": 92,
+			"def": 77,
+			"hp": 81,
+			"spa": 75,
+			"spd": 75,
+			"spe": 85
+		},
+		"heightm": 1.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"bubblebeam",
+			"submission",
+			"rest",
+			"dig",
+			"horndrill",
+			"counter",
+			"takedown",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"defensecurl",
+			"thunder",
+			"earthquake",
+			"poisonsting",
+			"doubleedge",
+			"fireblast",
+			"doublekick",
+			"seismictoss",
+			"reflect",
+			"thrash",
+			"superfang",
+			"roar",
+			"hyperbeam",
+			"focusenergy",
+			"blizzard",
+			"rage"
+		],
+		"name": "Nidoking",
+		"types": [
+			"Poison",
+			"Ground"
+		],
+		"weightkg": 62
+	},
+	"nidoqueen": {
+		"baseStats": {
+			"atk": 82,
+			"def": 87,
+			"hp": 90,
+			"spa": 75,
+			"spd": 75,
+			"spe": 76
+		},
+		"heightm": 1.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"bubblebeam",
+			"submission",
+			"rest",
+			"dig",
+			"horndrill",
+			"counter",
+			"takedown",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"defensecurl",
+			"thunder",
+			"poisonsting",
+			"doubleedge",
+			"fireblast",
+			"doublekick",
+			"seismictoss",
+			"reflect",
+			"earthquake",
+			"superfang",
+			"roar",
+			"hyperbeam",
+			"blizzard",
+			"rage"
+		],
+		"name": "Nidoqueen",
+		"types": [
+			"Poison",
+			"Ground"
+		],
+		"weightkg": 60
+	},
+	"nidoranf": {
+		"baseStats": {
+			"atk": 47,
+			"def": 52,
+			"hp": 55,
+			"spa": 40,
+			"spd": 40,
+			"spe": 41
+		},
+		"heightm": 0.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"rest",
+			"dig",
+			"doublekick",
+			"takedown",
+			"counter",
+			"furyswipes",
+			"bite",
+			"disable",
+			"substitute",
+			"reflect",
+			"skullbash",
+			"superfang",
+			"defensecurl",
+			"focusenergy",
+			"blizzard",
+			"rage",
+			"thunder",
+			"poisonsting",
+			"doubleedge"
+		],
+		"name": "Nidoran-F",
+		"types": [
+			"Poison"
+		],
+		"weightkg": 7
+	},
+	"nidoranm": {
+		"baseStats": {
+			"atk": 57,
+			"def": 40,
+			"hp": 46,
+			"spa": 40,
+			"spd": 40,
+			"spe": 50
+		},
+		"heightm": 0.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"rest",
+			"doublekick",
+			"takedown",
+			"dig",
+			"counter",
+			"disable",
+			"substitute",
+			"reflect",
+			"skullbash",
+			"superfang",
+			"defensecurl",
+			"focusenergy",
+			"amnesia",
+			"furyattack",
+			"poisonsting",
+			"horndrill",
+			"rage",
+			"thunder",
+			"blizzard",
+			"doubleedge"
+		],
+		"name": "Nidoran-M",
+		"types": [
+			"Poison"
+		],
+		"weightkg": 9
+	},
+	"nidorina": {
+		"baseStats": {
+			"atk": 62,
+			"def": 67,
+			"hp": 70,
+			"spa": 55,
+			"spd": 55,
+			"spe": 56
+		},
+		"heightm": 0.8,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"rest",
+			"dig",
+			"doublekick",
+			"takedown",
+			"reflect",
+			"counter",
+			"furyswipes",
+			"bite",
+			"substitute",
+			"bubblebeam",
+			"skullbash",
+			"superfang",
+			"defensecurl",
+			"horndrill",
+			"blizzard",
+			"rage",
+			"thunder",
+			"poisonsting"
+		],
+		"name": "Nidorina",
+		"types": [
+			"Poison"
+		],
+		"weightkg": 20
+	},
+	"nidorino": {
+		"baseStats": {
+			"atk": 72,
+			"def": 57,
+			"hp": 61,
+			"spa": 55,
+			"spd": 55,
+			"spe": 65
+		},
+		"heightm": 0.9,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"doubleedge",
+			"rest",
+			"doublekick",
+			"takedown",
+			"rage",
+			"dig",
+			"reflect",
+			"counter",
+			"substitute",
+			"skullbash",
+			"superfang",
+			"defensecurl",
+			"focusenergy",
+			"furyattack",
+			"blizzard",
+			"horndrill",
+			"thunder",
+			"poisonsting"
+		],
+		"name": "Nidorino",
+		"types": [
+			"Poison"
+		],
+		"weightkg": 19.5
+	},
+	"ninetales": {
+		"baseStats": {
+			"atk": 76,
+			"def": 75,
+			"hp": 73,
+			"spa": 100,
+			"spd": 100,
+			"spe": 100
+		},
+		"heightm": 1.1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"skullbash",
+			"rest",
+			"dig",
+			"dreameater",
+			"solarbeam",
+			"firespin",
+			"fireblast",
+			"doubleedge",
+			"takedown",
+			"swift",
+			"reflect",
+			"disable",
+			"substitute",
+			"roar",
+			"hyperbeam",
+			"rage"
+		],
+		"name": "Ninetales",
+		"types": [
+			"Fire"
+		],
+		"weightkg": 19.9
+	},
+	"oddish": {
+		"baseStats": {
+			"atk": 50,
+			"def": 55,
+			"hp": 45,
+			"spa": 75,
+			"spd": 75,
+			"spe": 30
+		},
+		"heightm": 0.5,
+		"inherit": True,
+		"learnset": [
+			"acid",
+			"mimic",
+			"bide",
+			"razorleaf",
+			"absorb",
+			"doubleedge",
+			"rest",
+			"growth",
+			"rage",
+			"takedown",
+			"substitute",
+			"reflect",
+			"solarbeam",
+			"petaldance",
+			"leechseed",
+			"stunspore"
+		],
+		"name": "Oddish",
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"weightkg": 5.4
+	},
+	"omanyte": {
+		"baseStats": {
+			"atk": 40,
+			"def": 100,
+			"hp": 35,
+			"spa": 90,
+			"spd": 90,
+			"spe": 35
+		},
+		"heightm": 0.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"reflect",
+			"doubleedge",
+			"rest",
+			"bind",
+			"haze",
+			"takedown",
+			"rage",
+			"spikecannon",
+			"substitute",
+			"bite",
+			"constrict",
+			"rockthrow",
+			"bubblebeam",
+			"aurorabeam",
+			"rockslide",
+			"blizzard"
+		],
+		"name": "Omanyte",
+		"types": [
+			"Rock",
+			"Water"
+		],
+		"weightkg": 7.5
+	},
+	"omastar": {
+		"baseStats": {
+			"atk": 60,
+			"def": 125,
+			"hp": 70,
+			"spa": 115,
+			"spd": 115,
+			"spe": 55
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"horndrill",
+			"bide",
+			"doubleedge",
+			"skullbash",
+			"submission",
+			"rest",
+			"reflect",
+			"bind",
+			"rage",
+			"spikecannon",
+			"seismictoss",
+			"substitute",
+			"bite",
+			"constrict",
+			"rockthrow",
+			"bubblebeam",
+			"hyperbeam",
+			"takedown",
+			"rockslide",
+			"blizzard"
+		],
+		"name": "Omastar",
+		"types": [
+			"Rock",
+			"Water"
+		],
+		"weightkg": 35
+	},
+	"onix": {
+		"baseStats": {
+			"atk": 45,
+			"def": 160,
+			"hp": 35,
+			"spa": 30,
+			"spd": 30,
+			"spe": 70
+		},
+		"heightm": 8.8,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"rest",
+			"dig",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"defensecurl",
+			"selfdestruct",
+			"earthquake",
+			"explosion",
+			"doubleedge",
+			"bind",
+			"substitute",
+			"rockthrow",
+			"roar",
+			"takedown",
+			"rage"
+		],
+		"name": "Onix",
+		"types": [
+			"Rock",
+			"Ground"
+		],
+		"weightkg": 210
+	},
+	"paras": {
+		"baseStats": {
+			"atk": 70,
+			"def": 55,
+			"hp": 35,
+			"spa": 55,
+			"spd": 55,
+			"spe": 25
+		},
+		"heightm": 0.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"counter",
+			"bide",
+			"slash",
+			"skullbash",
+			"rest",
+			"dig",
+			"growth",
+			"lightscreen",
+			"solarbeam",
+			"leechseed",
+			"absorb",
+			"furyswipes",
+			"doubleedge",
+			"reflect",
+			"substitute",
+			"takedown",
+			"rage",
+			"stunspore"
+		],
+		"name": "Paras",
+		"types": [
+			"Bug",
+			"Grass"
+		],
+		"weightkg": 5.4
+	},
+	"parasect": {
+		"baseStats": {
+			"atk": 95,
+			"def": 80,
+			"hp": 60,
+			"spa": 80,
+			"spd": 80,
+			"spe": 30
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"absorb",
+			"doubleedge",
+			"skullbash",
+			"rest",
+			"dig",
+			"growth",
+			"reflect",
+			"counter",
+			"takedown",
+			"furyswipes",
+			"substitute",
+			"stunspore",
+			"hyperbeam",
+			"lightscreen",
+			"solarbeam",
+			"rage",
+			"leechseed",
+			"slash"
+		],
+		"name": "Parasect",
+		"types": [
+			"Bug",
+			"Grass"
+		],
+		"weightkg": 29.5
+	},
+	"persian": {
+		"baseStats": {
+			"atk": 70,
+			"def": 60,
+			"hp": 65,
+			"spa": 65,
+			"spd": 65,
+			"spe": 115
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"rest",
+			"dig",
+			"rage",
+			"dreameater",
+			"skullbash",
+			"defensecurl",
+			"amnesia",
+			"thunder",
+			"slash",
+			"furyswipes",
+			"doubleedge",
+			"takedown",
+			"swift",
+			"bite",
+			"substitute",
+			"roar",
+			"hyperbeam"
+		],
+		"name": "Persian",
+		"types": [
+			"Normal"
+		],
+		"weightkg": 32
+	},
+	"pidgeot": {
+		"baseStats": {
+			"atk": 80,
+			"def": 75,
+			"hp": 83,
+			"spa": 70,
+			"spd": 70,
+			"spe": 91
+		},
+		"heightm": 1.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"razorwind",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"swift",
+			"rage",
+			"fly",
+			"takedown",
+			"substitute",
+			"hyperbeam",
+			"wingattack",
+			"whirlwind",
+			"sandattack",
+			"mirrormove",
+			"gust"
+		],
+		"name": "Pidgeot",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"weightkg": 39.5
+	},
+	"pidgeotto": {
+		"baseStats": {
+			"atk": 60,
+			"def": 55,
+			"hp": 63,
+			"spa": 50,
+			"spd": 50,
+			"spe": 71
+		},
+		"heightm": 1.1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"razorwind",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"swift",
+			"rage",
+			"fly",
+			"takedown",
+			"substitute",
+			"wingattack",
+			"whirlwind",
+			"sandattack",
+			"mirrormove",
+			"gust"
+		],
+		"name": "Pidgeotto",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"weightkg": 30
+	},
+	"pidgey": {
+		"baseStats": {
+			"atk": 45,
+			"def": 40,
+			"hp": 40,
+			"spa": 35,
+			"spd": 35,
+			"spe": 56
+		},
+		"heightm": 0.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"razorwind",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"sandattack",
+			"rage",
+			"fly",
+			"takedown",
+			"substitute",
+			"swift",
+			"wingattack",
+			"whirlwind",
+			"mirrormove",
+			"gust"
+		],
+		"name": "Pidgey",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"weightkg": 1.8
+	},
+	"pikachu": {
+		"baseStats": {
+			"atk": 55,
+			"def": 30,
+			"hp": 35,
+			"spa": 50,
+			"spd": 50,
+			"spe": 90
+		},
+		"heightm": 0.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"skullbash",
+			"submission",
+			"rest",
+			"counter",
+			"fly",
+			"rage",
+			"substitute",
+			"defensecurl",
+			"lightscreen",
+			"thunder",
+			"doubleedge",
+			"reflect",
+			"dig",
+			"swift",
+			"seismictoss",
+			"thunderwave",
+			"doublekick",
+			"takedown"
+		],
+		"name": "Pikachu",
+		"types": [
+			"Electric"
+		],
+		"weightkg": 6
+	},
+	"pinsir": {
+		"baseStats": {
+			"atk": 125,
+			"def": 100,
+			"hp": 65,
+			"spa": 55,
+			"spd": 55,
+			"spe": 85
+		},
+		"heightm": 1.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"slash",
+			"doubleedge",
+			"submission",
+			"rest",
+			"dig",
+			"takedown",
+			"bind",
+			"seismictoss",
+			"substitute",
+			"guillotine",
+			"rockslide",
+			"thrash",
+			"earthquake",
+			"hyperbeam",
+			"focusenergy",
+			"furyattack",
+			"rage"
+		],
+		"name": "Pinsir",
+		"types": [
+			"Bug"
+		],
+		"weightkg": 55
+	},
+	"poliwag": {
+		"baseStats": {
+			"atk": 50,
+			"def": 40,
+			"hp": 40,
+			"spa": 40,
+			"spd": 40,
+			"spe": 90
+		},
+		"heightm": 0.6,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"psywave",
+			"rest",
+			"haze",
+			"takedown",
+			"dig",
+			"psychic",
+			"doubleslap",
+			"substitute",
+			"bubblebeam",
+			"skullbash",
+			"defensecurl",
+			"bubble",
+			"rage",
+			"amnesia",
+			"mist",
+			"blizzard"
+		],
+		"name": "Poliwag",
+		"types": [
+			"Water"
+		],
+		"weightkg": 12.4
+	},
+	"poliwhirl": {
+		"baseStats": {
+			"atk": 65,
+			"def": 65,
+			"hp": 65,
+			"spa": 50,
+			"spd": 50,
+			"spe": 90
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"submission",
+			"psywave",
+			"rest",
+			"takedown",
+			"dig",
+			"counter",
+			"psychic",
+			"metronome",
+			"rage",
+			"doubleslap",
+			"seismictoss",
+			"substitute",
+			"earthquake",
+			"fissure",
+			"bubblebeam",
+			"skullbash",
+			"defensecurl",
+			"bubble",
+			"amnesia",
+			"blizzard"
+		],
+		"name": "Poliwhirl",
+		"types": [
+			"Water"
+		],
+		"weightkg": 20
+	},
+	"poliwrath": {
+		"baseStats": {
+			"atk": 85,
+			"def": 95,
+			"hp": 90,
+			"spa": 70,
+			"spd": 70,
+			"spe": 70
+		},
+		"heightm": 1.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"submission",
+			"rest",
+			"haze",
+			"counter",
+			"bubble",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"defensecurl",
+			"blizzard",
+			"metronome",
+			"doubleedge",
+			"psywave",
+			"takedown",
+			"dig",
+			"psychic",
+			"seismictoss",
+			"doubleslap",
+			"earthquake",
+			"hyperbeam",
+			"substitute",
+			"rage",
+			"mist"
+		],
+		"name": "Poliwrath",
+		"types": [
+			"Water",
+			"Fighting"
+		],
+		"weightkg": 54
+	},
+	"ponyta": {
+		"baseStats": {
+			"atk": 85,
+			"def": 55,
+			"hp": 50,
+			"spa": 65,
+			"spd": 65,
+			"spe": 90
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"fireblast",
+			"bide",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"swift",
+			"takedown",
+			"doublekick",
+			"substitute",
+			"stomp",
+			"skullbash",
+			"thrash",
+			"horndrill",
+			"rage",
+			"firespin",
+			"solarbeam"
+		],
+		"name": "Ponyta",
+		"types": [
+			"Fire"
+		],
+		"weightkg": 30
+	},
+	"porygon": {
+		"baseStats": {
+			"atk": 60,
+			"def": 70,
+			"hp": 65,
+			"spa": 75,
+			"spd": 75,
+			"spe": 40
+		},
+		"heightm": 0.8,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"conversion",
+			"doubleedge",
+			"psywave",
+			"rest",
+			"reflect",
+			"triattack",
+			"skullbash",
+			"psychic",
+			"takedown",
+			"rage",
+			"thunderwave",
+			"dreameater",
+			"substitute",
+			"swift",
+			"defensecurl",
+			"hyperbeam",
+			"solarbeam",
+			"recover",
+			"thunder",
+			"blizzard"
+		],
+		"name": "Porygon",
+		"types": [
+			"Normal"
+		],
+		"weightkg": 36.5
+	},
+	"primeape": {
+		"baseStats": {
+			"atk": 105,
+			"def": 60,
+			"hp": 65,
+			"spa": 60,
+			"spd": 60,
+			"spe": 95
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"counter",
+			"bide",
+			"submission",
+			"rest",
+			"furyswipes",
+			"substitute",
+			"rockslide",
+			"skullbash",
+			"defensecurl",
+			"karatechop",
+			"thunder",
+			"metronome",
+			"doubleedge",
+			"dig",
+			"swift",
+			"seismictoss",
+			"thrash",
+			"earthquake",
+			"hyperbeam",
+			"focusenergy",
+			"takedown",
+			"rage"
+		],
+		"name": "Primeape",
+		"types": [
+			"Fighting"
+		],
+		"weightkg": 32
+	},
+	"psyduck": {
+		"baseStats": {
+			"atk": 52,
+			"def": 48,
+			"hp": 50,
+			"spa": 50,
+			"spd": 50,
+			"spe": 55
+		},
+		"heightm": 0.8,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"submission",
+			"rest",
+			"dig",
+			"counter",
+			"skullbash",
+			"lightscreen",
+			"amnesia",
+			"blizzard",
+			"furyswipes",
+			"doubleedge",
+			"takedown",
+			"psychic",
+			"swift",
+			"seismictoss",
+			"disable",
+			"substitute",
+			"rage"
+		],
+		"name": "Psyduck",
+		"types": [
+			"Water"
+		],
+		"weightkg": 19.6
+	},
+	"raichu": {
+		"baseStats": {
+			"atk": 90,
+			"def": 55,
+			"hp": 60,
+			"spa": 90,
+			"spd": 90,
+			"spe": 100
+		},
+		"heightm": 0.8,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"submission",
+			"rest",
+			"dig",
+			"swift",
+			"counter",
+			"rage",
+			"skullbash",
+			"defensecurl",
+			"lightscreen",
+			"thunder",
+			"doubleedge",
+			"seismictoss",
+			"thunderwave",
+			"reflect",
+			"hyperbeam",
+			"substitute",
+			"takedown"
+		],
+		"name": "Raichu",
+		"types": [
+			"Electric"
+		],
+		"weightkg": 30
+	},
+	"rapidash": {
+		"baseStats": {
+			"atk": 100,
+			"def": 70,
+			"hp": 65,
+			"spa": 80,
+			"spd": 80,
+			"spe": 105
+		},
+		"heightm": 1.7,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"rest",
+			"doublekick",
+			"swift",
+			"reflect",
+			"hyperbeam",
+			"takedown",
+			"substitute",
+			"stomp",
+			"skullbash",
+			"horndrill",
+			"furyattack",
+			"rage",
+			"firespin",
+			"fireblast",
+			"solarbeam"
+		],
+		"name": "Rapidash",
+		"types": [
+			"Fire"
+		],
+		"weightkg": 95
+	},
+	"raticate": {
+		"baseStats": {
+			"atk": 81,
+			"def": 60,
+			"hp": 55,
+			"spa": 50,
+			"spd": 50,
+			"spe": 97
+		},
+		"heightm": 0.7,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"counter",
+			"bide",
+			"bubblebeam",
+			"rest",
+			"skullbash",
+			"defensecurl",
+			"thunder",
+			"blizzard",
+			"furyswipes",
+			"doubleedge",
+			"takedown",
+			"dig",
+			"swift",
+			"thunderwave",
+			"bite",
+			"substitute",
+			"superfang",
+			"roar",
+			"hyperbeam",
+			"focusenergy",
+			"rage"
+		],
+		"name": "Raticate",
+		"types": [
+			"Normal"
+		],
+		"weightkg": 18.5
+	},
+	"rattata": {
+		"baseStats": {
+			"atk": 56,
+			"def": 35,
+			"hp": 30,
+			"spa": 25,
+			"spd": 25,
+			"spe": 72
+		},
+		"heightm": 0.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"skullbash",
+			"rest",
+			"takedown",
+			"dig",
+			"counter",
+			"swift",
+			"focusenergy",
+			"thunderwave",
+			"furyswipes",
+			"bite",
+			"substitute",
+			"bubblebeam",
+			"superfang",
+			"defensecurl",
+			"rage",
+			"thunder",
+			"blizzard"
+		],
+		"name": "Rattata",
+		"types": [
+			"Normal"
+		],
+		"weightkg": 3.5
+	},
+	"rhydon": {
+		"baseStats": {
+			"atk": 130,
+			"def": 120,
+			"hp": 105,
+			"spa": 45,
+			"spd": 45,
+			"spe": 40
+		},
+		"heightm": 1.9,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"rest",
+			"horndrill",
+			"counter",
+			"takedown",
+			"substitute",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"thunder",
+			"blizzard",
+			"doubleedge",
+			"fireblast",
+			"submission",
+			"dig",
+			"seismictoss",
+			"sandattack",
+			"earthquake",
+			"rockthrow",
+			"roar",
+			"hyperbeam",
+			"furyattack",
+			"rage",
+			"stomp"
+		],
+		"name": "Rhydon",
+		"types": [
+			"Ground",
+			"Rock"
+		],
+		"weightkg": 120
+	},
+	"rhyhorn": {
+		"baseStats": {
+			"atk": 85,
+			"def": 95,
+			"hp": 80,
+			"spa": 30,
+			"spd": 30,
+			"spe": 25
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"rest",
+			"dig",
+			"horndrill",
+			"counter",
+			"fissure",
+			"skullbash",
+			"thunder",
+			"earthquake",
+			"blizzard",
+			"doubleedge",
+			"fireblast",
+			"takedown",
+			"sandattack",
+			"thrash",
+			"substitute",
+			"stomp",
+			"roar",
+			"furyattack",
+			"rage",
+			"rockthrow",
+			"rockslide"
+		],
+		"name": "Rhyhorn",
+		"types": [
+			"Ground",
+			"Rock"
+		],
+		"weightkg": 115
+	},
+	"sandshrew": {
+		"baseStats": {
+			"atk": 75,
+			"def": 85,
+			"hp": 50,
+			"spa": 30,
+			"spd": 30,
+			"spe": 40
+		},
+		"heightm": 0.6,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"counter",
+			"bide",
+			"slash",
+			"submission",
+			"rest",
+			"dig",
+			"swift",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"defensecurl",
+			"amnesia",
+			"earthquake",
+			"poisonsting",
+			"doubleedge",
+			"furyswipes",
+			"seismictoss",
+			"sandattack",
+			"substitute",
+			"superfang",
+			"takedown",
+			"rage"
+		],
+		"name": "Sandshrew",
+		"types": [
+			"Ground"
+		],
+		"weightkg": 12
+	},
+	"sandslash": {
+		"baseStats": {
+			"atk": 100,
+			"def": 110,
+			"hp": 75,
+			"spa": 55,
+			"spd": 55,
+			"spe": 65
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"slash",
+			"submission",
+			"rest",
+			"dig",
+			"swift",
+			"counter",
+			"rage",
+			"fissure",
+			"rockslide",
+			"skullbash",
+			"defensecurl",
+			"amnesia",
+			"earthquake",
+			"poisonsting",
+			"furyswipes",
+			"doubleedge",
+			"seismictoss",
+			"sandattack",
+			"substitute",
+			"superfang",
+			"hyperbeam",
+			"takedown",
+			"pinmissile"
+		],
+		"name": "Sandslash",
+		"types": [
+			"Ground"
+		],
+		"weightkg": 29.5
+	},
+	"scyther": {
+		"baseStats": {
+			"atk": 110,
+			"def": 80,
+			"hp": 70,
+			"spa": 55,
+			"spd": 55,
+			"spe": 105
+		},
+		"heightm": 1.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"slash",
+			"razorwind",
+			"doubleedge",
+			"skullbash",
+			"rest",
+			"takedown",
+			"counter",
+			"swift",
+			"substitute",
+			"hyperbeam",
+			"lightscreen",
+			"focusenergy",
+			"wingattack",
+			"rage"
+		],
+		"name": "Scyther",
+		"types": [
+			"Bug",
+			"Flying"
+		],
+		"weightkg": 56
+	},
+	"seadra": {
+		"baseStats": {
+			"atk": 65,
+			"def": 95,
+			"hp": 55,
+			"spa": 95,
+			"spd": 95,
+			"spe": 85
+		},
+		"heightm": 1.2,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"skullbash",
+			"rest",
+			"takedown",
+			"swift",
+			"substitute",
+			"disable",
+			"bubblebeam",
+			"bubble",
+			"hyperbeam",
+			"focusenergy",
+			"rage",
+			"blizzard"
+		],
+		"name": "Seadra",
+		"types": [
+			"Water"
+		],
+		"weightkg": 25
+	},
+	"seaking": {
+		"baseStats": {
+			"atk": 92,
+			"def": 65,
+			"hp": 80,
+			"spa": 80,
+			"spd": 80,
+			"spe": 68
+		},
+		"heightm": 1.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"horndrill",
+			"bide",
+			"doubleedge",
+			"skullbash",
+			"rest",
+			"swift",
+			"rage",
+			"substitute",
+			"bubblebeam",
+			"hyperbeam",
+			"takedown",
+			"furyattack",
+			"blizzard"
+		],
+		"name": "Seaking",
+		"types": [
+			"Water"
+		],
+		"weightkg": 39
+	},
+	"seel": {
+		"baseStats": {
+			"atk": 45,
+			"def": 55,
+			"hp": 65,
+			"spa": 70,
+			"spd": 70,
+			"spe": 45
+		},
+		"heightm": 1.1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"horndrill",
+			"rest",
+			"takedown",
+			"disable",
+			"substitute",
+			"bubblebeam",
+			"skullbash",
+			"aurorabeam",
+			"rage",
+			"blizzard"
+		],
+		"name": "Seel",
+		"types": [
+			"Water"
+		],
+		"weightkg": 90
+	},
+	"shellder": {
+		"baseStats": {
+			"atk": 65,
+			"def": 100,
+			"hp": 30,
+			"spa": 45,
+			"spd": 45,
+			"spe": 40
+		},
+		"heightm": 0.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"takedown",
+			"twineedle",
+			"swift",
+			"explosion",
+			"clamp",
+			"bubblebeam",
+			"aurorabeam",
+			"selfdestruct",
+			"rage",
+			"triattack",
+			"blizzard"
+		],
+		"name": "Shellder",
+		"types": [
+			"Water"
+		],
+		"weightkg": 4
+	},
+	"slowbro": {
+		"baseStats": {
+			"atk": 75,
+			"def": 110,
+			"hp": 95,
+			"spa": 80,
+			"spd": 80,
+			"spe": 30
+		},
+		"heightm": 1.6,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"bubblebeam",
+			"submission",
+			"dig",
+			"counter",
+			"rage",
+			"dreameater",
+			"fissure",
+			"skullbash",
+			"lightscreen",
+			"amnesia",
+			"earthquake",
+			"blizzard",
+			"fireblast",
+			"doubleedge",
+			"psywave",
+			"rest",
+			"takedown",
+			"reflect",
+			"psychic",
+			"swift",
+			"seismictoss",
+			"thunderwave",
+			"disable",
+			"stomp",
+			"hyperbeam",
+			"triattack"
+		],
+		"name": "Slowbro",
+		"types": [
+			"Water",
+			"Psychic"
+		],
+		"weightkg": 78.5
+	},
+	"slowpoke": {
+		"baseStats": {
+			"atk": 65,
+			"def": 65,
+			"hp": 90,
+			"spa": 40,
+			"spd": 40,
+			"spe": 15
+		},
+		"heightm": 1.2,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"rest",
+			"dig",
+			"dreameater",
+			"fissure",
+			"skullbash",
+			"lightscreen",
+			"amnesia",
+			"earthquake",
+			"blizzard",
+			"fireblast",
+			"doubleedge",
+			"psywave",
+			"takedown",
+			"psychic",
+			"swift",
+			"thunderwave",
+			"reflect",
+			"disable",
+			"substitute",
+			"stomp",
+			"rage",
+			"triattack"
+		],
+		"name": "Slowpoke",
+		"types": [
+			"Water",
+			"Psychic"
+		],
+		"weightkg": 36
+	},
+	"snorlax": {
+		"baseStats": {
+			"atk": 110,
+			"def": 65,
+			"hp": 160,
+			"spa": 65,
+			"spd": 65,
+			"spe": 30
+		},
+		"heightm": 2.1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"skullbash",
+			"submission",
+			"rest",
+			"counter",
+			"whirlwind",
+			"solarbeam",
+			"fissure",
+			"rockslide",
+			"reflect",
+			"bubblebeam",
+			"defensecurl",
+			"selfdestruct",
+			"amnesia",
+			"thunder",
+			"earthquake",
+			"blizzard",
+			"doubleedge",
+			"fireblast",
+			"metronome",
+			"psywave",
+			"psychic",
+			"seismictoss",
+			"bite",
+			"takedown",
+			"hyperbeam",
+			"rage"
+		],
+		"name": "Snorlax",
+		"types": [
+			"Normal"
+		],
+		"weightkg": 460
+	},
+	"spearow": {
+		"baseStats": {
+			"atk": 60,
+			"def": 30,
+			"hp": 40,
+			"spa": 31,
+			"spd": 31,
+			"spe": 70
+		},
+		"heightm": 0.3,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"razorwind",
+			"doubleedge",
+			"rest",
+			"takedown",
+			"swift",
+			"rage",
+			"fly",
+			"substitute",
+			"focusenergy",
+			"furyattack",
+			"whirlwind",
+			"triattack",
+			"mirrormove"
+		],
+		"name": "Spearow",
+		"types": [
+			"Normal",
+			"Flying"
+		],
+		"weightkg": 2
+	},
+	"squirtle": {
+		"baseStats": {
+			"atk": 48,
+			"def": 65,
+			"hp": 44,
+			"spa": 50,
+			"spd": 50,
+			"spe": 43
+		},
+		"heightm": 0.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"submission",
+			"rest",
+			"dig",
+			"haze",
+			"counter",
+			"substitute",
+			"rockslide",
+			"skullbash",
+			"defensecurl",
+			"bubble",
+			"blizzard",
+			"doubleedge",
+			"reflect",
+			"takedown",
+			"seismictoss",
+			"bite",
+			"rage",
+			"mist",
+			"bubblebeam"
+		],
+		"name": "Squirtle",
+		"types": [
+			"Water"
+		],
+		"weightkg": 9
+	},
+	"starmie": {
+		"baseStats": {
+			"atk": 75,
+			"def": 85,
+			"hp": 60,
+			"spa": 100,
+			"spd": 100,
+			"spe": 115
+		},
+		"heightm": 1.1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"skullbash",
+			"rest",
+			"minimize",
+			"dreameater",
+			"lightscreen",
+			"thunder",
+			"blizzard",
+			"doubleedge",
+			"psywave",
+			"reflect",
+			"takedown",
+			"psychic",
+			"swift",
+			"thunderwave",
+			"hyperbeam",
+			"substitute",
+			"recover",
+			"rage",
+			"triattack"
+		],
+		"name": "Starmie",
+		"types": [
+			"Water",
+			"Psychic"
+		],
+		"weightkg": 80
+	},
+	"staryu": {
+		"baseStats": {
+			"atk": 45,
+			"def": 55,
+			"hp": 30,
+			"spa": 70,
+			"spd": 70,
+			"spe": 85
+		},
+		"heightm": 0.8,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"doubleedge",
+			"skullbash",
+			"psywave",
+			"rest",
+			"reflect",
+			"takedown",
+			"rage",
+			"psychic",
+			"swift",
+			"thunderwave",
+			"substitute",
+			"triattack",
+			"minimize",
+			"lightscreen",
+			"recover",
+			"thunder",
+			"blizzard"
+		],
+		"name": "Staryu",
+		"types": [
+			"Water"
+		],
+		"weightkg": 34.5
+	},
+	"tangela": {
+		"baseStats": {
+			"atk": 55,
+			"def": 115,
+			"hp": 65,
+			"spa": 100,
+			"spd": 100,
+			"spe": 60
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"absorb",
+			"doubleedge",
+			"solarbeam",
+			"rest",
+			"growth",
+			"bind",
+			"hyperbeam",
+			"takedown",
+			"substitute",
+			"constrict",
+			"reflect",
+			"skullbash",
+			"amnesia",
+			"rage",
+			"leechseed",
+			"stunspore"
+		],
+		"name": "Tangela",
+		"types": [
+			"Grass"
+		],
+		"weightkg": 35
+	},
+	"tauros": {
+		"baseStats": {
+			"atk": 100,
+			"def": 95,
+			"hp": 75,
+			"spa": 70,
+			"spd": 70,
+			"spe": 110
+		},
+		"heightm": 1.4,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"horndrill",
+			"bide",
+			"rest",
+			"fissure",
+			"skullbash",
+			"solarbeam",
+			"thunder",
+			"blizzard",
+			"fireblast",
+			"doubleedge",
+			"takedown",
+			"thrash",
+			"substitute",
+			"earthquake",
+			"stomp",
+			"hyperbeam",
+			"focusenergy",
+			"rage",
+			"rockslide"
+		],
+		"name": "Tauros",
+		"types": [
+			"Normal"
+		],
+		"weightkg": 88.4
+	},
+	"tentacool": {
+		"baseStats": {
+			"atk": 40,
+			"def": 35,
+			"hp": 40,
+			"spa": 100,
+			"spd": 100,
+			"spe": 70
+		},
+		"heightm": 0.9,
+		"inherit": True,
+		"learnset": [
+			"acid",
+			"haze",
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"bind",
+			"bubble",
+			"wrap",
+			"substitute",
+			"constrict",
+			"skullbash",
+			"aurorabeam",
+			"takedown",
+			"poisonsting",
+			"rage",
+			"blizzard"
+		],
+		"name": "Tentacool",
+		"types": [
+			"Water",
+			"Poison"
+		],
+		"weightkg": 45.5
+	},
+	"tentacruel": {
+		"baseStats": {
+			"atk": 70,
+			"def": 65,
+			"hp": 80,
+			"spa": 120,
+			"spd": 120,
+			"spe": 100
+		},
+		"heightm": 1.6,
+		"inherit": True,
+		"learnset": [
+			"acid",
+			"haze",
+			"mimic",
+			"bide",
+			"bubblebeam",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"bind",
+			"hyperbeam",
+			"wrap",
+			"substitute",
+			"constrict",
+			"skullbash",
+			"takedown",
+			"poisonsting",
+			"rage",
+			"blizzard"
+		],
+		"name": "Tentacruel",
+		"types": [
+			"Water",
+			"Poison"
+		],
+		"weightkg": 55
+	},
+	"vaporeon": {
+		"baseStats": {
+			"atk": 65,
+			"def": 60,
+			"hp": 130,
+			"spa": 110,
+			"spd": 110,
+			"spe": 65
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"haze",
+			"bubblebeam",
+			"rest",
+			"dig",
+			"skullbash",
+			"blizzard",
+			"doubleedge",
+			"doublekick",
+			"swift",
+			"sandattack",
+			"reflect",
+			"bite",
+			"substitute",
+			"roar",
+			"aurorabeam",
+			"hyperbeam",
+			"focusenergy",
+			"takedown",
+			"rage",
+			"mist"
+		],
+		"name": "Vaporeon",
+		"types": [
+			"Water"
+		],
+		"weightkg": 29
+	},
+	"venomoth": {
+		"baseStats": {
+			"atk": 65,
+			"def": 60,
+			"hp": 70,
+			"spa": 90,
+			"spd": 90,
+			"spe": 90
+		},
+		"heightm": 1.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"razorwind",
+			"doubleedge",
+			"psywave",
+			"rest",
+			"reflect",
+			"takedown",
+			"psychic",
+			"swift",
+			"rage",
+			"dreameater",
+			"disable",
+			"substitute",
+			"hyperbeam",
+			"solarbeam",
+			"whirlwind",
+			"gust",
+			"stunspore"
+		],
+		"name": "Venomoth",
+		"types": [
+			"Bug",
+			"Poison"
+		],
+		"weightkg": 12.5
+	},
+	"venonat": {
+		"baseStats": {
+			"atk": 55,
+			"def": 50,
+			"hp": 60,
+			"spa": 40,
+			"spd": 40,
+			"spe": 45
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"psychic",
+			"bide",
+			"doubleedge",
+			"psywave",
+			"rest",
+			"reflect",
+			"swift",
+			"takedown",
+			"disable",
+			"substitute",
+			"stunspore",
+			"solarbeam",
+			"rage"
+		],
+		"name": "Venonat",
+		"types": [
+			"Bug",
+			"Poison"
+		],
+		"weightkg": 30
+	},
+	"venusaur": {
+		"baseStats": {
+			"atk": 82,
+			"def": 83,
+			"hp": 80,
+			"spa": 100,
+			"spd": 100,
+			"spe": 80
+		},
+		"heightm": 2,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"razorleaf",
+			"rest",
+			"growth",
+			"defensecurl",
+			"amnesia",
+			"lightscreen",
+			"petaldance",
+			"solarbeam",
+			"leechseed",
+			"doubleedge",
+			"bind",
+			"reflect",
+			"substitute",
+			"earthquake",
+			"hyperbeam",
+			"takedown",
+			"rage",
+			"roar"
+		],
+		"name": "Venusaur",
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"weightkg": 100
+	},
+	"victreebel": {
+		"baseStats": {
+			"atk": 105,
+			"def": 65,
+			"hp": 80,
+			"spa": 100,
+			"spd": 100,
+			"spe": 70
+		},
+		"heightm": 1.7,
+		"inherit": True,
+		"learnset": [
+			"acid",
+			"mimic",
+			"bide",
+			"razorleaf",
+			"doubleedge",
+			"rest",
+			"growth",
+			"bind",
+			"hyperbeam",
+			"takedown",
+			"wrap",
+			"substitute",
+			"reflect",
+			"solarbeam",
+			"rage",
+			"stunspore"
+		],
+		"name": "Victreebel",
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"weightkg": 15.5
+	},
+	"vileplume": {
+		"baseStats": {
+			"atk": 80,
+			"def": 85,
+			"hp": 75,
+			"spa": 100,
+			"spd": 100,
+			"spe": 50
+		},
+		"heightm": 1.2,
+		"inherit": True,
+		"learnset": [
+			"acid",
+			"mimic",
+			"bide",
+			"absorb",
+			"doubleedge",
+			"rest",
+			"growth",
+			"hyperbeam",
+			"reflect",
+			"takedown",
+			"substitute",
+			"stunspore",
+			"petaldance",
+			"solarbeam",
+			"rage"
+		],
+		"name": "Vileplume",
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"weightkg": 18.6
+	},
+	"voltorb": {
+		"baseStats": {
+			"atk": 30,
+			"def": 50,
+			"hp": 40,
+			"spa": 55,
+			"spd": 55,
+			"spe": 100
+		},
+		"heightm": 0.5,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"rest",
+			"reflect",
+			"takedown",
+			"rage",
+			"thunderwave",
+			"explosion",
+			"sonicboom",
+			"lightscreen",
+			"substitute",
+			"swift",
+			"selfdestruct",
+			"thunder"
+		],
+		"name": "Voltorb",
+		"types": [
+			"Electric"
+		],
+		"weightkg": 10.4
+	},
+	"vulpix": {
+		"baseStats": {
+			"atk": 41,
+			"def": 40,
+			"hp": 38,
+			"spa": 65,
+			"spd": 65,
+			"spe": 65
+		},
+		"heightm": 0.6,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"doubleedge",
+			"rest",
+			"dig",
+			"fireblast",
+			"swift",
+			"takedown",
+			"disable",
+			"substitute",
+			"reflect",
+			"skullbash",
+			"roar",
+			"rage",
+			"firespin"
+		],
+		"name": "Vulpix",
+		"types": [
+			"Fire"
+		],
+		"weightkg": 9.9
+	},
+	"wartortle": {
+		"baseStats": {
+			"atk": 63,
+			"def": 80,
+			"hp": 59,
+			"spa": 65,
+			"spd": 65,
+			"spe": 58
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"doubleedge",
+			"submission",
+			"rest",
+			"dig",
+			"reflect",
+			"takedown",
+			"counter",
+			"seismictoss",
+			"bite",
+			"bubblebeam",
+			"skullbash",
+			"defensecurl",
+			"bubble",
+			"rage",
+			"rockslide",
+			"blizzard"
+		],
+		"name": "Wartortle",
+		"types": [
+			"Water"
+		],
+		"weightkg": 22.5
+	},
+	"weedle": {
+		"baseStats": {
+			"atk": 35,
+			"def": 30,
+			"hp": 40,
+			"spa": 20,
+			"spd": 20,
+			"spe": 50
+		},
+		"heightm": 0.3,
+		"inherit": True,
+		"learnset": [
+			"poisonsting"
+		],
+		"name": "Weedle",
+		"types": [
+			"Bug",
+			"Poison"
+		],
+		"weightkg": 3.2
+	},
+	"weepinbell": {
+		"baseStats": {
+			"atk": 90,
+			"def": 50,
+			"hp": 65,
+			"spa": 85,
+			"spd": 85,
+			"spe": 55
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"acid",
+			"mimic",
+			"bide",
+			"razorleaf",
+			"doubleedge",
+			"rest",
+			"growth",
+			"bind",
+			"reflect",
+			"takedown",
+			"wrap",
+			"substitute",
+			"solarbeam",
+			"rage",
+			"stunspore"
+		],
+		"name": "Weepinbell",
+		"types": [
+			"Grass",
+			"Poison"
+		],
+		"weightkg": 6.4
+	},
+	"weezing": {
+		"baseStats": {
+			"atk": 90,
+			"def": 120,
+			"hp": 65,
+			"spa": 85,
+			"spd": 85,
+			"spe": 60
+		},
+		"heightm": 1.2,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"haze",
+			"bide",
+			"rest",
+			"fireblast",
+			"explosion",
+			"sludge",
+			"substitute",
+			"hyperbeam",
+			"selfdestruct",
+			"rage",
+			"thunder"
+		],
+		"name": "Weezing",
+		"types": [
+			"Poison"
+		],
+		"weightkg": 9.5
+	},
+	"wigglytuff": {
+		"baseStats": {
+			"atk": 70,
+			"def": 45,
+			"hp": 140,
+			"spa": 50,
+			"spd": 50,
+			"spe": 45
+		},
+		"heightm": 1,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"substitute",
+			"bubblebeam",
+			"submission",
+			"rest",
+			"skullbash",
+			"counter",
+			"rage",
+			"dreameater",
+			"selfdestruct",
+			"minimize",
+			"defensecurl",
+			"lightscreen",
+			"solarbeam",
+			"thunder",
+			"blizzard",
+			"fireblast",
+			"doubleedge",
+			"psywave",
+			"takedown",
+			"dig",
+			"psychic",
+			"seismictoss",
+			"doubleslap",
+			"thunderwave",
+			"reflect",
+			"disable",
+			"hyperbeam",
+			"triattack"
+		],
+		"name": "Wigglytuff",
+		"types": [
+			"Normal",
+			"Fairy"
+		],
+		"weightkg": 12
+	},
+	"zapdos": {
+		"baseStats": {
+			"atk": 90,
+			"def": 85,
+			"hp": 90,
+			"spa": 125,
+			"spd": 125,
+			"spe": 100
+		},
+		"heightm": 1.6,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"bide",
+			"razorwind",
+			"doubleedge",
+			"rest",
+			"reflect",
+			"swift",
+			"fly",
+			"thunder",
+			"thunderwave",
+			"takedown",
+			"substitute",
+			"roar",
+			"hyperbeam",
+			"lightscreen",
+			"whirlwind",
+			"rage"
+		],
+		"name": "Zapdos",
+		"types": [
+			"Electric",
+			"Flying"
+		],
+		"weightkg": 52.6
+	},
+	"zubat": {
+		"baseStats": {
+			"atk": 45,
+			"def": 35,
+			"hp": 40,
+			"spa": 40,
+			"spd": 40,
+			"spe": 55
+		},
+		"heightm": 0.8,
+		"inherit": True,
+		"learnset": [
+			"mimic",
+			"haze",
+			"bide",
+			"absorb",
+			"doubleedge",
+			"rest",
+			"fly",
+			"takedown",
+			"bite",
+			"substitute",
+			"swift",
+			"superfang",
+			"wingattack",
+			"gust",
+			"rage",
+			"whirlwind",
+			"razorwind"
+		],
+		"name": "Zubat",
+		"types": [
+			"Poison",
+			"Flying"
+		],
+		"weightkg": 7.5
+	}
+}
