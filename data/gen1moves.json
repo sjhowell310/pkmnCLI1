@@ -79,7 +79,7 @@
 		"inherit": true,
 		"desc": "Hits twice. If the first hit breaks the target's substitute, the move ends."
 	},
-	"bubble": {
+	"bubble": {	
 		"inherit": true,
 		"desc": "Has a 33% chance to lower the target's Speed by 1 stage.",
 		"shortDesc": "33% chance to lower the target's Speed by 1.",

@@ -18,6 +18,12 @@ class Pokemon():
 		self.evs = self.calcEVs()
 		self.statHP , self.statAtk, self. statDef, self.statSpa, self.statSpe =  self.calcStats(self.ivs, self.evs)
 		self.movenames, self.moves = self.setMoves(poke)
+		self.HPlvl = 0
+		self.Atklvl = 0
+		self.Deflvl = 0
+		self.Spalvl = 0
+		self.Spelvl = 0
+		self.HPlvl = 0
 
 			
 	def calcIVs(self):

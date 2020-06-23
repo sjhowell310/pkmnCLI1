@@ -1,0 +1,1157 @@
+{
+   "absorb": {
+      "effect": "restores the user's hp by 1/2 of the damage inflicted on the target.",
+      "type": "grass",
+      "pp": 20,
+      "basePower": 20,
+      "accuracy": 100
+   },
+   "acid": {
+      "effect": "has a ~10% chance to lower the target's defense by 1 stage.",
+      "type": "poison",
+      "pp": 30,
+      "basePower": 40,
+      "accuracy": 100
+   },
+   "acidarmor": {
+      "effect": "raises the user's defense by 2 stages.",
+      "type": "poison",
+      "pp": 40,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "agility": {
+      "effect": "raises the user's speed by 2 stages.",
+      "type": "psychic",
+      "pp": 30,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "amnesia": {
+      "effect": "raises the user's special by 2 stages.",
+      "type": "psychic",
+      "pp": 20,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "aurorabeam": {
+      "effect": "has a ~10% chance to lower the target's attack by 1 stage.",
+      "type": "ice",
+      "pp": 20,
+      "basePower": 65,
+      "accuracy": 100
+   },
+   "barrage": {
+      "effect": "attacks 2-5 times in one turn; if one of these attacks breaks a target's substitute, the target will take damage for the rest of the hits. this move has a 3/8 chance to hit twice, a 3/8 chance to hit three times, a 1/8 chance to hit four times and a 1/8 chance to hit five times.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": 15,
+      "accuracy": 85
+   },
+   "barrier": {
+      "effect": "raises the user's defense by 2 stages.",
+      "type": "psychic",
+      "pp": 30,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "bide": {
+      "effect": "the user absorbs all damage for 2-3 turns and then inflicts twice the absorbed damage on its target. this move ignores the target's type but still cannot hit ghost-type pokemon.",
+      "type": "normal",
+      "pp": 10,
+      "basePower": "var dmg",
+      "accuracy": 100
+   },
+   "bind": {
+      "effect": "the user becomes uncontrollable and attacks for 2-5 consecutive turns; the target cannot make attacks of its own during this time, but it may switch out, use items or run away.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": 15,
+      "accuracy": 75
+   },
+   "bite": {
+      "effect": "has a ~10% chance to make the target flinch.",
+      "type": "normal",
+      "pp": 25,
+      "basePower": 60,
+      "accuracy": 100
+   },
+   "blizzard": {
+      "effect": "has a ~10% chance to freeze the target.",
+      "type": "ice",
+      "pp": 5,
+      "basePower": 120,
+      "accuracy": 90
+   },
+   "bodyslam": {
+      "effect": "has a ~30% chance to paralyze the target.",
+      "type": "normal",
+      "pp": 15,
+      "basePower": 85,
+      "accuracy": 100
+   },
+   "boneclub": {
+      "effect": "has a ~10% chance to make the target flinch.",
+      "type": "ground",
+      "pp": 20,
+      "basePower": 65,
+      "accuracy": 85
+   },
+   "bonemerang": {
+      "effect": "strikes twice; if the first hit breaks the target's substitute, the real pokemon will take damage from the second hit.",
+      "type": "ground",
+      "pp": 10,
+      "basePower": 50,
+      "accuracy": 90
+   },
+   "bubble": {
+      "effect": "has a ~10% chance to lower the target's speed by 1 stage.",
+      "type": "water",
+      "pp": 30,
+      "basePower": 20,
+      "accuracy": 100
+   },
+   "bubblebeam": {
+      "effect": "has a ~10% chance to lower the target's speed by 1 stage.",
+      "type": "water",
+      "pp": 20,
+      "basePower": 65,
+      "accuracy": 100
+   },
+   "clamp": {
+      "effect": "the user becomes uncontrollable and attacks for 2-5 consecutive turns; the target cannot make attacks of its own during this time, but it may switch out, use items or run away.",
+      "type": "water",
+      "pp": 10,
+      "basePower": 35,
+      "accuracy": 75
+   },
+   "cometpunch": {
+      "effect": "attacks 2-5 times in one turn; if one of these attacks breaks a target's substitute, the target will take damage for the rest of the hits. this move has a 3/8 chance to hit twice, a 3/8 chance to hit three times, a 1/8 chance to hit four times and a 1/8 chance to hit five times.",
+      "type": "normal",
+      "pp": 15,
+      "basePower": 18,
+      "accuracy": 85
+   },
+   "confuseray": {
+      "effect": "confuses the target.",
+      "type": "ghost",
+      "pp": 10,
+      "basePower": "n/a",
+      "accuracy": 100
+   },
+   "confusion": {
+      "effect": "has a ~10% chance to confuse the target.",
+      "type": "psychic",
+      "pp": 25,
+      "basePower": 50,
+      "accuracy": 100
+   },
+   "constrict": {
+      "effect": "has a ~10% chance to lower the target's speed by 1 stage.",
+      "type": "normal",
+      "pp": 35,
+      "basePower": 10,
+      "accuracy": 100
+   },
+   "conversion": {
+      "effect": "the user's type changes to match the type of one of its four attacks. this move fails if the user cannot change its type under this condition.",
+      "type": "normal",
+      "pp": 30,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "counter": {
+      "effect": "almost always goes last; if an opponent strikes with a normal- or fighting-type attack before the user's turn, the user retaliates for twice the damage it had endured.",
+      "type": "fighting",
+      "pp": 20,
+      "basePower": "var dmg",
+      "accuracy": 100
+   },
+   "crabhammer": {
+      "effect": "has a high critical hit ratio.",
+      "type": "water",
+      "pp": 10,
+      "basePower": 90,
+      "accuracy": 85
+   },
+   "cut": {
+      "effect": "damages the target.",
+      "type": "normal",
+      "pp": 30,
+      "basePower": 50,
+      "accuracy": 95
+   },
+   "defensecurl": {
+      "effect": "raises the user's defense by 1 stage.",
+      "type": "normal",
+      "pp": 40,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "dig": {
+      "effect": "on the first turn, the user digs underground, becoming uncontrollable, and evades all attacks. swift may still hit a pokemon underground. on the second turn, the user attacks.",
+      "type": "ground",
+      "pp": 10,
+      "basePower": 100,
+      "accuracy": 100
+   },
+   "disable": {
+      "effect": "one randomly selected move of the target's cannot be selected for 1-7 turns. disable only works on one move at a time. the target does nothing if it is about to use a move that becomes disabled.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": "n/a",
+      "accuracy": 55
+   },
+   "dizzypunch": {
+      "effect": "damages the target.",
+      "type": "normal",
+      "pp": 10,
+      "basePower": 70,
+      "accuracy": 100
+   },
+   "doublekick": {
+      "effect": "strikes twice; if the first hit breaks the target's substitute, the real pokemon will take damage from the second hit.",
+      "type": "fighting",
+      "pp": 30,
+      "basePower": 30,
+      "accuracy": 100
+   },
+   "doubleteam": {
+      "effect": "raises the user's evasion by 1 stage.",
+      "type": "normal",
+      "pp": 15,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "doubleedge": {
+      "effect": "the user receives 1/4 recoil damage.",
+      "type": "normal",
+      "pp": 15,
+      "basePower": 100,
+      "accuracy": 100
+   },
+   "doubleslap": {
+      "effect": "attacks 2-5 times in one turn; if one of these attacks breaks a target's substitute, the target will take damage for the rest of the hits. this move has a 3/8 chance to hit twice, a 3/8 chance to hit three times, a 1/8 chance to hit four times and a 1/8 chance to hit five times.",
+      "type": "normal",
+      "pp": 10,
+      "basePower": 15,
+      "accuracy": 85
+   },
+   "dragonrage": {
+      "effect": "always deals 40 points of damage.",
+      "type": "dragon",
+      "pp": 10,
+      "basePower": "set",
+      "accuracy": 100
+   },
+   "dreameater": {
+      "effect": "restores the user's hp by 1/2 of the damage inflicted on the target but only works on a sleeping target.",
+      "type": "psychic",
+      "pp": 15,
+      "basePower": 100,
+      "accuracy": 100
+   },
+   "drillpeck": {
+      "effect": "damages the target.",
+      "type": "flying",
+      "pp": 20,
+      "basePower": 80,
+      "accuracy": 100
+   },
+   "earthquake": {
+      "effect": "damages the target.",
+      "type": "ground",
+      "pp": 10,
+      "basePower": 100,
+      "accuracy": 100
+   },
+   "eggbomb": {
+      "effect": "damages the target.",
+      "type": "normal",
+      "pp": 10,
+      "basePower": 100,
+      "accuracy": 75
+   },
+   "ember": {
+      "effect": "has a ~10% chance to burn the target.",
+      "type": "fire",
+      "pp": 25,
+      "basePower": 40,
+      "accuracy": 100
+   },
+   "explosion": {
+      "effect": "the defense stat of other pokemon is halved against this attack, essentially doubling the move's base power; causes the user to faint.",
+      "type": "normal",
+      "pp": 5,
+      "basePower": 170,
+      "accuracy": 100
+   },
+   "fireblast": {
+      "effect": "has a ~30% chance to burn the target.",
+      "type": "fire",
+      "pp": 5,
+      "basePower": 120,
+      "accuracy": 85
+   },
+   "firepunch": {
+      "effect": "has a ~10% chance to burn the target.",
+      "type": "fire",
+      "pp": 15,
+      "basePower": 75,
+      "accuracy": 100
+   },
+   "firespin": {
+      "effect": "the user becomes uncontrollable and attacks for 2-5 consecutive turns; the target cannot make attacks of its own during this time, but it may switch out, use items or run away.",
+      "type": "fire",
+      "pp": 15,
+      "basePower": 15,
+      "accuracy": 70
+   },
+   "fissure": {
+      "effect": "the target faints; doesn't work on faster or higher-leveled pokemon.",
+      "type": "ground",
+      "pp": 5,
+      "basePower": "ko",
+      "accuracy": 30
+   },
+   "flamethrower": {
+      "effect": "has a ~10% chance to burn the target.",
+      "type": "fire",
+      "pp": 15,
+      "basePower": 95,
+      "accuracy": 100
+   },
+   "flash": {
+      "effect": "lowers the target's accuracy by 1 stage.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": "n/a",
+      "accuracy": 70
+   },
+   "fly": {
+      "effect": "on the first turn, the user flies into the air, becoming uncontrollable, and evades most attacks. swift may still hit a pokemon in the air. on the second turn, the user attacks.",
+      "type": "flying",
+      "pp": 15,
+      "basePower": 70,
+      "accuracy": 95
+   },
+   "focusenergy": {
+      "effect": "decreases critical hit ratio in-game, but raises it in pokemon stadium.",
+      "type": "normal",
+      "pp": 30,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "furyattack": {
+      "effect": "attacks 2-5 times in one turn; if one of these attacks breaks a target's substitute, the target will take damage for the rest of the hits. this move has a 3/8 chance to hit twice, a 3/8 chance to hit three times, a 1/8 chance to hit four times and a 1/8 chance to hit five times.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": 15,
+      "accuracy": 85
+   },
+   "furyswipes": {
+      "effect": "attacks 2-5 times in one turn; if one of these attacks breaks a target's substitute, the target will take damage for the rest of the hits. this move has a 3/8 chance to hit twice, a 3/8 chance to hit three times, a 1/8 chance to hit four times and a 1/8 chance to hit five times.",
+      "type": "normal",
+      "pp": 15,
+      "basePower": 10,
+      "accuracy": 80
+   },
+   "glare": {
+      "effect": "paralyzes the target. this move works on ghost-type pokemon.",
+      "type": "normal",
+      "pp": 30,
+      "basePower": "n/a",
+      "accuracy": 75
+   },
+   "growl": {
+      "effect": "lowers the target's attack by 1 stage.",
+      "type": "normal",
+      "pp": 40,
+      "basePower": "n/a",
+      "accuracy": 100
+   },
+   "growth": {
+      "effect": "raises the user's special by 1 stage.",
+      "type": "normal",
+      "pp": 40,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "guillotine": {
+      "effect": "the target faints; doesn't work on faster or higher-leveled pokemon.",
+      "type": "normal",
+      "pp": 5,
+      "basePower": "ko",
+      "accuracy": 30
+   },
+   "gust": {
+      "effect": "damages the target.",
+      "type": "normal",
+      "pp": 35,
+      "basePower": 40,
+      "accuracy": 100
+   },
+   "harden": {
+      "effect": "raises the user's defense by 1 stage.",
+      "type": "normal",
+      "pp": 30,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "haze": {
+      "effect": "eliminates any stat modifiers from all active pokemon. also removes leech seed, reflect and light screen from either pokemon and cures the opponent of any status conditions (including toxic). if the user of haze has toxic poisoning, it will be downgraded to regular poisoning.",
+      "type": "ice",
+      "pp": 30,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "headbutt": {
+      "effect": "has a ~30% chance to make the target flinch.",
+      "type": "normal",
+      "pp": 15,
+      "basePower": 70,
+      "accuracy": 100
+   },
+   "highjumpkick": {
+      "effect": "if this attack misses the target, the user receives 1 hp of damage.",
+      "type": "fighting",
+      "pp": 20,
+      "basePower": 85,
+      "accuracy": 90
+   },
+   "hornattack": {
+      "effect": "damages the target.",
+      "type": "normal",
+      "pp": 25,
+      "basePower": 65,
+      "accuracy": 100
+   },
+   "horndrill": {
+      "effect": "the target faints; doesn't work on faster or higher-leveled pokemon.",
+      "type": "normal",
+      "pp": 5,
+      "basePower": "ko",
+      "accuracy": 30
+   },
+   "hydropump": {
+      "effect": "damages the target.",
+      "type": "water",
+      "pp": 5,
+      "basePower": 120,
+      "accuracy": 80
+   },
+   "hyperbeam": {
+      "effect": "in stadium, the user becomes uncontrollable during its next turn. otherwise, the user attacks on turn one but it doesn't recharge on turn two if it kos the target, breaks its substitute or misses entirely.",
+      "type": "normal",
+      "pp": 5,
+      "basePower": 150,
+      "accuracy": 90
+   },
+   "hyperfang": {
+      "effect": "has a ~10% chance to make the target flinch.",
+      "type": "normal",
+      "pp": 15,
+      "basePower": 80,
+      "accuracy": 90
+   },
+   "hypnosis": {
+      "effect": "puts the target to sleep.",
+      "type": "psychic",
+      "pp": 20,
+      "basePower": "n/a",
+      "accuracy": 60
+   },
+   "icebeam": {
+      "effect": "has a ~10% chance to freeze the target.",
+      "type": "ice",
+      "pp": 10,
+      "basePower": 95,
+      "accuracy": 100
+   },
+   "icepunch": {
+      "effect": "has a ~10% chance to freeze the target.",
+      "type": "ice",
+      "pp": 15,
+      "basePower": 75,
+      "accuracy": 100
+   },
+   "jumpkick": {
+      "effect": "if this attack misses the target, the user receives 1 hp of damage.",
+      "type": "fighting",
+      "pp": 20,
+      "basePower": 70,
+      "accuracy": 95
+   },
+   "karatechop": {
+      "effect": "has a high critical hit ratio.",
+      "type": "normal",
+      "pp": 25,
+      "basePower": 55,
+      "accuracy": 100
+   },
+   "kinesis": {
+      "effect": "lowers the target's accuracy by 1 stage.",
+      "type": "psychic",
+      "pp": 15,
+      "basePower": "n/a",
+      "accuracy": 80
+   },
+   "leechlife": {
+      "effect": "restores the user's hp by 1/2 of the damage inflicted on the target.",
+      "type": "bug",
+      "pp": 15,
+      "basePower": 20,
+      "accuracy": 100
+   },
+   "leechseed": {
+      "effect": "the user steals 1/16 of the target's max hp (or more if used in conjunction with toxic) until either pokemon uses haze or the target is switched out or ko'ed; does not work on grass-type pokemon, but will work against pokemon behind substitutes.",
+      "type": "grass",
+      "pp": 10,
+      "basePower": "n/a",
+      "accuracy": 90
+   },
+   "leer": {
+      "effect": "lowers the target's defense by 1 stage.",
+      "type": "normal",
+      "pp": 30,
+      "basePower": "n/a",
+      "accuracy": 100
+   },
+   "lick": {
+      "effect": "has a ~30% chance to paralyze the target. this move fails against psychic-type pokemon.",
+      "type": "ghost",
+      "pp": 30,
+      "basePower": 20,
+      "accuracy": 100
+   },
+   "lightscreen": {
+      "effect": "the user receives 1/2 damage from special attacks until it switches out or either pokemon uses haze.",
+      "type": "psychic",
+      "pp": 30,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "lovelykiss": {
+      "effect": "puts the target to sleep.",
+      "type": "normal",
+      "pp": 10,
+      "basePower": "n/a",
+      "accuracy": 75
+   },
+   "lowkick": {
+      "effect": "has a ~30% chance to make the target flinch.",
+      "type": "fighting",
+      "pp": 20,
+      "basePower": 50,
+      "accuracy": 90
+   },
+   "meditate": {
+      "effect": "raises the user's attack by 1 stage.",
+      "type": "psychic",
+      "pp": 40,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "megadrain": {
+      "effect": "restores the user's hp by 1/2 of the damage inflicted on the target.",
+      "type": "grass",
+      "pp": 10,
+      "basePower": 40,
+      "accuracy": 100
+   },
+   "megakick": {
+      "effect": "damages the target.",
+      "type": "normal",
+      "pp": 5,
+      "basePower": 120,
+      "accuracy": 75
+   },
+   "megapunch": {
+      "effect": "damages the target.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": 80,
+      "accuracy": 85
+   },
+   "metronome": {
+      "effect": "the user performs a randomly selected move; almost any move in the game could be picked. metronome cannot generate itself, struggle or any move that the user already knows.",
+      "type": "normal",
+      "pp": 10,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "mimic": {
+      "effect": "this move is temporarily replaced by one of the target's moves; after one pp is subtracted to use this move, the replacement move will retain mimic's remaining pp. the user can select any of the target's moves to copy until the end of the battle or until the user switches out. there are no move restrictions on mimic other than itself and struggle. however, in a link battle, mimic will copy one of the target's attacks randomly.",
+      "type": "normal",
+      "pp": 10,
+      "basePower": "n/a",
+      "accuracy": 100
+   },
+   "minimize": {
+      "effect": "raises the user's evasion by 1 stage.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "mirrormove": {
+      "effect": "the user performs the last move executed by its target; if applicable, an attack's damage is calculated with the user's stats, level and type(s). this moves fails if the target has not yet used a move. mirror move also cannot copy itself.",
+      "type": "flying",
+      "pp": 20,
+      "basePower": "copy",
+      "accuracy": "na"
+   },
+   "mist": {
+      "effect": "protects the user from negative stat modifiers caused by other pokemon until it switches out. the user's accuracy and evasion stats are also protected. moves that cause negative stat modifiers as a secondary effect, such as psychic, still deal their regular damage.",
+      "type": "ice",
+      "pp": 30,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "nightshade": {
+      "effect": "does damage equal to user's level. this move hits normal-type pokemon.",
+      "type": "ghost",
+      "pp": 15,
+      "basePower": "var dmg",
+      "accuracy": 100
+   },
+   "payday": {
+      "effect": "the player picks up extra money after in-game battles; the money received is equal to: [user's level * 2 * number of times pay day is used]. the player does not lose money if the opponent uses pay day but the player wins the battle.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": 40,
+      "accuracy": 100
+   },
+   "peck": {
+      "effect": "damages the target.",
+      "type": "flying",
+      "pp": 35,
+      "basePower": 35,
+      "accuracy": 100
+   },
+   "petaldance": {
+      "effect": "the user attacks uncontrollably for 2-3 turns and then gets confused.",
+      "type": "grass",
+      "pp": 20,
+      "basePower": 70,
+      "accuracy": 100
+   },
+   "pinmissile": {
+      "effect": "attacks 2-5 times in one turn; if one of these attacks breaks a target's substitute, the target will take damage for the rest of the hits. this move has a 3/8 chance to hit twice, a 3/8 chance to hit three times, a 1/8 chance to hit four times and a 1/8 chance to hit five times.",
+      "type": "bug",
+      "pp": 20,
+      "basePower": 14,
+      "accuracy": 85
+   },
+   "poisongas": {
+      "effect": "poisons the target.",
+      "type": "poison",
+      "pp": 40,
+      "basePower": "n/a",
+      "accuracy": 55
+   },
+   "poisonsting": {
+      "effect": "has a ~20% chance to poison the target.",
+      "type": "poison",
+      "pp": 35,
+      "basePower": 15,
+      "accuracy": 100
+   },
+   "poisonpowder": {
+      "effect": "poisons the target.",
+      "type": "poison",
+      "pp": 35,
+      "basePower": "n/a",
+      "accuracy": 75
+   },
+   "pound": {
+      "effect": "damages the target.",
+      "type": "normal",
+      "pp": 35,
+      "basePower": 40,
+      "accuracy": 100
+   },
+   "psybeam": {
+      "effect": "has a ~10% chance to confuse the target.",
+      "type": "psychic",
+      "pp": 20,
+      "basePower": 65,
+      "accuracy": 100
+   },
+   "psychic": {
+      "effect": "has a ~30% chance to lower the target's special by 1 stage.",
+      "type": "psychic",
+      "pp": 10,
+      "basePower": 90,
+      "accuracy": 100
+   },
+   "psywave": {
+      "effect": "randomly inflicts set damage between a minimum of 1 hp and a maximum of [1.5x the user's level] hp.",
+      "type": "psychic",
+      "pp": 15,
+      "basePower": "var dmg",
+      "accuracy": 80
+   },
+   "quickattack": {
+      "effect": "usually goes first.",
+      "type": "normal",
+      "pp": 30,
+      "basePower": 40,
+      "accuracy": 100
+   },
+   "rage": {
+      "effect": "the user attacks uncontrollably until it faints or its target faints. during this time, the user's attack increases by 1 stage for each time it is hit by the target. if this move misses, the user continues to attack but has only a 1/256 chance to land a hit.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": 20,
+      "accuracy": 100
+   },
+   "razorleaf": {
+      "effect": "has a high critical hit ratio.",
+      "type": "grass",
+      "pp": 25,
+      "basePower": 55,
+      "accuracy": 95
+   },
+   "razorwind": {
+      "effect": "the user prepares on turn one, becoming uncontrollable, and then attacks on turn two.",
+      "type": "normal",
+      "pp": 10,
+      "basePower": 80,
+      "accuracy": 75
+   },
+   "recover": {
+      "effect": "restores 1/2 of the user's max hp. however, this move fails if the user's current hp is 511 or 255 hp below its value at full health.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "reflect": {
+      "effect": "the user receives 1/2 damage from physical attacks until it switches out or either pokemon uses haze.",
+      "type": "psychic",
+      "pp": 20,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "rest": {
+      "effect": "the user is cured of status effects (and confusion), and recovers full hp, but falls asleep for 2 turns (and then uses a third turn to wake up). however, this move fails if the user's current hp is 511 or 255 hp below its value at full health.",
+      "type": "psychic",
+      "pp": 10,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "roar": {
+      "effect": "escapes from wild battles; fails automatically in trainer and link battles.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": "n/a",
+      "accuracy": 100
+   },
+   "rockslide": {
+      "effect": "damages the target.",
+      "type": "rock",
+      "pp": 10,
+      "basePower": 75,
+      "accuracy": 90
+   },
+   "rockthrow": {
+      "effect": "damages the target.",
+      "type": "rock",
+      "pp": 15,
+      "basePower": 50,
+      "accuracy": 65
+   },
+   "rollingkick": {
+      "effect": "has a ~30% chance to make the target flinch.",
+      "type": "fighting",
+      "pp": 15,
+      "basePower": 60,
+      "accuracy": 85
+   },
+   "sandattack": {
+      "effect": "lowers the target's accuracy by 1 stage.",
+      "type": "ground",
+      "pp": 15,
+      "basePower": "n/a",
+      "accuracy": 100
+   },
+   "scratch": {
+      "effect": "damages the target.",
+      "type": "normal",
+      "pp": 35,
+      "basePower": 40,
+      "accuracy": 100
+   },
+   "screech": {
+      "effect": "lowers the target's defense by 2 stages.",
+      "type": "normal",
+      "pp": 10,
+      "basePower": "n/a",
+      "accuracy": 85
+   },
+   "seismictoss": {
+      "effect": "does damage equal to user's level. hits ghost-type pokemon.",
+      "type": "fighting",
+      "pp": 20,
+      "basePower": "var dmg",
+      "accuracy": 100
+   },
+   "selfdestruct": {
+      "effect": "the defense stat of other pokemon is halved against this attack, essentially doubling the move's base power; causes the user to faint.",
+      "type": "normal",
+      "pp": 5,
+      "basePower": 130,
+      "accuracy": 100
+   },
+   "sharpen": {
+      "effect": "raises the user's attack by 1 stage.",
+      "type": "normal",
+      "pp": 30,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "sing": {
+      "effect": "puts the target to sleep.",
+      "type": "normal",
+      "pp": 15,
+      "basePower": "n/a",
+      "accuracy": 55
+   },
+   "skullbash": {
+      "effect": "the user prepares on turn one, becoming uncontrollable, and then attacks on turn two.",
+      "type": "normal",
+      "pp": 15,
+      "basePower": 100,
+      "accuracy": 100
+   },
+   "skyattack": {
+      "effect": "the user prepares on turn one, becoming uncontrollable, and then attacks on turn two.",
+      "type": "flying",
+      "pp": 5,
+      "basePower": 140,
+      "accuracy": 90
+   },
+   "slam": {
+      "effect": "damages the target.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": 80,
+      "accuracy": 75
+   },
+   "slash": {
+      "effect": "has a high critical hit ratio.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": 70,
+      "accuracy": 100
+   },
+   "sleeppowder": {
+      "effect": "puts the target to sleep.",
+      "type": "grass",
+      "pp": 15,
+      "basePower": "n/a",
+      "accuracy": 75
+   },
+   "sludge": {
+      "effect": "has a ~30% chance to poison the target.",
+      "type": "poison",
+      "pp": 20,
+      "basePower": 65,
+      "accuracy": 100
+   },
+   "smog": {
+      "effect": "has a ~30% chance to poison the target.",
+      "type": "poison",
+      "pp": 20,
+      "basePower": 20,
+      "accuracy": 100
+   },
+   "smokescreen": {
+      "effect": "lowers the target's accuracy by 1 stage.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": "n/a",
+      "accuracy": 100
+   },
+   "softboiled": {
+      "effect": "restores 1/2 of the user's max hp. however, this move fails if the user's current hp is 511 or 255 hp below its value at full health.",
+      "type": "normal",
+      "pp": 10,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "solarbeam": {
+      "effect": "the user prepares on turn one, becoming uncontrollable, and then attacks on turn two.",
+      "type": "grass",
+      "pp": 10,
+      "basePower": 120,
+      "accuracy": 100
+   },
+   "sonicboom": {
+      "effect": "always deals 20 points of damage.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": "set",
+      "accuracy": 90
+   },
+   "spikecannon": {
+      "effect": "attacks 2-5 times in one turn; if one of these attacks breaks a target's substitute, the target will take damage for the rest of the hits. this move has a 3/8 chance to hit twice, a 3/8 chance to hit three times, a 1/8 chance to hit four times and a 1/8 chance to hit five times.",
+      "type": "normal",
+      "pp": 15,
+      "basePower": 20,
+      "accuracy": 100
+   },
+   "splash": {
+      "effect": "doesn't do anything (but we still love it).",
+      "type": "normal",
+      "pp": 40,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "spore": {
+      "effect": "puts the target to sleep.",
+      "type": "grass",
+      "pp": 15,
+      "basePower": "n/a",
+      "accuracy": 100
+   },
+   "stomp": {
+      "effect": "has a ~30% chance to make the target flinch.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": 65,
+      "accuracy": 100
+   },
+   "strength": {
+      "effect": "damages the target.",
+      "type": "normal",
+      "pp": 15,
+      "basePower": 80,
+      "accuracy": 100
+   },
+   "stringshot": {
+      "effect": "lowers the target's speed by 1 stage.",
+      "type": "bug",
+      "pp": 40,
+      "basePower": "n/a",
+      "accuracy": 95
+   },
+   "struggle": {
+      "effect": "used automatically when all of the user's other moves have run out of pp or are otherwise inaccessible. the user receives 1/4 recoil damage. struggle is classified as a normal-type move, so it is resisted by rock-type pokemon and cannot hit ghost-type pokemon at all.",
+      "type": "normal",
+      "pp": 1,
+      "basePower": 50,
+      "accuracy": 100
+   },
+   "stunspore": {
+      "effect": "paralyzes the target.",
+      "type": "grass",
+      "pp": 30,
+      "basePower": "n/a",
+      "accuracy": 75
+   },
+   "submission": {
+      "effect": "the user receives 1/4 recoil damage.",
+      "type": "fighting",
+      "pp": 20,
+      "basePower": 80,
+      "accuracy": 80
+   },
+   "substitute": {
+      "effect": "the user takes one-fourth of its maximum hp to create a substitute; this move fails if the user does not have enough hp for this. until the substitute is broken, it receives damage from all attacks made by other pokemon. in-game, the user can still be inflicted with status effects and stat modifiers from other pokemon, but this is fixed in pokemon stadium. if a substitute breaks from a hit during a multistrike move such as fury attack, the user takes damage from the remaining strikes.",
+      "type": "normal",
+      "pp": 10,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "superfang": {
+      "effect": "this move halves the target's current hp.",
+      "type": "normal",
+      "pp": 10,
+      "basePower": "var dmg",
+      "accuracy": 90
+   },
+   "supersonic": {
+      "effect": "confuses the target.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": "n/a",
+      "accuracy": 55
+   },
+   "surf": {
+      "effect": "damages the target.",
+      "type": "water",
+      "pp": 15,
+      "basePower": 95,
+      "accuracy": 100
+   },
+   "swift": {
+      "effect": "ignores evasion and accuracy modifiers and will hit pokemon even if they are in the middle of fly or dig. has a 1-in-256 chance of missing.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": 60,
+      "accuracy": 100
+   },
+   "swordsdance": {
+      "effect": "raises the user's attack by 2 stages.",
+      "type": "normal",
+      "pp": 30,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "tackle": {
+      "effect": "damages the target.",
+      "type": "normal",
+      "pp": 35,
+      "basePower": 35,
+      "accuracy": 95
+   },
+   "tailwhip": {
+      "effect": "lowers the target's defense by 1 stage.",
+      "type": "normal",
+      "pp": 30,
+      "basePower": "n/a",
+      "accuracy": 100
+   },
+   "takedown": {
+      "effect": "the user receives 1/4 recoil damage.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": 90,
+      "accuracy": 85
+   },
+   "teleport": {
+      "effect": "escapes from wild battles; fails automatically in trainer and link battles.",
+      "type": "psychic",
+      "pp": 20,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "thrash": {
+      "effect": "the user attacks uncontrollably for 2-3 turns and then gets confused.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": 90,
+      "accuracy": 100
+   },
+   "thunder": {
+      "effect": "has a ~10% chance to paralyze the target.",
+      "type": "electric",
+      "pp": 10,
+      "basePower": 120,
+      "accuracy": 70
+   },
+   "thunderwave": {
+      "effect": "paralyzes the target.",
+      "type": "electric",
+      "pp": 20,
+      "basePower": "n/a",
+      "accuracy": 100
+   },
+   "thunderbolt": {
+      "effect": "has a ~10% chance to paralyze the target.",
+      "type": "electric",
+      "pp": 15,
+      "basePower": 95,
+      "accuracy": 100
+   },
+   "thunderpunch": {
+      "effect": "has a ~10% chance to paralyze the target.",
+      "type": "electric",
+      "pp": 15,
+      "basePower": 75,
+      "accuracy": 100
+   },
+   "thundershock": {
+      "effect": "has a ~10% chance to paralyze the target.",
+      "type": "electric",
+      "pp": 30,
+      "basePower": 40,
+      "accuracy": 100
+   },
+   "toxic": {
+      "effect": "the target is badly poisoned, with the damage caused by poison doubling after each turn. however, toxic poisoning will revert to normal poisoning if the poisoned pokemon is switched out or uses haze. damage caused by leech seed will also increase as toxic damage increases.",
+      "type": "poison",
+      "pp": 10,
+      "basePower": "n/a",
+      "accuracy": 85
+   },
+   "transform": {
+      "effect": "the user morphs into a near-exact copy of the target. stats, stat modifiers, type, moves and appearance are changed; the user's level and hp remain the same and each copied move receives only 5 pp.",
+      "type": "normal",
+      "pp": 10,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "triattack": {
+      "effect": "damages the target.",
+      "type": "normal",
+      "pp": 10,
+      "basePower": 80,
+      "accuracy": 100
+   },
+   "twineedle": {
+      "effect": "strikes twice; if the first hit breaks the target's substitute, the real pokemon will take damage from the second hit. has a ~20% chance to poison the target .",
+      "type": "bug",
+      "pp": 20,
+      "basePower": 25,
+      "accuracy": 100
+   },
+   "visegrip": {
+      "effect": "damages the target.",
+      "type": "normal",
+      "pp": 30,
+      "basePower": 55,
+      "accuracy": 100
+   },
+   "vinewhip": {
+      "effect": "damages the target.",
+      "type": "grass",
+      "pp": 10,
+      "basePower": 35,
+      "accuracy": 100
+   },
+   "watergun": {
+      "effect": "damages the target.",
+      "type": "water",
+      "pp": 25,
+      "basePower": 40,
+      "accuracy": 100
+   },
+   "waterfall": {
+      "effect": "damages the target.",
+      "type": "water",
+      "pp": 15,
+      "basePower": 80,
+      "accuracy": 100
+   },
+   "whirlwind": {
+      "effect": "escapes from wild battles; fails automatically in trainer and link battles.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": "n/a",
+      "accuracy": 100
+   },
+   "wingattack": {
+      "effect": "damages the target.",
+      "type": "flying",
+      "pp": 35,
+      "basePower": 35,
+      "accuracy": 100
+   },
+   "withdraw": {
+      "effect": "raises the user's defense by 1 stage.",
+      "type": "water",
+      "pp": 40,
+      "basePower": "n/a",
+      "accuracy": "na"
+   },
+   "wrap": {
+      "effect": "the user becomes uncontrollable and attacks for 2-5 consecutive turns; the target cannot make attacks of its own during this time, but it may switch out, use items or run away.",
+      "type": "normal",
+      "pp": 20,
+      "basePower": 15,
+      "accuracy": 85
+   }
+}

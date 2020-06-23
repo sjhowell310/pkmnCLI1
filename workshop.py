@@ -2,23 +2,26 @@ import random
 import math
 import json
 
-with open("data/gen1moves.json") as pdex:
+with open("data/g1movevals.json") as pdex:
 	g1moves = json.load(pdex)
 
 	with open("data/moves.json") as pdex:
 		allmoves = json.load(pdex)
 	out = []
-	for moves in allmoves.keys():
-		for keys in allmoves[moves]:
-			if keys not in out:
-				out.append(keys)
 
 	for moves in g1moves.keys():
 		for keys in g1moves[moves]:
 			if keys not in out:
 				out.append(keys)
+				out.append("b")
+				
+	for moves in allmoves.keys():
+		for keys in allmoves[moves]:
+			if keys not in out:
+				out.append(keys)
+				out.append("a")
 
-	print(sorted(out), len(out))
+	print(out, len(out))
 
 	out2 = []
 	for moves in allmoves.keys():

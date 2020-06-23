@@ -1,0 +1,4129 @@
+{
+	"absorb": {
+		"accuracy": 100,
+		"basePower": 20,
+		"category": "Special",
+		"contestType": "Clever",
+		"desc": "The user recovers 1/2 the HP lost by the target, rounded down. If this move breaks the target's substitute, the user does not recover any HP.",
+		"drain": [
+			1,
+			2
+		],
+		"effect": "restores the user's hp by 1/2 of the damage inflicted on the target.",
+		"flags": {
+			"heal": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Absorb",
+		"num": 71,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "User recovers 50% of the damage dealt.",
+		"target": "normal",
+		"type": "grass"
+	},
+	"acid": {
+		"accuracy": 100,
+		"basePower": 40,
+		"category": "Special",
+		"contestType": "Clever",
+		"desc": "Has a 33% chance to lower the target's Defense by 1 stage.",
+		"effect": "has a ~10% chance to lower the target's defense by 1 stage.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Acid",
+		"num": 51,
+		"pp": 30,
+		"priority": 0,
+		"secondary": {
+			"boosts": {
+				"def": -1
+			},
+			"chance": 33
+		},
+		"shortDesc": "33% chance to lower the target's Defense by 1.",
+		"target": "normal",
+		"type": "poison"
+	},
+	"acidarmor": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"boosts": {
+			"def": 2
+		},
+		"category": "Status",
+		"contestType": "Tough",
+		"desc": "Raises the user's Defense by 2 stages.",
+		"effect": "raises the user's defense by 2 stages.",
+		"flags": {
+			"snatch": 1
+		},
+		"name": "Acid Armor",
+		"num": 151,
+		"pp": 40,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Raises the user's Defense by 2.",
+		"target": "self",
+		"type": "poison",
+		"zMove": {
+			"effect": "clearnegativeboost"
+		}
+	},
+	"agility": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"boosts": {
+			"spe": 2
+		},
+		"category": "Status",
+		"contestType": "Cool",
+		"desc": "Raises the user's Speed by 2 stages.",
+		"effect": "raises the user's speed by 2 stages.",
+		"flags": {
+			"snatch": 1
+		},
+		"name": "Agility",
+		"num": 97,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Raises the user's Speed by 2.",
+		"target": "self",
+		"type": "psychic",
+		"zMove": {
+			"effect": "clearnegativeboost"
+		}
+	},
+	"amnesia": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"boosts": {
+			"spa": 2,
+			"spd": 2
+		},
+		"category": "Status",
+		"contestType": "Cute",
+		"desc": "Raises the user's Special by 2 stages.",
+		"effect": "raises the user's special by 2 stages.",
+		"flags": {
+			"snatch": 1
+		},
+		"inherit": true,
+		"name": "Amnesia",
+		"num": 133,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Raises the user's Special by 2.",
+		"target": "self",
+		"type": "psychic",
+		"zMove": {
+			"effect": "clearnegativeboost"
+		}
+	},
+	"aurorabeam": {
+		"accuracy": 100,
+		"basePower": 65,
+		"category": "Special",
+		"contestType": "Beautiful",
+		"desc": "Has a 33% chance to lower the target's Attack by 1 stage.",
+		"effect": "has a ~10% chance to lower the target's attack by 1 stage.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Aurora Beam",
+		"num": 62,
+		"pp": 20,
+		"priority": 0,
+		"secondary": {
+			"boosts": {
+				"atk": -1
+			},
+			"chance": 33
+		},
+		"shortDesc": "33% chance to lower the target's Attack by 1.",
+		"target": "normal",
+		"type": "ice"
+	},
+	"barrage": {
+		"accuracy": 85,
+		"basePower": 15,
+		"category": "Physical",
+		"contestType": "Cute",
+		"desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+		"effect": "attacks 2-5 times in one turn; if one of these attacks breaks a target's substitute, the target will take damage for the rest of the hits. this move has a 3/8 chance to hit twice, a 3/8 chance to hit three times, a 1/8 chance to hit four times and a 1/8 chance to hit five times.",
+		"flags": {
+			"bullet": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"multihit": [
+			2,
+			5
+		],
+		"name": "Barrage",
+		"num": 140,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Hits 2-5 times in one turn.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"barrier": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"boosts": {
+			"def": 2
+		},
+		"category": "Status",
+		"contestType": "Cool",
+		"desc": "Raises the user's Defense by 2 stages.",
+		"effect": "raises the user's defense by 2 stages.",
+		"flags": {
+			"snatch": 1
+		},
+		"isNonstandard": "Past",
+		"name": "Barrier",
+		"num": 112,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Raises the user's Defense by 2.",
+		"target": "self",
+		"type": "psychic",
+		"zMove": {
+			"effect": "clearnegativeboost"
+		}
+	},
+	"bide": {
+		"accuracy": 100,
+		"basePower": "var dmg",
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "The user spends two or three turns locked into this move and then, on the second or third turn after using this move, the user attacks the opponent, inflicting double the damage in HP it lost during those turns. This move ignores type immunity and cannot be avoided even if the target is using Dig or Fly. The user can choose to switch out during the effect. If the user switches out or is prevented from moving during this move's use, the effect ends. During the effect, if the opposing Pokemon switches out or uses Confuse Ray, Conversion, Focus Energy, Glare, Haze, Leech Seed, Light Screen, Mimic, Mist, Poison Gas, Poison Powder, Recover, Reflect, Rest, Soft-Boiled, Splash, Stun Spore, Substitute, Supersonic, Teleport, Thunder Wave, Toxic, or Transform, the previous damage dealt to the user will be added to the total.",
+		"effect": "the user absorbs all damage for 2-3 turns and then inflicts twice the absorbed damage on its target. this move ignores the target's type but still cannot hit ghost-type pokemon.",
+		"flags": {
+			"contact": 1,
+			"protect": 1
+		},
+		"ignoreEvasion": true,
+		"ignoreImmunity": true,
+		"inherit": true,
+		"isNonstandard": "Past",
+		"name": "Bide",
+		"num": 117,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Waits 2 turns; deals double the damage taken.",
+		"target": "self",
+		"type": "normal",
+		"volatileStatus": "bide"
+	},
+	"bind": {
+		"accuracy": 75,
+		"basePower": 15,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "The user spends two to five turns using this move. Has a 3/8 chance to last two or three turns, and a 1/8 chance to last four or five turns. The damage calculated for the first turn is used for every other turn. The user cannot select a move and the target cannot execute a move during the effect, but both may switch out. If the user switches out, the target remains unable to execute a move during that turn. If the target switches out, the user uses this move again automatically, and if it had 0 PP at the time, it becomes 63. If the user or the target switch out, or the user is prevented from moving, the effect ends. This move can prevent the target from moving even if it has type immunity, but will not deal damage.",
+		"effect": "the user becomes uncontrollable and attacks for 2-5 consecutive turns; the target cannot make attacks of its own during this time, but it may switch out, use items or run away.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"ignoreImmunity": true,
+		"inherit": true,
+		"name": "Bind",
+		"num": 20,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"self": {
+			"volatileStatus": "partialtrappinglock"
+		},
+		"shortDesc": "Prevents the target from moving for 2-5 turns.",
+		"target": "normal",
+		"type": "normal",
+		"volatileStatus": "partiallytrapped"
+	},
+	"bite": {
+		"accuracy": 100,
+		"basePower": 60,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Has a 10% chance to flinch the target.",
+		"effect": "has a ~10% chance to make the target flinch.",
+		"flags": {
+			"bite": 1,
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Bite",
+		"num": 44,
+		"pp": 25,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"volatileStatus": "flinch"
+		},
+		"shortDesc": "10% chance to flinch the target.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"blizzard": {
+		"accuracy": 90,
+		"basePower": 120,
+		"category": "Special",
+		"contestType": "Beautiful",
+		"desc": "Has a 10% chance to freeze the target. If the weather is Hail, this move does not check accuracy.",
+		"effect": "has a ~10% chance to freeze the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Blizzard",
+		"num": 59,
+		"pp": 5,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"status": "frz"
+		},
+		"shortDesc": "10% chance to freeze foe(s). Can't miss in hail.",
+		"target": "normal",
+		"type": "ice"
+	},
+	"bodyslam": {
+		"accuracy": 100,
+		"basePower": 85,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Has a 30% chance to paralyze the target. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
+		"effect": "has a ~30% chance to paralyze the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"nonsky": 1,
+			"protect": 1
+		},
+		"name": "Body Slam",
+		"num": 34,
+		"pp": 15,
+		"priority": 0,
+		"secondary": {
+			"chance": 30,
+			"status": "par"
+		},
+		"shortDesc": "30% chance to paralyze the target.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"boneclub": {
+		"accuracy": 85,
+		"basePower": 65,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Has a 10% chance to flinch the target.",
+		"effect": "has a ~10% chance to make the target flinch.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"isNonstandard": "Past",
+		"name": "Bone Club",
+		"num": 125,
+		"pp": 20,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"volatileStatus": "flinch"
+		},
+		"shortDesc": "10% chance to flinch the target.",
+		"target": "normal",
+		"type": "ground"
+	},
+	"bonemerang": {
+		"accuracy": 90,
+		"basePower": 50,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Hits twice. If the first hit breaks the target's substitute, the move ends.",
+		"effect": "strikes twice; if the first hit breaks the target's substitute, the real pokemon will take damage from the second hit.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"maxMove": {
+			"basePower": 130
+		},
+		"multihit": 2,
+		"name": "Bonemerang",
+		"num": 155,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Hits 2 times in one turn.",
+		"target": "normal",
+		"type": "ground"
+	},
+	"bubble": {
+		"accuracy": 100,
+		"basePower": 20,
+		"category": "Special",
+		"contestType": "Cute",
+		"desc": "Has a 33% chance to lower the target's Speed by 1 stage.",
+		"effect": "has a ~10% chance to lower the target's speed by 1 stage.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"name": "Bubble",
+		"num": 145,
+		"pp": 30,
+		"priority": 0,
+		"secondary": {
+			"boosts": {
+				"spe": -1
+			},
+			"chance": 33
+		},
+		"shortDesc": "33% chance to lower the target's Speed by 1.",
+		"target": "normal",
+		"type": "water"
+	},
+	"bubblebeam": {
+		"accuracy": 100,
+		"basePower": 65,
+		"category": "Special",
+		"contestType": "Beautiful",
+		"desc": "Has a 33% chance to lower the target's Speed by 1 stage.",
+		"effect": "has a ~10% chance to lower the target's speed by 1 stage.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Bubble Beam",
+		"num": 61,
+		"pp": 20,
+		"priority": 0,
+		"secondary": {
+			"boosts": {
+				"spe": -1
+			},
+			"chance": 33
+		},
+		"shortDesc": "33% chance to lower the target's Speed by 1.",
+		"target": "normal",
+		"type": "water"
+	},
+	"clamp": {
+		"accuracy": 75,
+		"basePower": 35,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "The user spends two to five turns using this move. Has a 3/8 chance to last two or three turns, and a 1/8 chance to last four or five turns. The damage calculated for the first turn is used for every other turn. The user cannot select a move and the target cannot execute a move during the effect, but both may switch out. If the user switches out, the target remains unable to execute a move during that turn. If the target switches out, the user uses this move again automatically, and if it had 0 PP at the time, it becomes 63. If the user or the target switch out, or the user is prevented from moving, the effect ends. This move can prevent the target from moving even if it has type immunity, but will not deal damage.",
+		"effect": "the user becomes uncontrollable and attacks for 2-5 consecutive turns; the target cannot make attacks of its own during this time, but it may switch out, use items or run away.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"name": "Clamp",
+		"num": 128,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"self": {
+			"volatileStatus": "partialtrappinglock"
+		},
+		"shortDesc": "Prevents the target from moving for 2-5 turns.",
+		"target": "normal",
+		"type": "water",
+		"volatileStatus": "partiallytrapped"
+	},
+	"cometpunch": {
+		"accuracy": 85,
+		"basePower": 18,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+		"effect": "attacks 2-5 times in one turn; if one of these attacks breaks a target's substitute, the target will take damage for the rest of the hits. this move has a 3/8 chance to hit twice, a 3/8 chance to hit three times, a 1/8 chance to hit four times and a 1/8 chance to hit five times.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1,
+			"punch": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"maxMove": {
+			"basePower": 100
+		},
+		"multihit": [
+			2,
+			5
+		],
+		"name": "Comet Punch",
+		"num": 4,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Hits 2-5 times in one turn.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"confuseray": {
+		"accuracy": 100,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "Causes the target to become confused.",
+		"effect": "confuses the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"name": "Confuse Ray",
+		"num": 109,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Confuses the target.",
+		"target": "normal",
+		"type": "ghost",
+		"volatileStatus": "confusion",
+		"zMove": {
+			"boost": {
+				"spa": 1
+			}
+		}
+	},
+	"confusion": {
+		"accuracy": 100,
+		"basePower": 50,
+		"category": "Special",
+		"contestType": "Clever",
+		"desc": "Has a 10% chance to confuse the target.",
+		"effect": "has a ~10% chance to confuse the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Confusion",
+		"num": 93,
+		"pp": 25,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"volatileStatus": "confusion"
+		},
+		"shortDesc": "10% chance to confuse the target.",
+		"target": "normal",
+		"type": "psychic"
+	},
+	"constrict": {
+		"accuracy": 100,
+		"basePower": 10,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Has a 33% chance to lower the target's Speed by 1 stage.",
+		"effect": "has a ~10% chance to lower the target's speed by 1 stage.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"name": "Constrict",
+		"num": 132,
+		"pp": 35,
+		"priority": 0,
+		"secondary": {
+			"boosts": {
+				"spe": -1
+			},
+			"chance": 33
+		},
+		"shortDesc": "33% chance to lower the target's Speed by 1.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"conversion": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Beautiful",
+		"desc": "Causes the user's types to become the same as the current types of the target.",
+		"effect": "the user's type changes to match the type of one of its four attacks. this move fails if the user cannot change its type under this condition.",
+		"flags": {
+			"snatch": 1
+		},
+		"inherit": true,
+		"name": "Conversion",
+		"num": 160,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "User becomes the same type as the target.",
+		"target": "normal",
+		"type": "normal",
+		"volatileStatus": "conversion",
+		"zMove": {
+			"boost": {
+				"atk": 1,
+				"def": 1,
+				"spa": 1,
+				"spd": 1,
+				"spe": 1
+			}
+		}
+	},
+	"counter": {
+		"accuracy": 100,
+		"basePower": "var dmg",
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Deals damage to the opposing Pokemon equal to twice the damage dealt by the last move used in the battle. This move ignores type immunity. Fails if the user moves first, or if the opposing side's last move was Counter, had 0 power, or was not Normal or Fighting type. Fails if the last move used by either side did 0 damage and was not Confuse Ray, Conversion, Focus Energy, Glare, Haze, Leech Seed, Light Screen, Mimic, Mist, Poison Gas, Poison Powder, Recover, Reflect, Rest, Soft-Boiled, Splash, Stun Spore, Substitute, Supersonic, Teleport, Thunder Wave, Toxic, or Transform.",
+		"effect": "almost always goes last; if an opponent strikes with a normal- or fighting-type attack before the user's turn, the user retaliates for twice the damage it had endured.",
+		"flags": {
+			"contact": 1,
+			"protect": 1
+		},
+		"ignoreImmunity": true,
+		"inherit": true,
+		"maxMove": {
+			"basePower": 75
+		},
+		"name": "Counter",
+		"num": 68,
+		"pp": 20,
+		"priority": -5,
+		"secondary": null,
+		"shortDesc": "If hit by physical attack, returns double damage.",
+		"target": "scripted",
+		"type": "fighting",
+		"willCrit": false
+	},
+	"crabhammer": {
+		"accuracy": 85,
+		"basePower": 90,
+		"category": "Physical",
+		"contestType": "Tough",
+		"critRatio": 2,
+		"desc": "Has a higher chance for a critical hit.",
+		"effect": "has a high critical hit ratio.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Crabhammer",
+		"num": 152,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "High critical hit ratio.",
+		"target": "normal",
+		"type": "water"
+	},
+	"cut": {
+		"accuracy": 95,
+		"basePower": 50,
+		"category": "Physical",
+		"contestType": "Cool",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Cut",
+		"num": 15,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"defensecurl": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"boosts": {
+			"def": 1
+		},
+		"category": "Status",
+		"contestType": "Cute",
+		"desc": "Raises the user's Defense by 1 stage.",
+		"effect": "raises the user's defense by 1 stage.",
+		"flags": {
+			"snatch": 1
+		},
+		"inherit": true,
+		"name": "Defense Curl",
+		"num": 111,
+		"pp": 40,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Raises the user's Defense by 1.",
+		"target": "self",
+		"type": "normal",
+		"volatileStatus": "defensecurl",
+		"zMove": {
+			"boost": {
+				"accuracy": 1
+			}
+		}
+	},
+	"dig": {
+		"accuracy": 100,
+		"basePower": 100,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Bide, Swift, and Transform. If the user is fully paralyzed on the second turn, it continues avoiding attacks until it switches out or successfully executes the second turn of this move or Fly.",
+		"effect": "on the first turn, the user digs underground, becoming uncontrollable, and evades all attacks. swift may still hit a pokemon underground. on the second turn, the user attacks.",
+		"flags": {
+			"charge": 1,
+			"contact": 1,
+			"mirror": 1,
+			"nonsky": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Dig",
+		"num": 91,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Digs underground turn 1, strikes turn 2.",
+		"target": "normal",
+		"type": "ground"
+	},
+	"disable": {
+		"accuracy": 55,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "For 0 to 7 turns, one of the target's known moves that has at least 1 PP remaining becomes disabled, at random. Fails if one of the target's moves is already disabled, or if none of the target's moves have PP remaining. If any Pokemon uses Haze, this effect ends. Whether or not this move was successful, it counts as a hit for the purposes of the opponent's use of Rage.",
+		"effect": "one randomly selected move of the target's cannot be selected for 1-7 turns. disable only works on one move at a time. the target does nothing if it is about to use a move that becomes disabled.",
+		"flags": {
+			"authentic": 1,
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"inherit": true,
+		"name": "Disable",
+		"num": 50,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "For 0-7 turns, disables one of the target's moves.",
+		"target": "normal",
+		"type": "normal",
+		"volatileStatus": "disable",
+		"zMove": {
+			"effect": "clearnegativeboost"
+		}
+	},
+	"dizzypunch": {
+		"accuracy": 100,
+		"basePower": 70,
+		"category": "Physical",
+		"contestType": "Cute",
+		"desc": "No additional effect.",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1,
+			"punch": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"name": "Dizzy Punch",
+		"num": 146,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"doubleedge": {
+		"accuracy": 100,
+		"basePower": 100,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",
+		"effect": "the user receives 1/4 recoil damage.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Double-Edge",
+		"num": 38,
+		"pp": 15,
+		"priority": 0,
+		"recoil": [
+			33,
+			100
+		],
+		"secondary": null,
+		"shortDesc": "Has 33% recoil.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"doublekick": {
+		"accuracy": 100,
+		"basePower": 30,
+		"category": "Physical",
+		"contestType": "Cool",
+		"desc": "Hits twice. Damage is calculated once for the first hit and used for both hits. If the first hit breaks the target's substitute, the move ends.",
+		"effect": "strikes twice; if the first hit breaks the target's substitute, the real pokemon will take damage from the second hit.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"maxMove": {
+			"basePower": 80
+		},
+		"multihit": 2,
+		"name": "Double Kick",
+		"num": 24,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Hits 2 times in one turn.",
+		"target": "normal",
+		"type": "fighting"
+	},
+	"doubleslap": {
+		"accuracy": 85,
+		"basePower": 15,
+		"category": "Physical",
+		"contestType": "Cute",
+		"desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+		"effect": "attacks 2-5 times in one turn; if one of these attacks breaks a target's substitute, the target will take damage for the rest of the hits. this move has a 3/8 chance to hit twice, a 3/8 chance to hit three times, a 1/8 chance to hit four times and a 1/8 chance to hit five times.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"multihit": [
+			2,
+			5
+		],
+		"name": "Double Slap",
+		"num": 3,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Hits 2-5 times in one turn.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"doubleteam": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"boosts": {
+			"evasion": 1
+		},
+		"category": "Status",
+		"contestType": "Cool",
+		"desc": "Raises the user's evasiveness by 1 stage.",
+		"effect": "raises the user's evasion by 1 stage.",
+		"flags": {
+			"snatch": 1
+		},
+		"name": "Double Team",
+		"num": 104,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Raises the user's evasiveness by 1.",
+		"target": "self",
+		"type": "normal",
+		"zMove": {
+			"effect": "clearnegativeboost"
+		}
+	},
+	"dragonrage": {
+		"accuracy": 100,
+		"basePower": "set",
+		"category": "Special",
+		"contestType": "Cool",
+		"damage": 40,
+		"effect": "always deals 40 points of damage.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"name": "Dragon Rage",
+		"num": 82,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Deals 40 HP of damage to the target.",
+		"target": "normal",
+		"type": "dragon"
+	},
+	"dreameater": {
+		"accuracy": 100,
+		"basePower": 100,
+		"category": "Special",
+		"contestType": "Clever",
+		"desc": "The target is unaffected by this move unless it is asleep. The user recovers 1/2 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not recover any HP.",
+		"drain": [
+			1,
+			2
+		],
+		"effect": "restores the user's hp by 1/2 of the damage inflicted on the target but only works on a sleeping target.",
+		"flags": {
+			"heal": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Dream Eater",
+		"num": 138,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "User gains 1/2 HP inflicted. Sleeping target only.",
+		"target": "normal",
+		"type": "psychic"
+	},
+	"drillpeck": {
+		"accuracy": 100,
+		"basePower": 80,
+		"category": "Physical",
+		"contestType": "Cool",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"distance": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Drill Peck",
+		"num": 65,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "any",
+		"type": "flying"
+	},
+	"earthquake": {
+		"accuracy": 100,
+		"basePower": 100,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "No additional effect.",
+		"effect": "damages the target.",
+		"flags": {
+			"mirror": 1,
+			"nonsky": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Earthquake",
+		"num": 89,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "allAdjacent",
+		"type": "ground"
+	},
+	"eggbomb": {
+		"accuracy": 75,
+		"basePower": 100,
+		"category": "Physical",
+		"contestType": "Cute",
+		"effect": "damages the target.",
+		"flags": {
+			"bullet": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"isNonstandard": "Past",
+		"name": "Egg Bomb",
+		"num": 121,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"ember": {
+		"accuracy": 100,
+		"basePower": 40,
+		"category": "Special",
+		"contestType": "Cute",
+		"desc": "Has a 10% chance to burn the target.",
+		"effect": "has a ~10% chance to burn the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Ember",
+		"num": 52,
+		"pp": 25,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"status": "brn"
+		},
+		"shortDesc": "10% chance to burn the target.",
+		"target": "normal",
+		"type": "fire"
+	},
+	"explosion": {
+		"accuracy": 100,
+		"basePower": 170,
+		"category": "Physical",
+		"contestType": "Beautiful",
+		"desc": "The user faints after using this move, unless this move broke the target's substitute. The target's Defense is halved during damage calculation.",
+		"effect": "the defense stat of other pokemon is halved against this attack, essentially doubling the move's base power; causes the user to faint.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Explosion",
+		"num": 153,
+		"pp": 5,
+		"priority": 0,
+		"secondary": null,
+		"selfdestruct": "always",
+		"shortDesc": "Hits adjacent Pokemon. The user faints.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"fireblast": {
+		"accuracy": 85,
+		"basePower": 120,
+		"category": "Special",
+		"contestType": "Beautiful",
+		"desc": "Has a 30% chance to burn the target.",
+		"effect": "has a ~30% chance to burn the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Fire Blast",
+		"num": 126,
+		"pp": 5,
+		"priority": 0,
+		"secondary": {
+			"chance": 30,
+			"status": "brn"
+		},
+		"shortDesc": "30% chance to burn the target.",
+		"target": "normal",
+		"type": "fire"
+	},
+	"firepunch": {
+		"accuracy": 100,
+		"basePower": 75,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Has a 10% chance to burn the target.",
+		"effect": "has a ~10% chance to burn the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1,
+			"punch": 1
+		},
+		"name": "Fire Punch",
+		"num": 7,
+		"pp": 15,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"status": "brn"
+		},
+		"shortDesc": "10% chance to burn the target.",
+		"target": "normal",
+		"type": "fire"
+	},
+	"firespin": {
+		"accuracy": 70,
+		"basePower": 15,
+		"category": "Special",
+		"contestType": "Beautiful",
+		"desc": "The user spends two to five turns using this move. Has a 3/8 chance to last two or three turns, and a 1/8 chance to last four or five turns. The damage calculated for the first turn is used for every other turn. The user cannot select a move and the target cannot execute a move during the effect, but both may switch out. If the user switches out, the target remains unable to execute a move during that turn. If the target switches out, the user uses this move again automatically, and if it had 0 PP at the time, it becomes 63. If the user or the target switch out, or the user is prevented from moving, the effect ends. This move can prevent the target from moving even if it has type immunity, but will not deal damage.",
+		"effect": "the user becomes uncontrollable and attacks for 2-5 consecutive turns; the target cannot make attacks of its own during this time, but it may switch out, use items or run away.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Fire Spin",
+		"num": 83,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"self": {
+			"volatileStatus": "partialtrappinglock"
+		},
+		"shortDesc": "Prevents the target from moving for 2-5 turns.",
+		"target": "normal",
+		"type": "fire",
+		"volatileStatus": "partiallytrapped"
+	},
+	"fissure": {
+		"accuracy": 30,
+		"basePower": "ko",
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Deals 65535 damage to the target. Fails if the target's Speed is greater than the user's.",
+		"effect": "the target faints; doesn't work on faster or higher-leveled pokemon.",
+		"flags": {
+			"mirror": 1,
+			"nonsky": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"maxMove": {
+			"basePower": 130
+		},
+		"name": "Fissure",
+		"num": 90,
+		"ohko": true,
+		"pp": 5,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Deals 65535 damage. Fails if target is faster.",
+		"target": "normal",
+		"type": "ground",
+		"zMove": {
+			"basePower": 180
+		}
+	},
+	"flamethrower": {
+		"accuracy": 100,
+		"basePower": 95,
+		"category": "Special",
+		"contestType": "Beautiful",
+		"desc": "Has a 10% chance to burn the target.",
+		"effect": "has a ~10% chance to burn the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Flamethrower",
+		"num": 53,
+		"pp": 15,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"status": "brn"
+		},
+		"shortDesc": "10% chance to burn the target.",
+		"target": "normal",
+		"type": "fire"
+	},
+	"flash": {
+		"accuracy": 70,
+		"basePower": "n/a",
+		"boosts": {
+			"accuracy": -1
+		},
+		"category": "Status",
+		"contestType": "Beautiful",
+		"desc": "Lowers the target's accuracy by 1 stage.",
+		"effect": "lowers the target's accuracy by 1 stage.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"isNonstandard": "Past",
+		"name": "Flash",
+		"num": 148,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Lowers the target's accuracy by 1.",
+		"target": "normal",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"evasion": 1
+			}
+		}
+	},
+	"fly": {
+		"accuracy": 95,
+		"basePower": 70,
+		"category": "Physical",
+		"contestType": "Clever",
+		"desc": "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Bide, Swift, and Transform. If the user is fully paralyzed on the second turn, it continues avoiding attacks until it switches out or successfully executes the second turn of this move or Dig.",
+		"effect": "on the first turn, the user flies into the air, becoming uncontrollable, and evades most attacks. swift may still hit a pokemon in the air. on the second turn, the user attacks.",
+		"flags": {
+			"charge": 1,
+			"contact": 1,
+			"distance": 1,
+			"gravity": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Fly",
+		"num": 19,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Flies up on first turn, then strikes the next turn.",
+		"target": "any",
+		"type": "flying"
+	},
+	"focusenergy": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Cool",
+		"desc": "While the user remains active, its chance for a critical hit is quartered. Fails if the user already has the effect. If any Pokemon uses Haze, this effect ends.",
+		"effect": "decreases critical hit ratio in-game, but raises it in pokemon stadium.",
+		"flags": {
+			"snatch": 1
+		},
+		"inherit": true,
+		"name": "Focus Energy",
+		"num": 116,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Quarters the user's chance for a critical hit.",
+		"target": "self",
+		"type": "normal",
+		"volatileStatus": "focusenergy",
+		"zMove": {
+			"boost": {
+				"accuracy": 1
+			}
+		}
+	},
+	"furyattack": {
+		"accuracy": 85,
+		"basePower": 15,
+		"category": "Physical",
+		"contestType": "Cool",
+		"desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+		"effect": "attacks 2-5 times in one turn; if one of these attacks breaks a target's substitute, the target will take damage for the rest of the hits. this move has a 3/8 chance to hit twice, a 3/8 chance to hit three times, a 1/8 chance to hit four times and a 1/8 chance to hit five times.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"multihit": [
+			2,
+			5
+		],
+		"name": "Fury Attack",
+		"num": 31,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Hits 2-5 times in one turn.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"furyswipes": {
+		"accuracy": 80,
+		"basePower": 10,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+		"effect": "attacks 2-5 times in one turn; if one of these attacks breaks a target's substitute, the target will take damage for the rest of the hits. this move has a 3/8 chance to hit twice, a 3/8 chance to hit three times, a 1/8 chance to hit four times and a 1/8 chance to hit five times.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"maxMove": {
+			"basePower": 100
+		},
+		"multihit": [
+			2,
+			5
+		],
+		"name": "Fury Swipes",
+		"num": 154,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Hits 2-5 times in one turn.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"glare": {
+		"accuracy": 75,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Tough",
+		"desc": "Paralyzes the target.",
+		"effect": "paralyzes the target. this move works on ghost-type pokemon.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"ignoreImmunity": true,
+		"inherit": true,
+		"name": "Glare",
+		"num": 137,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Paralyzes the target.",
+		"status": "par",
+		"target": "normal",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"spd": 1
+			}
+		}
+	},
+	"growl": {
+		"accuracy": 100,
+		"basePower": "n/a",
+		"boosts": {
+			"atk": -1
+		},
+		"category": "Status",
+		"contestType": "Cute",
+		"desc": "Lowers the target's Attack by 1 stage.",
+		"effect": "lowers the target's attack by 1 stage.",
+		"flags": {
+			"authentic": 1,
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1,
+			"sound": 1
+		},
+		"name": "Growl",
+		"num": 45,
+		"pp": 40,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Lowers the foe(s) Attack by 1.",
+		"target": "allAdjacentFoes",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"def": 1
+			}
+		}
+	},
+	"growth": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"boosts": {
+			"spa": 1,
+			"spd": 1
+		},
+		"category": "Status",
+		"contestType": "Beautiful",
+		"desc": "Raises the user's Special by 1 stage.",
+		"effect": "raises the user's special by 1 stage.",
+		"flags": {
+			"snatch": 1
+		},
+		"inherit": true,
+		"name": "Growth",
+		"num": 74,
+		"pp": 40,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Raises the user's Special by 1.",
+		"target": "self",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"spa": 1
+			}
+		}
+	},
+	"guillotine": {
+		"accuracy": 30,
+		"basePower": "ko",
+		"category": "Physical",
+		"contestType": "Cool",
+		"desc": "Deals 65535 damage to the target. Fails if the target's Speed is greater than the user's.",
+		"effect": "the target faints; doesn't work on faster or higher-leveled pokemon.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"maxMove": {
+			"basePower": 130
+		},
+		"name": "Guillotine",
+		"num": 12,
+		"ohko": true,
+		"pp": 5,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Deals 65535 damage. Fails if target is faster.",
+		"target": "normal",
+		"type": "normal",
+		"zMove": {
+			"basePower": 180
+		}
+	},
+	"gust": {
+		"accuracy": 100,
+		"basePower": 40,
+		"category": "Special",
+		"contestType": "Clever",
+		"desc": "No additional effect.",
+		"effect": "damages the target.",
+		"flags": {
+			"distance": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Gust",
+		"num": 16,
+		"pp": 35,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "any",
+		"type": "normal"
+	},
+	"harden": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"boosts": {
+			"def": 1
+		},
+		"category": "Status",
+		"contestType": "Tough",
+		"desc": "Raises the user's Defense by 1 stage.",
+		"effect": "raises the user's defense by 1 stage.",
+		"flags": {
+			"snatch": 1
+		},
+		"name": "Harden",
+		"num": 106,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Raises the user's Defense by 1.",
+		"target": "self",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"def": 1
+			}
+		}
+	},
+	"haze": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Beautiful",
+		"desc": "Resets the stat stages of both Pokemon to 0 and removes stat reductions due to burn and paralysis. Resets Toxic counters to 0 and removes the effect of confusion, Disable, Focus Energy, Leech Seed, Light Screen, Mist, and Reflect from both Pokemon. Removes the opponent's major status condition.",
+		"effect": "eliminates any stat modifiers from all active pokemon. also removes leech seed, reflect and light screen from either pokemon and cures the opponent of any status conditions (including toxic). if the user of haze has toxic poisoning, it will be downgraded to regular poisoning.",
+		"flags": {
+			"authentic": 1
+		},
+		"inherit": true,
+		"name": "Haze",
+		"num": 114,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Resets all stat changes. Removes foe's status.",
+		"target": "self",
+		"type": "ice",
+		"zMove": {
+			"effect": "heal"
+		}
+	},
+	"headbutt": {
+		"accuracy": 100,
+		"basePower": 70,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Has a 30% chance to flinch the target.",
+		"effect": "has a ~30% chance to make the target flinch.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Headbutt",
+		"num": 29,
+		"pp": 15,
+		"priority": 0,
+		"secondary": {
+			"chance": 30,
+			"volatileStatus": "flinch"
+		},
+		"shortDesc": "30% chance to flinch the target.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"highjumpkick": {
+		"accuracy": 90,
+		"basePower": 85,
+		"category": "Physical",
+		"contestType": "Cool",
+		"desc": "If this attack misses the target, the user takes 1 HP of crash damage. If the user has a substitute, the crash damage is dealt to the target's substitute if it has one, otherwise no crash damage is dealt.",
+		"effect": "if this attack misses the target, the user receives 1 hp of damage.",
+		"flags": {
+			"contact": 1,
+			"gravity": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"hasCrashDamage": true,
+		"inherit": true,
+		"name": "High Jump Kick",
+		"num": 136,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "User takes 1 HP of damage if it misses.",
+		"target": "normal",
+		"type": "fighting"
+	},
+	"hornattack": {
+		"accuracy": 100,
+		"basePower": 65,
+		"category": "Physical",
+		"contestType": "Cool",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Horn Attack",
+		"num": 30,
+		"pp": 25,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"horndrill": {
+		"accuracy": 30,
+		"basePower": "ko",
+		"category": "Physical",
+		"contestType": "Cool",
+		"desc": "Deals 65535 damage to the target. Fails if the target's Speed is greater than the user's.",
+		"effect": "the target faints; doesn't work on faster or higher-leveled pokemon.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"maxMove": {
+			"basePower": 130
+		},
+		"name": "Horn Drill",
+		"num": 32,
+		"ohko": true,
+		"pp": 5,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Deals 65535 damage. Fails if target is faster.",
+		"target": "normal",
+		"type": "normal",
+		"zMove": {
+			"basePower": 180
+		}
+	},
+	"hydropump": {
+		"accuracy": 80,
+		"basePower": 120,
+		"category": "Special",
+		"contestType": "Beautiful",
+		"effect": "damages the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Hydro Pump",
+		"num": 56,
+		"pp": 5,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "water"
+	},
+	"hyperbeam": {
+		"accuracy": 90,
+		"basePower": 150,
+		"category": "Special",
+		"contestType": "Cool",
+		"desc": "If this move is successful, the user must recharge on the following turn and cannot select a move, unless the target or its substitute was knocked out by this move.",
+		"effect": "in stadium, the user becomes uncontrollable during its next turn. otherwise, the user attacks on turn one but it doesn't recharge on turn two if it kos the target, breaks its substitute or misses entirely.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"recharge": 1
+		},
+		"inherit": true,
+		"name": "Hyper Beam",
+		"num": 63,
+		"pp": 5,
+		"priority": 0,
+		"secondary": null,
+		"self": {
+			"volatileStatus": "mustrecharge"
+		},
+		"shortDesc": "Can't move next turn if target or sub is not KOed.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"hyperfang": {
+		"accuracy": 90,
+		"basePower": 80,
+		"category": "Physical",
+		"contestType": "Cool",
+		"desc": "Has a 10% chance to flinch the target.",
+		"effect": "has a ~10% chance to make the target flinch.",
+		"flags": {
+			"bite": 1,
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"isNonstandard": "Past",
+		"name": "Hyper Fang",
+		"num": 158,
+		"pp": 15,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"volatileStatus": "flinch"
+		},
+		"shortDesc": "10% chance to flinch the target.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"hypnosis": {
+		"accuracy": 60,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Clever",
+		"effect": "puts the target to sleep.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"name": "Hypnosis",
+		"num": 95,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Causes the target to fall asleep.",
+		"status": "slp",
+		"target": "normal",
+		"type": "psychic",
+		"zMove": {
+			"boost": {
+				"spe": 1
+			}
+		}
+	},
+	"icebeam": {
+		"accuracy": 100,
+		"basePower": 95,
+		"category": "Special",
+		"contestType": "Beautiful",
+		"desc": "Has a 10% chance to freeze the target.",
+		"effect": "has a ~10% chance to freeze the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Ice Beam",
+		"num": 58,
+		"pp": 10,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"status": "frz"
+		},
+		"shortDesc": "10% chance to freeze the target.",
+		"target": "normal",
+		"type": "ice"
+	},
+	"icepunch": {
+		"accuracy": 100,
+		"basePower": 75,
+		"category": "Physical",
+		"contestType": "Beautiful",
+		"desc": "Has a 10% chance to freeze the target.",
+		"effect": "has a ~10% chance to freeze the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1,
+			"punch": 1
+		},
+		"name": "Ice Punch",
+		"num": 8,
+		"pp": 15,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"status": "frz"
+		},
+		"shortDesc": "10% chance to freeze the target.",
+		"target": "normal",
+		"type": "ice"
+	},
+	"jumpkick": {
+		"accuracy": 95,
+		"basePower": 70,
+		"category": "Physical",
+		"contestType": "Cool",
+		"desc": "If this attack misses the target, the user takes 1 HP of crash damage. If the user has a substitute, the crash damage is dealt to the target's substitute if it has one, otherwise no crash damage is dealt.",
+		"effect": "if this attack misses the target, the user receives 1 hp of damage.",
+		"flags": {
+			"contact": 1,
+			"gravity": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"hasCrashDamage": true,
+		"inherit": true,
+		"isNonstandard": "Past",
+		"name": "Jump Kick",
+		"num": 26,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "User takes 1 HP of damage if it misses.",
+		"target": "normal",
+		"type": "fighting"
+	},
+	"karatechop": {
+		"accuracy": 100,
+		"basePower": 55,
+		"category": "Physical",
+		"contestType": "Tough",
+		"critRatio": 2,
+		"desc": "Has a higher chance for a critical hit.",
+		"effect": "has a high critical hit ratio.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"name": "Karate Chop",
+		"num": 2,
+		"pp": 25,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "High critical hit ratio.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"kinesis": {
+		"accuracy": 80,
+		"basePower": "n/a",
+		"boosts": {
+			"accuracy": -1
+		},
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "Lowers the target's accuracy by 1 stage.",
+		"effect": "lowers the target's accuracy by 1 stage.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"name": "Kinesis",
+		"num": 134,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Lowers the target's accuracy by 1.",
+		"target": "normal",
+		"type": "psychic",
+		"zMove": {
+			"boost": {
+				"evasion": 1
+			}
+		}
+	},
+	"leechlife": {
+		"accuracy": 100,
+		"basePower": 20,
+		"category": "Physical",
+		"contestType": "Clever",
+		"desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		"drain": [
+			1,
+			2
+		],
+		"effect": "restores the user's hp by 1/2 of the damage inflicted on the target.",
+		"flags": {
+			"contact": 1,
+			"heal": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Leech Life",
+		"num": 141,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "User recovers 50% of the damage dealt.",
+		"target": "normal",
+		"type": "bug"
+	},
+	"leechseed": {
+		"accuracy": 90,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "At the end of each of the target's turns, The Pokemon at the user's position steals 1/16 of the target's maximum HP, rounded down and multiplied by the target's current Toxic counter if it has one, even if the target currently has less than that amount of HP remaining. If the target switches out or any Pokemon uses Haze, this effect ends. Grass-type Pokemon are immune to this move.",
+		"effect": "the user steals 1/16 of the target's max hp (or more if used in conjunction with toxic) until either pokemon uses haze or the target is switched out or ko'ed; does not work on grass-type pokemon, but will work against pokemon behind substitutes.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"inherit": true,
+		"name": "Leech Seed",
+		"num": 73,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "1/8 of target's HP is restored to user every turn.",
+		"target": "normal",
+		"type": "grass",
+		"volatileStatus": "leechseed",
+		"zMove": {
+			"effect": "clearnegativeboost"
+		}
+	},
+	"leer": {
+		"accuracy": 100,
+		"basePower": "n/a",
+		"boosts": {
+			"def": -1
+		},
+		"category": "Status",
+		"contestType": "Cool",
+		"desc": "Lowers the target's Defense by 1 stage.",
+		"effect": "lowers the target's defense by 1 stage.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"name": "Leer",
+		"num": 43,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Lowers the foe(s) Defense by 1.",
+		"target": "allAdjacentFoes",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"atk": 1
+			}
+		}
+	},
+	"lick": {
+		"accuracy": 100,
+		"basePower": 20,
+		"category": "Physical",
+		"contestType": "Cute",
+		"desc": "Has a 30% chance to paralyze the target.",
+		"effect": "has a ~30% chance to paralyze the target. this move fails against psychic-type pokemon.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Lick",
+		"num": 122,
+		"pp": 30,
+		"priority": 0,
+		"secondary": {
+			"chance": 30,
+			"status": "par"
+		},
+		"shortDesc": "30% chance to paralyze the target.",
+		"target": "normal",
+		"type": "ghost"
+	},
+	"lightscreen": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Beautiful",
+		"desc": "While the user remains active, its Special is doubled when taking damage. Critical hits ignore this effect. If any Pokemon uses Haze, this effect ends.",
+		"effect": "the user receives 1/2 damage from special attacks until it switches out or either pokemon uses haze.",
+		"flags": {},
+		"name": "Light Screen",
+		"num": 113,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "While active, user's Special is 2x when damaged.",
+		"sideCondition": "lightscreen",
+		"target": "self",
+		"type": "psychic",
+		"volatileStatus": "lightscreen",
+		"zMove": {
+			"boost": {
+				"spd": 1
+			}
+		}
+	},
+	"lovelykiss": {
+		"accuracy": 75,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Beautiful",
+		"effect": "puts the target to sleep.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"isNonstandard": "Past",
+		"name": "Lovely Kiss",
+		"num": 142,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Causes the target to fall asleep.",
+		"status": "slp",
+		"target": "normal",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"spe": 1
+			}
+		}
+	},
+	"lowkick": {
+		"accuracy": 90,
+		"basePower": 50,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "This move's power is 20 if the target weighs less than 10 kg, 40 if less than 25 kg, 60 if less than 50 kg, 80 if less than 100 kg, 100 if less than 200 kg, and 120 if greater than or equal to 200 kg.",
+		"effect": "has a ~30% chance to make the target flinch.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Low Kick",
+		"num": 67,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "More power the heavier the target.",
+		"target": "normal",
+		"type": "fighting",
+		"zMove": {
+			"basePower": 160
+		}
+	},
+	"meditate": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"boosts": {
+			"atk": 1
+		},
+		"category": "Status",
+		"contestType": "Beautiful",
+		"desc": "Raises the user's Attack by 1 stage.",
+		"effect": "raises the user's attack by 1 stage.",
+		"flags": {
+			"snatch": 1
+		},
+		"isNonstandard": "Past",
+		"name": "Meditate",
+		"num": 96,
+		"pp": 40,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Raises the user's Attack by 1.",
+		"target": "self",
+		"type": "psychic",
+		"zMove": {
+			"boost": {
+				"atk": 1
+			}
+		}
+	},
+	"megadrain": {
+		"accuracy": 100,
+		"basePower": 40,
+		"category": "Special",
+		"contestType": "Clever",
+		"desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		"drain": [
+			1,
+			2
+		],
+		"effect": "restores the user's hp by 1/2 of the damage inflicted on the target.",
+		"flags": {
+			"heal": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Mega Drain",
+		"num": 72,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "User recovers 50% of the damage dealt.",
+		"target": "normal",
+		"type": "grass",
+		"zMove": {
+			"basePower": 120
+		}
+	},
+	"megakick": {
+		"accuracy": 75,
+		"basePower": 120,
+		"category": "Physical",
+		"contestType": "Cool",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Mega Kick",
+		"num": 25,
+		"pp": 5,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"megapunch": {
+		"accuracy": 85,
+		"basePower": 80,
+		"category": "Physical",
+		"contestType": "Tough",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1,
+			"punch": 1
+		},
+		"name": "Mega Punch",
+		"num": 5,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"metronome": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Cute",
+		"desc": "A random move is selected for use, other than Metronome or Struggle.",
+		"effect": "the user performs a randomly selected move; almost any move in the game could be picked. metronome cannot generate itself, struggle or any move that the user already knows.",
+		"flags": {},
+		"inherit": true,
+		"name": "Metronome",
+		"noMetronome": [
+			"Metronome",
+			"Struggle"
+		],
+		"num": 118,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Picks a random move.",
+		"target": "self",
+		"type": "normal"
+	},
+	"mimic": {
+		"accuracy": 100,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Cute",
+		"desc": "While the user remains active, this move is replaced by a random move known by the target, even if the user already knows that move. The copied move keeps the remaining PP for this move, regardless of the copied move's maximum PP. Whenever one PP is used for a copied move, one PP is used for this move.",
+		"effect": "this move is temporarily replaced by one of the target's moves; after one pp is subtracted to use this move, the replacement move will retain mimic's remaining pp. the user can select any of the target's moves to copy until the end of the battle or until the user switches out. there are no move restrictions on mimic other than itself and struggle. however, in a link battle, mimic will copy one of the target's attacks randomly.",
+		"flags": {
+			"authentic": 1,
+			"mystery": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Mimic",
+		"num": 102,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Random move known by the target replaces this.",
+		"target": "normal",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"accuracy": 1
+			}
+		}
+	},
+	"minimize": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"boosts": {
+			"evasion": 2
+		},
+		"category": "Status",
+		"contestType": "Cute",
+		"desc": "Raises the user's evasiveness by 1 stage.",
+		"effect": "raises the user's evasion by 1 stage.",
+		"flags": {
+			"snatch": 1
+		},
+		"inherit": true,
+		"name": "Minimize",
+		"num": 107,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Raises the user's evasiveness by 2.",
+		"target": "self",
+		"type": "normal",
+		"volatileStatus": "minimize",
+		"zMove": {
+			"effect": "clearnegativeboost"
+		}
+	},
+	"mirrormove": {
+		"accuracy": "na",
+		"basePower": "copy",
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "The user uses the last move used by the target. Fails if the target has not made a move, or if the last move used was Mirror Move.",
+		"effect": "the user performs the last move executed by its target; if applicable, an attack's damage is calculated with the user's stats, level and type(s). this moves fails if the target has not yet used a move. mirror move also cannot copy itself.",
+		"flags": {},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"name": "Mirror Move",
+		"num": 119,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "User uses the target's last used move against it.",
+		"target": "normal",
+		"type": "flying",
+		"zMove": {
+			"boost": {
+				"atk": 2
+			}
+		}
+	},
+	"mist": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Beautiful",
+		"desc": "While the user remains active, it is protected from having its stat stages lowered by other Pokemon, unless caused by the secondary effect of a move. Fails if the user already has the effect. If any Pokemon uses Haze, this effect ends.",
+		"effect": "protects the user from negative stat modifiers caused by other pokemon until it switches out. the user's accuracy and evasion stats are also protected. moves that cause negative stat modifiers as a secondary effect, such as psychic, still deal their regular damage.",
+		"flags": {
+			"snatch": 1
+		},
+		"inherit": true,
+		"name": "Mist",
+		"num": 54,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "For 5 turns, protects user's party from stat drops.",
+		"sideCondition": "mist",
+		"target": "allySide",
+		"type": "ice",
+		"zMove": {
+			"effect": "heal"
+		}
+	},
+	"nightshade": {
+		"accuracy": 100,
+		"basePower": "var dmg",
+		"category": "Special",
+		"contestType": "Clever",
+		"damage": "level",
+		"desc": "Deals damage to the target equal to the user's level. This move ignores type immunity.",
+		"effect": "does damage equal to user's level. this move hits normal-type pokemon.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"ignoreImmunity": true,
+		"inherit": true,
+		"name": "Night Shade",
+		"num": 101,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Damage = user's level. Can hit Normal types.",
+		"target": "normal",
+		"type": "ghost"
+	},
+	"payday": {
+		"accuracy": 100,
+		"basePower": 40,
+		"category": "Physical",
+		"contestType": "Clever",
+		"desc": "No additional effect.",
+		"effect": "the player picks up extra money after in-game battles; the money received is equal to: [user's level * 2 * number of times pay day is used]. the player does not lose money if the opponent uses pay day but the player wins the battle.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Pay Day",
+		"num": 6,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Scatters coins.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"peck": {
+		"accuracy": 100,
+		"basePower": 35,
+		"category": "Physical",
+		"contestType": "Cool",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"distance": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Peck",
+		"num": 64,
+		"pp": 35,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "any",
+		"type": "flying"
+	},
+	"petaldance": {
+		"accuracy": 100,
+		"basePower": 70,
+		"category": "Special",
+		"contestType": "Beautiful",
+		"desc": "Whether or not this move is successful, the user spends three or four turns locked into this move and becomes confused immediately after its move on the last turn of the effect, even if it is already confused. If the user is prevented from moving, the effect ends without causing confusion. During the effect, this move's accuracy is overwritten every turn with the current calculated accuracy including stat stage changes, but not to less than 1/256 or more than 255/256.",
+		"effect": "the user attacks uncontrollably for 2-3 turns and then gets confused.",
+		"flags": {
+			"contact": 1,
+			"dance": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Petal Dance",
+		"num": 80,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"self": {
+			"volatileStatus": "lockedmove"
+		},
+		"shortDesc": "Lasts 3-4 turns. Confuses the user afterwards.",
+		"target": "randomNormal",
+		"type": "grass"
+	},
+	"pinmissile": {
+		"accuracy": 85,
+		"basePower": 14,
+		"category": "Physical",
+		"contestType": "Cool",
+		"desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+		"effect": "attacks 2-5 times in one turn; if one of these attacks breaks a target's substitute, the target will take damage for the rest of the hits. this move has a 3/8 chance to hit twice, a 3/8 chance to hit three times, a 1/8 chance to hit four times and a 1/8 chance to hit five times.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"maxMove": {
+			"basePower": 130
+		},
+		"multihit": [
+			2,
+			5
+		],
+		"name": "Pin Missile",
+		"num": 42,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Hits 2-5 times in one turn.",
+		"target": "normal",
+		"type": "bug",
+		"zMove": {
+			"basePower": 140
+		}
+	},
+	"poisongas": {
+		"accuracy": 55,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "Poisons the target.",
+		"effect": "poisons the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"name": "Poison Gas",
+		"num": 139,
+		"pp": 40,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Poisons the foe(s).",
+		"status": "psn",
+		"target": "allAdjacentFoes",
+		"type": "poison",
+		"zMove": {
+			"boost": {
+				"def": 1
+			}
+		}
+	},
+	"poisonpowder": {
+		"accuracy": 75,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "Poisons the target.",
+		"effect": "poisons the target.",
+		"flags": {
+			"mirror": 1,
+			"powder": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"name": "Poison Powder",
+		"num": 77,
+		"pp": 35,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Poisons the target.",
+		"status": "psn",
+		"target": "normal",
+		"type": "poison",
+		"zMove": {
+			"boost": {
+				"def": 1
+			}
+		}
+	},
+	"poisonsting": {
+		"accuracy": 100,
+		"basePower": 15,
+		"category": "Physical",
+		"contestType": "Clever",
+		"desc": "Has a 20% chance to poison the target.",
+		"effect": "has a ~20% chance to poison the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Poison Sting",
+		"num": 40,
+		"pp": 35,
+		"priority": 0,
+		"secondary": {
+			"chance": 20,
+			"status": "psn"
+		},
+		"shortDesc": "20% chance to poison the target.",
+		"target": "normal",
+		"type": "poison"
+	},
+	"pound": {
+		"accuracy": 100,
+		"basePower": 40,
+		"category": "Physical",
+		"contestType": "Tough",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Pound",
+		"num": 1,
+		"pp": 35,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"psybeam": {
+		"accuracy": 100,
+		"basePower": 65,
+		"category": "Special",
+		"contestType": "Beautiful",
+		"desc": "Has a 10% chance to confuse the target.",
+		"effect": "has a ~10% chance to confuse the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Psybeam",
+		"num": 60,
+		"pp": 20,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"volatileStatus": "confusion"
+		},
+		"shortDesc": "10% chance to confuse the target.",
+		"target": "normal",
+		"type": "psychic"
+	},
+	"psychic": {
+		"accuracy": 100,
+		"basePower": 90,
+		"category": "Special",
+		"contestType": "Clever",
+		"desc": "Has a 33% chance to lower the target's Special by 1 stage.",
+		"effect": "has a ~30% chance to lower the target's special by 1 stage.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Psychic",
+		"num": 94,
+		"pp": 10,
+		"priority": 0,
+		"secondary": {
+			"boosts": {
+				"spa": -1,
+				"spd": -1
+			},
+			"chance": 33
+		},
+		"shortDesc": "33% chance to lower the target's Special by 1.",
+		"target": "normal",
+		"type": "psychic"
+	},
+	"psywave": {
+		"accuracy": 80,
+		"basePower": "var dmg",
+		"category": "Special",
+		"contestType": "Clever",
+		"desc": "Deals damage to the target equal to (user's level) * (X + 50) / 100, where X is a random number from 0 to 100, rounded down, but not less than 1 HP.",
+		"effect": "randomly inflicts set damage between a minimum of 1 hp and a maximum of [1.5x the user's level] hp.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"name": "Psywave",
+		"num": 149,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Random damage equal to 0.5x-1.5x user's level.",
+		"target": "normal",
+		"type": "psychic"
+	},
+	"quickattack": {
+		"accuracy": 100,
+		"basePower": 40,
+		"category": "Physical",
+		"contestType": "Cool",
+		"desc": "No additional effect.",
+		"effect": "usually goes first.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Quick Attack",
+		"num": 98,
+		"pp": 30,
+		"priority": 1,
+		"secondary": null,
+		"shortDesc": "Usually goes first.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"rage": {
+		"accuracy": 100,
+		"basePower": 20,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Once this move is successfully used, the user automatically uses this move every turn and can no longer switch out. During the effect, the user's Attack is raised by 1 stage every time it is hit by the opposing Pokemon, and this move's accuracy is overwritten every turn with the current calculated accuracy including stat stage changes, but not to less than 1/256 or more than 255/256.",
+		"effect": "the user attacks uncontrollably until it faints or its target faints. during this time, the user's attack increases by 1 stage for each time it is hit by the target. if this move misses, the user continues to attack but has only a 1/256 chance to land a hit.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"name": "Rage",
+		"num": 99,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"self": {
+			"volatileStatus": "rage"
+		},
+		"shortDesc": "Lasts forever. Raises user's Attack by 1 when hit.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"razorleaf": {
+		"accuracy": 95,
+		"basePower": 55,
+		"category": "Physical",
+		"contestType": "Cool",
+		"critRatio": 2,
+		"desc": "Has a higher chance for a critical hit.",
+		"effect": "has a high critical hit ratio.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Razor Leaf",
+		"num": 75,
+		"pp": 25,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "High critical hit ratio. Hits adjacent foes.",
+		"target": "normal",
+		"type": "grass"
+	},
+	"razorwind": {
+		"accuracy": 75,
+		"basePower": 80,
+		"category": "Special",
+		"contestType": "Cool",
+		"critRatio": 1,
+		"desc": "This attack charges on the first turn and executes on the second.",
+		"effect": "the user prepares on turn one, becoming uncontrollable, and then attacks on turn two.",
+		"flags": {
+			"charge": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"name": "Razor Wind",
+		"num": 13,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Charges turn 1. Hits turn 2.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"recover": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "The user restores 1/2 of its maximum HP, rounded down. Fails if (user's maximum HP - user's current HP + 1) is divisible by 256.",
+		"effect": "restores 1/2 of the user's max hp. however, this move fails if the user's current hp is 511 or 255 hp below its value at full health.",
+		"flags": {
+			"heal": 1,
+			"snatch": 1
+		},
+		"heal": null,
+		"inherit": true,
+		"name": "Recover",
+		"num": 105,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Heals the user by 50% of its max HP.",
+		"target": "self",
+		"type": "normal",
+		"zMove": {
+			"effect": "clearnegativeboost"
+		}
+	},
+	"reflect": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "While the user remains active, its Defense is doubled when taking damage. Critical hits ignore this protection. This effect can be removed by Haze.",
+		"effect": "the user receives 1/2 damage from physical attacks until it switches out or either pokemon uses haze.",
+		"flags": {},
+		"name": "Reflect",
+		"num": 115,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "While active, the user's Defense is doubled.",
+		"sideCondition": "reflect",
+		"target": "self",
+		"type": "psychic",
+		"volatileStatus": "reflect",
+		"zMove": {
+			"boost": {
+				"def": 1
+			}
+		}
+	},
+	"rest": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Cute",
+		"desc": "The user falls asleep for the next two turns and restores all of its HP, curing itself of any major status condition in the process. This does not remove the user's stat penalty for burn or paralysis. Fails if the user has full HP.",
+		"effect": "the user is cured of status effects (and confusion), and recovers full hp, but falls asleep for 2 turns (and then uses a third turn to wake up). however, this move fails if the user's current hp is 511 or 255 hp below its value at full health.",
+		"flags": {
+			"heal": 1,
+			"snatch": 1
+		},
+		"inherit": true,
+		"name": "Rest",
+		"num": 156,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "User sleeps 2 turns and restores HP and status.",
+		"target": "self",
+		"type": "psychic",
+		"zMove": {
+			"effect": "clearnegativeboost"
+		}
+	},
+	"roar": {
+		"accuracy": 100,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Cool",
+		"desc": "No competitive use.",
+		"effect": "escapes from wild battles; fails automatically in trainer and link battles.",
+		"flags": {
+			"authentic": 1,
+			"mirror": 1,
+			"mystery": 1,
+			"reflectable": 1,
+			"sound": 1
+		},
+		"forceSwitch": false,
+		"inherit": true,
+		"name": "Roar",
+		"num": 46,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No competitive use.",
+		"target": "normal",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"def": 1
+			}
+		}
+	},
+	"rockslide": {
+		"accuracy": 90,
+		"basePower": 75,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "No additional effect.",
+		"effect": "damages the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Rock Slide",
+		"num": 157,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "rock"
+	},
+	"rockthrow": {
+		"accuracy": 65,
+		"basePower": 50,
+		"category": "Physical",
+		"contestType": "Tough",
+		"effect": "damages the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Rock Throw",
+		"num": 88,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "rock"
+	},
+	"rollingkick": {
+		"accuracy": 85,
+		"basePower": 60,
+		"category": "Physical",
+		"contestType": "Cool",
+		"desc": "Has a 30% chance to flinch the target.",
+		"effect": "has a ~30% chance to make the target flinch.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"isNonstandard": "Past",
+		"name": "Rolling Kick",
+		"num": 27,
+		"pp": 15,
+		"priority": 0,
+		"secondary": {
+			"chance": 30,
+			"volatileStatus": "flinch"
+		},
+		"shortDesc": "30% chance to flinch the target.",
+		"target": "normal",
+		"type": "fighting"
+	},
+	"sandattack": {
+		"accuracy": 100,
+		"basePower": "n/a",
+		"boosts": {
+			"accuracy": -1
+		},
+		"category": "Status",
+		"contestType": "Cute",
+		"desc": "Lowers the target's accuracy by 1 stage.",
+		"effect": "lowers the target's accuracy by 1 stage.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"ignoreImmunity": true,
+		"inherit": true,
+		"name": "Sand Attack",
+		"num": 28,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Lowers the target's accuracy by 1.",
+		"target": "normal",
+		"type": "ground",
+		"zMove": {
+			"boost": {
+				"evasion": 1
+			}
+		}
+	},
+	"scratch": {
+		"accuracy": 100,
+		"basePower": 40,
+		"category": "Physical",
+		"contestType": "Tough",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Scratch",
+		"num": 10,
+		"pp": 35,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"screech": {
+		"accuracy": 85,
+		"basePower": "n/a",
+		"boosts": {
+			"def": -2
+		},
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "Lowers the target's Defense by 2 stages.",
+		"effect": "lowers the target's defense by 2 stages.",
+		"flags": {
+			"authentic": 1,
+			"mirror": 1,
+			"mystery": 1,
+			"protect": 1,
+			"reflectable": 1,
+			"sound": 1
+		},
+		"name": "Screech",
+		"num": 103,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Lowers the target's Defense by 2.",
+		"target": "normal",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"atk": 1
+			}
+		}
+	},
+	"seismictoss": {
+		"accuracy": 100,
+		"basePower": "var dmg",
+		"category": "Physical",
+		"contestType": "Tough",
+		"damage": "level",
+		"desc": "Deals damage to the target equal to the user's level. This move ignores type immunity.",
+		"effect": "does damage equal to user's level. hits ghost-type pokemon.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"nonsky": 1,
+			"protect": 1
+		},
+		"ignoreImmunity": true,
+		"inherit": true,
+		"maxMove": {
+			"basePower": 75
+		},
+		"name": "Seismic Toss",
+		"num": 69,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Damage = user's level. Can hit Ghost types.",
+		"target": "normal",
+		"type": "fighting"
+	},
+	"selfdestruct": {
+		"accuracy": 100,
+		"basePower": 130,
+		"category": "Physical",
+		"contestType": "Beautiful",
+		"desc": "The user faints after using this move, unless the target's substitute was broken by the damage. The target's Defense is halved during damage calculation.",
+		"effect": "the defense stat of other pokemon is halved against this attack, essentially doubling the move's base power; causes the user to faint.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Self-Destruct",
+		"num": 120,
+		"pp": 5,
+		"priority": 0,
+		"secondary": null,
+		"selfdestruct": "always",
+		"shortDesc": "Hits adjacent Pokemon. The user faints.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"sharpen": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"boosts": {
+			"atk": 1
+		},
+		"category": "Status",
+		"contestType": "Cute",
+		"desc": "Raises the user's Attack by 1 stage.",
+		"effect": "raises the user's attack by 1 stage.",
+		"flags": {
+			"snatch": 1
+		},
+		"isNonstandard": "Past",
+		"name": "Sharpen",
+		"num": 159,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Raises the user's Attack by 1.",
+		"target": "self",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"atk": 1
+			}
+		}
+	},
+	"sing": {
+		"accuracy": 55,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Cute",
+		"effect": "puts the target to sleep.",
+		"flags": {
+			"authentic": 1,
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1,
+			"sound": 1
+		},
+		"name": "Sing",
+		"num": 47,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Causes the target to fall asleep.",
+		"status": "slp",
+		"target": "normal",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"spe": 1
+			}
+		}
+	},
+	"skullbash": {
+		"accuracy": 100,
+		"basePower": 100,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "This attack charges on the first turn and executes on the second.",
+		"effect": "the user prepares on turn one, becoming uncontrollable, and then attacks on turn two.",
+		"flags": {
+			"charge": 1,
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Skull Bash",
+		"num": 130,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Charges turn 1. Hits turn 2.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"skyattack": {
+		"accuracy": 90,
+		"basePower": 140,
+		"category": "Physical",
+		"contestType": "Cool",
+		"critRatio": 2,
+		"desc": "Has a 30% chance to flinch the target and a higher chance for a critical hit. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
+		"effect": "the user prepares on turn one, becoming uncontrollable, and then attacks on turn two.",
+		"flags": {
+			"charge": 1,
+			"distance": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Sky Attack",
+		"num": 143,
+		"pp": 5,
+		"priority": 0,
+		"secondary": {
+			"chance": 30,
+			"volatileStatus": "flinch"
+		},
+		"shortDesc": "Charges, then hits turn 2. 30% flinch. High crit.",
+		"target": "any",
+		"type": "flying"
+	},
+	"slam": {
+		"accuracy": 75,
+		"basePower": 80,
+		"category": "Physical",
+		"contestType": "Tough",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"nonsky": 1,
+			"protect": 1
+		},
+		"name": "Slam",
+		"num": 21,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"slash": {
+		"accuracy": 100,
+		"basePower": 70,
+		"category": "Physical",
+		"contestType": "Cool",
+		"critRatio": 2,
+		"desc": "Has a higher chance for a critical hit.",
+		"effect": "has a high critical hit ratio.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Slash",
+		"num": 163,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "High critical hit ratio.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"sleeppowder": {
+		"accuracy": 75,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Clever",
+		"effect": "puts the target to sleep.",
+		"flags": {
+			"mirror": 1,
+			"powder": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"name": "Sleep Powder",
+		"num": 79,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Causes the target to fall asleep.",
+		"status": "slp",
+		"target": "normal",
+		"type": "grass",
+		"zMove": {
+			"boost": {
+				"spe": 1
+			}
+		}
+	},
+	"sludge": {
+		"accuracy": 100,
+		"basePower": 65,
+		"category": "Special",
+		"contestType": "Tough",
+		"desc": "Has a 40% chance to poison the target.",
+		"effect": "has a ~30% chance to poison the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Sludge",
+		"num": 124,
+		"pp": 20,
+		"priority": 0,
+		"secondary": {
+			"chance": 30,
+			"status": "psn"
+		},
+		"shortDesc": "40% chance to poison the target.",
+		"target": "normal",
+		"type": "poison"
+	},
+	"smog": {
+		"accuracy": 100,
+		"basePower": 20,
+		"category": "Special",
+		"contestType": "Tough",
+		"desc": "Has a 40% chance to poison the target.",
+		"effect": "has a ~30% chance to poison the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Smog",
+		"num": 123,
+		"pp": 20,
+		"priority": 0,
+		"secondary": {
+			"chance": 40,
+			"status": "psn"
+		},
+		"shortDesc": "40% chance to poison the target.",
+		"target": "normal",
+		"type": "poison"
+	},
+	"smokescreen": {
+		"accuracy": 100,
+		"basePower": "n/a",
+		"boosts": {
+			"accuracy": -1
+		},
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "Lowers the target's accuracy by 1 stage.",
+		"effect": "lowers the target's accuracy by 1 stage.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"name": "Smokescreen",
+		"num": 108,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Lowers the target's accuracy by 1.",
+		"target": "normal",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"evasion": 1
+			}
+		}
+	},
+	"softboiled": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Cute",
+		"desc": "The user restores 1/2 of its maximum HP, rounded down. Fails if (user's maximum HP - user's current HP + 1) is divisible by 256.",
+		"effect": "restores 1/2 of the user's max hp. however, this move fails if the user's current hp is 511 or 255 hp below its value at full health.",
+		"flags": {
+			"heal": 1,
+			"snatch": 1
+		},
+		"heal": null,
+		"inherit": true,
+		"name": "Soft-Boiled",
+		"num": 135,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Heals the user by 50% of its max HP.",
+		"target": "self",
+		"type": "normal",
+		"zMove": {
+			"effect": "clearnegativeboost"
+		}
+	},
+	"solarbeam": {
+		"accuracy": 100,
+		"basePower": 120,
+		"category": "Special",
+		"contestType": "Cool",
+		"desc": "This attack charges on the first turn and executes on the second.",
+		"effect": "the user prepares on turn one, becoming uncontrollable, and then attacks on turn two.",
+		"flags": {
+			"charge": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Solar Beam",
+		"num": 76,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Charges turn 1. Hits turn 2.",
+		"target": "normal",
+		"type": "grass"
+	},
+	"sonicboom": {
+		"accuracy": 90,
+		"basePower": "set",
+		"category": "Special",
+		"contestType": "Cool",
+		"damage": 20,
+		"desc": "Deals 20 HP of damage to the target. This move ignores type immunity.",
+		"effect": "always deals 20 points of damage.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"name": "Sonic Boom",
+		"num": 49,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Always does 20 HP of damage.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"spikecannon": {
+		"accuracy": 100,
+		"basePower": 20,
+		"category": "Physical",
+		"contestType": "Cool",
+		"desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+		"effect": "attacks 2-5 times in one turn; if one of these attacks breaks a target's substitute, the target will take damage for the rest of the hits. this move has a 3/8 chance to hit twice, a 3/8 chance to hit three times, a 1/8 chance to hit four times and a 1/8 chance to hit five times.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"maxMove": {
+			"basePower": 120
+		},
+		"multihit": [
+			2,
+			5
+		],
+		"name": "Spike Cannon",
+		"num": 131,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Hits 2-5 times in one turn.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"splash": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Cute",
+		"effect": "doesn't do anything (but we still love it).",
+		"flags": {
+			"gravity": 1
+		},
+		"name": "Splash",
+		"num": 150,
+		"pp": 40,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No competitive use.",
+		"target": "self",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"atk": 3
+			}
+		}
+	},
+	"spore": {
+		"accuracy": 100,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Beautiful",
+		"effect": "puts the target to sleep.",
+		"flags": {
+			"mirror": 1,
+			"powder": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"name": "Spore",
+		"num": 147,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Causes the target to fall asleep.",
+		"status": "slp",
+		"target": "normal",
+		"type": "grass",
+		"zMove": {
+			"effect": "clearnegativeboost"
+		}
+	},
+	"stomp": {
+		"accuracy": 100,
+		"basePower": 65,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Has a 30% chance to flinch the target.",
+		"effect": "has a ~30% chance to make the target flinch.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"nonsky": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Stomp",
+		"num": 23,
+		"pp": 20,
+		"priority": 0,
+		"secondary": {
+			"chance": 30,
+			"volatileStatus": "flinch"
+		},
+		"shortDesc": "30% chance to flinch the target.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"strength": {
+		"accuracy": 100,
+		"basePower": 80,
+		"category": "Physical",
+		"contestType": "Tough",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Strength",
+		"num": 70,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"stringshot": {
+		"accuracy": 95,
+		"basePower": "n/a",
+		"boosts": {
+			"spe": -2
+		},
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "Lowers the target's Speed by 2 stages.",
+		"effect": "lowers the target's speed by 1 stage.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"name": "String Shot",
+		"num": 81,
+		"pp": 40,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Lowers the foe(s) Speed by 2.",
+		"target": "allAdjacentFoes",
+		"type": "bug",
+		"zMove": {
+			"boost": {
+				"spe": 1
+			}
+		}
+	},
+	"struggle": {
+		"accuracy": 100,
+		"basePower": 50,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Deals Normal-type damage. If this move was successful, the user takes damage equal to 1/2 the HP lost by the target, rounded down, but not less than 1 HP. This move is automatically used if none of the user's known moves can be selected.",
+		"effect": "used automatically when all of the user's other moves have run out of pp or are otherwise inaccessible. the user receives 1/4 recoil damage. struggle is classified as a normal-type move, so it is resisted by rock-type pokemon and cannot hit ghost-type pokemon at all.",
+		"flags": {
+			"contact": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Struggle",
+		"noPPBoosts": true,
+		"noSketch": true,
+		"num": 165,
+		"pp": 1,
+		"priority": 0,
+		"recoil": [
+			1,
+			2
+		],
+		"secondary": null,
+		"shortDesc": "User loses 1/2 the HP lost by the target.",
+		"struggleRecoil": true,
+		"target": "randomNormal",
+		"type": "normal"
+	},
+	"stunspore": {
+		"accuracy": 75,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "Paralyzes the target.",
+		"effect": "paralyzes the target.",
+		"flags": {
+			"mirror": 1,
+			"powder": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"inherit": true,
+		"name": "Stun Spore",
+		"num": 78,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Paralyzes the target.",
+		"status": "par",
+		"target": "normal",
+		"type": "grass",
+		"zMove": {
+			"boost": {
+				"spd": 1
+			}
+		}
+	},
+	"submission": {
+		"accuracy": 80,
+		"basePower": 80,
+		"category": "Physical",
+		"contestType": "Cool",
+		"desc": "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",
+		"effect": "the user receives 1/4 recoil damage.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Submission",
+		"num": 66,
+		"pp": 20,
+		"priority": 0,
+		"recoil": [
+			1,
+			4
+		],
+		"secondary": null,
+		"shortDesc": "Has 1/4 recoil.",
+		"target": "normal",
+		"type": "fighting"
+	},
+	"substitute": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Cute",
+		"desc": "The user takes 1/4 of its maximum HP, rounded down, and puts it into a substitute to take its place in battle. The substitute has 1 HP plus the HP used to create it, and is removed once enough damage is inflicted on it or 255 damage is inflicted at once, or if the user switches out or faints. Until the substitute is broken, it receives damage from all attacks made by the opposing Pokemon and shields the user from status effects and stat stage changes caused by the opponent, unless the effect is Disable, Leech Seed, sleep, primary paralysis, or secondary confusion and the user's substitute did not break. The user still takes normal damage from status effects while behind its substitute, unless the effect is confusion damage, which is applied to the opposing Pokemon's substitute instead. If the substitute breaks during a multi-hit attack, the attack ends. Fails if the user does not have enough HP remaining to create a substitute, or if it already has a substitute. The user will create a substitute and then faint if its current HP is exactly 1/4 of its maximum HP.",
+		"effect": "the user takes one-fourth of its maximum hp to create a substitute; this move fails if the user does not have enough hp for this. until the substitute is broken, it receives damage from all attacks made by other pokemon. in-game, the user can still be inflicted with status effects and stat modifiers from other pokemon, but this is fixed in pokemon stadium. if a substitute breaks from a hit during a multistrike move such as fury attack, the user takes damage from the remaining strikes.",
+		"flags": {},
+		"name": "Substitute",
+		"num": 164,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "User takes 1/4 its max HP to put in a Substitute.",
+		"target": "self",
+		"type": "normal",
+		"volatileStatus": "substitute",
+		"zMove": {
+			"effect": "clearnegativeboost"
+		}
+	},
+	"superfang": {
+		"accuracy": 90,
+		"basePower": "var dmg",
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Deals damage to the target equal to half of its current HP, rounded down, but not less than 1 HP. This move ignores type immunity.",
+		"effect": "this move halves the target's current hp.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"ignoreImmunity": true,
+		"inherit": true,
+		"name": "Super Fang",
+		"num": 162,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Damage = 1/2 target's current HP. Hits Ghosts.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"supersonic": {
+		"accuracy": 55,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Clever",
+		"effect": "confuses the target.",
+		"flags": {
+			"authentic": 1,
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1,
+			"sound": 1
+		},
+		"name": "Supersonic",
+		"num": 48,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Causes the target to become confused.",
+		"target": "normal",
+		"type": "normal",
+		"volatileStatus": "confusion",
+		"zMove": {
+			"boost": {
+				"spe": 1
+			}
+		}
+	},
+	"surf": {
+		"accuracy": 100,
+		"basePower": 95,
+		"category": "Special",
+		"contestType": "Beautiful",
+		"desc": "Damage doubles if the target is using Dive.",
+		"effect": "damages the target.",
+		"flags": {
+			"mirror": 1,
+			"nonsky": 1,
+			"protect": 1
+		},
+		"name": "Surf",
+		"num": 57,
+		"pp": 15,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Hits adjacent Pokemon. Double damage on Dive.",
+		"target": "allAdjacent",
+		"type": "water"
+	},
+	"swift": {
+		"accuracy": 100,
+		"basePower": 60,
+		"category": "Special",
+		"contestType": "Cool",
+		"desc": "This move does not check accuracy and hits even if the target is using Dig or Fly.",
+		"effect": "ignores evasion and accuracy modifiers and will hit pokemon even if they are in the middle of fly or dig. has a 1-in-256 chance of missing.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Swift",
+		"num": 129,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Never misses, even against Dig and Fly.",
+		"target": "allAdjacentFoes",
+		"type": "normal"
+	},
+	"swordsdance": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"boosts": {
+			"atk": 2
+		},
+		"category": "Status",
+		"contestType": "Beautiful",
+		"desc": "Raises the user's Attack by 2 stages.",
+		"effect": "raises the user's attack by 2 stages.",
+		"flags": {
+			"dance": 1,
+			"snatch": 1
+		},
+		"name": "Swords Dance",
+		"num": 14,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Raises the user's Attack by 2.",
+		"target": "self",
+		"type": "normal",
+		"zMove": {
+			"effect": "clearnegativeboost"
+		}
+	},
+	"tackle": {
+		"accuracy": 95,
+		"basePower": 35,
+		"category": "Physical",
+		"contestType": "Tough",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Tackle",
+		"num": 33,
+		"pp": 35,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"tailwhip": {
+		"accuracy": 100,
+		"basePower": "n/a",
+		"boosts": {
+			"def": -1
+		},
+		"category": "Status",
+		"contestType": "Cute",
+		"desc": "Lowers the target's Defense by 1 stage.",
+		"effect": "lowers the target's defense by 1 stage.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"name": "Tail Whip",
+		"num": 39,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Lowers the foe(s) Defense by 1.",
+		"target": "allAdjacentFoes",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"atk": 1
+			}
+		}
+	},
+	"takedown": {
+		"accuracy": 85,
+		"basePower": 90,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",
+		"effect": "the user receives 1/4 recoil damage.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Take Down",
+		"num": 36,
+		"pp": 20,
+		"priority": 0,
+		"recoil": [
+			1,
+			4
+		],
+		"secondary": null,
+		"shortDesc": "Has 1/4 recoil.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"teleport": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Cool",
+		"desc": "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members.",
+		"effect": "escapes from wild battles; fails automatically in trainer and link battles.",
+		"flags": {},
+		"name": "Teleport",
+		"num": 100,
+		"onTryHit": true,
+		"pp": 20,
+		"priority": -6,
+		"secondary": null,
+		"selfSwitch": true,
+		"shortDesc": "User switches out.",
+		"target": "self",
+		"type": "psychic",
+		"zMove": {
+			"effect": "heal"
+		}
+	},
+	"thrash": {
+		"accuracy": 100,
+		"basePower": 90,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Whether or not this move is successful, the user spends three or four turns locked into this move and becomes confused immediately after its move on the last turn of the effect, even if it is already confused. If the user is prevented from moving, the effect ends without causing confusion. During the effect, this move's accuracy is overwritten every turn with the current calculated accuracy including stat stage changes, but not to less than 1/256 or more than 255/256.",
+		"effect": "the user attacks uncontrollably for 2-3 turns and then gets confused.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Thrash",
+		"num": 37,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"self": {
+			"volatileStatus": "lockedmove"
+		},
+		"shortDesc": "Lasts 3-4 turns. Confuses the user afterwards.",
+		"target": "randomNormal",
+		"type": "normal"
+	},
+	"thunder": {
+		"accuracy": 70,
+		"basePower": 120,
+		"category": "Special",
+		"contestType": "Cool",
+		"desc": "Has a 10% chance to paralyze the target.",
+		"effect": "has a ~10% chance to paralyze the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Thunder",
+		"num": 87,
+		"pp": 10,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"status": "par"
+		},
+		"shortDesc": "10% chance to paralyze the target.",
+		"target": "normal",
+		"type": "electric"
+	},
+	"thunderbolt": {
+		"accuracy": 100,
+		"basePower": 95,
+		"category": "Special",
+		"contestType": "Cool",
+		"desc": "Has a 10% chance to paralyze the target.",
+		"effect": "has a ~10% chance to paralyze the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Thunderbolt",
+		"num": 85,
+		"pp": 15,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"status": "par"
+		},
+		"shortDesc": "10% chance to paralyze the target.",
+		"target": "normal",
+		"type": "electric"
+	},
+	"thunderpunch": {
+		"accuracy": 100,
+		"basePower": 75,
+		"category": "Physical",
+		"contestType": "Cool",
+		"desc": "Has a 10% chance to paralyze the target.",
+		"effect": "has a ~10% chance to paralyze the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1,
+			"punch": 1
+		},
+		"name": "Thunder Punch",
+		"num": 9,
+		"pp": 15,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"status": "par"
+		},
+		"shortDesc": "10% chance to paralyze the target.",
+		"target": "normal",
+		"type": "electric"
+	},
+	"thundershock": {
+		"accuracy": 100,
+		"basePower": 40,
+		"category": "Special",
+		"contestType": "Cool",
+		"desc": "Has a 10% chance to paralyze the target.",
+		"effect": "has a ~10% chance to paralyze the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Thunder Shock",
+		"num": 84,
+		"pp": 30,
+		"priority": 0,
+		"secondary": {
+			"chance": 10,
+			"status": "par"
+		},
+		"shortDesc": "10% chance to paralyze the target.",
+		"target": "normal",
+		"type": "electric"
+	},
+	"thunderwave": {
+		"accuracy": 100,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Cool",
+		"desc": "Paralyzes the target. This move does not ignore type immunity.",
+		"effect": "paralyzes the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"ignoreImmunity": false,
+		"inherit": true,
+		"name": "Thunder Wave",
+		"num": 86,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Paralyzes the target.",
+		"status": "par",
+		"target": "normal",
+		"type": "electric",
+		"zMove": {
+			"boost": {
+				"spd": 1
+			}
+		}
+	},
+	"toxic": {
+		"accuracy": 85,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "Badly poisons the target. If a Poison-type Pokemon uses this move, the target cannot avoid the attack, even if the target is in the middle of a two-turn move.",
+		"effect": "the target is badly poisoned, with the damage caused by poison doubling after each turn. however, toxic poisoning will revert to normal poisoning if the poisoned pokemon is switched out or uses haze. damage caused by leech seed will also increase as toxic damage increases.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1,
+			"reflectable": 1
+		},
+		"name": "Toxic",
+		"num": 92,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Badly poisons the target. Poison types can't miss.",
+		"status": "tox",
+		"target": "normal",
+		"type": "poison",
+		"zMove": {
+			"boost": {
+				"def": 1
+			}
+		}
+	},
+	"transform": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "The user transforms into the target. The target's current stats, stat stages, types, moves, DVs, species, and sprite are copied. The user's level and HP remain the same and each copied move receives only 5 PP. This move can hit a target using Dig or Fly.",
+		"effect": "the user morphs into a near-exact copy of the target. stats, stat modifiers, type, moves and appearance are changed; the user's level and hp remain the same and each copied move receives only 5 pp.",
+		"flags": {
+			"mystery": 1
+		},
+		"inherit": true,
+		"name": "Transform",
+		"num": 144,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Copies target's stats, moves, types, and Ability.",
+		"target": "normal",
+		"type": "normal",
+		"zMove": {
+			"effect": "heal"
+		}
+	},
+	"triattack": {
+		"accuracy": 100,
+		"basePower": 80,
+		"category": "Special",
+		"contestType": "Beautiful",
+		"desc": "No additional effect.",
+		"effect": "damages the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Tri Attack",
+		"num": 161,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"twineedle": {
+		"accuracy": 100,
+		"basePower": 25,
+		"category": "Physical",
+		"contestType": "Cool",
+		"desc": "Hits twice, with the second hit having a 20% chance to poison the target. If the first hit breaks the target's substitute, the move ends.",
+		"effect": "strikes twice; if the first hit breaks the target's substitute, the real pokemon will take damage from the second hit. has a ~20% chance to poison the target .",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"isNonstandard": "Past",
+		"maxMove": {
+			"basePower": 100
+		},
+		"multihit": 2,
+		"name": "Twineedle",
+		"num": 41,
+		"pp": 20,
+		"priority": 0,
+		"secondary": {
+			"chance": 20,
+			"status": "psn"
+		},
+		"shortDesc": "Hits 2 times. Each hit has 20% chance to poison.",
+		"target": "normal",
+		"type": "bug"
+	},
+	"vinewhip": {
+		"accuracy": 100,
+		"basePower": 35,
+		"category": "Physical",
+		"contestType": "Cool",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Vine Whip",
+		"num": 22,
+		"pp": 10,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "grass"
+	},
+	"visegrip": {
+		"accuracy": 100,
+		"basePower": 55,
+		"category": "Physical",
+		"contestType": "Tough",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Vice Grip",
+		"num": 11,
+		"pp": 30,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "normal"
+	},
+	"waterfall": {
+		"accuracy": 100,
+		"basePower": 80,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "Has a 20% chance to flinch the target.",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Waterfall",
+		"num": 127,
+		"pp": 15,
+		"priority": 0,
+		"secondary": {
+			"chance": 20,
+			"volatileStatus": "flinch"
+		},
+		"shortDesc": "20% chance to flinch the target.",
+		"target": "normal",
+		"type": "water"
+	},
+	"watergun": {
+		"accuracy": 100,
+		"basePower": 40,
+		"category": "Special",
+		"contestType": "Cute",
+		"effect": "damages the target.",
+		"flags": {
+			"mirror": 1,
+			"protect": 1
+		},
+		"name": "Water Gun",
+		"num": 55,
+		"pp": 25,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "normal",
+		"type": "water"
+	},
+	"whirlwind": {
+		"accuracy": 100,
+		"basePower": "n/a",
+		"category": "Status",
+		"contestType": "Clever",
+		"desc": "No competitive use.",
+		"effect": "escapes from wild battles; fails automatically in trainer and link battles.",
+		"flags": {
+			"authentic": 1,
+			"mirror": 1,
+			"mystery": 1,
+			"reflectable": 1
+		},
+		"forceSwitch": false,
+		"inherit": true,
+		"name": "Whirlwind",
+		"num": 18,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No competitive use.",
+		"target": "normal",
+		"type": "normal",
+		"zMove": {
+			"boost": {
+				"spd": 1
+			}
+		}
+	},
+	"wingattack": {
+		"accuracy": 100,
+		"basePower": 35,
+		"category": "Physical",
+		"contestType": "Cool",
+		"effect": "damages the target.",
+		"flags": {
+			"contact": 1,
+			"distance": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"inherit": true,
+		"name": "Wing Attack",
+		"num": 17,
+		"pp": 35,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "No additional effect.",
+		"target": "any",
+		"type": "flying"
+	},
+	"withdraw": {
+		"accuracy": "na",
+		"basePower": "n/a",
+		"boosts": {
+			"def": 1
+		},
+		"category": "Status",
+		"contestType": "Cute",
+		"desc": "Raises the user's Defense by 1 stage.",
+		"effect": "raises the user's defense by 1 stage.",
+		"flags": {
+			"snatch": 1
+		},
+		"name": "Withdraw",
+		"num": 110,
+		"pp": 40,
+		"priority": 0,
+		"secondary": null,
+		"shortDesc": "Raises the user's Defense by 1.",
+		"target": "self",
+		"type": "water",
+		"zMove": {
+			"boost": {
+				"def": 1
+			}
+		}
+	},
+	"wrap": {
+		"accuracy": 85,
+		"basePower": 15,
+		"category": "Physical",
+		"contestType": "Tough",
+		"desc": "The user spends two to five turns using this move. Has a 3/8 chance to last two or three turns, and a 1/8 chance to last four or five turns. The damage calculated for the first turn is used for every other turn. The user cannot select a move and the target cannot execute a move during the effect, but both may switch out. If the user switches out, the target remains unable to execute a move during that turn. If the target switches out, the user uses this move again automatically, and if it had 0 PP at the time, it becomes 63. If the user or the target switch out, or the user is prevented from moving, the effect ends. This move can prevent the target from moving even if it has type immunity, but will not deal damage.",
+		"effect": "the user becomes uncontrollable and attacks for 2-5 consecutive turns; the target cannot make attacks of its own during this time, but it may switch out, use items or run away.",
+		"flags": {
+			"contact": 1,
+			"mirror": 1,
+			"protect": 1
+		},
+		"ignoreImmunity": true,
+		"inherit": true,
+		"name": "Wrap",
+		"num": 35,
+		"pp": 20,
+		"priority": 0,
+		"secondary": null,
+		"self": {
+			"volatileStatus": "partialtrappinglock"
+		},
+		"shortDesc": "Prevents the target from moving for 2-5 turns.",
+		"target": "normal",
+		"type": "normal",
+		"volatileStatus": "partiallytrapped"
+	}
+}

@@ -5,7 +5,7 @@ import trainer
 import pokemon
 
 global g1moves
-with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/gen1moves.json") as pdex:
+with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/g1movevals.json") as pdex:
 	g1moves = json.load(pdex)
 
 global allmoves
@@ -15,15 +15,15 @@ with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/moves.json") as 
 class Move():
 
 	def __init__(self, movename):
-		self.name = movename
-		if "type" in g1moves[movename]:
-			self.type = g1moves[movename]["type"]
-		else:
-			self.type = allmoves[movename]["type"]
-		self.accuracy = allmoves[movename]["accuracy"]
-		self.basePower = allmoves[movename]["basePower"]
 		physicals = ["Normal", "Fighting", "Flying", "Ground", "Rock", "Bug", "Ghost", "Poison"]
 		specials = ["Water", "Grass", "Fire", "Ice", "Electric", "Psychic", "Dragon"]
+
+		self.name = movename
+		self.type = g1moves[movename]["type"]
+		self.accuracy = g1moves[movename]["accuracy"]
+		self.basePower = g1moves[movename]["basePower"]
+		self.pp = g1moves[movename]["pp"] * (8/5)
+		
 		if allmoves[movename]["category"] == "status":
 			self.category = "status"
 		elif self.type in physicals:
@@ -36,7 +36,11 @@ class Move():
 			self.statusp = 1
 		elif "secondary" in allmoves[movename] and allmoves[movename]["secondary"] != None:
 			self.status = allmoves[movename]["secondary"]["status"]
-			self.statusp = self.status = allmoves[movename]["secondary"]["chance"]/100
+			self.statusp = self.status = allmoves[movename]["secondary"]["chance"]
+		
+
+
+
 
 
 
