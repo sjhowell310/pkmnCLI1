@@ -2,10 +2,7 @@ import pokemon
 import json
 import math
 import string
-
-global dex
-with open("data/dexwithmovesandtypes.json") as pdex:
-	dex = json.load(pdex)
+import moves
 
 class Trainer():
 
@@ -19,15 +16,17 @@ class Trainer():
 		
 
 	def chooseParty(self):
-		for keys in sorted(dex.keys()):
-			print(keys.capitalize())
-		out = []
-		for i in range(6):
-			pname = input("{name}, please enter your choice of pokemon #{number} for your party:\n(Generation I)\n".format(name = self.name, number=len(out)+1))
-			pname = pname.lower()
-			while(pname not in dex):
-				pname = input("Trainer, please enter your choice of pokemon #{number} for your party:\n(Generation I)\n".format(number=len(out)+1))
+		with open("data/dexwithmovesandtypes.json") as pdex:
+			dex = json.load(pdex)
+			for keys in sorted(dex.keys()):
+				print(keys.capitalize())
+			out = []
+			for i in range(6):
+				pname = input("{name}, please enter your choice of pokemon #{number} for your party:\n(Generation I)\n".format(name = self.name, number=len(out)+1))
 				pname = pname.lower()
-			out.append(pokemon.Pokemon(dex[pname]))
+				while(pname not in dex):
+					pname = input("Trainer, please enter your choice of pokemon #{number} for your party:\n(Generation I)\n".format(number=len(out)+1))
+					pname = pname.lower()
+				out.append(pokemon.Pokemon(dex[pname]))
 		return out
 

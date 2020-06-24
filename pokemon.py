@@ -1,6 +1,7 @@
 import random
 import math
 import moves
+import trainer
 
 class Pokemon():
 
@@ -17,7 +18,7 @@ class Pokemon():
 		self.ivs = self.calcIVs()
 		self.evs = self.calcEVs()
 		self.statHP , self.statAtk, self. statDef, self.statSpa, self.statSpe =  self.calcStats(self.ivs, self.evs)
-		self.movenames, self.moves = self.setMoves(poke)
+		self.moves = self.setMoves(poke)
 		self.HPlvl = 0
 		self.Atklvl = 0
 		self.Deflvl = 0
@@ -64,12 +65,12 @@ class Pokemon():
 				print(move)
 		else:
 			print("No learnset")
-			return ["struggle"], [moves.Move("struggle")]
+			return [moves.Move("struggle")]
 		for i in range(4):
 			if len(out) != len(poke["learnset"]):
 				movename = ""
 				while(movename not in poke["learnset"] or movename in names):
-					movename = input("Trainer, please enter your choice of move for {name})\n".format(name = self.name))
+					movename = input("{tname}, please enter your choice of move for {name})\n".format(tname = trainer.name, name = self.name))
 					movename = movename.lower()
 				print("You chose {move} as {pkmn}'s #{num} move!".format(move = movename.capitalize(), pkmn = self.name, num = len(out) + 1))
 				out.append(moves.Move(movename))
