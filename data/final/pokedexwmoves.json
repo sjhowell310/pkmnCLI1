@@ -9,6 +9,7 @@
 			"spe": 90
 		},
 		"heightm": 0.9,
+		"id": 63,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -52,6 +53,7 @@
 			"spe": 130
 		},
 		"heightm": 1.8,
+		"id": 142,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -94,6 +96,7 @@
 			"spe": 120
 		},
 		"heightm": 1.5,
+		"id": 65,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -144,6 +147,7 @@
 			"spe": 80
 		},
 		"heightm": 3.5,
+		"id": 24,
 		"inherit": true,
 		"learnset": {
 			"acid": "Acid",
@@ -188,6 +192,7 @@
 			"spe": 95
 		},
 		"heightm": 1.9,
+		"id": 59,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -228,6 +233,7 @@
 			"spe": 85
 		},
 		"heightm": 1.7,
+		"id": 144,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -271,6 +277,7 @@
 			"spe": 75
 		},
 		"heightm": 1,
+		"id": 15,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -312,6 +319,7 @@
 			"spe": 40
 		},
 		"heightm": 0.7,
+		"id": 69,
 		"inherit": true,
 		"learnset": {
 			"acid": "Acid",
@@ -355,6 +363,7 @@
 			"spe": 78
 		},
 		"heightm": 1.6,
+		"id": 9,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -407,6 +416,7 @@
 			"spe": 45
 		},
 		"heightm": 0.7,
+		"id": 1,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -450,6 +460,7 @@
 			"spe": 70
 		},
 		"heightm": 1.1,
+		"id": 12,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -497,6 +508,7 @@
 			"spe": 45
 		},
 		"heightm": 0.3,
+		"id": 10,
 		"inherit": true,
 		"learnset": {
 			"stringshot": "String Shot",
@@ -518,6 +530,7 @@
 			"spe": 50
 		},
 		"heightm": 1.1,
+		"id": 113,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -581,6 +594,7 @@
 			"spe": 100
 		},
 		"heightm": 1.7,
+		"id": 6,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -636,6 +650,7 @@
 			"spe": 65
 		},
 		"heightm": 0.6,
+		"id": 4,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -686,6 +701,7 @@
 			"spe": 80
 		},
 		"heightm": 1.1,
+		"id": 5,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -736,6 +752,7 @@
 			"spe": 60
 		},
 		"heightm": 1.3,
+		"id": 36,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -792,6 +809,7 @@
 			"spe": 35
 		},
 		"heightm": 0.6,
+		"id": 35,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -851,6 +869,7 @@
 			"spe": 70
 		},
 		"heightm": 1.5,
+		"id": 91,
 		"inherit": true,
 		"learnset": {
 			"aurorabeam": "Aurora Beam",
@@ -897,6 +916,7 @@
 			"spe": 35
 		},
 		"heightm": 0.4,
+		"id": 104,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -949,6 +969,7 @@
 			"spe": 70
 		},
 		"heightm": 1.7,
+		"id": 87,
 		"inherit": true,
 		"learnset": {
 			"aurorabeam": "Aurora Beam",
@@ -992,6 +1013,7 @@
 			"spe": 95
 		},
 		"heightm": 0.2,
+		"id": 50,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -1030,6 +1052,7 @@
 			"spe": 48
 		},
 		"heightm": 0.3,
+		"id": 132,
 		"inherit": true,
 		"learnset": {
 			"transform": "Transform"
@@ -1050,6 +1073,7 @@
 			"spe": 100
 		},
 		"heightm": 1.8,
+		"id": 85,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -1092,6 +1116,7 @@
 			"spe": 75
 		},
 		"heightm": 1.4,
+		"id": 84,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -1133,6 +1158,7 @@
 			"spe": 70
 		},
 		"heightm": 4,
+		"id": 148,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -1181,6 +1207,7 @@
 			"spe": 80
 		},
 		"heightm": 2.2,
+		"id": 149,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -1232,6 +1259,7 @@
 			"spe": 50
 		},
 		"heightm": 1.8,
+		"id": 147,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -1279,6 +1307,7 @@
 			"spe": 42
 		},
 		"heightm": 1,
+		"id": 96,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -1330,6 +1359,7 @@
 			"spe": 120
 		},
 		"heightm": 0.7,
+		"id": 51,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -1369,6 +1399,7 @@
 			"spe": 55
 		},
 		"heightm": 0.3,
+		"id": 133,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -1408,6 +1439,7 @@
 			"spe": 55
 		},
 		"heightm": 2,
+		"id": 23,
 		"inherit": true,
 		"learnset": {
 			"acid": "Acid",
@@ -1451,6 +1483,7 @@
 			"spe": 105
 		},
 		"heightm": 1.1,
+		"id": 125,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -1504,6 +1537,7 @@
 			"spe": 140
 		},
 		"heightm": 1.2,
+		"id": 101,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -1546,6 +1580,7 @@
 			"spe": 40
 		},
 		"heightm": 0.4,
+		"id": 102,
 		"inherit": true,
 		"learnset": {
 			"barrage": "Barrage",
@@ -1589,6 +1624,7 @@
 			"spe": 55
 		},
 		"heightm": 2,
+		"id": 103,
 		"inherit": true,
 		"learnset": {
 			"barrage": "Barrage",
@@ -1632,6 +1668,7 @@
 			"spe": 60
 		},
 		"heightm": 0.8,
+		"id": 83,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -1676,6 +1713,7 @@
 			"spe": 100
 		},
 		"heightm": 1.2,
+		"id": 22,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -1719,6 +1757,7 @@
 			"spe": 65
 		},
 		"heightm": 0.9,
+		"id": 136,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -1763,6 +1802,7 @@
 			"spe": 80
 		},
 		"heightm": 1.3,
+		"id": 92,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -1802,6 +1842,7 @@
 			"spe": 110
 		},
 		"heightm": 1.5,
+		"id": 94,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -1853,6 +1894,7 @@
 			"spe": 20
 		},
 		"heightm": 0.4,
+		"id": 74,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -1900,6 +1942,7 @@
 			"spe": 40
 		},
 		"heightm": 0.8,
+		"id": 44,
 		"inherit": true,
 		"learnset": {
 			"absorb": "Absorb",
@@ -1940,6 +1983,7 @@
 			"spe": 90
 		},
 		"heightm": 1.6,
+		"id": 42,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -1981,6 +2025,7 @@
 			"spe": 63
 		},
 		"heightm": 0.6,
+		"id": 118,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -2024,6 +2069,7 @@
 			"spe": 85
 		},
 		"heightm": 1.7,
+		"id": 55,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -2075,6 +2121,7 @@
 			"spe": 45
 		},
 		"heightm": 1.4,
+		"id": 76,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -2124,6 +2171,7 @@
 			"spe": 35
 		},
 		"heightm": 1,
+		"id": 75,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -2171,6 +2219,7 @@
 			"spe": 25
 		},
 		"heightm": 0.9,
+		"id": 88,
 		"inherit": true,
 		"learnset": {
 			"acidarmor": "Acid Armor",
@@ -2212,6 +2261,7 @@
 			"spe": 60
 		},
 		"heightm": 0.7,
+		"id": 58,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -2253,6 +2303,7 @@
 			"spe": 81
 		},
 		"heightm": 6.5,
+		"id": 130,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -2300,6 +2351,7 @@
 			"spe": 95
 		},
 		"heightm": 1.6,
+		"id": 93,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -2339,6 +2391,7 @@
 			"spe": 76
 		},
 		"heightm": 1.4,
+		"id": 107,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -2382,6 +2435,7 @@
 			"spe": 87
 		},
 		"heightm": 1.5,
+		"id": 106,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -2426,6 +2480,7 @@
 			"spe": 60
 		},
 		"heightm": 0.4,
+		"id": 116,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -2466,6 +2521,7 @@
 			"spe": 67
 		},
 		"heightm": 1.6,
+		"id": 97,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -2518,6 +2574,7 @@
 			"spe": 60
 		},
 		"heightm": 1,
+		"id": 2,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -2561,6 +2618,7 @@
 			"spe": 20
 		},
 		"heightm": 0.5,
+		"id": 39,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -2618,6 +2676,7 @@
 			"spe": 130
 		},
 		"heightm": 0.8,
+		"id": 135,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -2663,6 +2722,7 @@
 			"spe": 95
 		},
 		"heightm": 1.4,
+		"id": 124,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -2715,6 +2775,7 @@
 			"spe": 55
 		},
 		"heightm": 0.5,
+		"id": 140,
 		"inherit": true,
 		"learnset": {
 			"absorb": "Absorb",
@@ -2757,6 +2818,7 @@
 			"spe": 80
 		},
 		"heightm": 1.3,
+		"id": 141,
 		"inherit": true,
 		"learnset": {
 			"absorb": "Absorb",
@@ -2807,6 +2869,7 @@
 			"spe": 105
 		},
 		"heightm": 1.3,
+		"id": 64,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -2856,6 +2919,7 @@
 			"spe": 35
 		},
 		"heightm": 0.6,
+		"id": 14,
 		"inherit": true,
 		"learnset": {
 			"harden": "Harden"
@@ -2877,6 +2941,7 @@
 			"spe": 90
 		},
 		"heightm": 2.2,
+		"id": 115,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -2930,6 +2995,7 @@
 			"spe": 75
 		},
 		"heightm": 1.3,
+		"id": 99,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -2975,6 +3041,7 @@
 			"spe": 35
 		},
 		"heightm": 0.6,
+		"id": 109,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3011,6 +3078,7 @@
 			"spe": 50
 		},
 		"heightm": 0.4,
+		"id": 98,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3055,6 +3123,7 @@
 			"spe": 60
 		},
 		"heightm": 2.5,
+		"id": 131,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3106,6 +3175,7 @@
 			"spe": 30
 		},
 		"heightm": 1.2,
+		"id": 108,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3162,6 +3232,7 @@
 			"spe": 55
 		},
 		"heightm": 1.6,
+		"id": 68,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3209,6 +3280,7 @@
 			"spe": 45
 		},
 		"heightm": 1.5,
+		"id": 67,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3255,6 +3327,7 @@
 			"spe": 35
 		},
 		"heightm": 0.8,
+		"id": 66,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3301,6 +3374,7 @@
 			"spe": 80
 		},
 		"heightm": 0.9,
+		"id": 129,
 		"inherit": true,
 		"learnset": {
 			"dragonrage": "Dragon Rage",
@@ -3323,6 +3397,7 @@
 			"spe": 93
 		},
 		"heightm": 1.3,
+		"id": 126,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3372,6 +3447,7 @@
 			"spe": 45
 		},
 		"heightm": 0.3,
+		"id": 81,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3413,6 +3489,7 @@
 			"spe": 70
 		},
 		"heightm": 1,
+		"id": 82,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3455,6 +3532,7 @@
 			"spe": 70
 		},
 		"heightm": 0.5,
+		"id": 56,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3506,6 +3584,7 @@
 			"spe": 45
 		},
 		"heightm": 1,
+		"id": 105,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3559,6 +3638,7 @@
 			"spe": 90
 		},
 		"heightm": 0.4,
+		"id": 52,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3601,6 +3681,7 @@
 			"spe": 30
 		},
 		"heightm": 0.7,
+		"id": 11,
 		"inherit": true,
 		"learnset": {
 			"harden": "Harden"
@@ -3621,6 +3702,7 @@
 			"spe": 100
 		},
 		"heightm": 0.4,
+		"id": 151,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3697,6 +3779,7 @@
 			"spe": 130
 		},
 		"heightm": 2,
+		"id": 150,
 		"inherit": true,
 		"learnset": {
 			"amnesia": "Amnesia",
@@ -3757,6 +3840,7 @@
 			"spe": 29
 		},
 		"heightm": 3,
+		"id": 0,
 		"inherit": true,
 		"learnset": {
 			"blizzard": "Blizzard",
@@ -3803,6 +3887,7 @@
 			"spe": 90
 		},
 		"heightm": 2,
+		"id": 146,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -3844,6 +3929,7 @@
 			"spe": 90
 		},
 		"heightm": 1.3,
+		"id": 122,
 		"inherit": true,
 		"learnset": {
 			"barrier": "Barrier",
@@ -3896,6 +3982,7 @@
 			"spe": 50
 		},
 		"heightm": 1.2,
+		"id": 89,
 		"inherit": true,
 		"learnset": {
 			"acidarmor": "Acid Armor",
@@ -3938,6 +4025,7 @@
 			"spe": 85
 		},
 		"heightm": 1.4,
+		"id": 34,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -3995,6 +4083,7 @@
 			"spe": 76
 		},
 		"heightm": 1.3,
+		"id": 31,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -4052,6 +4141,7 @@
 			"spe": 41
 		},
 		"heightm": 0.4,
+		"id": 29,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -4094,6 +4184,7 @@
 			"spe": 50
 		},
 		"heightm": 0.5,
+		"id": 32,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -4136,6 +4227,7 @@
 			"spe": 56
 		},
 		"heightm": 0.8,
+		"id": 30,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -4182,6 +4274,7 @@
 			"spe": 65
 		},
 		"heightm": 0.9,
+		"id": 33,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -4227,6 +4320,7 @@
 			"spe": 100
 		},
 		"heightm": 1.1,
+		"id": 38,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -4266,6 +4360,7 @@
 			"spe": 30
 		},
 		"heightm": 0.5,
+		"id": 43,
 		"inherit": true,
 		"learnset": {
 			"absorb": "Absorb",
@@ -4306,6 +4401,7 @@
 			"spe": 35
 		},
 		"heightm": 0.4,
+		"id": 138,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -4347,6 +4443,7 @@
 			"spe": 55
 		},
 		"heightm": 1,
+		"id": 139,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -4393,6 +4490,7 @@
 			"spe": 70
 		},
 		"heightm": 8.8,
+		"id": 95,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -4437,6 +4535,7 @@
 			"spe": 25
 		},
 		"heightm": 0.3,
+		"id": 46,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -4480,6 +4579,7 @@
 			"spe": 30
 		},
 		"heightm": 1,
+		"id": 47,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -4524,6 +4624,7 @@
 			"spe": 115
 		},
 		"heightm": 1,
+		"id": 53,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -4567,6 +4668,7 @@
 			"spe": 91
 		},
 		"heightm": 1.5,
+		"id": 18,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -4609,6 +4711,7 @@
 			"spe": 71
 		},
 		"heightm": 1.1,
+		"id": 17,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -4650,6 +4753,7 @@
 			"spe": 56
 		},
 		"heightm": 0.3,
+		"id": 16,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -4691,6 +4795,7 @@
 			"spe": 90
 		},
 		"heightm": 0.4,
+		"id": 25,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -4741,6 +4846,7 @@
 			"spe": 85
 		},
 		"heightm": 1.5,
+		"id": 127,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -4782,6 +4888,7 @@
 			"spe": 90
 		},
 		"heightm": 0.6,
+		"id": 60,
 		"inherit": true,
 		"learnset": {
 			"amnesia": "Amnesia",
@@ -4824,6 +4931,7 @@
 			"spe": 90
 		},
 		"heightm": 1,
+		"id": 61,
 		"inherit": true,
 		"learnset": {
 			"amnesia": "Amnesia",
@@ -4875,6 +4983,7 @@
 			"spe": 70
 		},
 		"heightm": 1.3,
+		"id": 62,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -4925,6 +5034,7 @@
 			"spe": 90
 		},
 		"heightm": 1,
+		"id": 77,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -4965,6 +5075,7 @@
 			"spe": 40
 		},
 		"heightm": 0.8,
+		"id": 137,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -5013,6 +5124,7 @@
 			"spe": 95
 		},
 		"heightm": 1,
+		"id": 57,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -5065,6 +5177,7 @@
 			"spe": 55
 		},
 		"heightm": 0.8,
+		"id": 54,
 		"inherit": true,
 		"learnset": {
 			"amnesia": "Amnesia",
@@ -5116,6 +5229,7 @@
 			"spe": 100
 		},
 		"heightm": 0.8,
+		"id": 26,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -5160,6 +5274,7 @@
 			"spe": 105
 		},
 		"heightm": 1.7,
+		"id": 78,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -5202,6 +5317,7 @@
 			"spe": 97
 		},
 		"heightm": 0.7,
+		"id": 20,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -5247,6 +5363,7 @@
 			"spe": 72
 		},
 		"heightm": 0.3,
+		"id": 19,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -5290,6 +5407,7 @@
 			"spe": 40
 		},
 		"heightm": 1.9,
+		"id": 112,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -5347,6 +5465,7 @@
 			"spe": 25
 		},
 		"heightm": 1,
+		"id": 111,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -5392,6 +5511,7 @@
 			"spe": 40
 		},
 		"heightm": 0.6,
+		"id": 27,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -5437,6 +5557,7 @@
 			"spe": 65
 		},
 		"heightm": 1,
+		"id": 28,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -5483,6 +5604,7 @@
 			"spe": 105
 		},
 		"heightm": 1.5,
+		"id": 123,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -5523,6 +5645,7 @@
 			"spe": 85
 		},
 		"heightm": 1.2,
+		"id": 117,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -5564,6 +5687,7 @@
 			"spe": 68
 		},
 		"heightm": 1.3,
+		"id": 119,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -5608,6 +5732,7 @@
 			"spe": 45
 		},
 		"heightm": 1.1,
+		"id": 86,
 		"inherit": true,
 		"learnset": {
 			"aurorabeam": "Aurora Beam",
@@ -5649,6 +5774,7 @@
 			"spe": 40
 		},
 		"heightm": 0.3,
+		"id": 90,
 		"inherit": true,
 		"learnset": {
 			"aurorabeam": "Aurora Beam",
@@ -5694,6 +5820,7 @@
 			"spe": 30
 		},
 		"heightm": 1.6,
+		"id": 80,
 		"inherit": true,
 		"learnset": {
 			"amnesia": "Amnesia",
@@ -5756,6 +5883,7 @@
 			"spe": 15
 		},
 		"heightm": 1.2,
+		"id": 79,
 		"inherit": true,
 		"learnset": {
 			"amnesia": "Amnesia",
@@ -5811,6 +5939,7 @@
 			"spe": 30
 		},
 		"heightm": 2.1,
+		"id": 143,
 		"inherit": true,
 		"learnset": {
 			"amnesia": "Amnesia",
@@ -5869,6 +5998,7 @@
 			"spe": 70
 		},
 		"heightm": 0.3,
+		"id": 21,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -5910,6 +6040,7 @@
 			"spe": 43
 		},
 		"heightm": 0.5,
+		"id": 7,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -5959,6 +6090,7 @@
 			"spe": 115
 		},
 		"heightm": 1.1,
+		"id": 121,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -6007,6 +6139,7 @@
 			"spe": 85
 		},
 		"heightm": 0.8,
+		"id": 120,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -6057,6 +6190,7 @@
 			"spe": 60
 		},
 		"heightm": 1,
+		"id": 114,
 		"inherit": true,
 		"learnset": {
 			"absorb": "Absorb",
@@ -6101,6 +6235,7 @@
 			"spe": 110
 		},
 		"heightm": 1.4,
+		"id": 128,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -6145,6 +6280,7 @@
 			"spe": 70
 		},
 		"heightm": 0.9,
+		"id": 72,
 		"inherit": true,
 		"learnset": {
 			"acid": "Acid",
@@ -6192,6 +6328,7 @@
 			"spe": 100
 		},
 		"heightm": 1.6,
+		"id": 73,
 		"inherit": true,
 		"learnset": {
 			"acid": "Acid",
@@ -6240,6 +6377,7 @@
 			"spe": 65
 		},
 		"heightm": 1,
+		"id": 134,
 		"inherit": true,
 		"learnset": {
 			"acidarmor": "Acid Armor",
@@ -6288,6 +6426,7 @@
 			"spe": 90
 		},
 		"heightm": 1.5,
+		"id": 49,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -6337,6 +6476,7 @@
 			"spe": 45
 		},
 		"heightm": 1,
+		"id": 48,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -6381,6 +6521,7 @@
 			"spe": 80
 		},
 		"heightm": 2,
+		"id": 3,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -6425,6 +6566,7 @@
 			"spe": 70
 		},
 		"heightm": 1.7,
+		"id": 71,
 		"inherit": true,
 		"learnset": {
 			"acid": "Acid",
@@ -6467,6 +6609,7 @@
 			"spe": 50
 		},
 		"heightm": 1.2,
+		"id": 45,
 		"inherit": true,
 		"learnset": {
 			"acid": "Acid",
@@ -6508,6 +6651,7 @@
 			"spe": 100
 		},
 		"heightm": 0.5,
+		"id": 100,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -6548,6 +6692,7 @@
 			"spe": 65
 		},
 		"heightm": 0.6,
+		"id": 37,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -6589,6 +6734,7 @@
 			"spe": 58
 		},
 		"heightm": 1,
+		"id": 8,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -6638,6 +6784,7 @@
 			"spe": 50
 		},
 		"heightm": 0.3,
+		"id": 13,
 		"inherit": true,
 		"learnset": {
 			"poisonsting": "Poison Sting",
@@ -6660,6 +6807,7 @@
 			"spe": 55
 		},
 		"heightm": 1,
+		"id": 70,
 		"inherit": true,
 		"learnset": {
 			"acid": "Acid",
@@ -6703,6 +6851,7 @@
 			"spe": 60
 		},
 		"heightm": 1.2,
+		"id": 110,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -6740,6 +6889,7 @@
 			"spe": 45
 		},
 		"heightm": 1,
+		"id": 40,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",
@@ -6797,6 +6947,7 @@
 			"spe": 100
 		},
 		"heightm": 1.6,
+		"id": 145,
 		"inherit": true,
 		"learnset": {
 			"agility": "Agility",
@@ -6841,6 +6992,7 @@
 			"spe": 55
 		},
 		"heightm": 0.8,
+		"id": 41,
 		"inherit": true,
 		"learnset": {
 			"bide": "Bide",

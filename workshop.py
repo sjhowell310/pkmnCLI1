@@ -3,16 +3,32 @@ import math
 import json
 import moves
 
-with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/accurateg1moves.json") as pdex:
+with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/final/gen1moves.json") as pdex:
 	g1moves = json.load(pdex)
 
-	with open("data/moves.json") as pdex:
+	with open("data/master/moves.json") as pdex:
 		allmoves = json.load(pdex)
-	out = []
-	print(len(g1moves.keys()))
-	for move in g1moves.keys():
-		testmove = moves.Move(move)
-		print(testmove.getMove())
+		with open("data/final/pokedexwmoves.json") as pdex:
+			allpokemon = json.load(pdex)
+			out = []
+			print(len(g1moves.keys()))
+			# for move in g1moves.keys():
+			# 	testmove = moves.Move(move)
+			# 	print(testmove.getMove())
+test_dict = {'Nikhil' : { 'roll' : 24, 'marks' : 17}, 
+             'Akshat' : {'roll' : 54, 'marks' : 12},  
+             'Akash' : { 'roll' : 12, 'marks' : 15}} 
+  
+# printing original dict 
+print("The original dictionary : " + str(test_dict)) 
+  
+# using sorted() 
+# Sort nested dictionary by key 
+res = sorted(test_dict.items(), key = lambda x: x[1]['marks']) 
+  
+# print result 
+print("The sorted dictionary by marks is : " + str(res)) 
+			
 
 	# for moves in g1moves.keys():
 	# 	for keys in g1moves[moves]:

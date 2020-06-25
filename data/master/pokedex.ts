@@ -9,7 +9,7 @@ export const BattlePokedex: {[speciesid: string]: SpeciesData} = {
 		heightm: 0.7,
 		weightkg: 6.9,
 		color: "Green",
-		evos: ["Ivysaur"],
+		ev
 		eggGroups: ["Monster", "Grass"],
 	},
 	ivysaur: {

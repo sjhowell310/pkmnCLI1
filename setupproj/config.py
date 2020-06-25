@@ -1,14 +1,17 @@
 import json
 import string 
+from collections import OrderedDict 
+from operator import getitem 
 
 def makedexwlearnsets(out, master, learnlist, movedex):
-
 	for key in out.keys():
 		out[key]["types"] = master[key]["types"]
+		
 		out[key]["name"] = master[key]["name"]
 		out[key]["heightm"] = master[key]["heightm"]
 		out[key]["weightkg"] = master[key]["weightkg"]
 		out[key]["learnset"] = {}
+		out[key]["id"] = master[key]["num"]
 
 		for lkey in learnlist[key]["learnset"].keys():
 			count = 0
@@ -17,8 +20,6 @@ def makedexwlearnsets(out, master, learnlist, movedex):
 					count += 1
 			if count > 0:
 				out[key]["learnset"][lkey] = movedex[lkey]["name"]
-
-		# out[key]["learnset"] = sorted(out[key]["learnset"])
 
 def makegenimovesetlib(gen1movevals, pokemonshowdowndata, masterlist):
 	out = {}
