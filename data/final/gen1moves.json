@@ -705,8 +705,8 @@
 		"pp": 15,
 		"priority": 0,
 		"recoil": [
-			1,
-			4
+			33,
+			100
 		],
 		"secondary": null,
 		"shortDesc": "Has 33% recoil.",
@@ -2954,7 +2954,7 @@
 		"basePower": 50,
 		"category": "Physical",
 		"desc": "Deals Normal-type damage. If this move was successful, the user takes damage equal to 1/2 the HP lost by the target, rounded down, but not less than 1 HP. This move is automatically used if none of the user's known moves can be selected.",
-		"effect": "used automatically when all of the user's other moves have run out of pp or are otherwise inaccessible. the user receives 1/2 recoil damage. struggle is classified as a normal-type move, so it is resisted by rock-type pokemon and cannot hit ghost-type pokemon at all.",
+		"effect": "used automatically when all of the user's other moves have run out of pp or are otherwise inaccessible. the user receives 1/4 recoil damage. struggle is classified as a normal-type move, so it is resisted by rock-type pokemon and cannot hit ghost-type pokemon at all.",
 		"flags": {
 			"contact": 1,
 			"protect": 1

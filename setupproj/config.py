@@ -1,14 +1,14 @@
 import json
 import string 
 
-def makedexwlearnsets(out, master, learnlist):
+def makedexwlearnsets(out, master, learnlist, movedex):
 
 	for key in out.keys():
 		out[key]["types"] = master[key]["types"]
 		out[key]["name"] = master[key]["name"]
 		out[key]["heightm"] = master[key]["heightm"]
 		out[key]["weightkg"] = master[key]["weightkg"]
-		out[key]["learnset"] = []
+		out[key]["learnset"] = {}
 
 		for lkey in learnlist[key]["learnset"].keys():
 			count = 0
@@ -16,9 +16,9 @@ def makedexwlearnsets(out, master, learnlist):
 				if genkey[0] == "1":
 					count += 1
 			if count > 0:
-				out[key]["learnset"].append(lkey)
+				out[key]["learnset"][lkey] = movedex[lkey]["name"]
 
-		out[key]["learnset"].sort()
+		# out[key]["learnset"] = sorted(out[key]["learnset"])
 
 def makegenimovesetlib(gen1movevals, pokemonshowdowndata, masterlist):
 	out = {}
@@ -71,16 +71,16 @@ with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/gen1/moves.json"
 
 				with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/master/pokedex.json") as pkdx:
 					pokedex = json.load(pkdx)
-					
+
 					with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/gen1/movevals.json") as amvs:
 						gen1movevals = json.load(amvs)
 
-						makedexwlearnsets(gen1pokedex, pokedex, learnset)
-
-						with open("../data/final/dexwithmovesandtypes.json", "w") as jsonout:
-							json.dump(gen1pokedex, jsonout, sort_keys = True, indent = "\t")
-
 						movedex = makegenimovesetlib(gen1movevals, gen1moves, movevals)
 
-						with open("../data/final/accurateg1moves.json", "w") as jsonout:
+						with open("../data/final/gen1moves.json", "w") as jsonout:
 							json.dump(movedex, jsonout, sort_keys = True, indent = "\t")
+
+						makedexwlearnsets(gen1pokedex, pokedex, learnset, movedex)
+
+						with open("../data/final/pokedexwmoves.json", "w") as jsonout:
+							json.dump(gen1pokedex, jsonout, sort_keys = True, indent = "\t")

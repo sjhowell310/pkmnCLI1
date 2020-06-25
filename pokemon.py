@@ -2,12 +2,13 @@ import random
 import math
 import moves
 import trainer
+import json
 
 class Pokemon():
 
 	level = 100
 
-	def __init__(self, poke):
+	def __init__(self, poke, tname):
 		self.name = poke["name"]
 		self.baseHP = poke["baseStats"]["hp"]
 		self.baseAtk = poke["baseStats"]["atk"]
@@ -18,13 +19,11 @@ class Pokemon():
 		self.ivs = self.calcIVs()
 		self.evs = self.calcEVs()
 		self.statHP , self.statAtk, self. statDef, self.statSpa, self.statSpe =  self.calcStats(self.ivs, self.evs)
-		self.moves = self.setMoves(poke)
-		self.HPlvl = 0
+		self.moves = self.setMoves(poke, tname)
 		self.Atklvl = 0
 		self.Deflvl = 0
 		self.Spalvl = 0
 		self.Spelvl = 0
-		self.HPlvl = 0
 
 			
 	def calcIVs(self):
@@ -57,25 +56,30 @@ class Pokemon():
 
 		return hp, attack, defense, special, speed
 
-	def setMoves(self, poke):
-		names, out = [],[]
-		print("Choose 4 of the following moves from the learnset: (Up to once each)")
-		if len(poke["learnset"]) > 0:
-			for move in sorted(poke["learnset"]):
-				print(move)
-		else:
-			print("No learnset")
-			return [moves.Move("struggle")]
-		for i in range(4):
-			if len(out) != len(poke["learnset"]):
-				movename = ""
-				while(movename not in poke["learnset"] or movename in names):
-					movename = input("{tname}, please enter your choice of move for {name})\n".format(tname = trainer.name, name = self.name))
-					movename = movename.lower()
-				print("You chose {move} as {pkmn}'s #{num} move!".format(move = movename.capitalize(), pkmn = self.name, num = len(out) + 1))
-				out.append(moves.Move(movename))
-				names.append(movename)
-		return names, out
+	def setMoves(self, pokemon, trainerName):
+		out = []
+		names = []
+		with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/final/gen1moves.json") as pdex:
+			g1moves = json.load(pdex)
+			if len(pokemon["learnset"]) > 4:
+				print("\nChoose 4 of the following moves from the learnset once each:")
+				# for key in sorted(pokemon["learnset"].keys()):
+				print("\n".join("{name: >15}{mtype: >10}{pwr: >10}{power: >8}{acc: >10}{accuracy: >8}{PP: >10}{pp: >8}".format(name = str(g1moves[key]["name"]), mtype = str(g1moves[key]["type"]), pwr = "Pwr:", acc = "Acc:", PP = "PP:" , power = str(g1moves[key]["basePower"]), accuracy = str(g1moves[key]["accuracy"]), pp = str(g1moves[key]["pp"])) for key in sorted(pokemon["learnset"].keys())))
+				for i in range(4):
+					move = "buffer"	
+					if len(out) != len(pokemon["learnset"]):
+						while move not in pokemon["learnset"].keys() or move in names or move == "buffer":
+							move = input("{trainerName}, please enter your choice of move for {name}\n".format(trainerName = trainerName, name = self.name))
+							move = move.lower().replace(" ", "").replace("-", "")
+						print("\nYou chose {move} as {pkmn}'s #{num} move!".format(move = pokemon["learnset"][move], pkmn = self.name, num = len(out) + 1))
+						out.append(moves.Move(move))
+						names.append(move)
+						print("Moves selected so far:", names)
+			else:
+				for key in pokemon["learnset"].keys():
+					out.append(moves.Move(key))
+					print("{name} has 4 or less moves in their moveset, you can have 'em all!\n".format(name = pokemon["name"]))
+		return out
 	
 
 

@@ -12,7 +12,7 @@ import pokemon
 class Move():
 
 	def __init__(self, movename):
-		with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/accurateg1moves.json") as pdex:
+		with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/final/gen1moves.json") as pdex:
 			g1moves = json.load(pdex)
 			self.accuracy = g1moves[movename]["accuracy"]
 
