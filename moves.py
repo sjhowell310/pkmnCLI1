@@ -12,8 +12,11 @@ import pokemon
 class Move():
 
 	def __init__(self, movename):
+		#importing moves library
 		with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/final/gen1moves.json") as pdex:
 			g1moves = json.load(pdex)
+
+			#harvesting the many required flags and such for each move
 			self.accuracy = g1moves[movename]["accuracy"]
 
 			self.basePower = g1moves[movename]["basePower"]
@@ -177,8 +180,7 @@ class Move():
 			elif "willCrit" not in g1moves[movename]:
 				self.willCrit = None
 	
-	def getMove(self):
-		return self.name, self.type, self.category, self.basePower, self.accuracy
+
 
 		
 
