@@ -5,6 +5,7 @@ import trainer
 import pokemon
 
 
+
 # global allmoves
 # with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/moves.json") as pdex:
 # 	allmoves = json.load(pdex)

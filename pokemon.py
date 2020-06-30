@@ -3,13 +3,14 @@ import math
 import moves
 import trainer
 import json
+import sys
 
 #Pokemon class for use in pkmnCLI1, contained by Trainers, each Pokemon contains Moves (none of these classes extend one another)
 class Pokemon():
 
 	level = 100
 
-	def __init__(self, pokemon, trainername, isRandom):
+	def __init__(self, pokemon, isRandom):
 		#taking values rom passed in dictionary
 		self.name = pokemon["name"]
 		self.baseHP = pokemon["baseStats"]["hp"]
@@ -20,12 +21,14 @@ class Pokemon():
 		self.type = pokemon["types"]
 		self.height = pokemon["heightm"]
 		self.weight = pokemon["weightkg"]
+		self.active = False
 
-		#calculate IVs and EVs for stat calculation
+		#calculate IVs and EVs for stat calculation, battStats are for manipulation with move multipliers during battle
 		self.ivs = self.calcIVs()
 		self.evs = self.calcEVs(isRandom)
 		self.statHP , self.statAtk, self. statDef, self.statSpa, self.statSpe =  self.calcStats(self.ivs, self.evs)
-		
+		self.battHP, self.battAtk, self.battDef, self.battSpa, self.battSpe = self.statHP , self.statAtk, self. statDef, self.statSpa, self.statSpe
+
 		#choosing moves
 		self.moves = []
 		self.setMoves(pokemon, trainername, self.moves)
@@ -72,55 +75,6 @@ class Pokemon():
 		speed = math.floor(((((self.baseSpe + ivs[4]) * 2) + (math.floor((math.ceil(evs[4]**0.5))/(4))))*(self.level))/(100)) + 5
 
 		return hp, attack, defense, special, speed
-
-	#trainer makes choice of moves from pokemon's learnset
-	def setMoves(self, pokemon, trainerName, out):
-		#keeps list of movenames chosen so far, easier to keep track of than to examine instantiated Move objects
-		names = []
-
-		#reads in full list of moves available in Generation I
-		with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/final/gen1moves.json") as pdex:
-			g1moves = json.load(pdex)
-
-			#check there are more than 4 moves to choose from (Magikarp I'm looking at YOU)
-			if len(pokemon["learnset"]) > 4:
-
-				#displays full list of moves pokemon can learn
-				print("\nChoose 4 of the following moves from the learnset once each:")
-				print("{name: <15}{mtype: <10}{base: <10}{acc: <7}{pp: <5}".format(name = "MOVENAME", mtype = "TYPE", base = "BASEPOWER", acc = "ACCURACY", pp = "PP"))
-				print("\n".join("{name: <15}{mtype: <10}{power: <10}{accuracy: <7}{pp: <5}".format(name = str(g1moves[key]["name"]), mtype = str(g1moves[key]["type"]), power = str(g1moves[key]["basePower"]), accuracy = str(g1moves[key]["accuracy"]), pp = str(g1moves[key]["pp"])) for key in sorted(pokemon["learnset"].keys())))
-
-				#trainer now makes 4 choices on moves
-				while len(out) < 4:
-					#trainer can input any combination of capitalisation spaces and hyphens, can input individually or as comma separated list in terminal
-					movechoices = "buffer"	
-					movechoices = input("\n{trainerName}, please complete your choice of moves for {name} (comma separated)\nYou have {places} moves left to choose:\n".format(trainerName = trainerName, name = self.name, places = 4 - len(out)))
-					movechoices = movechoices.lower().split(",")
-					movechoices = [move.replace(" ", "").replace("-", "") for move in movechoices]
-					if len(out) != len(pokemon["learnset"]):
-						for move in movechoices:
-							if move in pokemon["learnset"].keys() and move not in names:
-								if len(out) <4:
-									if len(out) == 0:
-										print("You chose {move} as {pkmn}'s first move!".format(move = pokemon["learnset"][move], pkmn = self.name))	
-									elif len(out) == 1:
-										print("You chose {move} as {pkmn}'s second move!".format(move = pokemon["learnset"][move], pkmn = self.name))
-									elif len(out) == 2:
-										print("You chose {move} as {pkmn}'s third move!".format(move = pokemon["learnset"][move], pkmn = self.name))
-									elif len(out) == 3:
-										print("You chose {move} as {pkmn}'s final move!".format(move = pokemon["learnset"][move], pkmn = self.name))
-									out.append(moves.Move(move))
-									names.append(move)
-					#prints current moveset to remind trainer as moves can only be added to moveset once each
-					print("\nCurrent moveset:")
-					self.printMoves()				
-			else:
-				for key in pokemon["learnset"].keys():
-					out.append(moves.Move(key))
-					print("{name} has 4 or less moves in their moveset, you can have 'em all!\n".format(name = pokemon["name"]))
-		return
-	
-
 
 	def getStats(self):
 		return self.statHP, self.statAtk, self. statDef, self.statSpa, self.statSpe
