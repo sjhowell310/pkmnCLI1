@@ -2,7 +2,7 @@ import pokemon
 import json
 import math
 import string
-import moves
+import moveset
 
 #Trainer class for use in pkmnCLI1, contained by Arena class, contains Pokemon in party (none of these classes extend one another)
 class Trainer():

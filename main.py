@@ -4,9 +4,9 @@ import json
 import math
 import string
 import pokemon
-import moves
+import moveset
 import sys
-data = sys.stdin.readlines()
+sys.stdin
 def printDex():
 	#print pokedex out in index order (i.e. the order of the original pokedex)
 	print("Gen I Pokedex:\n")
@@ -30,7 +30,7 @@ try:
 	while partySize not in validsizes:
 		partySize = input("Contestants, decide and enter how many Pokemon you will both have in your parties\n")
 
-
+	partySize = int(partySize)
 	isRandom = ""
 	while isRandom.lower() != "y" and isRandom.lower() != "n":
 		isRandom = input("EVs are set to be maxed by default, would you like them to be randomised instead? [y/n]")
@@ -41,7 +41,7 @@ try:
 	#check input is valid, if not, prompt again until valid
 	while(len(name1) >10):
 		name1 = input("\nTrainer#1, please enter your name:\n(up to 10 characters)\n")
-	t1 = trainer.Trainer(name)
+	t1 = trainer.Trainer(name1)
 
 	printDex()
 
@@ -60,38 +60,38 @@ try:
 			#displays full list of moves pname can learn
 			print("\nChoose 4 of the following moves from the learnset once each:")
 			print("{name: <15}{mtype: <10}{base: <10}{acc: <7}{pp: <5}".format(name = "MOVENAME", mtype = "TYPE", base = "BASEPOWER", acc = "ACCURACY", pp = "PP"))
-			print("\n".join("{name: <15}{mtype: <10}{power: <10}{accuracy: <7}{pp: <5}".format(name = str(g1moves[key]["name"]), mtype = str(g1moves[key]["type"]), power = str(g1moves[key]["basePower"]), accuracy = str(g1moves[key]["accuracy"]), pp = str(g1moves[key]["pp"])) for key in sorted(g1moves[pname]["learnset"].keys())))
+			print("\n".join("{name: <15}{mtype: <10}{power: <10}{accuracy: <7}{pp: <5}".format(name = str(g1moves[key]["name"]), mtype = str(g1moves[key]["type"]), power = str(g1moves[key]["basePower"]), accuracy = str(g1moves[key]["accuracy"]), pp = str(g1moves[key]["pp"])) for key in sorted(dex[pname]["learnset"].keys())))
 			poke = t1.party[-1]
 			#trainer now makes 4 choices on moves
 			while len(poke.moves) < 4:
 				#trainer can input any combination of capitalisation spaces and hyphens, can input individually or as comma separated list in terminal
 				movechoices = "buffer"	
-				movechoices = input("\n{trainerName}, please complete your choice of moves for {name} (comma separated)\nYou have {places} moves left to choose:\n".format(trainerName = trainerName, name = poke.name, places = 4 - len(poke.moves)))
+				movechoices = input("\n{trainerName}, please complete your choice of moves for {name} (comma separated)\nYou have {places} moves left to choose:\n".format(trainerName = t1.name, name = poke.name, places = 4 - len(poke.moves)))
 				movechoices = movechoices.lower().split(",")
 				movechoices = [move.replace(" ", "").replace("-", "") for move in movechoices]
-				if len(poke.moves) != len(g1moves[pname]["learnset"]):
+				if len(poke.moves) != len(dex[pname]["learnset"]):
 					for move in movechoices:
-						if move in g1moves[pname]["learnset"].keys() and move not in names:
+						if move in dex[pname]["learnset"].keys() and move not in names:
 							if len(poke.moves) <4:
 								if len(poke.moves) == 0:
-									print("You chose {move} as {pkmn}'s first move!".format(move = g1moves[pname]["learnset"][move], pkmn = poke.name))	
+									print("You chose {move} as {pkmn}'s first move!".format(move = dex[pname]["learnset"][move], pkmn = poke.name))	
 								elif len(poke.moves) == 1:
-									print("You chose {move} as {pkmn}'s second move!".format(move = g1moves[pname]["learnset"][move], pkmn = poke.name))
+									print("You chose {move} as {pkmn}'s second move!".format(move = dex[pname]["learnset"][move], pkmn = poke.name))
 								elif len(poke.moves) == 2:
-									print("You chose {move} as {pkmn}'s third move!".format(move = g1moves[pname]["learnset"][move], pkmn = poke.name))
+									print("You chose {move} as {pkmn}'s third move!".format(move = dex[pname]["learnset"][move], pkmn = poke.name))
 								elif len(poke.moves) == 3:
-									print("You chose {move} as {pkmn}'s final move!".format(move = g1moves[pname]["learnset"][move], pkmn = poke.name))
-								poke.moves.append(moves.Move(move))
+									print("You chose {move} as {pkmn}'s final move!".format(move = dex[pname]["learnset"][move], pkmn = poke.name))
+								poke.moves.append(moveset.Move(move))
 								names.append(move)
 				#prints current moveset to remind trainer as moves can only be added to moveset once each
 				print("\nCurrent moveset:")
 				poke.printMoves()				
 		else:
-			for key in g1moves[pname]["learnset"].keys():
-				poke.moves.append(moves.Move(key))
-				print("{name} has 4 or less moves in their moveset, you can have 'em all!\n".format(name = g1moves[pname]["name"]))
+			for key in dex[pname]["learnset"].keys():
+				poke.moves.append(moveset.Move(key))
+				print("{name} has 4 or less moves in their moveset, you can have 'em all!\n".format(name = dex[pname]["name"]))
 		pname = ""
-		moves = "buffer"
+		movechoices = "buffer"
 
 
 	name2 = input("\nTrainer #2, please enter your name:\n(up to 10 characters)\n")
@@ -100,10 +100,6 @@ try:
 	while(len(name2) >10):
 		name2 = input("\nTrainer#2, please enter your name:\n(up to 10 characters)\n")
 
-	put("\nTrainer #1, please enter your name:\n(up to 10 characters)\n")
-	#check input is valid, if not, prompt again until valid
-	while(len(name2) >10):
-		name2 = input("\nTrainer#1, please enter your name:\n(up to 10 characters)\n")
 	t2 = trainer.Trainer(name2)
 
 	printDex()
@@ -123,38 +119,38 @@ try:
 			#displays full list of moves pname can learn
 			print("\nChoose 4 of the following moves from the learnset once each:")
 			print("{name: <15}{mtype: <10}{base: <10}{acc: <7}{pp: <5}".format(name = "MOVENAME", mtype = "TYPE", base = "BASEPOWER", acc = "ACCURACY", pp = "PP"))
-			print("\n".join("{name: <15}{mtype: <10}{power: <10}{accuracy: <7}{pp: <5}".format(name = str(g1moves[key]["name"]), mtype = str(g1moves[key]["type"]), power = str(g1moves[key]["basePower"]), accuracy = str(g1moves[key]["accuracy"]), pp = str(g1moves[key]["pp"])) for key in sorted(g1moves[pname]["learnset"].keys())))
+			print("\n".join("{name: <15}{mtype: <10}{power: <10}{accuracy: <7}{pp: <5}".format(name = str(g1moves[key]["name"]), mtype = str(g1moves[key]["type"]), power = str(g1moves[key]["basePower"]), accuracy = str(g1moves[key]["accuracy"]), pp = str(g1moves[key]["pp"])) for key in sorted(dex[pname]["learnset"].keys())))
 			poke = t2.party[-1]
 			#trainer now makes 4 choices on moves
 			while len(poke.moves) < 4:
 				#trainer can input any combination of capitalisation spaces and hyphens, can input individually or as comma separated list in terminal
 				movechoices = "buffer"	
-				movechoices = input("\n{trainerName}, please complete your choice of moves for {name} (comma separated)\nYou have {places} moves left to choose:\n".format(trainerName = trainerName, name = poke.name, places = 4 - len(poke.moves)))
+				movechoices = input("\n{trainerName}, please complete your choice of moves for {name} (comma separated)\nYou have {places} moves left to choose:\n".format(trainerName = t2.name, name = poke.name, places = 4 - len(poke.moves)))
 				movechoices = movechoices.lower().split(",")
 				movechoices = [move.replace(" ", "").replace("-", "") for move in movechoices]
-				if len(poke.moves) != len(g1moves[pname]["learnset"]):
+				if len(poke.moves) != len(dex[pname]["learnset"]):
 					for move in movechoices:
-						if move in g1moves[pname]["learnset"].keys() and move not in names:
+						if move in dex[pname]["learnset"].keys() and move not in names:
 							if len(poke.moves) <4:
 								if len(poke.moves) == 0:
-									print("You chose {move} as {pkmn}'s first move!".format(move = g1moves[pname]["learnset"][move], pkmn = poke.name))	
+									print("You chose {move} as {pkmn}'s first move!".format(move = dex[pname]["learnset"][move], pkmn = poke.name))	
 								elif len(poke.moves) == 1:
-									print("You chose {move} as {pkmn}'s second move!".format(move = g1moves[pname]["learnset"][move], pkmn = poke.name))
+									print("You chose {move} as {pkmn}'s second move!".format(move = dex[pname]["learnset"][move], pkmn = poke.name))
 								elif len(poke.moves) == 2:
-									print("You chose {move} as {pkmn}'s third move!".format(move = g1moves[pname]["learnset"][move], pkmn = poke.name))
+									print("You chose {move} as {pkmn}'s third move!".format(move = dex[pname]["learnset"][move], pkmn = poke.name))
 								elif len(poke.moves) == 3:
-									print("You chose {move} as {pkmn}'s final move!".format(move = g1moves[pname]["learnset"][move], pkmn = poke.name))
-								poke.moves.append(moves.Move(move))
+									print("You chose {move} as {pkmn}'s final move!".format(move = dex[pname]["learnset"][move], pkmn = poke.name))
+								poke.moves.append(moveset.Move(move))
 								names.append(move)
 				#prints current moveset to remind trainer as moves can only be added to moveset once each
 				print("\nCurrent moveset:")
 				poke.printMoves()				
 		else:
-			for key in g1moves[pname]["learnset"].keys():
-				poke.moves.append(moves.Move(key))
-				print("{name} has 4 or less moves in their moveset, you can have 'em all!\n".format(name = g1moves[pname]["name"]))
+			for key in dex[pname]["learnset"].keys():
+				poke.moves.append(moveset.Move(key))
+				print("{name} has 4 or less moves in their moveset, you can have 'em all!\n".format(name = dex[pname]["name"]))
 		pname = ""
-		moves = "buffer"
+		movechoices = "buffer"
 
 	t1.showParty()
 	t2.showParty()

@@ -3,7 +3,7 @@ import json
 import math
 import string
 import pokemon
-import moves
+import moveset
 
 
 #Arena class for use in pkmnCLI1, contains Trainers, weather effects and other holistic battle mechanics (none of these classes extend one another)

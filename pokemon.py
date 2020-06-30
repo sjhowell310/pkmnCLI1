@@ -1,6 +1,6 @@
 import random
 import math
-import moves
+import moveset
 import trainer
 import json
 import sys
@@ -31,7 +31,6 @@ class Pokemon():
 
 		#choosing moves
 		self.moves = []
-		self.setMoves(pokemon, trainername, self.moves)
 		
 		#stat multipliers for use in battle
 		self.Atklvl = 0

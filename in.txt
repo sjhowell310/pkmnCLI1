@@ -1,4 +1,5 @@
 2
+n
 steve
 mewtwo
 icebeam,psychic,rest,reflect

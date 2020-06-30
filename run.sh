@@ -1,5 +1,6 @@
 python3 main.py <<'ENDOFINPUT'
 2
+n
 steve
 mewtwo
 icebeam,psychic,rest,reflect
