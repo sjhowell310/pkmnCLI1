@@ -1,7 +1,7 @@
 import random
 import math
 import json
-import moves
+import moveset
 
 with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/final/gen1moves.json") as pdex:
 	g1moves = json.load(pdex)

@@ -4,11 +4,6 @@ import math
 import trainer
 import pokemon
 
-
-
-# global allmoves
-# with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/moves.json") as pdex:
-# 	allmoves = json.load(pdex)
 	
 class Move():
 
@@ -120,6 +115,7 @@ class Move():
 				self.onTryHit = g1moves[movename]["onTryHit"]
 			elif "onTryHit" not in g1moves[movename]:
 				self.onTryHit = None		
+			
 			self.pp = g1moves[movename]["pp"] * (8/5)
 			
 			self.priority = g1moves[movename]["priority"]

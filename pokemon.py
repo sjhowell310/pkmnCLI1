@@ -22,12 +22,13 @@ class Pokemon():
 		self.height = pokemon["heightm"]
 		self.weight = pokemon["weightkg"]
 		self.active = False
-
+		self.idtag = int(100000000 * random.random())
 		#calculate IVs and EVs for stat calculation, battStats are for manipulation with move multipliers during battle
 		self.ivs = self.calcIVs()
 		self.evs = self.calcEVs(isRandom)
 		self.statHP , self.statAtk, self. statDef, self.statSpa, self.statSpe =  self.calcStats(self.ivs, self.evs)
 		self.battHP, self.battAtk, self.battDef, self.battSpa, self.battSpe = self.statHP , self.statAtk, self. statDef, self.statSpa, self.statSpe
+		self.status = None
 
 		#choosing moves
 		self.moves = []
@@ -83,9 +84,16 @@ class Pokemon():
 
 	#prints full list of moveset to terminal with headings
 	def printMoves(self):
-		header = "{pos: <6}{name: <15}{mtype: <10}{base: <10}{acc: <9}{pp: <8}\n".format(pos = "", name = "MOVENAME", mtype = "TYPE", base = "BASEPOWER", acc = "ACCURACY", pp = "PP")
+		header = "{pos: <9}{name: <15}{mtype: <10}{base: <10}{acc: <9}{pp: <8}\n".format(pos = "", name = "MOVENAME", mtype = "TYPE", base = "BASEPOWER", acc = "ACCURACY", pp = "PP")
 
-		out = "\n".join("{pos: <6}{name: <15}{mtype: <10}{power: <10}{accuracy: <9}{pp: <8}".format(pos = "", name = move.name, mtype = move.type, power = str(move.basePower), accuracy = str(move.accuracy), pp = str(move.pp)) for move in self.moves)
+		out = "\n".join("{pos: <9}{name: <15}{mtype: <10}{power: <10}{accuracy: <9}{pp: <8}".format(pos = "", name = move.name, mtype = move.type, power = str(move.basePower), accuracy = str(move.accuracy), pp = str(move.pp)) for move in self.moves)
+		out = header + out
+		print(out)
+
+	def battlePrintMoves(self):
+		header = "{pos: <9}{name: <15}{mtype: <10}{pp: <8}\n".format(pos = "", name = "MOVENAME", mtype = "TYPE", pp = "PP")
+
+		out = "\n".join("{pos: <9}{name: <15}{mtype: <10}{power: <10}{accuracy: <9}{pp: <8}".format(pos = "", name = move.name, mtype = move.type, power = str(move.basePower), accuracy = str(move.accuracy), pp = str(move.pp)) for move in self.moves)
 		out = header + out
 		print(out)
 

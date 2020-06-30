@@ -1,15 +1,19 @@
 import trainer
-import arena
+import battle
 import json
 import math
 import string
 import pokemon
 import moveset
 import sys
+
+# #enables program to read inputs from file, makes testing a lot easier
 sys.stdin
+
+
 def printDex():
 	#print pokedex out in index order (i.e. the order of the original pokedex)
-	print("Gen I Pokedex:\n")
+	print("\nGEN I POKEDEX:")
 	print("{index: <5}{name: <12}{type: <18}{hp: <4}{atk: <8}{dfn: <8}{spa: <8}{spe: <8}".format(index = "#", name = "NAME", type = "TYPE(s)", hp = "HP", atk = "ATTACK", dfn = "DEFENCE", spa = "SPECIAL", spe = "SPEED"))
 	#cycle through index numbers
 	for i in range(1, len(dex.keys())):
@@ -17,6 +21,8 @@ def printDex():
 		for key in dex.keys():
 			if dex[key]["id"] == i:
 				print("{index: <5}{name: <12}{type: <18}{hp: <4}{atk: <8}{dfn: <8}{spa: <8}{spe: <8}".format(index = str(dex[key]["id"]), name = dex[key]["name"], type = ", ".join(dex[key]["types"]), hp = str(dex[key]["baseStats"]["hp"]), atk = str(dex[key]["baseStats"]["atk"]), dfn = str(dex[key]["baseStats"]["def"]), spa = str(dex[key]["baseStats"]["spa"]), spe = str(dex[key]["baseStats"]["spe"])))
+
+
 try:
 	with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/final/gen1moves.json") as pdex:
 		g1moves = json.load(pdex)
@@ -43,7 +49,9 @@ try:
 		name1 = input("\nTrainer#1, please enter your name:\n(up to 10 characters)\n")
 	t1 = trainer.Trainer(name1)
 
+	
 	printDex()
+
 
 	for i in range(partySize):
 		#prompt user for name of pokemon they'd like to add, if not contained in pokedex, reprompt until valid input is passed
@@ -101,7 +109,7 @@ try:
 		name2 = input("\nTrainer#2, please enter your name:\n(up to 10 characters)\n")
 
 	t2 = trainer.Trainer(name2)
-
+	battle = battle.Battle(t1, t2)
 	printDex()
 
 	for i in range(partySize):
@@ -152,9 +160,34 @@ try:
 		pname = ""
 		movechoices = "buffer"
 
-	t1.showParty()
-	t2.showParty()
 
+	t1.showParty()
+	validPos = [str(i) for i in range(1, partySize + 1)]
+	pokechoice = input("{tname}, which pokemon would you like to send into battle first?\nPlease enter the pokemon's current position in the party\n".format(tname = t1.name))
+	pokechoice = pokechoice.capitalize()
+	while pokechoice not in validPos:
+		pokechoice = input("{tname}, which pokemon would you like to send into battle first?\nPlease enter the pokemon's current position in the party\n".format(tname = t1.name))
+	if pokechoice in validPos:
+		i = int(pokechoice) - 1
+	t1.switchIn(t1.party[i])
+	
+	t2.showParty()
+	pokechoice = input("{tname}, which pokemon would you like to send into battle first?\nPlease enter the pokemon's current position in the party\n".format(tname = t2.name))
+	pokechoice = pokechoice.capitalize()
+	while pokechoice not in validPos:
+		pokechoice = input("{tname}, which pokemon would you like to send into battle first?\nPlease enter the pokemon's current position in the party\n".format(tname = t2.name))
+	if pokechoice in validPos:
+		j = int(pokechoice) - 1
+	t2.switchIn(t2.party[j])
+	print("{tname} sent {current} into battle!".format(tname = t1.name, current = t1.activePokemon.name))
+	print("{tname} sent {current} into battle!".format(tname = t2.name, current = t2.activePokemon.name))
+	i = 0
+	while not battle.isWhiteOut() and i < 1:
+		battle.printBattle()
+		i += 1
+
+	
+	quit()
 	
 except Exception as e:
 	raise e

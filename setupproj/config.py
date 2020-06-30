@@ -6,7 +6,6 @@ from operator import getitem
 def makedexwlearnsets(out, master, learnlist, movedex):
 	for key in out.keys():
 		out[key]["types"] = master[key]["types"]
-		
 		out[key]["name"] = master[key]["name"]
 		out[key]["heightm"] = master[key]["heightm"]
 		out[key]["weightkg"] = master[key]["weightkg"]
