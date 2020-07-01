@@ -3,6 +3,7 @@ import json
 import math
 import string
 import moveset
+import time
 
 #Trainer class for use in pkmnCLI1, contained by Arena class, contains Pokemon in party (none of these classes extend one another)
 class Trainer():
@@ -49,6 +50,7 @@ class Trainer():
 
 	#function that switches a party member into battle
 	def switchIn(self, pokemon):
+		time.sleep(1)
 		if self.activePokemon == None and pokemon.battHP != 0:
 			self.activePokemon = pokemon
 			pokemon.active = True

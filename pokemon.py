@@ -27,8 +27,16 @@ class Pokemon():
 		self.ivs = self.calcIVs()
 		self.evs = self.calcEVs(isRandom)
 		self.statHP , self.statAtk, self. statDef, self.statSpa, self.statSpe =  self.calcStats(self.ivs, self.evs)
-		self.battHP, self.battAtk, self.battDef, self.battSpa, self.battSpe = self.statHP , self.statAtk, self. statDef, self.statSpa, self.statSpe
-		self.status = None
+		self.battHP, self.battAtk, self.battDef, self.battSpa, self.battSpe = self.statHP , self.statAtk * 1.125, self. statDef * 1.125, self.statSpa * 1.125, self.statSpe * 1.125
+		self.nonVolatileStatus = None
+		self.nonVolatileCount = 0
+		self.volatileStatus = None
+		self.volatileCount = 0
+		self.isRecharging = False
+		self.isCharging = False
+		self.isConfused = False
+		Self.isConfusedCount = 0
+		self.disabledMove = [0, ""]
 
 		#choosing moves
 		self.moves = []
@@ -68,15 +76,25 @@ class Pokemon():
 	def calcStats(self, ivs, evs):
 
 		hp = math.floor(((((self.baseHP + ivs[0]) * 2) + (math.floor((math.ceil(evs[0]**0.5))/(4))))*(self.level))/(100)) + self.level + 10
+		if hp > 888:
+			hp = 888
 
 		attack = math.floor(((((self.baseAtk + ivs[1]) * 2) + (math.floor((math.ceil(evs[1]**0.5))/(4))))*(self.level))/(100)) + 5
+		if attack > 888:
+			attack = 888
 
 		defense = math.floor(((((self.baseDef + ivs[2]) * 2) + (math.floor((math.ceil(evs[2]**0.5))/(4))))*(self.level))/(100)) + 5
+		if defense > 888:
+			defense = 888
 
 		special = math.floor(((((self.baseSpa + ivs[3]) * 2) + (math.floor((math.ceil(evs[3]**0.5))/(4))))*(self.level))/(100)) + 5
-
+		if special > 888:
+			special = 888
+		
 		speed = math.floor(((((self.baseSpe + ivs[4]) * 2) + (math.floor((math.ceil(evs[4]**0.5))/(4))))*(self.level))/(100)) + 5
-
+		if speed > 888:
+			speed = 888
+		
 		return hp, attack, defense, special, speed
 
 

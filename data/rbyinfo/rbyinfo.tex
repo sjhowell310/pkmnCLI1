@@ -1,3 +1,63 @@
+\documentclass[reprint, aps, prl, paper=A4]{revtex4-1}
+\usepackage{amsfonts}
+\usepackage{amssymb, gensymb}
+\usepackage{amsmath}
+\usepackage{breqn}
+\usepackage{mathbbol}   % for math symbols.
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{ulem}
+\usepackage{epstopdf}
+\usepackage{booktabs}
+\usepackage{easytable}
+\usepackage{url}
+\usepackage{pgfplots}
+\usepackage{appendix}
+\usepackage{listings}
+\usepackage{alltt}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\usepackage{footmisc}
+\usepackage{tipa}
+\usepackage{dcolumn}
+\usepackage[linguistics]{forest}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{subfig}
+\usetikzlibrary{shapes.geometric, arrows, quotes, patterns}
+\pgfplotsset{width=10cm,compat=1.9}
+\pgfplotsset{width=7cm,compat=1.13}
+\usepgfplotslibrary{polar}
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\color{mygray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{mygreen},
+  stringstyle=\color{mymauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\newcommand*\rfrac[2]{{}^{#1}\!/_{#2}}
+\newcommand{\tit}[1]{\textit{#1}}
+\newcommand{\tsc}[1]{\textsc{#1}}
+\newcommand{\tbf}[1]{\textbf{#1}}
+\newcommand{\tul}[1]{\underline{#1}}
+\newcommand{\mbf}[1]{\mathbf{#1}}
+\newcommand{\mrm}[1]{\mathrm{#1}}
+\newcommand{\trm}[1]{\textrm{#1}}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+
+\begin{document}
 How Things Work
 Last Updated 12 Mar 2005
 
@@ -42,7 +102,7 @@ I. Reference Information
 
 A. Introduction, Copyright, Disclaimer;
 The purpose of this document is to provide as much and as detailed information as possible
-about the battling aspect of the Pokémon chromatic generation. It should be noted that despite
+about the battling aspect of the Pok�mon chromatic generation. It should be noted that despite
 this, I do not guarantee that the information provided is 100% complete or accurate (see
 especially I5).
 
@@ -65,45 +125,45 @@ first given, and then any information that is relevant only to certain types of 
 then presented and noted accordingly.
 
 
-When you start a battle, you will automatically send out the first pokémon in your team that
+When you start a battle, you will automatically send out the first pok�mon in your team that
 has not fainted. During any one turn of a battle, there are four general actions that can be
 performed: fight, switch, use an item, or run away.
 
 ***Fight***
-You can order your active pokémon to attempt an attack, the effects of which are listed in E4.
+You can order your active pok�mon to attempt an attack, the effects of which are listed in E4.
 
 ***Switch***
-If you don't want your current active pokémon to fight, you can decide to switch it to one of
+If you don't want your current active pok�mon to fight, you can decide to switch it to one of
 your other party members (though this will not be possible if your team party has only one
-member, or if you try to switch to a pokémon that has fainted). Switching your active pokémon
+member, or if you try to switch to a pok�mon that has fainted). Switching your active pok�mon
 takes precedence over all other actions. Any time either player switches, the last move used
-flag of both pokémon will be reset.
+flag of both pok�mon will be reset.
 
 ***Use an Item***
 You can opt to use an item instead of attacking. The use of an item takes precedence over
 making a move, though not over switching. Item use during a battle is restricted to items that
 can restore HP, restore PP, cure a status ailment, temporarily increase a stat, attempt to
-catch the opposing pokémon, or allow you to escape from the battle. It is not possible to
-escape from a trainer battle, and it is not possible to catch a trainer's pokémon (though you
+catch the opposing pok�mon, or allow you to escape from the battle. It is not possible to
+escape from a trainer battle, and it is not possible to catch a trainer's pok�mon (though you
 still have the ability to try). This option is unavailable in link battles.
 
 ***Run away***
-If you do not want to battle, you can attempt to run away from the opposing pokémon. If the 
-current speed of your active pokémon is greater than or equal to the current speed of the
+If you do not want to battle, you can attempt to run away from the opposing pok�mon. If the 
+current speed of your active pok�mon is greater than or equal to the current speed of the
 opponent, you will be able to run away without any problems, but if the current speed of your
-active pokémon is less than the speed of the opponent, there is a chance of not being able to
+active pok�mon is less than the speed of the opponent, there is a chance of not being able to
 escape, in which case you do nothing during that round. It is not possible to run away from a
 trainer battle.
 
-A battle will end if all of your pokémon faint, if all the opposing pokémon faint, or (if
-against a wild pokémon) the opposing pokémon is caught.
+A battle will end if all of your pok�mon faint, if all the opposing pok�mon faint, or (if
+against a wild pok�mon) the opposing pok�mon is caught.
 
-A pokémon's health will be represented by health bar with 48 pixels. The health bar will be
+A pok�mon's health will be represented by health bar with 48 pixels. The health bar will be
 green if it has int(2.25*int(MaxHP/4) + 0.75) or more HP, orange if it has
 int(265*int(0.2*MaxHP + 0.2)/256 + 2) or more HP but less HP than the amount needed for a green
 health bar, and red if it has less HP than the amount needed for a yellow bar. This translates
 into approximate ranges of 1% to 20% for a red meter, 21% to 55% for an orange meter, and 56%
-or higher for a green meter. If a pokémon's health bar is red, its cry will change, further
+or higher for a green meter. If a pok�mon's health bar is red, its cry will change, further
 indicating that it is in poor health.
 
 The Battle Damage Formula is:
@@ -123,29 +183,29 @@ effectiveness multipliers is 999.
 There are some other phenomena that influence the BDF. One is rollover, the effects of which
 are described in the Stats section. Each time a calculation is made, it is done by integer
 division, which results in the decimal (if any) always being dropped, instead of rounded.
-Aside from recurrent damage, the amount of damage done to a pokémon can never be greater than
+Aside from recurrent damage, the amount of damage done to a pok�mon can never be greater than
 its current HP (but the amount of damage done to a substitute can). Any time a damaging move
 results in 0 damage being done, it will generate a miss, though the displayed message will
-almost always be that the opponent is unaffected. Also, if the pokémon's current attack or
+almost always be that the opponent is unaffected. Also, if the pok�mon's current attack or
 current defense is greater than 255, then its attack and its defense will be halved, and halved
 again (truncating both times), and those numbers will be used in place of its actual attack and
 defense values.
 
-If an active pokémon switches out, all benefits and losses of moves that have influenced it
-while it remained active will be reset. The only things a pokémon will retain after switching
+If an active pok�mon switches out, all benefits and losses of moves that have influenced it
+while it remained active will be reset. The only things a pok�mon will retain after switching
 is its current HP, current PP, and any major status ailments it has.
 
 
 Common to all in-game battles:
 Your PP is of course limited, but the opponent will have an unlimited amount current of PP.
-Each time an opponent pokémon faints, every one of your team members that was active during
+Each time an opponent pok�mon faints, every one of your team members that was active during
 that battle will gain experience. If you win the battle, you will pick up any money generated
 by the use of Pay Day and will receive money if the battle was against a trainer. If all of
-your pokémon are knocked out, you will black out, and awake in the last pokémon center you
+your pok�mon are knocked out, you will black out, and awake in the last pok�mon center you
 visited, with half of your money.
 
-If a pokémon has been traded to you (either from another person or from a person in the game),
-it will gain 50% more experience from each battle than your pokémon, but if you do not have the
+If a pok�mon has been traded to you (either from another person or from a person in the game),
+it will gain 50% more experience from each battle than your pok�mon, but if you do not have the
 proper badges, it may become unruly. It will always run away when ordered to, but if ordered to
 attack, it might turn away, loaf around, ignore orders, use a different attack, begin to nap,
 or not obey. If it turns away, loafs around, or ignores orders, it will simply not make a move
@@ -156,107 +216,107 @@ process). If if does not obey, it will hurt itself in its confusion.
 After defeating each of the eight gym leaders, you will receive the leader's badge, enhancing
 your in-game abilities.
 
-Boulderbadge: increases the attack of all your pokémon by 12.5% of its original value
+Boulderbadge: increases the attack of all your pok�mon by 12.5% of its original value
               allows you to use Flash outside of battle
 
-Cascadebadge: traded pokémon of up to Lv.30 will always obey you
+Cascadebadge: traded pok�mon of up to Lv.30 will always obey you
               allows you to use Cut outside of battle
 
-Thunderbadge: increases the speed of all your pokémon by 12.5% of its original value
+Thunderbadge: increases the speed of all your pok�mon by 12.5% of its original value
               allows you to use Fly outside of battle
 
-Rainbowbadge: traded pokémon of up to Lv.50 will always obey you
+Rainbowbadge: traded pok�mon of up to Lv.50 will always obey you
               allows you to use Strength outside of battle
 
-Soul Badge: increases the defense of all your pokémon by 12.5% of its original value
+Soul Badge: increases the defense of all your pok�mon by 12.5% of its original value
             allows you to use Surf outside of battle
 
-Marsh Badge: traded pokémon of up to Lv.70 will always obey you
+Marsh Badge: traded pok�mon of up to Lv.70 will always obey you
 
-Volcanobadge: increases the special of all your pokémon by 12.5% of its original value
+Volcanobadge: increases the special of all your pok�mon by 12.5% of its original value
 
-Earth Badge: traded pokémon of up to Lv.100 will always obey you
+Earth Badge: traded pok�mon of up to Lv.100 will always obey you
 
 The effects of gym leader badges apply to all in-game battles. Even without any gym badges,
-traded pokémon of up to Lv.10 will always obey you. Note that the Earth Badge will allow you
-to control traded pokémon of up to Lv.100, as opposed to allowing you to control all traded
-pokémon. It is not possible for you to fully control a traded pokémon that is above Lv.100
-(though such a pokémon would have to be obtained via a glitch or cheating device).
+traded pok�mon of up to Lv.10 will always obey you. Note that the Earth Badge will allow you
+to control traded pok�mon of up to Lv.100, as opposed to allowing you to control all traded
+pok�mon. It is not possible for you to fully control a traded pok�mon that is above Lv.100
+(though such a pok�mon would have to be obtained via a glitch or cheating device).
 
-Stat increases due to badges are automatically applied to all your pokémon, and do not
+Stat increases due to badges are automatically applied to all your pok�mon, and do not
 count as stat level changes. Because of these stat increases, the stat value cap for all stats
-essentially becomes 888 instead of 999. Also, each time your pokémon uses a stat-increasing
+essentially becomes 888 instead of 999. Also, each time your pok�mon uses a stat-increasing
 move (such as Amnesia, Double Team, or Swords Dance), the stat increases given by the badges
 will be applied again; this is known as the stat bleeding glitch.
 
 
-Wild pokémon battles:
-Wild pokémon can be encountered in tall grass, caves, across water, or when fishing (or in the
+Wild pok�mon battles:
+Wild pok�mon can be encountered in tall grass, caves, across water, or when fishing (or in the
 Safari Zone, but that is slightly different, as noted below). You can attempt to catch the
-pokémon by throwing a pokéball at it before it faints. The battle ends when the wild pokémon
-has fainted or been caught, or all of your active pokémon have fainted.
+pok�mon by throwing a pok�ball at it before it faints. The battle ends when the wild pok�mon
+has fainted or been caught, or all of your active pok�mon have fainted.
 
 
 Safari Zone battles:
-The Safari Zone is located in Fuschia City. You pay 500 pokédollars for 30 Safari Balls (which
+The Safari Zone is located in Fuschia City. You pay 500 pok�dollars for 30 Safari Balls (which
 act like Great Balls), and can stay until you use all of them, walk 500 steps, or leave on your
-own will, whichever happens first. When encountering pokémon in the Safari Zone, you can't
+own will, whichever happens first. When encountering pok�mon in the Safari Zone, you can't
 battle them. Instead, you will have the option to throw bait, a rock, or a Safari Ball at the
-pokémon, or to run away. Throwing a rock doubles the pokémon's catch rate and run away rate,
-while throwing bait halves a pokémon's catch rate and run away rate.
+pok�mon, or to run away. Throwing a rock doubles the pok�mon's catch rate and run away rate,
+while throwing bait halves a pok�mon's catch rate and run away rate.
 
 
 Trainer battles:
 If you get in the field of view of a trainer, an exclamation point will appear over the
 trainer's head and the trainer will walk up to you, give an introduction, and start a battle.
-Whenever you knock out one of the trainer's pokémon, you will be told what the next pokémon
-sent out will be and then have the option of switching your active pokémon without taking a
-turn, even if your active pokémon normally couldn't. Instead of attacking or switching, both
+Whenever you knock out one of the trainer's pok�mon, you will be told what the next pok�mon
+sent out will be and then have the option of switching your active pok�mon without taking a
+turn, even if your active pok�mon normally couldn't. Instead of attacking or switching, both
 you and the trainer (though the trainer almost never does this) may use an item. You may also
-throw a pokéball at the opponent's pokémon, but the trainer will always block it. You win by
-knocking out all of the trainer's pokémon. It is not possible to run from a trainer battle. Gym
+throw a pok�ball at the opponent's pok�mon, but the trainer will always block it. You win by
+knocking out all of the trainer's pok�mon. It is not possible to run from a trainer battle. Gym
 leaders and Elite 4 members will not automatically walk up to you; you must face them and press
 A to challenge them.
 
 
 Link Battles:
-If you and someone else have linked your games and are both in pokémon centers, the person in
-the right half of the pokémon center will allow you to trade pokémon or battle. You will have
-to save before battling, and your pokémon will not be automatically healed before battling.
+If you and someone else have linked your games and are both in pok�mon centers, the person in
+the right half of the pok�mon center will allow you to trade pok�mon or battle. You will have
+to save before battling, and your pok�mon will not be automatically healed before battling.
 Choosing to battle will land you and your opponent in a room with a battling simulator, and
 when both of you have pressed A while facing it, the battle will begin. During each turn, you
-will have the chance to make an attack, switch your active pokémon, or run away. You win if
-your opponent has no active pokémon or runs away, lose if you have no active pokémon or run
-away, and draw if both of you simultaneously run away or have no active pokémon.
+will have the chance to make an attack, switch your active pok�mon, or run away. You win if
+your opponent has no active pok�mon or runs away, lose if you have no active pok�mon or run
+away, and draw if both of you simultaneously run away or have no active pok�mon.
 
 For the purpose of a link battle, badges, unruliness, items, and gaining experience do not
-exist, and your pokémon will be restored to their original state after the battle ends or is
+exist, and your pok�mon will be restored to their original state after the battle ends or is
 reset.
 
 
 Stadium Differences:
-A pokémon's health bar will have 96 pixels. Players will be able to see the exact amount of
-current and maximum HP that each active pokémon has. Damaging moves that do 0 damage will
+A pok�mon's health bar will have 96 pixels. Players will be able to see the exact amount of
+current and maximum HP that each active pok�mon has. Damaging moves that do 0 damage will
 always result in a message that the move missed.
 
 
 
 C. Stats, Stat Modifiers, and Stat Caps
 
-All pokémon have six numerical statistics (Level, HP, Attack, Defense, Speed, Special), as well
-as two non-numerical stats (Accuracy, Evasion). Pokémon also have experience points, which are
+All pok�mon have six numerical statistics (Level, HP, Attack, Defense, Speed, Special), as well
+as two non-numerical stats (Accuracy, Evasion). Pok�mon also have experience points, which are
 used to determine their levels, and stat experience, a non-visible number that affects a
-pokémon's stats.
+pok�mon's stats.
 
 ***Level, Experience Points***
-Each time a pokémon grows a level, its other numerical stats will increase. Both level and the
+Each time a pok�mon grows a level, its other numerical stats will increase. Both level and the
 appropriate offensive stat are used in the BDF to calculate the amount of damage it can do, so
-an increase in level results in an increase in average damage. Since a pokémon's level also
+an increase in level results in an increase in average damage. Since a pok�mon's level also
 determines how much damage Night Shade, Seismic Toss, and (less directly) Psywave will do, the
-damage done by those moves will increase as well. Wild pokémon can be found as low as Lv.2, and
-it is possible to raise a pokémon up to Lv.100.
+damage done by those moves will increase as well. Wild pok�mon can be found as low as Lv.2, and
+it is possible to raise a pok�mon up to Lv.100.
 
-A pokémon's level is determined by how many experience points it has and its growth rate. The
+A pok�mon's level is determined by how many experience points it has and its growth rate. The
 growth rate formulas are:
      Fast:   0.8L^3                          (800,000 to get to Lv.100)
      Medium: L^3                           (1,000,000 to get to Lv.100)
@@ -265,99 +325,99 @@ growth rate formulas are:
 
 Truncating the values given by these formulas determines the minimum number of experience
 points necessary to be on a given level L. The total amount of experience points that an
-opponent pokémon will give for defeating it is equal to int(T*int(int(int(int(B*L*W)/7)/N)/E)).
+opponent pok�mon will give for defeating it is equal to int(T*int(int(int(int(B*L*W)/7)/N)/E)).
 Additionally, if E=2, then int(T*int(int(int(int(int(B*L*W)/7)/N)/2)/P)) experience points will
 be gained by each non-fainted member of your party, regardless of whether or not they were
 active during the battle. In both of these formulas, B is the opponent's base experience (a
 fundamental value based on its species), L is the opponent's level, W is the opponent's
-wildness (1.5 if used by a trainer, otherwise 1), N is the total number of your pokémon that
+wildness (1.5 if used by a trainer, otherwise 1), N is the total number of your pok�mon that
 were active and did not faint while the opponent was active, E is your Exp.All value (2 if you
 are carrying the Exp.All item, 1 if you are not), P is the number of party members you have
-that have not fainted, and T is your pokémon's trade value (1.5 if your pokémon is traded,
-otherwise 1; a pokémon is considered traded if its ID number does not match your ID number).
-Pokémon that have fainted cannot gain experience points, even if they were active before
-fainting. Pokémon cannot gain experience in link battles.
+that have not fainted, and T is your pok�mon's trade value (1.5 if your pok�mon is traded,
+otherwise 1; a pok�mon is considered traded if its ID number does not match your ID number).
+Pok�mon that have fainted cannot gain experience points, even if they were active before
+fainting. Pok�mon cannot gain experience in link battles.
 
-Although the actual levels on which you can normally acquire pokémon on range from 2 to 100, it
-is theoretically possible for a pokémon's level to be any integer from 0 to 255 (any time it
+Although the actual levels on which you can normally acquire pok�mon on range from 2 to 100, it
+is theoretically possible for a pok�mon's level to be any integer from 0 to 255 (any time it
 becomes higher, including during a critical hit, it will be reduced mod 256). It is also
-possible to find pokémon on levels higher than 100 (and through level roll over, 0 and 1) via
-the Missingno. glitch in Pokémon Red and Blue. To activate the Missingno. glitch, talk to the
+possible to find pok�mon on levels higher than 100 (and through level roll over, 0 and 1) via
+the Missingno. glitch in Pok�mon Red and Blue. To activate the Missingno. glitch, talk to the
 old man in Viridian City near the cuttable bush, answer no to his question, and watch him catch
-a Weedle. Afterwards, wild pokémon (including the glitch pokémon Missingno.) will appear on the
-eastern edges of Cinnabar and Seafoam Islands, and some of these pokémon will have levels
+a Weedle. Afterwards, wild pok�mon (including the glitch pok�mon Missingno.) will appear on the
+eastern edges of Cinnabar and Seafoam Islands, and some of these pok�mon will have levels
 higher than 100.
 
-A pokémon's level can be increased by gaining enough experience points (and is in fact
-recalculated each time a pokémon gains experience points or is given a Rare Candy). Using the
-Rare Candy item on a pokémon will increase its experience points by the minimum amount needed
-to increase its level by 1. Though it will have no effect on Lv.100 pokémon, it will work on
-pokémon of higher levels. A Lv.100 pokémon cannot gain experience points, and if a pokémon's
+A pok�mon's level can be increased by gaining enough experience points (and is in fact
+recalculated each time a pok�mon gains experience points or is given a Rare Candy). Using the
+Rare Candy item on a pok�mon will increase its experience points by the minimum amount needed
+to increase its level by 1. Though it will have no effect on Lv.100 pok�mon, it will work on
+pok�mon of higher levels. A Lv.100 pok�mon cannot gain experience points, and if a pok�mon's
 level is greater than 100, it will be reduced to 100 if it gains any experience points via
 battling.
 
 
 ***HP***
-Short for Hit Points, basically the amount of damage a pokémon can withstand. When a pokémon
-has no HP left, it will faint, and you will win a battle when all of your opponent's pokémon
-have fainted. Pokémon have two HP values, current and maximum. Current HP is the amount of HP
-the pokémon has at any referenced time, since it may have been damaged during the battle and
-have less than its maximum possible HP. Maximum HP is supposedly the highest amount a pokémon's
+Short for Hit Points, basically the amount of damage a pok�mon can withstand. When a pok�mon
+has no HP left, it will faint, and you will win a battle when all of your opponent's pok�mon
+have fainted. Pok�mon have two HP values, current and maximum. Current HP is the amount of HP
+the pok�mon has at any referenced time, since it may have been damaged during the battle and
+have less than its maximum possible HP. Maximum HP is supposedly the highest amount a pok�mon's
 HP can be, but is more of a calibration number for determining how much HP to restore to a
-pokémon via HP-restoring methods. In at least one case, it is legally possible for a pokémon to
+pok�mon via HP-restoring methods. In at least one case, it is legally possible for a pok�mon to
 have greater current HP than maximum HP (for more information, see the in-game differences for
 Transform).
 
 Ways that HP can be restored:
-     -Healing at a Pokémon Center or rest stop, in which case the current HP of all your party
+     -Healing at a Pok�mon Center or rest stop, in which case the current HP of all your party
       members will be made equal to their respective maximum HP values.
      -Using a HP-restoring item, either in battle (where it will count as your turn) or out of
       battle. Items that can restore HP are Fresh Water, Full Restore, Hyper Potion, Lemonade,
       Max Potion, Max Revive, Potion, Rare Candy, Revive, Soda Pop, and Super Potion. (Rare
-      Candy is designated to increasing a pokémon's level rather than HP, but a level increase
+      Candy is designated to increasing a pok�mon's level rather than HP, but a level increase
       usually results in an increase in maximum HP and subsequently current HP, even if the
-      pokémon was fainted at the time of use.)
+      pok�mon was fainted at the time of use.)
      -By using a move while battling that can restore HP. Absorb, Dream Eater, Leech Life,
       Leech Seed, Mega Drain, Recover, Rest, and Softboiled are the moves that can restore HP,
       and Softboiled can also be used out of battle to heal other party members.
 
-There is also an item, HP Up, which can increase a pokémon's maximum HP but will have no effect
+There is also an item, HP Up, which can increase a pok�mon's maximum HP but will have no effect
 on its current HP.
 
 Using a move is the only available method of HP restoration in link battles.
 
 
 ***Attack***
-A pokémon's attack stat is used in calculating how much damage it will do with physical,
+A pok�mon's attack stat is used in calculating how much damage it will do with physical,
 damaging attacks.
 
 ***Defense***
-A pokémon's defense stat is used in calculating how much resistance it has to physical,
+A pok�mon's defense stat is used in calculating how much resistance it has to physical,
 damaging attacks.
 
 ***Speed***
-A pokémon's speed will determine when in a round it will attack in relation to its opponent,
-unless one of them uses an altered-priority move. If both pokémon use an increased or a
-decreased priority move, turn placement will be determined normally. If both active pokémon
+A pok�mon's speed will determine when in a round it will attack in relation to its opponent,
+unless one of them uses an altered-priority move. If both pok�mon use an increased or a
+decreased priority move, turn placement will be determined normally. If both active pok�mon
 have the same speed, turn placement will be determined randomly.
 
 ***Special***
-A pokémon's special stat is used in calculating how much damage it will do with as well as how
+A pok�mon's special stat is used in calculating how much damage it will do with as well as how
 much resistance it has to special, damaging attacks.
 
 
-A pokémon's Attack, Defense, Speed, and Special can be increased or decreased by up to six
+A pok�mon's Attack, Defense, Speed, and Special can be increased or decreased by up to six
 levels, via the use of certain moves or items. A stat with a level value of N will multiply the
-pokémon's base stat by (2+N)/2 if N is positive, or by 2/(2-N) if N is negative (and truncate
+pok�mon's base stat by (2+N)/2 if N is positive, or by 2/(2-N) if N is negative (and truncate
 afterwards). Actual changes to stat levels happen via addition and subtraction. All of a
-pokémon's stat levels will be reset to 0 if it switches out, and the use of Haze by either
-pokémon will (among other things) reset the stat levels of both active pokémon to 0.
+pok�mon's stat levels will be reset to 0 if it switches out, and the use of Haze by either
+pok�mon will (among other things) reset the stat levels of both active pok�mon to 0.
 
-A pokémon does not have statistical Accuracy or Evasion values, but Accuracy and Evasion
+A pok�mon does not have statistical Accuracy or Evasion values, but Accuracy and Evasion
 modifiers are taken into consideration by moves that have accuracy values (moves that do not
 have accuracy values are unaffected by accuracy and evasion modifiers, and essentially never
 miss). Accuracy and Evasion modifiers are also increased in terms of levels, but not on the
-same scale as Attack, Defense, Speed, and Special. Whenever a pokémon uses an attack with an
+same scale as Attack, Defense, Speed, and Special. Whenever a pok�mon uses an attack with an
 accuracy value, the base accuracy of the move is multiplied by the user's accuracy modifier and
 opponent's evasion modifier to determine the move's final accuracy.
 
@@ -369,8 +429,8 @@ negative. Whenever a move with an accuracy value is used, its initial accuracy v
 multiplied by the user's accuracy modifier and the opponent's evasion modifier to determine the
 final accuracy of the move.
 
-Stats have level and value caps. A pokémon's stat levels cannot go above +6 or below -6.
-Additionally, a pokémon's stat values cannot go above 999 or below 1 (for Accuracy and Evasion
+Stats have level and value caps. A pok�mon's stat levels cannot go above +6 or below -6.
+Additionally, a pok�mon's stat values cannot go above 999 or below 1 (for Accuracy and Evasion
 modifiers, a move's accuracy cannot go above 100% or below 0%). If a move that can only cause a
 stat level change attempts to change a stat beyond either of these limitations, nothing will
 happen, and if a move has a secondary effect that could potentially change a stat beyond its
@@ -378,7 +438,7 @@ level or value limitations, the secondary effect will not activate. The stat val
 to a burn, paralysis, or (in-game only) badges counts towards stat value caps, but the changes
 due to Light Screen and Reflect do not, and as a result may cause roll over.
 
-A pokémon's stats can roll over if they get too high. If a pokémon's attack, defense, or
+A pok�mon's stats can roll over if they get too high. If a pok�mon's attack, defense, or
 special reaches 1024 or higher at any time during battle calculations, it will be reduced mod
 1024. There is no such rollover associated with speed, though under normal circumstances it is
 still subject to the standard stat level and value caps.
@@ -386,9 +446,9 @@ still subject to the standard stat level and value caps.
 
 
 D. Status Ailments;
-This is a detailed list of the status ailments that a pokémon might be subjected to while
+This is a detailed list of the status ailments that a pok�mon might be subjected to while
 battling. Major status ailments cannot be reset by switching, though minor status ailments can.
-A pokémon can't have more than one status ailment at a time (so any major status ailment can
+A pok�mon can't have more than one status ailment at a time (so any major status ailment can
 prevented by having another major status ailment), but can simultaneously have one major status
 ailment and one minor status ailment. Burn, Freeze, Paralysis, Poison, and Sleep are major
 status ailments, and Confusion is a minor status ailment.
@@ -406,61 +466,61 @@ up to 1.
 
 
 ***Burn***
-Effects: The pokémon becomes burned, and loses 1/16th of its maximum HP at the end of each of
-its turns in a round. Also, the pokémon's attack is reduced to 50% of its original value,
-though this attack reduction is in addition to any stat modifiers that the pokémon may have. If
-the pokémon's maximum HP is less than 16, it will lose 1 HP per round.
+Effects: The pok�mon becomes burned, and loses 1/16th of its maximum HP at the end of each of
+its turns in a round. Also, the pok�mon's attack is reduced to 50% of its original value,
+though this attack reduction is in addition to any stat modifiers that the pok�mon may have. If
+the pok�mon's maximum HP is less than 16, it will lose 1 HP per round.
 
-If the pokémon is burned during a round that it switches in, it will only be subjected to
+If the pok�mon is burned during a round that it switches in, it will only be subjected to
 recurrent burn damage that round if its speed is less than or equal to the opponent's speed. If
-the pokémon is burned and is switched in, it will be subjected to recurrent burn damage before
+the pok�mon is burned and is switched in, it will be subjected to recurrent burn damage before
 the opponent makes a move if its speed is greater than the opponent's, but after the opponent
-makes a move if its speed is less than or equal to the opponent's. If both pokémon switch in
+makes a move if its speed is less than or equal to the opponent's. If both pok�mon switch in
 and are burned or poisoned, recurrent damage will be done in order according to their current
 speed values.
 
-Recurrent burn damage will be done even if the pokémon knocks itself out with crash damage,
+Recurrent burn damage will be done even if the pok�mon knocks itself out with crash damage,
 recoil damage, or self-inflicted confusion damage, or by making a substitute before the end of
-its turn but will not occur if the burned pokémon knocks out an opponent. Continuing partial
+its turn but will not occur if the burned pok�mon knocks out an opponent. Continuing partial
 trapping damage is done before recurrent burn damage, and Leech Seed draining is done after
 recurrent burn damage.
 
 The attack loss penalty will be ignored during a critical hit, and will be ignored after using
-an attack-raising attack, but reimplemented if the pokémon is subsequently hit with a attack-
+an attack-raising attack, but reimplemented if the pok�mon is subsequently hit with a attack-
 reducing attack.
 
 Prevention, Cures: A substitute will block secondary burns, and fire types can't be burned by
 fire attacks. Rest can cure a burn, but will not cure its attack reduction penalty (though
 subsequently using a attack-raising move or switching out will then cure that). Using an
 attack-raising move will tenuously negate the attack reduction penalty, but not the burn
-status. Haze will temporarily cure the attack reduction penalty if used by the pokémon, and
+status. Haze will temporarily cure the attack reduction penalty if used by the pok�mon, and
 completely cure the burn if it is used by the opponent. Critical hits will ignore the attack
 reduction of a burn.
 
-In-game Differences: Any attack modifiers used against a burned pokémon will cause the attack
+In-game Differences: Any attack modifiers used against a burned pok�mon will cause the attack
 reduction due to burn to be ignored.
 
 Stadium Differences: The attack reduction of a burn will be reset by rest. Attack-raising
-attacks will not negate the attack loss penalty. A pokémon can rid itself of the burn ailment
-by using Haze. A pokémon will not take recurrent burn damage when it switches in.
+attacks will not negate the attack loss penalty. A pok�mon can rid itself of the burn ailment
+by using Haze. A pok�mon will not take recurrent burn damage when it switches in.
 
 Moves that can cause a burn: Ember, Fire Blast, Fire Punch, Flamethrower
 
 
 ***Confusion***
-Effects: The pokémon receives a confusion duration length of 2-5 turns (chosen randomly), which
-is reduced by 1 each time the pokémon attempts to execute an attack. The duration deduction for
-confusion occurs immediately before the attempt to execute the move is made, so the pokémon
+Effects: The pok�mon receives a confusion duration length of 2-5 turns (chosen randomly), which
+is reduced by 1 each time the pok�mon attempts to execute an attack. The duration deduction for
+confusion occurs immediately before the attempt to execute the move is made, so the pok�mon
 will effectively be confused for 1-4 turns. When the confusion duration length ends, a notice
-that the pokémon is no longer confused will be shown immediately before it attempts to execute
-its next attack. While confused, the pokémon will have a 50% chance of attacking itself with a
+that the pok�mon is no longer confused will be shown immediately before it attempts to execute
+its next attack. While confused, the pok�mon will have a 50% chance of attacking itself with a
 40-power attack, resulting in min(int(int(40*A*int(2L/5 + 2)/D)/50), 997) + 2 damage to itself
-(where A, D, and L are the pokémon's current attack, current defense, and level) instead of
-performing its selected attack. If the pokémon's current attack or current defense is greater
+(where A, D, and L are the pok�mon's current attack, current defense, and level) instead of
+performing its selected attack. If the pok�mon's current attack or current defense is greater
 than 255, then its attack and its defense will be halved, and halved again (truncating both
 times), and those numbers will be used in place of its actual attack and defense values.
 
-The confusion duration length will only be reduced when the pokémon actually attempts to make a
+The confusion duration length will only be reduced when the pok�mon actually attempts to make a
 move, so turns spent flinching, fast asleep, frozen solid, recharging, or partially trapped
 will not count towards the confusion duration length. Self inflicted confusion damage will not
 reset the last move used flag, counts as the last amount of damage done (and can be countered
@@ -482,38 +542,38 @@ Moves that can cause confusion: Confuse Ray, Confusion, Petal Dance (self-inflic
 
 
 ***Freeze***
-Effects: The pokémon becomes frozen solid indefinately, rendering it unable to attack or select
+Effects: The pok�mon becomes frozen solid indefinately, rendering it unable to attack or select
 a move.
 
 Freeze will pause but not disrupt the turn duration of multi-turn moves, Bide, Hyper Beam,
 Petal Dance, Rage, and Thrash.
 
-If a frozen pokémon gets defrosted by a fire move before its turn in a round ends, it will be
+If a frozen pok�mon gets defrosted by a fire move before its turn in a round ends, it will be
 able to attack during that round. It will attack with the last move it selected, or its topmost
 move if it had not selected an attack (selecting an attack but switching out will reset the
 attack selection). If at this time the move selected has a current PP count of 0, it will still
 be used, and afterwards, its current PP will become 63, and full PP ups will be applied to the
-move. Additionally, a frozen pokémon that has not recharged and has its freeze status
+move. Additionally, a frozen pok�mon that has not recharged and has its freeze status
 eliminated via Haze will remain unable to attack, switch, or do anything, and nothing (not even
 getting refrozen and then defrosted by a fire move) will be able to change this.
 
 Prevention, Cures: A substitute will block secondary freeze, and ice types can't be frozen by
-ice attacks. The pokémon can be defrosted only if the opponent uses a fire attack or Haze
+ice attacks. The pok�mon can be defrosted only if the opponent uses a fire attack or Haze
 against it while it is active.
 
-Stadium Differences: You get to select a move while the pokémon is frozen.
+Stadium Differences: You get to select a move while the pok�mon is frozen.
 
 Moves that can cause freezing: Blizzard, Ice Beam, Ice Punch
 
 
 ***Paralysis****
-Effects: The pokémon becomes paralyzed, reducing its speed to 25% of its original value, though
-this speed reduction is in addition to any stat modifiers that the pokémon may have.
-Additionally, each time the pokémon attempts to perform an attack, it will have a 25% chance of
+Effects: The pok�mon becomes paralyzed, reducing its speed to 25% of its original value, though
+this speed reduction is in addition to any stat modifiers that the pok�mon may have.
+Additionally, each time the pok�mon attempts to perform an attack, it will have a 25% chance of
 being fully paralyzed and not being able to attack.
 
 The speed loss penalty can be negated by using a speed-raising attack, but will be
-reimplemented if the pokémon is subsequently hit with a speed-reducing attack. If a pokémon
+reimplemented if the pok�mon is subsequently hit with a speed-reducing attack. If a pok�mon
 becomes fully paralyzed during the semi-invulnerable turn of Dig or Fly, it will remain semi-
 invulnerable until it switches out or successfully executes Dig or Fly. Being fully paralyzed
 will not reset the last amount of damage done or last move used flags.
@@ -523,46 +583,46 @@ prevent the paralysis possibility of the respective attacks. Rest can cure paral
 not cure the speed reduction penalty (though subsequently using a speed-raising move or
 switching out will then cure that). Speed-increasing moves will temporarily cure the speed
 reduction penalty, but not the paralysis status. Haze will temporarily cure the speed reduction
-penalty if used by the pokémon, and completely cure paralysis if it is used by the opponent.
+penalty if used by the pok�mon, and completely cure paralysis if it is used by the opponent.
 
-In-game Differences: Any speed modifiers used against a paralyzed pokémon will cause the speed
+In-game Differences: Any speed modifiers used against a paralyzed pok�mon will cause the speed
 reduction due to paralysis to be ignored.
 
 Stadium Differences: Rest will reset the speed reduction of paralysis. Speed-raising attacks
 will not negate the speed loss penalty. A substitute will completely protect the user from
-paralysis. A pokémon can completely rid itself of the paralysis ailment by using Haze.
+paralysis. A pok�mon can completely rid itself of the paralysis ailment by using Haze.
 
 Moves that can cause paralysis: Body Slam, Glare, Lick, Stun Spore, Thunder, Thunder Wave,
           Thunderbolt, Thundershock, Thunderpunch
 
 
 ***Poison***
-Effects: The pokémon becomes poisoned, and loses 1/16th of its maximum HP at the end of each of
-its turns in a round. If the pokémon's maximum HP is less than 16, it will lose 1 HP per round.
+Effects: The pok�mon becomes poisoned, and loses 1/16th of its maximum HP at the end of each of
+its turns in a round. If the pok�mon's maximum HP is less than 16, it will lose 1 HP per round.
 
-If the pokémon is poisoned during a round that it switches in, it will only be subjected to
+If the pok�mon is poisoned during a round that it switches in, it will only be subjected to
 recurrent poison damage that round if its speed is less than or equal to the opponent's speed.
-If the pokémon is poisoned and is switched in, it will be subjected to recurrent poison damage
+If the pok�mon is poisoned and is switched in, it will be subjected to recurrent poison damage
 before the opponent makes a move if its speed is greater than the opponent's, but after the
-opponent makes a move if its speed is less than or equal to the opponent's. If both pokémon
+opponent makes a move if its speed is less than or equal to the opponent's. If both pok�mon
 switch in and are burned or poisoned, recurrent damage will be done in order according to their
 current speed values.
 
-Recurrent poison damage will be done even if the pokémon knocks itself out with crash damage,
+Recurrent poison damage will be done even if the pok�mon knocks itself out with crash damage,
 recoil damage, or self-inflicted confusion damage, or by making a substitute before the end of
-its turn but will not occur if the poisoned pokémon knocks out an opponent. Continuing partial
+its turn but will not occur if the poisoned pok�mon knocks out an opponent. Continuing partial
 trapping damage is done before recurrent poison damage, and Leech Seed draining is done after
 recurrent poison damage.
 
 Prevention, Cures: A substitute will prevent poisoning, and poison types can't be poisoned. If
 used by the opponent, Haze will cure poisoning.
 
-In-game Differences: Out of battle, a poisoned Pokémon will take 1 HP of damage for every
+In-game Differences: Out of battle, a poisoned Pok�mon will take 1 HP of damage for every
 fourth step you take. The amount of steps that required for the HP to be deducted will be reset
 by resetting the game. (No such poison damage is taken while walking around in a colosseum
 room.)
 
-Stadium Differences: A pokémon can rid itself of the poison ailment by using Haze. A pokémon
+Stadium Differences: A pok�mon can rid itself of the poison ailment by using Haze. A pok�mon
 will not take recurrent poison damage when it switches in.
 
 Moves that can cause poisoning: Poison Gas, Poison Sting, Poisonpowder, Sludge, Smog,
@@ -570,23 +630,23 @@ Moves that can cause poisoning: Poison Gas, Poison Sting, Poisonpowder, Sludge, 
 
 
 ***Sleep***
-Effects: The pokémon receives a sleep duration length of 1-7 turns (chosen randomly), which is
-reduced by 1 each time the pokémon attempts to execute an attack. The duration deduction will
-occur immediately before the attempt to execute the move is made, and the pokémon will wake up
+Effects: The pok�mon receives a sleep duration length of 1-7 turns (chosen randomly), which is
+reduced by 1 each time the pok�mon attempts to execute an attack. The duration deduction will
+occur immediately before the attempt to execute the move is made, and the pok�mon will wake up
 when its duration length becomes 0. It will not be able to attack on the same turn that it
-wakes up though, so the pokémon will be unable to attack for a total of 1-7 turns. The
-countdown duration will not be altered if the pokémon is switched out before it wakes up.
+wakes up though, so the pok�mon will be unable to attack for a total of 1-7 turns. The
+countdown duration will not be altered if the pok�mon is switched out before it wakes up.
 
 Sleep is required for Dream Eater to work. Sleep will pause but not disrupt the turn duration
 of all moves that take more than one turn to fully execute, except for Hyper Beam, for which
-the recharge turn will be negated. If pokémon uses an altered attack priority move (Counter,
+the recharge turn will be negated. If pok�mon uses an altered attack priority move (Counter,
 Quick Attack) during the same round it is put to sleep, the altered priority received by the
 move will only be reset on the turn after it wakes up (not even switching can reset this).
 
 Prevention, Cures: Can be cured by Haze, if used by the opponent. This ailment is temporary.
 
-Stadium Differenecs: The pokémon receives a sleep duration of 1-3 turns (chosen randomly).
-Also, you get to select a move while the pokémon is asleep. A substitute will protect the user
+Stadium Differenecs: The pok�mon receives a sleep duration of 1-3 turns (chosen randomly).
+Also, you get to select a move while the pok�mon is asleep. A substitute will protect the user
 from primary sleep.
 
 Moves that can cause sleep: Hypnosis, Lovely Kiss, Rest (self-inflicted), Sing, Sleep Powder,
@@ -597,10 +657,10 @@ Moves that can cause sleep: Hypnosis, Lovely Kiss, Rest (self-inflicted), Sing, 
 E. Type Effectiveness
 Each move has a type associated with it, which influences the amount of damage that the move
 will do, if it has a power value. The effectiveness of a move with a power against an opponent
-pokémon can be summed up with this chart:
+pok�mon can be summed up with this chart:
 
 
-      A\Defending
+      A \ Defending
       t \   Types        E       F
       t  \               l       i                               P
       a   \          D   e       g   F           G       N   P   s
@@ -639,13 +699,13 @@ pokémon can be summed up with this chart:
      |Rock     | 2 | 1 | 1 | 2 |0.5| 2 | 1 | 1 |0.5| 2 | 1 | 1 | 1 | 1 | 1 |
      |---------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
      |Water    | 1 |0.5| 1 | 2 | 1 | 1 | 1 |0.5| 2 | 1 | 1 | 1 | 1 | 2 |0.5|
-     \=====================================================================/
+     \ =====================================================================/
 
 
-In order to determine the type effectiveness of a move against a pokémon, look at the move's
-type in the rows and the pokémon's type in the columns. For example, a water attack used
+In order to determine the type effectiveness of a move against a pok�mon, look at the move's
+type in the rows and the pok�mon's type in the columns. For example, a water attack used
 against a dragon type has a multiplier of 0.5, so it would do half the damage it usually would.
-If a pokémon has two types, look at the type effectiveness against both types and multiply the
+If a pok�mon has two types, look at the type effectiveness against both types and multiply the
 moves together. For example, a grass attack used against a poison type has a multiplier of 0.5,
 and has a multiplier of 2 if used against a water type, so if used against a water/poison type,
 the multiplier will be 2 * 0.5 = 1, or just regular damage. The type effectiveness values used
@@ -657,13 +717,13 @@ effective if it has a type multiplier of 0.25 or 0.5. If it has a multiplier of 
 regular damage, and if it has a multiplier of 0, it will always miss against the opponent,
 though the text message will almost always note that the move "doesn't affect" the opponent.
 There is no text message distinction beyond whether or not a type multiplier is 0, between 0
-and 1, 1, or greater than 1. Additionally, if a pokémon has a second type and is attacked with
+and 1, 1, or greater than 1. Additionally, if a pok�mon has a second type and is attacked with
 a move that does not result in a type multiplier of 1 (or 10, depending on perspective), the
-type effectiveness message associated with the attack will be based solely on the pokémon's
+type effectiveness message associated with the attack will be based solely on the pok�mon's
 second type.
 
 Stadium Differences:
-The type effectiveness messages associated with moves will always take both of a pokémon's
+The type effectiveness messages associated with moves will always take both of a pok�mon's
 types into account (except regarding immunities, which will always result in a message that the
 attempted attack missed).
 
@@ -673,20 +733,20 @@ F. Order of Operations
 This is a list that shows the order in which the various operations happen relative to each
 other in any one round.
 
-First, determination of which pokémon performs its action first and which performs its action
+First, determination of which pok�mon performs its action first and which performs its action
 second in a round occurs. Running away takes priority over switching, which takes priority over
 using an item, which takes priority over attempting to attack. If both trainers choose to run
 away, it will happen simultaneously and the game will be declared a draw. If both trainers
-switch, each trainer will always see their pokémon switched out first. If both trainers use an
-item (in an in-game battle of course), each trainer will always see their pokémon affected
+switch, each trainer will always see their pok�mon switched out first. If both trainers use an
+item (in an in-game battle of course), each trainer will always see their pok�mon affected
 first.
 
-If both trainers choose to attack, determination of which pokémon attacks first depends on the
-current speed of both pokémon and the priority of the attack selected. If one of the pokémon
+If both trainers choose to attack, determination of which pok�mon attacks first depends on the
+current speed of both pok�mon and the priority of the attack selected. If one of the pok�mon
 has selected an increased (or decreased) priority attack, it will attack first (or last) unless
 the opponent has also selected an increased (or decreased) priority attack. If the attack
-priority of both the selected attacks is the same, then the pokémon with the higher current
-speed will go first. If both pokémon have the same current speed, the game will randomly select
+priority of both the selected attacks is the same, then the pok�mon with the higher current
+speed will go first. If both pok�mon have the same current speed, the game will randomly select
 which one goes first.
 
 Provided that neither player chooses to run away, the round will proceed as follows:
@@ -696,60 +756,60 @@ Beforehand:
 
 Running away will end the battle, but otherwise the round will proceed:
 
-First pokémon's turn:
+First pok�mon's turn:
      *Sleep duration deduction*
-     [First pokémon is frozen solid, fast asleep, or wakes up]
-     ([First pokémon must recharge])
+     [First pok�mon is frozen solid, fast asleep, or wakes up]
+     ([First pok�mon must recharge])
      *Disable duration deduction*
-     [First pokémon is disabled no more]
+     [First pok�mon is disabled no more]
      *Confusion duration deduction*
-     [First pokémon is confused no more]
-     *[First pokémon is fully paralyzed]*
-     *[First pokémon hurts itself due to confusion]*
+     [First pok�mon is confused no more]
+     *[First pok�mon is fully paralyzed]*
+     *[First pok�mon hurts itself due to confusion]*
      *PP is deducted from selected attack*
      *[Attack is used]*
      *[Attack misses]*
      *Damage calculation including critical hit*
      *Battle animation*
      *Damage and primary effects of attack*
-     [Second pokémon's substitute took the damage]
-     [Second pokémon's substitute broke]
+     [Second pok�mon's substitute took the damage]
+     [Second pok�mon's substitute broke]
      [Critical hit]
      [Type effectiveness of attack]
      [Any flavor text associated with the executed attack]
-     ([Second pokémon faints])
-     *[Second pokémon's rage builds]*
+     ([Second pok�mon faints])
+     *[Second pok�mon's rage builds]*
      *[Secondary effects of attack]*
-     *[Recurrent poison/burn damage to first pokémon]*
-     *[Recurrent Leech Seed damage to first pokémon]*
-     *[Second pokémon flinches]*
+     *[Recurrent poison/burn damage to first pok�mon]*
+     *[Recurrent Leech Seed damage to first pok�mon]*
+     *[Second pok�mon flinches]*
 
-Second pokémon's turn:
+Second pok�mon's turn:
      *Sleep duration deduction*
-     [Second pokémon is frozen solid, fast asleep, or wakes up]
-     (Second pokémon must recharge)
+     [Second pok�mon is frozen solid, fast asleep, or wakes up]
+     (Second pok�mon must recharge)
      *Disable duration deduction*
-     [Second pokémon is disabled no more]
+     [Second pok�mon is disabled no more]
      *Confusion duration deduction*
-     [Second pokémon is confused no more]
-     *[Second pokémon is fully paralyzed]*
-     *[Second pokémon hurts itself due to confusion]*
+     [Second pok�mon is confused no more]
+     *[Second pok�mon is fully paralyzed]*
+     *[Second pok�mon hurts itself due to confusion]*
      *PP is deducted from selected attack*
      *[Attack is used]*
      *[Attack misses]*
      *Damage calculation including critical hit*
      *Battle animation*
      *Damage and primary effects of attack*
-     [First pokémon's substitute took the damage]
-     [First pokémon's substitute broke]
+     [First pok�mon's substitute took the damage]
+     [First pok�mon's substitute broke]
      [Critical Hit]
      [Type effectiveness of attack]
      [Any flavor text associated with the executed attack]
-     ([First pokémon faints])
-     *[First pokémon's rage builds]*
+     ([First pok�mon faints])
+     *[First pok�mon's rage builds]*
      *[Secondary effects of attack]*
-     *[Recurrent poison/burn damage to second pokémon]*
-     *[Recurrent Leech Seed damage to second pokémon]*
+     *[Recurrent poison/burn damage to second pok�mon]*
+     *[Recurrent Leech Seed damage to second pok�mon]*
 
 Astericks indicate that the line involves an operation. Parentheses indicate that the line is
 a potential battle condition, which may effect the execution of lines below it. Brackets
@@ -759,7 +819,7 @@ associated with the line is displayed immediately following the operation or con
 (provided that it happened/exists).
 
 Also note that all lines will of course happen only if applicable, since the disable or
-confusion duration deductions can only happen if the pokémon actually is disabled or confused,
+confusion duration deductions can only happen if the pok�mon actually is disabled or confused,
 an attack missing will not result in a battle animation, etc.
 
 
@@ -773,7 +833,7 @@ A move has four main attributes: type, power, PP, and accuracy.
 ***Type***
 One of the 15 possible types that a move might be. A move's type determines whether it is a
 physical or special attack and also changes the effectiveness of the move when used against
-pokémon of different types (though this does not apply to moves that do damage but do not have
+pok�mon of different types (though this does not apply to moves that do damage but do not have
 power values). Also, if the move has a power and the move's type is the same as one of the
 user's types, the move will do 50% more damage (this is known as STAB, short for same type
 attack bonus).
@@ -787,19 +847,19 @@ moves can do damage despite not having power values.
 ***PP***
 PP is short for power points, and basically represents the number of times you can use the
 move. Each move has two PP values, a current value and a maximum value. Current PP is the
-amount of PP the pokémon has at any referenced time, since PP will be deducted from moves when
+amount of PP the pok�mon has at any referenced time, since PP will be deducted from moves when
 used. Maximum PP is supposedly the highest PP a move can have, but is more of a calibration
-number for determining how much PP to restore to a pokémon via PP-restoring methods.
+number for determining how much PP to restore to a pok�mon via PP-restoring methods.
 
 Every time a move is fully executed, 1 PP is deducted from it. If a move has 0 PP, you will not
 be allowed to select the attack (though this is bypassed in a couple of cases where the game
-automatically selects the attack). In-game, PP can be restored by healing at a Pokémon Center
+automatically selects the attack). In-game, PP can be restored by healing at a Pok�mon Center
 or use a PP-restoring item (Elixer, Ether, Max Elixer, Max Ether).
 
 The only way to "restore" used PP in a link battle is with the PP roll over glitch. If by some
 means the game allows you to use a move with a current PP count of 0, its current PP will
 become 63 and it will have max PP ups applied to it after that use. This can happen to any
-attack if a pokémon attacks immediately after being defrosted, or to a handful of moves (Bind,
+attack if a pok�mon attacks immediately after being defrosted, or to a handful of moves (Bind,
 Clamp, Fire Spin, Hyper Beam, Metronome, Mimic, and Wrap) because of the autoselection involved
 with partial trapping moves. More detailed information on how it can be done can be found in
 the information entry for Freeze, and in the entries of each mentioned move.
@@ -818,26 +878,26 @@ does not involve an accuracy or evasion check, and such moves essentially never 
 
 
 G2. Ways of Obtaining;
-A pokémon can learn a move by Level, Previous Evolution, TM, HM, or Gift.
+A pok�mon can learn a move by Level, Previous Evolution, TM, HM, or Gift.
 
 ***Level***
-When a pokémon's level reaches certain values, it will learn moves. If the pokémon has less
+When a pok�mon's level reaches certain values, it will learn moves. If the pok�mon has less
 than 4 moves, it will automatically learn the move, but if it has 4 moves, you will be given
-the option of allowing the pokémon to learn the move; you will have to replace one of the
-pokémon's current moves because it can't have more than 4 moves at a time. If the pokémon
+the option of allowing the pok�mon to learn the move; you will have to replace one of the
+pok�mon's current moves because it can't have more than 4 moves at a time. If the pok�mon
 already knows the move, no acknowledgement that it learns the move at that level will be made,
-and if the pokémon gains enough experience at once to skip the level at which it learns a move,
+and if the pok�mon gains enough experience at once to skip the level at which it learns a move,
 it will not learn it either.
 
 ***Previous Evolution***
-In a few instances, a pokémon will not be able to learn a move by Level or TM, yet one of its
+In a few instances, a pok�mon will not be able to learn a move by Level or TM, yet one of its
 previous evolutions will, allowing it access to the move. E3 contains a list of moves learnable
 in this way.
 
 ***TM***
-During the course of the game, you will find TMs that will allow you to teach a poé�mon the
-move it contains, provided that the selected pokémon is compatible with the move. If the
-pokémon already knows the move, the game will not allow you to teach the TM to that pokémon.
+During the course of the game, you will find TMs that will allow you to teach a pok�mon the
+move it contains, provided that the selected pok�mon is compatible with the move. If the
+pok�mon already knows the move, the game will not allow you to teach the TM to that pok�mon.
 There are a total of 50 different TMs, each of which is a one-time use (though it is possible
 to obtain multiple copies of some of them).
 
@@ -848,22 +908,22 @@ replace any of the 5 HM moves without using a move deleter (which is only presen
 
 ***Gift***
 A move is considered a Gift move if it is a move that can be obtained by receiving a gift
-pokémon with that move. Usually such a move can't be learned by any other means. Any of such a
-pokémon's evolutions are also considered to learn that move as a Gift move (as opposed to
+pok�mon with that move. Usually such a move can't be learned by any other means. Any of such a
+pok�mon's evolutions are also considered to learn that move as a Gift move (as opposed to
 Previous Evolution).
 
 Two moves can be obtained only from Stadium. A Lv.15 Psyduck with Amnesia can be obtained by
-getting all 151 pokémon in Stadium's Hall of Fame. Since it is awarded to you and does not
+getting all 151 pok�mon in Stadium's Hall of Fame. Since it is awarded to you and does not
 usually have that move, it is a Gift move. A Pikachu with Surf can be obtained by beating the
 R2 Prime Cup at the Master Ball level without saving. The team used for this must contain a
 Pikachu and must be completely selected from your gameboy cartridge. Pikachu must be in your
 3-member team, but only during the last round. Since Surf is taught to the Pikachu you bring
 with you, it is essentially a move learned by HM, though not under normal circumstances.
 
-A pokémon's move set will not be allowed to have the same move more than once, except
+A pok�mon's move set will not be allowed to have the same move more than once, except
 temporarily via Mimic.
 
-For a list of pokémon and the moves they can learn, I would recommend White Cat's dexes, found
+For a list of pok�mon and the moves they can learn, I would recommend White Cat's dexes, found
 at http://pokedex.kary.ca/.
 
 
@@ -900,36 +960,36 @@ turn, Raichu essentially learns Surf by Previous HM.
 
 
 G4. Number of Moves;
-The maximum number of moves a pokémon may have at any one time is four, and no pokémon may have
+The maximum number of moves a pok�mon may have at any one time is four, and no pok�mon may have
 less than one move. Since there is a move deleter in Blackthorn City in the Metallic
-generation, it is possible to have any pokémon with only one move by trading it to a metallic
+generation, it is possible to have any pok�mon with only one move by trading it to a metallic
 cartridge, deleting the move, and trading back.
 
 There is no move deleter directly available in the Chromatic generation though, and if the move
-deleter is not accessible, the minimum number of moves a pokémon can have will not always be
-equal to one. For calculating the minimum number of moves a pokémon can have, the minimum
-number of level moves it can have is all that needs to be considered, since a pokémon can skip
-all of its Previous Evolution, TM, HM, and Gift moves (if the minimum number of moves a pokémon
+deleter is not accessible, the minimum number of moves a pok�mon can have will not always be
+equal to one. For calculating the minimum number of moves a pok�mon can have, the minimum
+number of level moves it can have is all that needs to be considered, since a pok�mon can skip
+all of its Previous Evolution, TM, HM, and Gift moves (if the minimum number of moves a pok�mon
 must have is less than 4, then it will be equal to the minimum number of level moves it can
-have, but if the minimum number of moves a pokémon can have is 4, those moves may be obtained
+have, but if the minimum number of moves a pok�mon can have is 4, those moves may be obtained
 by any means, since they can be simply overwritten with moves not learned by level). Since a
-pokémon will not learn a move if it skips the level the move is learned on, the minimum number
-of moves a pokémon can have is equal to min(4, I + U + S). I is equal to the initial number of
-moves the pokémon has (which by its nature must be at least 1), though if the pokémon's level
-is greater than or equal to its evolution level and the pokémon has lower evolutions, then I is
-equal to the pokémon's initial number of moves or the initial number of moves of its lower
-evolution(s), whichever is lower. U is the number of moves the pokémon learns on levels it
+pok�mon will not learn a move if it skips the level the move is learned on, the minimum number
+of moves a pok�mon can have is equal to min(4, I + U + S). I is equal to the initial number of
+moves the pok�mon has (which by its nature must be at least 1), though if the pok�mon's level
+is greater than or equal to its evolution level and the pok�mon has lower evolutions, then I is
+equal to the pok�mon's initial number of moves or the initial number of moves of its lower
+evolution(s), whichever is lower. U is the number of moves the pok�mon learns on levels it
 can't skip. To find U, first determine a level K, which is the least K such that F(K)-F(K-1)>E,
-where F(K) (read as "F of K", since a pokémon's minimum experience points can be written as a
+where F(K) (read as "F of K", since a pok�mon's minimum experience points can be written as a
 function of level) is the number of experience points needed to be on level K, and E is the
 maximum number of experience points that can be obtained at once. Taking E to be 4387 (from a
-traded pokémon singlehandedly surviving your rival's Lv.65 Blastoise in Red or Blue), K is 35
-if the pokémon's growth rate is slow, 39 if the pokémon's growth rate is medium or fading, or
-43 if the pokémon's growth rate is fast. If the pokémon's level L is less than K, then U is 0,
-otherwise, U is the number of level moves the pokémon can learn from level K to level L. If L
-is greater than or equal to K, then S is 0 (since the pokémon won't be able to skip any levels
+traded pok�mon singlehandedly surviving your rival's Lv.65 Blastoise in Red or Blue), K is 35
+if the pok�mon's growth rate is slow, 39 if the pok�mon's growth rate is medium or fading, or
+43 if the pok�mon's growth rate is fast. If the pok�mon's level L is less than K, then U is 0,
+otherwise, U is the number of level moves the pok�mon can learn from level K to level L. If L
+is greater than or equal to K, then S is 0 (since the pok�mon won't be able to skip any levels
 at such values), otherwise, S is determined by the lengths of unskippable move streaks that a
-pokémon's level move list experiences. To determine how much of a move streak can be skipped,
+pok�mon's level move list experiences. To determine how much of a move streak can be skipped,
 find the least N such that F(H-N)-F(J)<E, where H is the highest level in the streak, J is the
 lowest level in the streak, and N is a nonnegative integer. Add N to S, and repeat the process
 until all move streaks are accounted for. It should be noted that no move streaks in RBY are
@@ -1075,7 +1135,7 @@ turns (chosen randomly), though it will still be able to switch out during this 
 following turn, Bide will do damage equal to twice the damage received during the idling
 period. Although Bide deals normal damage, type has no effect on the calculated damage
 inflicted by this attack. Bide is unaffected by accuracy and evasion modifiers, and can hit
-pokémon during the semi-invulnerable turn of Dig and Fly.
+pok�mon during the semi-invulnerable turn of Dig and Fly.
 
 Bide will count crash damage and an opponent's self-inflicted confusion damage as damage that
 can be reversed. Damage absorbed by a Substitute can be reversed for the amount of damage it
@@ -1090,7 +1150,7 @@ Sleep, freeze, partial trap duration, and flinching will pause but not disrupt t
 Bide.
 
 Stadium Differences:
-You get to select a move during each of Bide's idling turns. Bide will miss against pokémon
+You get to select a move during each of Bide's idling turns. Bide will miss against pok�mon
 that are in the middle of Dig or Fly.
 
 
@@ -1110,9 +1170,9 @@ before the opponent when used, the opponent will be unable to attack during that
 Damage done by Bind's continuing duration is done after recurrent damage. If the user switches
 out before the turn duration ends, the opponent will be unable to attack during that turn,
 since it did not get to select a move. If the opponent switches out before the turn duration
-ends, Bind will automatically be used against the incoming pokémon, deducting an additional PP
+ends, Bind will automatically be used against the incoming pok�mon, deducting an additional PP
 from the move. If at such a time Bind has 0 PP, Bind will still be used against the incoming
-pokémon. After that use, the current PP of Bind will roll over to 63, and full PP ups will be
+pok�mon. After that use, the current PP of Bind will roll over to 63, and full PP ups will be
 applied to it.
 
 Even if Bind misses, it will negate the recharge turn normally required for Hyper Beam.
@@ -1125,12 +1185,12 @@ Although Bind can't damage ghost types, it can immobilize them.
 
 In-game differences:
 The opponent will get to select a move during each turn of Bind's duration, and will attack
-your incoming pokémon with the selected move if you decide to switch before the duration is
+your incoming pok�mon with the selected move if you decide to switch before the duration is
 over.
 
 Stadium Differences:
 You get to select a move during each turn of Bind's duration. If the opponent switches out
-before the duration ends, the incoming pokémon will not automatically be attacked. Bind will
+before the duration ends, the incoming pok�mon will not automatically be attacked. Bind will
 negate the recharge turn of Hyper Beam only if successful.
 
 
@@ -1236,8 +1296,8 @@ before the opponent when used, the opponent will be unable to attack during that
 Damage done by Clamp's continuing duration is done after recurrent damage. If the user switches
 out before the turn duration ends, the opponent will be unable to attack during that turn. If
 the opponent switches out before the turn duration ends, Clamp will automatically be used
-against the incoming pokémon, deducting an additional PP from the move. If at such a time Clamp
-has 0 PP, Clamp will still be used against the incoming pokémon. After that use, the current PP
+against the incoming pok�mon, deducting an additional PP from the move. If at such a time Clamp
+has 0 PP, Clamp will still be used against the incoming pok�mon. After that use, the current PP
 of Clamp will roll over to 63, and full PP ups will be applied to it.
 
 Even if Clamp misses, it will negate the recharge turn normally required for Hyper Beam.
@@ -1248,12 +1308,12 @@ its current PP will roll over to 63, and full PP ups will be applied to it.
 
 In-game differences:
 The opponent will get to select a move during each turn of Clamp's duration, and will attack
-your incoming pokémon with the selected move if you decide to switch before the duration is
+your incoming pok�mon with the selected move if you decide to switch before the duration is
 over.
 
 Stadium Differences:
 You get to select a move during each turn of Clamp's duration. If the opponent switches out
-before the duration ends, the incoming pokémon will not automatically be attacked. Clamp will
+before the duration ends, the incoming pok�mon will not automatically be attacked. Clamp will
 negate the recharge turn of Hyper Beam only if successful.
 
 
@@ -1342,7 +1402,7 @@ attack of a partial trapping move. Counter will always miss if called by Metrono
 
 Switching, full paralysis, and using a multi-turn move will not reset the last amount of damage
 done, allowing counter to counter itself as well as self-inflicted recoil damage. However, if
-both active pokémon use Counter during the same round, both attacks will fail. An attack
+both active pok�mon use Counter during the same round, both attacks will fail. An attack
 absorbed by a Substitute can be countered for the amount of damage it would have done to the
 user had the user not had a substitute.
 
@@ -1418,7 +1478,7 @@ Accuracy: 54.7%
 
 Disable randomly selects one move that is in the opponent's current move set and whose current
 PP is greater than 0, and gives it a randomly chosen disable duration length of 1-8, which is
-reduced by 1 each time the pokémon attempts to execute an attack. While the move is disabled, a
+reduced by 1 each time the pok�mon attempts to execute an attack. While the move is disabled, a
 message of "disabled!" will appear in place of the disabled move's PP, and the opponent will be
 unable to use the move until the round after Disable wears off (attempting to select the move
 will just result in a notice that the move is disabled).
@@ -1440,11 +1500,11 @@ moves.
 Turns spent flinching, fast asleep, frozen solid, recharging, or partially trapped will not
 count towards the disable duration length.
 
-Even if unsuccessful (for any reason), using Disable against a pokémon using Rage will cause
+Even if unsuccessful (for any reason), using Disable against a pok�mon using Rage will cause
 its rage to build.
 
 Stadium Differences:
-Disable will cause a pokémon's rage to build only if successful. The disabled move's PP is not
+Disable will cause a pok�mon's rage to build only if successful. The disabled move's PP is not
 replaced with a "disabled!" message, though attempting to select the move will still result in
 a notice that the move is disabled.
 
@@ -1647,8 +1707,8 @@ before the opponent when used, the opponent will be unable to attack during that
 Damage done by Fire Spin's continuing duration is done after recurrent damage. If the user
 switches out before the turn duration ends, the opponent will be unable to attack during that
 turn. If the opponent switches out before the turn duration ends, Fire Spin will automatically
-be used against the incoming pokémon, deducting an additional PP from the move. If at such a
-time Fire Spin has 0 PP, Fire Spin will still be used against the incoming pokémon. After that
+be used against the incoming pok�mon, deducting an additional PP from the move. If at such a
+time Fire Spin has 0 PP, Fire Spin will still be used against the incoming pok�mon. After that
 use, the current PP of Fire Spin will roll over to 63, and full PP ups will be applied to it.
 
 Even if Fire Spin misses, it will negate the recharge turn normally required for Hyper Beam.
@@ -1659,12 +1719,12 @@ afterwards its current PP will roll over to 63, and full PP ups will be applied 
 
 In-game differences:
 The opponent will get to select a move during each turn of Fire Spin's duration, and will
-attack your incoming pokémon with the selected move if you decide to switch before the duration
+attack your incoming pok�mon with the selected move if you decide to switch before the duration
 is over.
 
 Stadium Differences:
 You get to select a move during each turn of Fire Spin's duration. If the opponent switches out
-before the duration ends, the incoming pokémon will not automatically be attacked. Fire Spin
+before the duration ends, the incoming pok�mon will not automatically be attacked. Fire Spin
 will negate the recharge turn of Hyper Beam only if successful.
 
 
@@ -1853,16 +1913,16 @@ Power: ---
 PP: 30-48
 Accuracy: ---
 
-Haze resets the stat levels of both active pokémon to 0 and removes the statistic reductions
+Haze resets the stat levels of both active pok�mon to 0 and removes the statistic reductions
 due to burns and paralysis as well as the effects of Focus Energy, Leech Seed, Light Screen,
-Mist, Reflect, confusion, and the cumulative nature of Toxic from both active pokémon. In
+Mist, Reflect, confusion, and the cumulative nature of Toxic from both active pok�mon. In
 addition, Haze removes any major status ailments from the opponent.
 
 Haze does not remove any major status ailments that the user has, does not change the generic
-Minimize graphic back to the pokémon's regular image, and does not reset either pokémon's
+Minimize graphic back to the pok�mon's regular image, and does not reset either pok�mon's
 current type(s), current move(s), or current species.
 
-If a frozen pokémon that has not recharged from Hyper Beam has its freeze status eliminated via
+If a frozen pok�mon that has not recharged from Hyper Beam has its freeze status eliminated via
 Haze, it will remain unable to attack, switch, or do anything else, and nothing will then be
 able to change this.
 
@@ -1950,7 +2010,7 @@ partial trapping move that misses, the user will automatically use Hyper Beam du
 If at such a time Hyper Beam has 0 PP, Hyper Beam will still be used, and afterwards its PP
 will roll over to 63, and full PP ups will be applied to it.
 
-If a frozen pokémon that has not recharged gets defrosted via Haze, it will remain unable to
+If a frozen pok�mon that has not recharged gets defrosted via Haze, it will remain unable to
 attack, switch, or do anything, and nothing (not even getting refrozen and then defrosted by a
 fire move) will be able to change this.
 
@@ -2069,13 +2129,13 @@ Accuracy: 89.5%
 
 Leech Seed plants a seed on the opponent. At the end of each of its turns that it is under the
 effect of Leech Seed, 1/16th of the opponent's HP will be drained, and the same amount of HP
-will be restored to your active pokémon (even if it was not the pokémon that originally used
-the attack). Recurrent Leech Seed draining will not occur if the seeded pokémon knocks out an
+will be restored to your active pok�mon (even if it was not the pok�mon that originally used
+the attack). Recurrent Leech Seed draining will not occur if the seeded pok�mon knocks out an
 opponent. Unlike other types of damage, the recurrent damage done by Leech Seed can exceed the
 opponent's current HP.
 
 If the opponent has less than 16 HP, Leech Seed will drain 1 HP per turn. Leech Seed draining
-will occur even if the seeded pokémon knocks itself out with crash damage, recoil damage, or
+will occur even if the seeded pok�mon knocks itself out with crash damage, recoil damage, or
 self-inflicted confusion damage, or by making a substitute before the end of its turn. Draining
 from Leech Seed is done after continuing partial trapping damage and recurrent poison or burn
 damage. Leech Seed can be removed by Haze or switching. If the opponent is seeded during a
@@ -2214,7 +2274,7 @@ attack. An attack called by Metronome in this way counts as the last move used.
 
 If Metronome successfully calls Hyper Beam or a partial trapping move and has 0 PP before the
 move fully executes, its PP can roll over in the same manner as the move is called. If
-Metronome calls Counter, it will always miss. A pokémon will be able to use a move that is
+Metronome calls Counter, it will always miss. A pok�mon will be able to use a move that is
 disabled if called via Metronome.
 
 
@@ -2272,7 +2332,7 @@ itself right before its use, Mirror Move will still use the last move that the o
 If Mirror Move is used during the first turn of a multi-turn move, Mirror Move will use the
 move that the opponent used before that move (or fail if no move was previously made).
 
-A pokémon will be able to use a move that is disabled if it is called via Mirror Move.
+A pok�mon will be able to use a move that is disabled if it is called via Mirror Move.
 
 Stadium Differences:
 Mirror Move will copy multi-turn moves during either of the turns they take to execute.
@@ -2440,7 +2500,7 @@ Accuracy: 79.7%
 
 Psywave causes a random amount of damage. The minimum damage it can do is 1, and the maximum
 damage it can do is less than 1.5 times the user's level. And yes, the game will freeze if a
-Lv.1 pokémon uses this attack.
+Lv.1 pok�mon uses this attack.
 
 
 ***Quick Attack***
@@ -2481,7 +2541,7 @@ Rage will not attempt to increase the user's attack if it has reached a level of
 not successfully increase the user's attack if it has reached a value of 999.
 
 Stadium Differences:
-Disable will cause a pokémon's rage to build only if successful.
+Disable will cause a pok�mon's rage to build only if successful.
 
 
 ***Razor Leaf***
@@ -2579,7 +2639,7 @@ Accuracy: 99.6%
 Roar will never affect the opponent.
 
 In-game Differences:
-Roar can be used to automatically end wild pokémon battles.
+Roar can be used to automatically end wild pok�mon battles.
 
 
 ***Rock Slide***
@@ -2947,7 +3007,7 @@ PP: 10-16
 Accuracy: 99.6%
 
 Struggle does damage, and the user receives recoil damage equal to 50% of the damage done to
-the opponent. Struggle will automatically be used by a pokémon that has no usable moves but
+the opponent. Struggle will automatically be used by a pok�mon that has no usable moves but
 is ordered to attack, and has infinite PP in such a situation.
 
 If the user of Struggle attacks first and faints itself due to recoil damage, the opponent will
@@ -3009,7 +3069,7 @@ Accuracy: ---
 Using 25% of the user's maximum HP, the user creates a substitute with 1 HP more than the
 amount of HP lost by the user. If the user's max HP is 3 or less, it will not lose any HP when
 the substitute is made. A substitute will have the same current type(s) and current stats of
-the pokémon that has it. Once created, all stat modifying attacks and side effects used by the
+the pok�mon that has it. Once created, all stat modifying attacks and side effects used by the
 opponent against the user will fail, though all current stat modifiers will remain in effect,
 and any stat modifiers used by the user will also be applied to the substitute. Until it
 breaks, a substitute will absorb all damage done by the opponent (even if the damage done
@@ -3025,10 +3085,10 @@ Fang, Transform, or partial trapping moves, and it will not absorb crash damage,
 or recurrent damage. However, a substitute will absorb self-inflicted confusion damage and
 prevent the user from flinching.
 
-If a pokémon breaks a substitute with Hyper Beam, it will not need to recharge. If a pokémon
+If a pok�mon breaks a substitute with Hyper Beam, it will not need to recharge. If a pok�mon
 breaks a substitute with Explosion or Selfdestruct, it will not faint, though its picture will
-no longer be visible until it switches out or uses Substitute. If a pokémon breaks a substitute
-with a recoil move, it will not take any recoil damage. If a pokémon breaks a substitute with a
+no longer be visible until it switches out or uses Substitute. If a pok�mon breaks a substitute
+with a recoil move, it will not take any recoil damage. If a pok�mon breaks a substitute with a
 draining move, no HP will be restored to it. Note that in each of these cases, the substitute
 has to be broken, not merely damaged, by the referenced attack.
 
@@ -3039,7 +3099,7 @@ maximum HP, it will create a substitute, and then faint.
 Stadium Differences:
 Substitute will protect the user from Absorb, Dream Eater, Leech Life, Leech Seed, Mega Drain,
 and all status ailments inflicted by the opponent. If the user's current HP is exactly equal to
-25% (rounded down) of its maximum HP, it will be too weak to create a substitute. If a pokémon
+25% (rounded down) of its maximum HP, it will be too weak to create a substitute. If a pok�mon
 breaks a substitute with Explosion or Selfdestruct, it will faint.
 
 
@@ -3080,7 +3140,7 @@ Power: 60
 PP: 20-32
 Accuracy: ---
 
-Swift does damage. Swift is unaffected by accuracy and evasion modifiers, and can hit pokémon
+Swift does damage. Swift is unaffected by accuracy and evasion modifiers, and can hit pok�mon
 during the semi-invulnerable turn of Dig and Fly.
 
 
@@ -3148,7 +3208,7 @@ Accuracy: ---
 Teleport will always fail.
 
 In-game Differences:
-Teleport can be used to run away from wild pokémon battles.
+Teleport can be used to run away from wild pok�mon battles.
 
 
 ***Thrash***
@@ -3241,14 +3301,14 @@ Accuracy: 84.4%
 
 Toxic badly poisons the opponent. Each time the opponent takes recurrent damage, the damage
 will equal N*max(1, int(0.0625*MaxHP)). N starts as 1 but is increased by 1 each time the
-afflicted pokémon endures recurrent damage (including by Leech Seed). Basically, the pokémon
+afflicted pok�mon endures recurrent damage (including by Leech Seed). Basically, the pok�mon
 will lose 1/16 of its maximum HP the first time, then 2/16 of its maximum HP, then 3/16 of its
 maximum HP, etc.
 
 The N value of Toxic can be reset by Haze, switching, or ending the battle, but not by Rest. If
-a pokémon rests off the poison and gets normally poisoned, burned, or seeded without switching
+a pok�mon rests off the poison and gets normally poisoned, burned, or seeded without switching
 out, the N value will influence the amount of damage done, and will increase each time
-recurrent damage is done. However, if a pokémon gets badly poisoned again, the cumulative value
+recurrent damage is done. However, if a pok�mon gets badly poisoned again, the cumulative value
 will be reset. Unlike other types of damage, the recurrent damage done by Toxic can exceed the
 opponent's current HP.
 
@@ -3272,12 +3332,12 @@ current catch rate. Each move copied by Transform will have 5 PP.
 
 Transform does not copy the opponent's status ailments, level, current or maximum HP, base
 experience, palette colors, or the generic minimize image. The current stat changes due to
-Transform will be ignored by critical hits, since critical hits use a pokémon's original stats.
+Transform will be ignored by critical hits, since critical hits use a pok�mon's original stats.
 Transform is not affected by accuracy and evasion modifiers, and no move can prevent the
 successful execution of Transform.
 
 In-game Differences:
-If a wild pokémon uses Transform and is subsequently caught, it will become a Ditto, regardless
+If a wild pok�mon uses Transform and is subsequently caught, it will become a Ditto, regardless
 of what species it originally was. It will then have all the stats and moves of a Ditto, except
 for its current HP, which will remain unaltered by this change.
 
@@ -3355,7 +3415,7 @@ Accuracy: 84.4%
 Whirlwind will never affect the opponent.
 
 In-game Differences:
-Whirlwind can be used to automatically end wild pokémon battles.
+Whirlwind can be used to automatically end wild pok�mon battles.
 
 
 ***Wing Attack***
@@ -3394,8 +3454,8 @@ before the opponent when used, the opponent will be unable to attack during that
 Damage done by Wrap's continuing duration is done after recurrent damage. If the user switches
 out before the turn duration ends, the opponent will be unable to attack during that turn. If
 the opponent switches out before the turn duration ends, Wrap will automatically be used
-against the incoming pokémon, deducting an additional PP from the move. If at such a time Wrap
-has 0 PP, Wrap will still be used against the incoming pokémon. After that use, the current PP
+against the incoming pok�mon, deducting an additional PP from the move. If at such a time Wrap
+has 0 PP, Wrap will still be used against the incoming pok�mon. After that use, the current PP
 of Wrap will roll over to 63, and full PP ups will be applied to it.
 
 Even if Wrap misses, it will negate the recharge turn normally required for Hyper Beam.
@@ -3408,12 +3468,12 @@ Although Wrap can't damage ghost types, it can immobilize them.
 
 In-game differences:
 The opponent will get to select a move during each turn of Wrap's duration, and will attack
-your incoming pokémon with the selected move if you decide to switch before the duration is
+your incoming pok�mon with the selected move if you decide to switch before the duration is
 over.
 
 Stadium Differences:
 You get to select a move during each turn of Wrap's duration. If the opponent switches out
-before the duration ends, the incoming pokémon will not automatically be attacked. Wrap will
+before the duration ends, the incoming pok�mon will not automatically be attacked. Wrap will
 negate the recharge turn of Hyper Beam only if successful.
 
 
@@ -3432,19 +3492,19 @@ depends on what moves are being used. Under most cases N is 1, but is multiplied
 an attack with a high critical hit ratio, is divided by 4 if under the effect of Focus Energy
 in a gameboy battle, and is multiplied by 4 if under the effect of Focus Energy in Stadium.
 
-If a pokémon's level reaches 256 or higher during the damage calculation, it will be reduced
+If a pok�mon's level reaches 256 or higher during the damage calculation, it will be reduced
 mod 256.
 
 Moves that have high critical hit ratios: Crabhammer, Karate Chop, Razor Leaf, Slash
 
 
 H2. Flinching;
-A pokémon may only cause its opponent to flinch if in any given round it attacks before the
+A pok�mon may only cause its opponent to flinch if in any given round it attacks before the
 opponent performs an action. If the opponent flinches, it loses its ability to make an attack
 during its turn in that round.
 
 Flinching negates the recharge turn of Hyper Beam. Turns spent flinching will not count towards
-the durations of Petal Dance, Thrash, multi-turn moves, and the confusion ailment. A pokémon
+the durations of Petal Dance, Thrash, multi-turn moves, and the confusion ailment. A pok�mon
 with a substitute cannot flinch.
 
 Moves that can cause flinching: Bite, Bone Club, Headbutt, Hyper Fang, Low Kick, Rolling Kick,
@@ -3456,130 +3516,130 @@ This is a list of the items that can be used during battles, and their effects. 
 counts as an action and and has priority over making a move, but not over switching. Items
 may not be used in link battles.
 
-Every item in this section except for the Poké Flute is a one-time use item. Unless noted,
+Every item in this section except for the Pok� Flute is a one-time use item. Unless noted,
 items will not be usable if they will have no effect on the selected target.
 
 
 ***Antidote***
-Antidote will cure a pokémon of the poison status ailment.
+Antidote will cure a pok�mon of the poison status ailment.
 
 ***Awakening***
-Awakening will cure a pokémon of the sleep status ailment.
+Awakening will cure a pok�mon of the sleep status ailment.
 
 ***Burn Heal***
-Burn Heal will cure a pokémon of the burn status ailment.
+Burn Heal will cure a pok�mon of the burn status ailment.
 
 ***Dire Hit***
-Like Focus Energy, Dire Hit will quarter the probability of your active pokémon scoring a
-critical hit and will last until you switch your active pokémon. Dire Hit can be used in
+Like Focus Energy, Dire Hit will quarter the probability of your active pok�mon scoring a
+critical hit and will last until you switch your active pok�mon. Dire Hit can be used in
 multiples, but will have no actual effect beyond the first use. If under the influence of Dire
 Hit, use of Focus Energy will fail, and the effect of Dire Hit can be removed via Haze.
 
 ***Elixer***
-Elixir will increase the current PP of each of a pokémon's moves by up to 10 (or set the move's
+Elixir will increase the current PP of each of a pok�mon's moves by up to 10 (or set the move's
 current PP equal to its maximum PP if its current PP is greater than its maximum PP).
 
 ***Ether***
-Ether will increase the current PP of one of a pokémon's moves by up to 10 (or set the move's
+Ether will increase the current PP of one of a pok�mon's moves by up to 10 (or set the move's
 current PP equal to its maximum PP if its current PP is greater than its maximum PP).
 
 ***Fresh Water***
-Fresh Water will increase a pokémon's current HP by up to 50 (or set its current HP equal to
+Fresh Water will increase a pok�mon's current HP by up to 50 (or set its current HP equal to
 its maximum HP if its current HP is greater than its maximum HP).
 
 ***Full Heal***
-Full Heal will cure any major status ailment that a pokémon has.
+Full Heal will cure any major status ailment that a pok�mon has.
 
 ***Full Restore***
-Full Restore will make a pokémon's current HP equal to its maximum HP, and cure any major
+Full Restore will make a pok�mon's current HP equal to its maximum HP, and cure any major
 status ailments it has.
 
 ***Great Ball***
-A Great Ball might catch a wild pokémon, with a success rate of 1.5 times that of a Pokéball.
-If used against a trainer's pokémon, it will always be blocked.
+A Great Ball might catch a wild pok�mon, with a success rate of 1.5 times that of a Pok�ball.
+If used against a trainer's pok�mon, it will always be blocked.
 
 ***Guard Spec.***
 Like Mist, Guard Spec. will prevent the effects of primary stat modifications inflicted by the
 opponent.
 
 ***Hyper Potion***
-Hyper Potion will increase a pokémon's current HP by up to 200 (or set its current HP equal to
+Hyper Potion will increase a pok�mon's current HP by up to 200 (or set its current HP equal to
 its maximum HP if its current HP is greater than its maximum HP).
 
 ***Ice Heal***
-Ice Heal will cure a pokémon of the freeze status ailment.
+Ice Heal will cure a pok�mon of the freeze status ailment.
 
 ***Lemonade***
-Lemonade will increase a pokémon's current HP by up to 80 (or set its current HP equal to its
+Lemonade will increase a pok�mon's current HP by up to 80 (or set its current HP equal to its
 maximum HP if its current HP is greater than its maximum HP).
 
 ***Master Ball***
-A Master Ball will catch a wild pokémon. If used against a trainer's pokémon, it will always be
+A Master Ball will catch a wild pok�mon. If used against a trainer's pok�mon, it will always be
 blocked.
 
 ***Max Elixer***
-Max Elixir will make the current PP of each of a pokémon's moves equal to their maximum PP
+Max Elixir will make the current PP of each of a pok�mon's moves equal to their maximum PP
 values.
 
 ***Max Ether***
-Max Ether will make the current PP of one of a pokémon's moves equal to its maximum PP.
+Max Ether will make the current PP of one of a pok�mon's moves equal to its maximum PP.
 
 ***Max Potion***
-Max Potion will make a pokémon's current HP equal to its maximum HP.
+Max Potion will make a pok�mon's current HP equal to its maximum HP.
 
 ***Max Revive***
-Max Revive can only be used on a pokémon that has fainted, and will restore all of that
-pokémon's health.
+Max Revive can only be used on a pok�mon that has fainted, and will restore all of that
+pok�mon's health.
 
 ***Paralyz Heal***
-Paraylz Heal will cure a pokémon of the paralysis status ailment.
+Paraylz Heal will cure a pok�mon of the paralysis status ailment.
 
-***Pokéball***
-A Pokéball might catch a wild pokémon. If used against a trainer's pokémon, it will always be
+***Pok�ball***
+A Pok�ball might catch a wild pok�mon. If used against a trainer's pok�mon, it will always be
 blocked.
 
-***Poké Flute***
-When played, the Poké Flute will cure all active pokémon of the sleep status ailment. If no
-active pokémon are asleep, it will just note that it is a catchy tune.
+***Pok� Flute***
+When played, the Pok� Flute will cure all active pok�mon of the sleep status ailment. If no
+active pok�mon are asleep, it will just note that it is a catchy tune.
 
 ***Potion***
-Potion will increase a pokémon's current HP by up to 20 (or set its current HP equal to its
+Potion will increase a pok�mon's current HP by up to 20 (or set its current HP equal to its
 maximum HP if its current HP is greater than its maximum HP).
 
 ***Revive***
-Revive can only be used on a pokémon that has fainted, and will restore half of that pokémon's
+Revive can only be used on a pok�mon that has fainted, and will restore half of that pok�mon's
 health.
 
 ***Soda Pop***
-Soda Pop will increase a pokémon's current HP by up to 60 (or set its current HP equal to its
+Soda Pop will increase a pok�mon's current HP by up to 60 (or set its current HP equal to its
 maximum HP if its current HP is greater than its maximum HP).
 
 ***Super Potion***
-Super Potion will increase a pokémon's current HP by up to 50 (or set its current HP equal to
+Super Potion will increase a pok�mon's current HP by up to 50 (or set its current HP equal to
 its maximum HP if its current HP is greater than its maximum HP).
 
 ***Ultra Ball***
-An Ultra Ball might catch a wild pokémon, with a success rate of twice that of a Pokéball. If
-used against a trainer's pokémon, it will always be blocked.
+An Ultra Ball might catch a wild pok�mon, with a success rate of twice that of a Pok�ball. If
+used against a trainer's pok�mon, it will always be blocked.
 
 ***X Accuracy***
-X Accuracy increases your active pokémon's accuracy by 1 level. If your active pokémon's
+X Accuracy increases your active pok�mon's accuracy by 1 level. If your active pok�mon's
 accuracy has reached a level cap, use of X Accuracy will do nothing.
 
 ***X Attack***
-X Attack increases your active pokémon's attack by 1 level. If your active pokémon's attack has
+X Attack increases your active pok�mon's attack by 1 level. If your active pok�mon's attack has
 reached a level or value cap, use of X Attack will do nothing.
 
 ***X Defend***
-X Defend increases your active pokémon's defense by 1 level. If your active pokémon's defense
+X Defend increases your active pok�mon's defense by 1 level. If your active pok�mon's defense
 has reached a level or value cap, use of X Defense will do nothing.
 
 ***X Special***
-X Special increases your active pokémon's special by 1 level. If your active pokémon's special
+X Special increases your active pok�mon's special by 1 level. If your active pok�mon's special
 has reached a level or value cap, use of X Special will do nothing.
 
 ***X Speed***
-X Speed increases your active pokémon's speed by 1 level. If your active pokémon's speed has
+X Speed increases your active pok�mon's speed by 1 level. If your active pok�mon's speed has
 reached a level or value cap, use of X Speed will do nothing.
 
 
@@ -3587,26 +3647,26 @@ H4. In-game Differences;
 This is a cross reference list of in-game differences.
 
 Burn (In-game) status ailment:
-Any attack modifiers used against a burned pokémon will cause the attack reduction due to burn
+Any attack modifiers used against a burned pok�mon will cause the attack reduction due to burn
 to be ignored.
 
 Paraylsis (In-game) status ailment:
-Any speed modifiers used against a paralyzed pokémon will cause the speed reduction due to
+Any speed modifiers used against a paralyzed pok�mon will cause the speed reduction due to
 paralysis to be ignored.
 
 Bind (In-game):
 The opponent will get to select a move during each turn of Bind's duration, and will attack
-your incoming pokémon with the selected move if you decide to switch before the duration is
+your incoming pok�mon with the selected move if you decide to switch before the duration is
 over.
 
 Clamp (In-game):
 The opponent will get to select a move during each turn of Clamp's duration, and will attack
-your incoming pokémon with the selected move if you decide to switch before the duration is
+your incoming pok�mon with the selected move if you decide to switch before the duration is
 over.
 
 Fire Spin (In-game):
 The opponent will get to select a move during each turn of Fire Spin's duration, and will
-attack your incoming pokémon with the selected move if you decide to switch before the duration
+attack your incoming pok�mon with the selected move if you decide to switch before the duration
 is over.
 
 Mimic (In-game):
@@ -3616,22 +3676,22 @@ Pay Day (In-game):
 Coins scattered by Pay Day are picked up if you win the battle.
 
 Roar (In-game):
-Roar can be used to automatically end wild pokémon battles.
+Roar can be used to automatically end wild pok�mon battles.
 
 Teleport (In-game):
-Teleport can be used to run away from wild pokémon battles.
+Teleport can be used to run away from wild pok�mon battles.
 
 Transform (In-game):
-If a wild pokémon uses Transform and is subsequently caught, it will become a Ditto, regardless
+If a wild pok�mon uses Transform and is subsequently caught, it will become a Ditto, regardless
 of its original species. It will then have all the stats and moves of a Ditto, except for its
 current HP, which will not be altered by this change.
 
 Whirlwind (In-game):
-Whirlwind can be used to automatically end wild pokémon battles.
+Whirlwind can be used to automatically end wild pok�mon battles.
 
 Wrap (In-game):
 The opponent will get to select a move during each turn of Wrap's duration, and will attack
-your incoming pokémon with the selected move if you decide to switch before the duration is
+your incoming pok�mon with the selected move if you decide to switch before the duration is
 over.
 
 For general in-game differences, see section B.
@@ -3641,18 +3701,18 @@ H5. Stadium Differences;
 This is a cross reference list of Stadium differences.
 
 General Stadium Differences:
-A pokémon's health bar will have 96 pixels. Players will be able to see the exact amount of
-current and maximum HP that each active pokémon has. Damaging moves that do 0 damage will
+A pok�mon's health bar will have 96 pixels. Players will be able to see the exact amount of
+current and maximum HP that each active pok�mon has. Damaging moves that do 0 damage will
 always result in a message that the move missed.
 
 Type Effectiveness Messages (Stadium):
-The type effectiveness messages associated with moves will take both of a pokémon's types into
+The type effectiveness messages associated with moves will take both of a pok�mon's types into
 account.
 
 Burn (Stadium) status ailment:
 The attack reduction of a burn will be reset by rest. Attack-raising attacks will not negate
-the attack loss penalty. A pokémon can completely rid itself of the burn ailment by using Haze.
-A pokémon will not take burn damage when it switches in.
+the attack loss penalty. A pok�mon can completely rid itself of the burn ailment by using Haze.
+A pok�mon will not take burn damage when it switches in.
 
 Confusion (Stadium) status ailment:
 The messages regarding confusion are displayed after the move choice is shown, allowing both
@@ -3660,20 +3720,20 @@ players to see the attempted attack regardless of success. A substitute will com
 the user from confusion (though not self-inflicted confusion).
 
 Freeze (Stadium) status ailment:
-You get to select a move while the pokémon is frozen.
+You get to select a move while the pok�mon is frozen.
 
 Paralysis (Stadium) status ailment:
 Rest will reset the speed reduction of paralysis. Speed-raising attacks will not negate the
-speed loss penalty. Substitute will completely protect the user from paralysis. A pokémon can
+speed loss penalty. Substitute will completely protect the user from paralysis. A pok�mon can
 completely rid itself of the paralysis ailment by using Haze.
 
 Poison (Stadium) status ailment:
-A pokémon can rid itself of the poison ailment by using Haze. A pokémon will not take poison
+A pok�mon can rid itself of the poison ailment by using Haze. A pok�mon will not take poison
 damage when it switches in.
 
 Sleep (Stadium) status ailment:
-The pokémon receives a sleep duration of 1-3 turns (chosen randomly). Also, you get to select a
-move while the pokémon is asleep. A substitute will protect the user from primary sleep.
+The pok�mon receives a sleep duration of 1-3 turns (chosen randomly). Also, you get to select a
+move while the pok�mon is asleep. A substitute will protect the user from primary sleep.
 
 Absorb (Stadium):
 Absorb will always miss if the opponent has a substitute.
@@ -3685,12 +3745,12 @@ Aurora Beam (Stadium):
 Aurora Beam has a 29.7% chance of lowering the opponent's attack by 1 level.
 
 Bide (Stadium):
-You get to select a move during each of Bide's idling turns. Bide will miss against pokémon
+You get to select a move during each of Bide's idling turns. Bide will miss against pok�mon
 that are in the middle of Dig or Fly.
 
 Bind (Stadium):
 You get to select a move during each turn of Bind's duration. If the opponent switches out
-before the duration ends, the incoming pokémon will not automatically be attacked. Bind will
+before the duration ends, the incoming pok�mon will not automatically be attacked. Bind will
 negate the recharge turn of Hyper Beam only if successful.
 
 Bubblebeam (Stadium):
@@ -3698,7 +3758,7 @@ Bubblebeam has a 29.7% chance of lowering the opponent's speed by 1 level.
 
 Clamp (Stadium):
 You get to select a move during each turn of Clamp's duration. If the opponent switches out
-before the duration ends, the incoming pokémon will not automatically be attacked. Clamp will
+before the duration ends, the incoming pok�mon will not automatically be attacked. Clamp will
 negate the recharge turn of Hyper Beam only if successful.
 
 Confusion (Stadium):
@@ -3714,7 +3774,7 @@ Dig will allow the user to avoid damage reversed by Bide. Full paralysis will re
 invulnerable part of Dig. Mirror Move will copy Dig on either of the turns it takes to execute.
 
 Disable (Stadium):
-Disable will cause a pokémon's rage to build only if successful. The disabled move's PP is not
+Disable will cause a pok�mon's rage to build only if successful. The disabled move's PP is not
 replaced with a "disabled!" message, though attempting to select the move will still result in
 a notice that the move is disabled.
 
@@ -3729,7 +3789,7 @@ If Explosion breaks an opponent's substitute, the user will faint.
 
 Fire Spin (Stadium):
 You get to select a move during each turn of Fire Spin's duration. If the opponent switches out
-before the duration ends, the incoming pokémon will not automatically be attacked. Fire Spin
+before the duration ends, the incoming pok�mon will not automatically be attacked. Fire Spin
 will negate the recharge turn of Hyper Beam only if successful.
 
 Fly (Stadium):
@@ -3776,7 +3836,7 @@ Psybeam (Stadium):
 Psybeam can't confuse an opponent that has a substitute.
 
 Rage (Stadium):
-Disable will cause a pokémon's rage to build only if successful.
+Disable will cause a pok�mon's rage to build only if successful.
 
 Razor Wind (Stadium):
 Mirror Move will copy Razor Wind on either of the turns it takes to execute.
@@ -3825,7 +3885,7 @@ No recoil damage is taken if Submission knocks out an opponent.
 Substitute (Stadium):
 Substitute will protect the user from Absorb, Dream Eater, Leech Life, Leech Seed, Mega Drain,
 and all status ailments inflicted by the opponent. If the user's current HP is exactly equal to
-25% (rounded down) of its maximum HP, it will be too weak to create a substitute. If a pokémon
+25% (rounded down) of its maximum HP, it will be too weak to create a substitute. If a pok�mon
 breaks a substitute with Explosion or Selfdestruct, it will faint.
 
 Take Down (Stadium):
@@ -3845,7 +3905,7 @@ Transform will not work if the opponent's current species is Ditto.
 
 Wrap (Stadium):
 You get to select a move during each turn of Wrap's duration. If the opponent switches out
-before the duration ends, the incoming pokémon will not automatically be attacked. Wrap will
+before the duration ends, the incoming pok�mon will not automatically be attacked. Wrap will
 negate the recharge turn of Hyper Beam only if successful.
 
 
@@ -3855,22 +3915,22 @@ I. Reference Information;
 I1. Glossary;
 These are the definitions of various terms as used in this document.
 
-***Active pokémon***
-Out of your party of up to 6 pokémon, the one that is at the time facing an opponent.
+***Active pok�mon***
+Out of your party of up to 6 pok�mon, the one that is at the time facing an opponent.
 
 ***Altered-priority (move)***
 A move such as Counter or Quick Attack whose very use takes precedence over the speed of the
-active pokémon. In any given round, using an increased priority move will make the user attack
+active pok�mon. In any given round, using an increased priority move will make the user attack
 before its opponent by default, while using a decreased priority move will make the user attack
-after its opponent by default. If both active pokémon use an increased or decreased priority
+after its opponent by default. If both active pok�mon use an increased or decreased priority
 move, turn placement will be determined normally.
 
 ***Battle Damage Formula (BDF for short)***
 The formula used to calculate the amount of damage done by an attack that has a power.
 
 ***Chromatic***
-Collectively refers to Pokémon Red, Pokémon Blue, Pokémon Yellow, and Pokémon Stadium, the
-first generation of pokémon games featuring 151 pokémon and 165 moves.
+Collectively refers to Pok�mon Red, Pok�mon Blue, Pok�mon Yellow, and Pok�mon Stadium, the
+first generation of pok�mon games featuring 151 pok�mon and 165 moves.
 
 ***Current***
 What a property is at a referenced time, since it may have changed during the course of the
@@ -3885,11 +3945,11 @@ A move that will do damage and increase the user's HP depending on the amount of
 such as Dream Eater or Leech Life.
 
 ***Evolution Level***
-The earliest level at which a pokémon can have evolved from its lower evolution. The evolution
-level of a pokémon that has no evolutions or is the lowest evolution in its chain is 1. The
-evolution level of a pokémon that evolves by using a stone is equal to the evolution level of
+The earliest level at which a pok�mon can have evolved from its lower evolution. The evolution
+level of a pok�mon that has no evolutions or is the lowest evolution in its chain is 1. The
+evolution level of a pok�mon that evolves by using a stone is equal to the evolution level of
 its unevolved form, because it does not have to increase a level to evolve. It is possible to
-obtain some pokémon below their evolution levels, such as the Lv.4 Metapods that can be found
+obtain some pok�mon below their evolution levels, such as the Lv.4 Metapods that can be found
 in Viridian Forest.
 
 ***Extended Duration***
@@ -3902,8 +3962,8 @@ Short for Gold, Silver, and Crystal, which are nearly clones of each other; can 
 abbreviation of sorts for Metallic.
 
 ***In-game***
-Pokémon Red, Blue, and Yellow each consist of two major parts: the RPG section, in which you
-complete a quest in the Kanto region, catch & train pokémon, and find items, and the link
+Pok�mon Red, Blue, and Yellow each consist of two major parts: the RPG section, in which you
+complete a quest in the Kanto region, catch and train pok�mon, and find items, and the link
 battle section, where you can link with a friend and battle each other with your team. In-game
 refers to things that exclusively occur in the RPG section of the games.
 
@@ -3915,8 +3975,8 @@ battle.
 The integer portion of a number; written in the form int(N).
 
 ***Metallic***
-Collectively refers to Pokémon Gold, Pokémon Silver, Pokémon Crystal, and Pokémon Stadium 2,
-the second generation of pokémon games featuring 251 pokémon and 251 moves.
+Collectively refers to Pok�mon Gold, Pok�mon Silver, Pok�mon Crystal, and Pok�mon Stadium 2,
+the second generation of pok�mon games featuring 251 pok�mon and 251 moves.
 
 ***Max***
 Out of two numbers, the larger one; written in the form max(A, B).
@@ -3929,7 +3989,7 @@ Short for modulo, a mathematical operation. To find the value of A mod B, reduce
 A by increments of B until you end up with a nonnegative number less than B.
 
 ***Move streak***
-When a pokémon learns moves on levels that immediately follow each other, such as the Lv.13,
+When a pok�mon learns moves on levels that immediately follow each other, such as the Lv.13,
 Lv.14, Lv.15 move streak in Butterfree's Yellow level move list. Learning more than one move on
 the same level does not count towards a move streak.
 
@@ -3943,7 +4003,7 @@ types of multi-hit moves:
 
 ***Multi-turn (move)***
 A move that takes two turns to fully execute, though it uses just 1 PP. On the first turn of
-such a move, only a check to see if the pokémon can use the move will be performed, and on the
+such a move, only a check to see if the pok�mon can use the move will be performed, and on the
 following turn, the move will do damage, PP will be deducted from it, and (in a gameboy battle)
 it will then count as the last move used. Dig and Fly also render the user invulnerable to most
 attacks during the first turn of their use.
@@ -3957,15 +4017,15 @@ Refers to an item that is is consumed/disappears after being used, since some it
 used repeatedly without being consumed.
 
 ***Palette Color***
-The image of each pokémon in the game consists of two parts. One part is its overall shape. The
+The image of each pok�mon in the game consists of two parts. One part is its overall shape. The
 other is the set of colors that are in the image, and those are what palette color(s) refer to.
-Each pokémon image has four palette colors, two of which are always black and white. There are
+Each pok�mon image has four palette colors, two of which are always black and white. There are
 some differences in the palette colors of Red/Blue as compared to Yellow as well as the
 metallic generation.
 
 ***Partial Trapping***
 A condition inflicted by a move (such as Clamp or Wrap) that lasts for 2-5 rounds during which
-a pokémon will be unable to attack (but still able to switch out) while its opponent does
+a pok�mon will be unable to attack (but still able to switch out) while its opponent does
 damage with one move chosen at the beginning of the duration. There is a 37.5% chance it will
 last for 2 turns, a 37.5% chance it will last for 3 turns, a 12.5% chance it will last for 4
 turns, and a 12.5% chance it will last for 5 turns.
@@ -3974,13 +4034,13 @@ turns, and a 12.5% chance it will last for 5 turns.
 When the full execution of a multi-turn move is delayed (but not disrupted) because of a move,
 flinching, status ailment, etc.
 
-***Pokédollars***
-For lack of a better word, the currency that is used in the Pokémon games. If that's too
+***Pok�dollars***
+For lack of a better word, the currency that is used in the Pok�mon games. If that's too
 unnatural for you, you could call it yen (the standard currency of Japan) instead, since that
-is the currency used in the Japanese Pokémon games.
+is the currency used in the Japanese Pok�mon games.
 
 ***Previous (level)***
-A move that a pokémon can't learn by level, but one of its lower evolutions can learn by level.
+A move that a pok�mon can't learn by level, but one of its lower evolutions can learn by level.
 Note that Surf Raichu is also considered a Previous move, due to the special circumstances
 under which it can learn it.
 
@@ -3995,8 +4055,8 @@ abbreviation of sorts for Chromatic.
 
 ***Recurrent (damage)***
 The fixed amount of damage inflicted by poison, a burn, and/or Leech seed at the end of each of
-the afflicted pokémon's turns. Unlike nearly every other way to inflict damage, recurrent
-damage can be greater than the pokémon's current HP.
+the afflicted pok�mon's turns. Unlike nearly every other way to inflict damage, recurrent
+damage can be greater than the pok�mon's current HP.
 
 ***Reversed (damage)***
 Damage that can be inflicted only in response to being damaged (such as via Bide or Counter).
@@ -4011,11 +4071,11 @@ does not miss. Paralysis from Body Slam and defense reduction from Acid are exam
 secondary status ailment and stat modification.
 
 ***STAB***
-Short for same-type attack bonus. If a pokémon uses a damaging move whose type matches one of
+Short for same-type attack bonus. If a pok�mon uses a damaging move whose type matches one of
 the user's current types, that attack will do 50% more damage.
 
 ***Turn***
-The action that you, your pokémon, your opponent, or your opponent's pokémon just performed,
+The action that you, your pok�mon, your opponent, or your opponent's pok�mon just performed,
 such as attack, switch, or use an item. It can frequently but not always be interchanged with
 "round."
 
@@ -4037,7 +4097,7 @@ I3. Revision History;
       2 Nov 2004 - first public release
 
       7 Jan 2005 - expanded overall scope of this faq to include as much information as
-                   possible about the battling aspect of pokémon in RBY
+                   possible about the battling aspect of pok�mon in RBY
                  - created type effectiveness and stats sections
                  - added detailed information on minimum move amounts
                  - added definitions for In-game, Move Streak, and Partial Trapping
@@ -4155,3 +4215,5 @@ I couldn't have completed this document without your help. Thanks. (And if I for
 you, feel free to let me know.)
 
 
+
+\end{document}

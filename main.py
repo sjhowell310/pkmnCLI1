@@ -208,16 +208,16 @@ try:
 					a1 = input()
 					a1 = a1.lower()
 				if a1 == "a":
-					t1action = "attack-1"
+					t1action = "attack-0"
 					isFinished = True
 				elif a1 == "b":
-					t1action = "attack-2"
+					t1action = "attack-1"
 					isFinished = True
 				elif a1 == "c":
-					t1action = "attack-3"
+					t1action = "attack-2"
 					isFinished = True
 				elif a1 == "d":
-					t1action = "attack-4"
+					t1action = "attack-3"
 					isFinished = True
 				else:
 					pass
@@ -237,44 +237,44 @@ try:
 						a1 = a1.lower()
 					if a1 == "a":
 						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
-							pass
+							print("{name} is already in battle!\n".format(name = t1.activePokemon.name))
 						else:
-							t1action = "switch-1"
+							t1action = "switch-0"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "b":
 						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
-							pass
+							print("{name} is already in battle!\n".format(name = t1.activePokemon.name))
 						else:
-							t1action = "switch-2"
+							t1action = "switch-1"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "c":
 						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
-							pass	
+							print("{name} is already in battle!\n".format(name = t1.activePokemon.name))	
 						else:
-							t1action = "switch-3"
+							t1action = "switch-2"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "d":
 						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
-							pass						
+							print("{name} is already in battle!\n".format(name = t1.activePokemon.name))						
 						else:
-							t1action = "switch-4"
+							t1action = "switch-3"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "e":
 						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
-							pass						
+							print("{name} is already in battle!\n".format(name = t1.activePokemon.name))						
 						else:
-							t1action = "switch-5"
+							t1action = "switch-4"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "f":
 						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
-							pass						
+							print("{name} is already in battle!\n".format(name = t1.activePokemon.name))						
 						else:
-							t1action = "switch-6"
+							t1action = "switch-5"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "x":
@@ -297,16 +297,16 @@ try:
 					a1 = input()
 					a1 = a1.lower()
 				if a1 == "a":
-					t2action = "attack-1"
+					t2action = "attack-0"
 					isFinished = True
 				elif a1 == "b":
-					t2action = "attack-2"
+					t2action = "attack-1"
 					isFinished = True
 				elif a1 == "c":
-					t2action = "attack-3"
+					t2action = "attack-2"
 					isFinished = True
 				elif a1 == "d":
-					t2action = "attack-4"
+					t2action = "attack-3"
 					isFinished = True
 				else:
 					pass
@@ -326,50 +326,50 @@ try:
 						a1 = a1.lower()
 					if a1 == "a":
 						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
-							pass
+							print("{name} is already in battle!\n".format(name = t2.activePokemon.name))
 						else:
-							t2action = "switch-1"
+							t2action = "switch-0"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "b":
 						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
-							pass
+							print("{name} is already in battle!\n".format(name = t2.activePokemon.name))
 						else:
-							t2action = "switch-2"
+							t2action = "switch-1"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "c":
 						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
-							pass	
+							print("{name} is already in battle!\n".format(name = t2.activePokemon.name))	
 						else:
-							t2action = "switch-3"
+							t2action = "switch-2"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "d":
 						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
-							pass						
+							print("{name} is already in battle!\n".format(name = t2.activePokemon.name))						
 						else:
-							t2action = "switch-4"
+							t2action = "switch-3"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "e":
 						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
-							pass						
+							print("{name} is already in battle!\n".format(name = t2.activePokemon.name))						
 						else:
-							t2action = "switch-5"
+							t2action = "switch-4"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "f":
 						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
-							pass						
+							print("{name} is already in battle!\n".format(name = t2.activePokemon.name))						
 						else:
-							t2action = "switch-6"
+							t2action = "switch-5"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "x":
 						madeChoice = True
 		battle.action(t1action, t2action)
-		todo: BEGIN ACTIONING INTERACTION BETWEEN POKEMON, I.E. CARRYING OUT ATTACKS ON ONE ANOTHER AND SWITCHING POKEMON IN AND OUT WHILE IN BATTLE, CONTROL FLOW IS DICTATED BY STRINGS PASSED AS ACTIONS FOR EACH TRAINER IN "ACTION" FUNCTION IN BATTLE MODULE
+
 
 
 	
