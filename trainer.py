@@ -25,6 +25,17 @@ class Trainer():
 			print("\n{pos: <5} {name: <12}{type: <18}{hp: <4}{atk: <7}{dfn: <8}{spa: <8}{spe: <8}".format(pos = str(i) + ")", name = "NAME", type = "TYPE(s)", hp = "HP", atk = "ATTACK", dfn = "DEFENCE", spa = "SPECIAL", spe = "SPEED"))
 			print("{pos: <6}{name: <12}{type: <18}{hp: <4}{atk: <7}{dfn: <8}{spa: <8}{spe: <8}\n".format(pos= "", name = pokemon.name, type = ", ".join(pokemon.type), hp = str(pokemon.battHP), atk = str(pokemon.battAtk), dfn = str(pokemon.battDef), spa = str(pokemon.battSpa), spe = str(pokemon.battSpe)))
 
+
+	#function to succinctly show status of party during battle (i.e. less details than are output during initial config)
+	def battleShowParty(self):
+		i = 0
+		options = ["a","b","c","d","e","f"]
+		for pokemon in self.party:
+			print("\n{pos: <5} {name: <12}{type: <18}{hp: <4}\n".format(pos = options[i] + ")", name = "NAME", type = "TYPE(s)", hp = "HP"))
+			print("{pos: <6}{name: <12}{type: <18}{hp: <4}\n".format(pos= "", name = pokemon.name, type = ", ".join(pokemon.type), hp = str(pokemon.battHP)))
+			i +=1
+	
+
 	#function which prints entire party to terminal along with each members moveset
 	def showPartywMoves(self):
 		print("\n{name}'s party and their movesets:".format(name = self.name))
@@ -34,6 +45,7 @@ class Trainer():
 			print("\n{pos: <5} {name: <12}{type: <18}{hp: <4}{atk: <7}{dfn: <8}{spa: <8}{spe: <8}".format(pos = str(i) + ")", name = "NAME", type = "TYPE(s)", hp = "HP", atk = "ATTACK", dfn = "DEFENCE", spa = "SPECIAL", spe = "SPEED"))
 			print("{pos: <6}{name: <12}{type: <18}{hp: <4}{atk: <7}{dfn: <8}{spa: <8}{spe: <8}".format(pos= "", name = pokemon.name, type = ", ".join(pokemon.type), hp = str(pokemon.battHP), atk = str(pokemon.battAtk), dfn = str(pokemon.battDef), spa = str(pokemon.battSpa), spe = str(pokemon.battSpe)))
 			pokemon.printMoves()
+
 
 	#function that switches a party member into battle
 	def switchIn(self, pokemon):

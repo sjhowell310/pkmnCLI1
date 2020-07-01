@@ -11,7 +11,7 @@ class Pokemon():
 	level = 100
 
 	def __init__(self, pokemon, isRandom):
-		#taking values rom passed in dictionary
+		#taking values from passed in dictionary value
 		self.name = pokemon["name"]
 		self.baseHP = pokemon["baseStats"]["hp"]
 		self.baseAtk = pokemon["baseStats"]["atk"]
@@ -39,6 +39,7 @@ class Pokemon():
 		self.Spalvl = 0
 		self.Spelvl = 0
 
+
 	#randomly samples a number between 0 and 15 for Atk, Def, Spa, and Spa. Takes final bit of binary representations of all 4 stats to form final binary representation of HP IV value 		
 	def calcIVs(self):
 		IVs = [int(15 * random.random()) for i in range(4)]
@@ -48,6 +49,7 @@ class Pokemon():
 		HPiv = int(hpiv, 2)
 		IVs.insert(0, HPiv)
 		return IVs
+
 
 	#calculates EV values for each of the stats, this can either be maxed out or randomly assigned
 	def calcEVs(self, isRandom):
@@ -60,6 +62,7 @@ class Pokemon():
 				EVs[i] = 65535
 			# print(EVs)
 		return EVs
+
 
 	#takes IVs and EVs along with base stats and converts them into full stats 
 	def calcStats(self, ivs, evs):
@@ -76,11 +79,14 @@ class Pokemon():
 
 		return hp, attack, defense, special, speed
 
+
 	def getStats(self):
 		return self.statHP, self.statAtk, self. statDef, self.statSpa, self.statSpe
 
+
 	def getBase(self):
 		return self.baseHP, self.baseAtk, self.baseDef, self.baseSpa, self.baseSpe
+
 
 	#prints full list of moveset to terminal with headings
 	def printMoves(self):
@@ -90,10 +96,12 @@ class Pokemon():
 		out = header + out
 		print(out)
 
+
 	def battlePrintMoves(self):
+		letters = validChoices = ["a","b","c","d"]
 		header = "{pos: <9}{name: <15}{mtype: <10}{pp: <8}\n".format(pos = "", name = "MOVENAME", mtype = "TYPE", pp = "PP")
 
-		out = "\n".join("{pos: <9}{name: <15}{mtype: <10}{power: <10}{accuracy: <9}{pp: <8}".format(pos = "", name = move.name, mtype = move.type, power = str(move.basePower), accuracy = str(move.accuracy), pp = str(move.pp)) for move in self.moves)
+		out = "\n".join("{pos: <9}{name: <15}{mtype: <10}{pp: <8}".format(pos = letters[i] + ")", name = self.moves[i].name, mtype = self.moves[i].type, pp = str(self.moves[i].pp)) for i in range(len(self.moves)))
 		out = header + out
 		print(out)
 

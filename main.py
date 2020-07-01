@@ -6,6 +6,7 @@ import string
 import pokemon
 import moveset
 import sys
+import os
 
 # #enables program to read inputs from file, makes testing a lot easier
 sys.stdin
@@ -181,13 +182,200 @@ try:
 	t2.switchIn(t2.party[j])
 	print("{tname} sent {current} into battle!".format(tname = t1.name, current = t1.activePokemon.name))
 	print("{tname} sent {current} into battle!".format(tname = t2.name, current = t2.activePokemon.name))
+
+	# cease input from stdin, idk why this works but it does, took me ages to find it...
+	sys.stdin.close()
+	sys.stdin = os.fdopen(1)
 	i = 0
 	while not battle.isWhiteOut() and i < 1:
-		battle.printBattle()
 		i += 1
+		battle.printBattle()
+		isFinished = False
+		while not isFinished:
+			r1 = input("\n{name}, what would you like to do?\n(Enter number of desired option)\n1)Attack\n2)Switch Pok\u00e9mon\n".format(name = t1.name))
+			while (r1 != "1" and r1 != "2") or r1 == "x":
+				r1 = input("{name}, what would you like to do?\n(Enter number of desired option)\n1)Attack\n2)Switch Pok\u00e9mon\n")
+			if r1 == "1":
+				print("Choose an attack to use:")
+				t1.activePokemon.battlePrintMoves()
+				options = len(t1.activePokemon.moves)
+				validChoices = ["x", "a","b","c","d"]
+				print("\n(Enter letter of desired option, X to go back)\n")
+				a1 = input()
+				a1 = a1.lower()
+				while a1 not in validChoices[:options+1]:
+					print("\n(Enter letter of desired option, X to go back)\n")
+					a1 = input()
+					a1 = a1.lower()
+				if a1 == "a":
+					t1action = "attack-1"
+					isFinished = True
+				elif a1 == "b":
+					t1action = "attack-2"
+					isFinished = True
+				elif a1 == "c":
+					t1action = "attack-3"
+					isFinished = True
+				elif a1 == "d":
+					t1action = "attack-4"
+					isFinished = True
+				else:
+					pass
+			if r1 == "2":
+				madeChoice = False
+				while not madeChoice:
+					print("Choose which member of your party to switch in:")
+					t1.battleShowParty()
+					options = len(t1.party)
+					validChoices = ["x", "a","b","c","d", "e", "f"]
+					print("\n(Enter letter of desired option, X to go back)\n")
+					a1 = input()
+					a1 = a1.lower()
+					while a1 not in validChoices[:options+1]:
+						print("\n(Enter letter of desired option, X to go back)\n")
+						a1 = input()
+						a1 = a1.lower()
+					if a1 == "a":
+						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
+							pass
+						else:
+							t1action = "switch-1"
+							isFinished = True
+							madeChoice = True
+					elif a1 == "b":
+						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
+							pass
+						else:
+							t1action = "switch-2"
+							isFinished = True
+							madeChoice = True
+					elif a1 == "c":
+						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
+							pass	
+						else:
+							t1action = "switch-3"
+							isFinished = True
+							madeChoice = True
+					elif a1 == "d":
+						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
+							pass						
+						else:
+							t1action = "switch-4"
+							isFinished = True
+							madeChoice = True
+					elif a1 == "e":
+						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
+							pass						
+						else:
+							t1action = "switch-5"
+							isFinished = True
+							madeChoice = True
+					elif a1 == "f":
+						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
+							pass						
+						else:
+							t1action = "switch-6"
+							isFinished = True
+							madeChoice = True
+					elif a1 == "x":
+						madeChoice = True
+		isFinished = False
+		while not isFinished:
+			r1 = input("\n{name}, what would you like to do?\n(Enter number of desired option)\n1)Attack\n2)Switch Pok\u00e9mon\n".format(name = t2.name))
+			while (r1 != "1" and r1 != "2") or r1 == "x":
+				r1 = input("{name}, what would you like to do?\n(Enter number of desired option)\n1)Attack\n2)Switch Pok\u00e9mon\n")
+			if r1 == "1":
+				print("Choose an attack to use:")
+				t2.activePokemon.battlePrintMoves()
+				options = len(t2.activePokemon.moves)
+				validChoices = ["x", "a","b","c","d"]
+				print("\n(Enter letter of desired option, X to go back)\n")
+				a1 = input()
+				a1 = a1.lower()
+				while a1 not in validChoices[:options+1]:
+					print("\n(Enter letter of desired option, X to go back)\n")
+					a1 = input()
+					a1 = a1.lower()
+				if a1 == "a":
+					t2action = "attack-1"
+					isFinished = True
+				elif a1 == "b":
+					t2action = "attack-2"
+					isFinished = True
+				elif a1 == "c":
+					t2action = "attack-3"
+					isFinished = True
+				elif a1 == "d":
+					t2action = "attack-4"
+					isFinished = True
+				else:
+					pass
+			if r1 == "2":
+				madeChoice = False
+				while not madeChoice:
+					print("Choose which member of your party to switch in:")
+					t2.battleShowParty()
+					options = len(t2.party)
+					validChoices = ["x", "a","b","c","d", "e", "f"]
+					print("\n(Enter letter of desired option, X to go back)\n")
+					a1 = input()
+					a1 = a1.lower()
+					while a1 not in validChoices[:options+1]:
+						print("\n(Enter letter of desired option, X to go back)\n")
+						a1 = input()
+						a1 = a1.lower()
+					if a1 == "a":
+						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
+							pass
+						else:
+							t2action = "switch-1"
+							isFinished = True
+							madeChoice = True
+					elif a1 == "b":
+						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
+							pass
+						else:
+							t2action = "switch-2"
+							isFinished = True
+							madeChoice = True
+					elif a1 == "c":
+						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
+							pass	
+						else:
+							t2action = "switch-3"
+							isFinished = True
+							madeChoice = True
+					elif a1 == "d":
+						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
+							pass						
+						else:
+							t2action = "switch-4"
+							isFinished = True
+							madeChoice = True
+					elif a1 == "e":
+						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
+							pass						
+						else:
+							t2action = "switch-5"
+							isFinished = True
+							madeChoice = True
+					elif a1 == "f":
+						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
+							pass						
+						else:
+							t2action = "switch-6"
+							isFinished = True
+							madeChoice = True
+					elif a1 == "x":
+						madeChoice = True
+		battle.action(t1action, t2action)
+		todo: BEGIN ACTIONING INTERACTION BETWEEN POKEMON, I.E. CARRYING OUT ATTACKS ON ONE ANOTHER AND SWITCHING POKEMON IN AND OUT WHILE IN BATTLE, CONTROL FLOW IS DICTATED BY STRINGS PASSED AS ACTIONS FOR EACH TRAINER IN "ACTION" FUNCTION IN BATTLE MODULE
+
 
 	
-	quit()
-	
-except Exception as e:
-	raise e
+
+except EOFError:
+	pass
+
+
+
