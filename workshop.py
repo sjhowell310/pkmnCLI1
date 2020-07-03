@@ -2,40 +2,27 @@ import random
 import math
 import json
 import moveset
+import battle
+import trainer
+import pokemon
+import moveset
 
-with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/final/gen1moves.json") as pdex:
-	g1moves = json.load(pdex)
+with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/final/pokedexwmoves.json") as pdex:
+	dex = json.load(pdex)
+ 	
+t1 = trainer.Trainer("Steve")
+t2 = trainer.Trainer("Jon")
+thisbattle = battle.Battle(t1,t2)
 
-	with open("data/master/moves.json") as pdex:
-		allmoves = json.load(pdex)
-		with open("data/final/pokedexwmoves.json") as pdex:
-			allpokemon = json.load(pdex)
-			out = []
-			print(len(g1moves.keys()))
+thisbattle.t1.party.append(pokemon.Pokemon(dex["venusaur"], "n"))
+thisbattle.t1.party[0].moves.append(moveset.Move("razorleaf"))
 
-			
-
-	# for moves in g1moves.keys():
-	# 	for keys in g1moves[moves]:
-	# 		if keys not in out:
-	# 			out.append(keys)
-	# # 			out.append("b")
-				
-	# # for moves in allmoves.keys():
-	# # 	for keys in allmoves[moves]:
-	# # 		if keys not in out:
-	# # 			out.append(keys)
-	# # 			out.append("a")
-
-	# print(sorted(out), len(out))
-
-	# out2 = []
-	# for moves in allmoves.keys():
-	# 	if "secondary" in allmoves[moves] and allmoves[moves]["secondary"] != None:
-	# 		for keys in allmoves[moves]["secondary"].keys():
-	# 			if keys not in out2:
-	# 				out2.append(keys)
-
-	# print(sorted(out2), len(out2))
-	
-# ['xaccuracy', 'xbasePower', 'xboosts', 'xcategory', 'xcritRatio', 'xdamage', 'xdesc', 'xdrain', 'xeffect', 'xflags', 'xforceSwitch', 'xhasCrashDamage', 'xheal', 'xignoreEvasion', 'xignoreImmunity', 'xisNonstandard', 'xmaxMove', 'xmultihit', 'xname', 'xnoMetronome', 'xnoPPBoosts', 'xnoSketch', 'xnum', 'xohko', 'xonTryHit', 'xpp', 'xpriority', 'xrecoil', 'xsecondary', 'xself', 'xselfSwitch', 'xselfdestruct', 'xshortDesc', 'xsideCondition', 'xstatus', 'xstruggleRecoil', 'xtarget', 'xtype', 'xvolatileStatus', 'xwillCrit'] 40
+thisbattle.t2.party.append(pokemon.Pokemon(dex["blastoise"], "n"))
+thisbattle.t2.party[0].moves.append(moveset.Move("surf"))
+t1.showPartywMoves()
+t2.showPartywMoves()
+off = thisbattle.t1.party[0]
+att = thisbattle.t1.party[0].moves[0]
+dfn = thisbattle.t2.party[0]
+print(thisbattle.getDamage(off, att, dfn))
+print(thisbattle.takeConfusionDamage(thisbattle.t1.party[0]))

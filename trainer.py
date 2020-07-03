@@ -68,6 +68,8 @@ class Trainer():
 		else:
 			print("{tname} switched {current} out for {switch}!".format(tname = self.name, current = self.activePokemon.name, switch = pokemon.name))
 			self.activePokemon.active = False
+			self.activePokemon.isConfused = False
+			self.activePokemon.isConfusedCount = 0
 			pokemon.active = True
 			self.activePokemon = pokemon
 			holder = self.party[0]

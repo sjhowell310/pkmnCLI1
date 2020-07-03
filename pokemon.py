@@ -8,10 +8,9 @@ import sys
 #Pokemon class for use in pkmnCLI1, contained by Trainers, each Pokemon contains Moves (none of these classes extend one another)
 class Pokemon():
 
-	level = 100
-
 	def __init__(self, pokemon, isRandom):
 		#taking values from passed in dictionary value
+		self.level = 100
 		self.name = pokemon["name"]
 		self.baseHP = pokemon["baseStats"]["hp"]
 		self.baseAtk = pokemon["baseStats"]["atk"]
@@ -27,16 +26,17 @@ class Pokemon():
 		self.ivs = self.calcIVs()
 		self.evs = self.calcEVs(isRandom)
 		self.statHP , self.statAtk, self. statDef, self.statSpa, self.statSpe =  self.calcStats(self.ivs, self.evs)
-		self.battHP, self.battAtk, self.battDef, self.battSpa, self.battSpe = self.statHP , self.statAtk * 1.125, self. statDef * 1.125, self.statSpa * 1.125, self.statSpe * 1.125
+		self.battHP, self.battAtk, self.battDef, self.battSpa, self.battSpe = self.statHP , self.statAtk, self. statDef, self.statSpa, self.statSpe
 		self.nonVolatileStatus = None
 		self.nonVolatileCount = 0
-		self.volatileStatus = None
+		self.volatileStatus = "None"
 		self.volatileCount = 0
 		self.isRecharging = False
 		self.isCharging = False
 		self.isConfused = False
-		Self.isConfusedCount = 0
-		self.disabledMove = [0, ""]
+		self.isConfusedCount = 0
+		self.disabledMove = [0, 0]
+		self.isFocusEnergy = False
 
 		#choosing moves
 		self.moves = []
