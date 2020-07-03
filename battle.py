@@ -50,28 +50,31 @@ class Battle():
 		if t1a == "switch" or t2a == "switch":
 			if t1a == "switch" and t2a == "attack":			
 				self.t1.switchIn(self.t1.party[t1c])		
-				self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 2)
+				self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 2, self.t2)
 			elif t1a == "attack" and t2a == "switch":		
 				self.t2.switchIn(self.t2.party[t2c])
-				self.attack(self.t1.activePokemon, self.t1.activePokemon.moves[t1c], self.t2.activePokemon, 2)
+				self.attack(self.t1.activePokemon, self.t1.activePokemon.moves[t1c], self.t2.activePokemon, 2, self.t1)
 			elif t1a == "switch" and t2a == "switch":
 				self.t1.switchIn(self.t1.party[t1c])
 				self.t2.switchIn(self.t2.party[t2c])
 		else:
 			if self.t1.activePokemon.moves[t1c]["priority"] > self.t2.activePokemon.moves[t2c]["priority"]:				
-				self.attack(self.t1.activePokemon, self.t1.activePokemon.moves[t1c], self.t2.activePokemon, 1)				
-				self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 2)
+				self.attack(self.t1.activePokemon, self.t1.activePokemon.moves[t1c], self.t2.activePokemon, 1, self.t1)	
+				self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 2, self.t2)
+
 			elif self.t1.activePokemon.moves[t1c]["priority"] < self.t2.activePokemon.moves[t2c]["priority"]:				
-				self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 1)
-				
-				self.attack(self.t1.activePokemon, self.t1.activePokemon.moves[t1c], self.t2.activePokemon, 2)
+				self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 1, self.t2)
+				self.attack(self.t1.activePokemon, self.t1.activePokemon.moves[t1c], self.t2.activePokemon, 2, self.t1)
+
 			elif self.t1.activePokemon.moves[t1c]["priority"] == self.t2.activePokemon.moves[t2c]["priority"]:
 				if self.t1.activePokemon.battSpe > self.t2.activePokemon.battSpe:					
-					self.attack(self.t1.activePokemon, self.t1.activePokemon.moves[t1c], self.t2.activePokemon, 1)					
-					self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 2)
+					self.attack(self.t1.activePokemon, self.t1.activePokemon.moves[t1c], self.t2.activePokemon, 1, self.t1)				
+					self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 2, self.t2)
+
 				elif self.t1.activePokemon.battSpe < self.t2.activePokemon.battSpe:					
-					self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 1)					
-					self.attack(self.t1.activePokemon, self.t1.activePokemon.moves[t1c], self.t2.activePokemon, 2)
+					self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 1, self.t2)	
+					self.attack(self.t1.activePokemon, self.t1.activePokemon.moves[t1c], self.t2.activePokemon, 2, self.t1)
+
 				elif self.t1.activePokemon.battSpe == self.t2.activePokemon.battSpe:
 					rand = random.random()
 					if rand < 0.5:						
@@ -82,72 +85,190 @@ class Battle():
 						self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 2)						
 
 
-	def attack(self, off, att, dfn, firstorsecond):
+	def attack(self, off, att, dfn, firstorsecond, trainer):
+		cantAttack = False
+
 		if firstorsecond == 1:
 			if off.nonVolatileStatus == "Frozen":
 				time.sleep(1)
 				print("{name} is frozen solid!\n".format(name = off.name))
-				time.sleep(1)
-				self.printBattle()
-				return
-			if off.nonVolatileStatus == "Asleep":
-				off.nonVolatileCount -= 1
-				if off.nonVolatileCount == 0:
-					time.sleep(1)
-					off.nonVolatileStatus = "None"
-					off.nonVolatileCount = 0
-					print("{name} woke up!\n".format(name = off.name))
-					time.sleep(1)
-					self.printBattle()
-					return
-				else:
-					print("{name} is fast asleep!\n".format(name = off.name))
-					time.sleep(1)
-					self.printBattle()
-					return
-			if off.isRecharging:
-				time.sleep(1)
-				print("{name} has to recharge!\n".format(name = off.name))
-				off.isRecharging = False
-				time.sleep(1)
-				self.printBattle()
-				return
-		
-			if off.disabledMove[0] > 0:
-				off.disabledMove[0] -= 1
-				if off.disabledMove[0] == 0:
-					off.disabledMove[1]
-					time.sleep(1)
-					print("{name}'s {movename} is no longer disabled!\n".format(name = off.name, movename = att.name))
-			if off.isConfused:
-				time.sleep(1)
-				print("{name} is confused!\n".format(name = off.name))
-				off.isConfusedCount -= 1
-				time.sleep(1)
-				self.printBattle()
-				if off.isConfusedCount >0:
-					rand = random.random()
-					if rand < 0.5:
+				cantAttack = True
+			else:
+				if off.nonVolatileStatus == "Asleep":
+					off.nonVolatileCount -= 1
+					if off.nonVolatileCount > 0:
 						time.sleep(1)
-						print("{name} hurt itself in its confusion!\n".format(name = off.name))
-						off.takeConfusionDamage()
+						print("{name} is fast asleep!\n".format(name = off.name))
+						cantAttack = True
+					else:
 						time.sleep(1)
-						self.printBattle()
+						off.nonVolatileStatus = "None"
+						off.nonVolatileCount = 0
+						print("{name} woke up!\n".format(name = off.name))
+						cantAttack = True
+						if off.isRecharging:
+							time.sleep(1)
+							print("{name} has to recharge!\n".format(name = off.name))
+							cantAttack = True
+							off.isRecharging = False
+						else:
+							if off.disabledMove[0] > 0:
+								off.disabledMove[0] -= 1
+								if off.disabledMove[0] == 0:
+									off.disabledMove[1]
+									time.sleep(1)
+									print("{name}'s {movename} is no longer disabled!\n".format(name = off.name, movename = att.name))
+							if off.isConfused:
+								time.sleep(1)
+								print("{name} is confused!\n".format(name = off.name))
+								off.isConfusedCount -= 1
+								if off.isConfusedCount == 0:
+									time.sleep(1)
+									print("{name} snapped out of it!\n".format(name = off.name))
+									off.isConfused = False
+									off.isConfusedCount = 0
+									if off.nonVolatileStatus == "Paralyzed":
+										rand = random.random()
+										if rand < 0.25:
+											time.sleep(1)
+											print("{name} is fully paralyzed and can't move!\n".format(name = off.name))
+											cantAttack = True
+								else:
+									if off.nonVolatileStatus == "Paralyzed":
+										rand = random.random()
+										if rand < 0.25:
+											time.sleep(1)
+											print("{name} is fully paralyzed and can't move!\n".format(name = off.name))
+											cantAttack = True
+									rand = random.random()
+									if rand < 0.5:
+										time.sleep(1)
+										print("{name} hurt itself in its confusion!\n".format(name = off.name))
+										off.takeConfusionDamage()
+										cantAttack = True
+										if off.battHP == 0:
+											time.sleep(1)
+											print("{name} fainted!".format(off.name))
+											if isWhiteOut():
+												return
+											else:
+												madeChoice = False
+												while not madeChoice:
+													print("Choose which member of your party to switch in:")
+													trainer.battleShowParty()
+													options = len(trainer.party)
+													validChoices = ["a","b","c","d", "e", "f"]
+													print("\n(Enter letter of desired option)\n")
+													a1 = input()
+													a1 = a1.lower()
+													while a1 not in validChoices[:options+1]:
+														print("\n(Enter letter of desired option)\n")
+														a1 = input()
+														a1 = a1.lower()
+													if a1 == "a":
+														if trainer.activePokemon.idtag == trainer.party[validChoices.index(a1)].idtag and trainer.activePokemon.battHP == trainer.party[validChoices.index(a1)].battHP:
+															print("{name} is already in battle!\n".format(name = trainer.activePokemon.name))
+														elif trainer.party[validChoices.index(a1)].battHP == 0:
+															print("{name} doesn't have any energy left to battle!\n".format(name = trainer.activePokemon.name))
+														else:
+															trainer.switchIn(trainer.party[validChoices.index(a1)])
+															madeChoice = True
+															return
+													elif a1 == "b":
+														if trainer.activePokemon.idtag == trainer.party[validChoices.index(a1)].idtag and trainer.activePokemon.battHP == trainer.party[validChoices.index(a1)].battHP:
+															print("{name} is already in battle!\n".format(name = trainer.activePokemon.name))
+														elif trainer.party[validChoices.index(a1)].battHP == 0:
+															print("{name} doesn't have any energy left to battle!\n".format(name = trainer.activePokemon.name))
+														else:
+															trainer.switchIn(trainer.party[validChoices.index(a1)])
+															madeChoice = True
+															return
+													elif a1 == "c":
+														if trainer.activePokemon.idtag == trainer.party[validChoices.index(a1)].idtag and trainer.activePokemon.battHP == trainer.party[validChoices.index(a1)].battHP:
+															print("{name} is already in battle!\n".format(name = trainer.activePokemon.name))	
+														elif trainer.party[validChoices.index(a1)].battHP == 0:
+															print("{name} doesn't have any energy left to battle!\n".format(name = trainer.activePokemon.name))
+														else:
+															trainer.switchIn(trainer.party[validChoices.index(a1)])
+															madeChoice = True
+															return
+													elif a1 == "d":
+														if trainer.activePokemon.idtag == trainer.party[validChoices.index(a1)].idtag and trainer.activePokemon.battHP == trainer.party[validChoices.index(a1)].battHP:
+															print("{name} is already in battle!\n".format(name = trainer.activePokemon.name))						
+														elif trainer.party[validChoices.index(a1)].battHP == 0:
+															print("{name} doesn't have any energy left to battle!\n".format(name = trainer.activePokemon.name))
+														else:
+															trainer.switchIn(trainer.party[validChoices.index(a1)])
+															madeChoice = True
+															return
+													elif a1 == "e":
+														if trainer.activePokemon.idtag == trainer.party[validChoices.index(a1)].idtag and trainer.activePokemon.battHP == trainer.party[validChoices.index(a1)].battHP:
+															print("{name} is already in battle!\n".format(name = trainer.activePokemon.name))						
+														elif trainer.party[validChoices.index(a1)].battHP == 0:
+															print("{name} doesn't have any energy left to battle!\n".format(name = trainer.activePokemon.name))
+														else:
+															trainer.switchIn(trainer.party[validChoices.index(a1)])
+															madeChoice = True
+															return
+													elif a1 == "f":
+														if trainer.activePokemon.idtag == trainer.party[validChoices.index(a1)].idtag and trainer.activePokemon.battHP == trainer.party[validChoices.index(a1)].battHP:
+															print("{name} is already in battle!\n".format(name = trainer.activePokemon.name))						
+														elif trainer.party[validChoices.index(a1)].battHP == 0:
+															print("{name} doesn't have any energy left to battle!\n".format(name = trainer.activePokemon.name))
+														else:
+															trainer.switchIn(trainer.party[validChoices.index(a1)])
+															madeChoice = True
+															return
+							
+			if not cantAttack:					
+				att.pp -= 1
+				if att.name != "Swift":
+					willHit = self.isHit(off, att, dfn)
+				else:
+					willHit = True
+				if not willHit:
+					time.sleep(1)
+					print("{name} used {movename}!\n".format(name = off.name, movename = att.name))
+					if off.Acclvl >= dfn.Evalvl:
+					time.sleep(1)
+					print("{name} missed!\n".format(name = off.name))
 				else:
 					time.sleep(1)
-					print("{name} snapped out of it!\n".format(name = off.name))
-					off.isConfused = False
-					off.isConfusedCount = 0
-					time.sleep(1)
-					self.printBattle()
-			if off.nonVolatileStatus == "Paralyzed":
-				rand = random.random()
-				if rand < 0.25:
-					time.sleep(1)
-					print("{name} is paralyzed and can't move!\n".format(name = off.name))
-					time.sleep(1)
-					self.printBattle()
-					return
+					print("{name} used {movename}!\n".format(name = off.name, movename = att.name))
+					results = self.useAttack(off, att, dfn)
+
+					self.takeHP(dfn, results[0])
+					if results[1]:
+						time.sleep(1)
+						print("Critical hit!")
+					if results[2] > 10:
+						time.sleep(1)
+						print("It was super effective!")
+					elif results[2] < 10:
+						print("It wasn't very effective...")
+
+BASIC FRAMEWORK TO GO IN FOR BASIC ATTACKING MOVES
+
+	def useAttack(self, off, att, dfn):
+		return self.getDamage(off, att, dfn)
+
+	def takeHP(self, dfn, damage):
+		if damage > dfn.battHP:
+			dfn.battHP = 0
+		else
+			dfn.battHP -= damage
+		return
+
+	def isHit(self, off, att, dfn):
+		accmove = math.floor(2.55 * att.accuracy)
+		accuser = off.Acclvl
+		evatarg = dfn.Evalvl
+		T = min(max(1, accmove * accuser * evatarg), 255)
+		R = random.randint(0, 256)
+		if R < T:
+			return True
+		else:
+			return False
 
 
 	def takeConfusionDamage(self, off):
@@ -163,7 +284,13 @@ class Battle():
 		
 		lvl = off.level
 
-		return (min(math.floor(math.floor((((math.floor((2*lvl)/5) + 2)*A*40)/max(1, D)))/50), 997) + 2)
+		damage = (min(math.floor(math.floor((((math.floor((2*lvl)/5) + 2)*A*40)/max(1, D)))/50), 997) + 2)
+
+		if off.battHP - damage < 0:
+			off.battHP = 0
+		else:
+			off.battHP -= damage
+		return
 
 
 	def getDamage(self, off, att, dfn):
@@ -177,7 +304,8 @@ class Battle():
 		if att.category == "Special":
 			A = off.battSpa
 			D = dfn.battSpa
-		if self.isCritical(off, att):
+		isCritical = self.isCritical(off, att)
+		if isCritical
 			lvl *= 2
 			if att.category == "Physical":
 				A = off.statAtk
@@ -197,7 +325,7 @@ class Battle():
 		T = self.getTypeMult(dfn, att.type)
 		R = random.randint(217, 256)
 
-		return math.floor((math.floor((((min(math.floor(math.floor((((math.floor((2*lvl)/5) + 2)*A*P)/max(1, D)))/50), 997) + 2)*S)*T)/10)*R)/255)
+		return math.floor((math.floor((((min(math.floor(math.floor((((math.floor((2*lvl)/5) + 2)*A*P)/max(1, D)))/50), 997) + 2)*S)*T)/10)*R)/255), isCritical, T
 
 	def getTypeMult(self, dfn, atype):
 		with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/final/typechart.json") as tchartjson:

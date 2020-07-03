@@ -208,17 +208,21 @@ try:
 					a1 = input()
 					a1 = a1.lower()
 				if a1 == "a":
-					t1action = "attack-0"
-					isFinished = True
+					if t1.activePokemon.moves[0].pp > 0:
+						t1action = "attack-0"
+						isFinished = True
 				elif a1 == "b":
-					t1action = "attack-1"
-					isFinished = True
+					if t1.activePokemon.moves[1].pp > 0:
+						t1action = "attack-1"
+						isFinished = True
 				elif a1 == "c":
-					t1action = "attack-2"
-					isFinished = True
+					if t1.activePokemon.moves[2].pp > 0:
+						t1action = "attack-2"
+						isFinished = True
 				elif a1 == "d":
-					t1action = "attack-3"
-					isFinished = True
+					if t1.activePokemon.moves[2].pp > 0:
+						t1action = "attack-3"
+						isFinished = True
 				else:
 					pass
 			if r1 == "2":
@@ -297,17 +301,21 @@ try:
 					a1 = input()
 					a1 = a1.lower()
 				if a1 == "a":
-					t2action = "attack-0"
-					isFinished = True
+					if t2.activePokemon.moves[0].pp > 0:
+						t2action = "attack-0"
+						isFinished = True
 				elif a1 == "b":
-					t2action = "attack-1"
-					isFinished = True
+					if t2.activePokemon.moves[1].pp > 0:
+						t2action = "attack-1"
+						isFinished = True
 				elif a1 == "c":
-					t2action = "attack-2"
-					isFinished = True
+					if t2.activePokemon.moves[2].pp > 0:
+						t2action = "attack-2"
+						isFinished = True
 				elif a1 == "d":
-					t2action = "attack-3"
-					isFinished = True
+					if t2.activePokemon.moves[2].pp > 0:
+						t1action = "attack-3"
+						isFinished = True
 				else:
 					pass
 			if r1 == "2":

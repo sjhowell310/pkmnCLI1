@@ -46,6 +46,8 @@ class Pokemon():
 		self.Deflvl = 0
 		self.Spalvl = 0
 		self.Spelvl = 0
+		self.Acclvl = 0
+		self.Evalvl = 0
 
 
 	#randomly samples a number between 0 and 15 for Atk, Def, Spa, and Spa. Takes final bit of binary representations of all 4 stats to form final binary representation of HP IV value 		

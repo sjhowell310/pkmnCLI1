@@ -116,7 +116,7 @@ class Move():
 			elif "onTryHit" not in g1moves[movename]:
 				self.onTryHit = None		
 			
-			self.pp = g1moves[movename]["pp"] * (8/5)
+			self.pp = math.floor((g1moves[movename]["pp"] * 8)/5)
 			
 			self.priority = g1moves[movename]["priority"]
 

@@ -14,11 +14,11 @@ t1 = trainer.Trainer("Steve")
 t2 = trainer.Trainer("Jon")
 thisbattle = battle.Battle(t1,t2)
 
-thisbattle.t1.party.append(pokemon.Pokemon(dex["venusaur"], "n"))
-thisbattle.t1.party[0].moves.append(moveset.Move("razorleaf"))
+thisbattle.t1.party.append(pokemon.Pokemon(dex["tentacruel"], "n"))
+thisbattle.t1.party[0].moves.append(moveset.Move("surf"))
 
-thisbattle.t2.party.append(pokemon.Pokemon(dex["blastoise"], "n"))
-thisbattle.t2.party[0].moves.append(moveset.Move("surf"))
+thisbattle.t2.party.append(pokemon.Pokemon(dex["geodude"], "n"))
+thisbattle.t2.party[0].moves.append(moveset.Move("rockslide"))
 t1.showPartywMoves()
 t2.showPartywMoves()
 off = thisbattle.t1.party[0]
