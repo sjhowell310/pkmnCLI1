@@ -93,8 +93,7 @@
 		"accuracy": 0,
 		"basePower": 0,
 		"boosts": {
-			"spa": 2,
-			"spd": 2
+			"spa": 2
 		},
 		"category": "Special",
 		"desc": "Raises the user's Special by 2 stages.",
@@ -557,7 +556,7 @@
 		"priority": -5,
 		"secondary": null,
 		"shortDesc": "If hit by physical attack, returns double damage.",
-		"target": "scripted",
+		"target": "normal",
 		"type": "Fighting",
 		"willCrit": false
 	},
@@ -844,7 +843,7 @@
 		"priority": 0,
 		"secondary": null,
 		"shortDesc": "No additional effect.",
-		"target": "any",
+		"target": "normal",
 		"type": "Flying"
 	},
 	"earthquake": {
@@ -864,7 +863,7 @@
 		"priority": 0,
 		"secondary": null,
 		"shortDesc": "No additional effect.",
-		"target": "allAdjacent",
+		"target": "normal",
 		"type": "Ground"
 	},
 	"eggbomb": {
@@ -1088,7 +1087,7 @@
 		"priority": 0,
 		"secondary": null,
 		"shortDesc": "Flies up on first turn, then strikes the next turn.",
-		"target": "any",
+		"target": "normal",
 		"type": "Flying"
 	},
 	"focusenergy": {
@@ -1205,15 +1204,14 @@
 		"priority": 0,
 		"secondary": null,
 		"shortDesc": "Lowers the foe(s) Attack by 1.",
-		"target": "allAdjacentFoes",
+		"target": "normal",
 		"type": "Normal"
 	},
 	"growth": {
 		"accuracy": 0,
 		"basePower": 0,
 		"boosts": {
-			"spa": 1,
-			"spd": 1
+			"spa": 1
 		},
 		"category": "Status",
 		"desc": "Raises the user's Special by 1 stage.",
@@ -1271,7 +1269,7 @@
 		"priority": 0,
 		"secondary": null,
 		"shortDesc": "No additional effect.",
-		"target": "any",
+		"target": "normal",
 		"type": "Normal"
 	},
 	"harden": {
@@ -1667,7 +1665,7 @@
 		"priority": 0,
 		"secondary": null,
 		"shortDesc": "Lowers the foe(s) Defense by 1.",
-		"target": "allAdjacentFoes",
+		"target": "normal",
 		"type": "Normal"
 	},
 	"lick": {
@@ -1932,7 +1930,7 @@
 		"secondary": null,
 		"shortDesc": "For 5 turns, protects user's party from stat drops.",
 		"sideCondition": "mist",
-		"target": "allySide",
+		"target": "normal",
 		"type": "Ice"
 	},
 	"nightshade": {
@@ -1992,7 +1990,7 @@
 		"priority": 0,
 		"secondary": null,
 		"shortDesc": "No additional effect.",
-		"target": "any",
+		"target": "normal",
 		"type": "Flying"
 	},
 	"petaldance": {
@@ -2016,7 +2014,7 @@
 			"volatileStatus": "lockedmove"
 		},
 		"shortDesc": "Lasts 3-4 turns. Confuses the user afterwards.",
-		"target": "randomNormal",
+		"target": "normal",
 		"type": "Grass"
 	},
 	"pinmissile": {
@@ -2063,7 +2061,7 @@
 		"secondary": null,
 		"shortDesc": "Poisons the foe(s).",
 		"status": "psn",
-		"target": "allAdjacentFoes",
+		"target": "normal",
 		"type": "Poison"
 	},
 	"poisonpowder": {
@@ -2167,8 +2165,7 @@
 		"priority": 0,
 		"secondary": {
 			"boosts": {
-				"spa": -1,
-				"spd": -1
+				"spa": -1
 			},
 			"chance": 33
 		},
@@ -2620,12 +2617,9 @@
 		"num": 143,
 		"pp": 5,
 		"priority": 0,
-		"secondary": {
-			"chance": 30,
-			"volatileStatus": "flinch"
-		},
+
 		"shortDesc": "Charges, then hits turn 2. 30% flinch. High crit.",
-		"target": "any",
+		"target": "normal",
 		"type": "Flying"
 	},
 	"slam": {
@@ -2705,7 +2699,7 @@
 		"pp": 20,
 		"priority": 0,
 		"secondary": {
-			"chance": 30,
+			"chance": 40,
 			"status": "psn"
 		},
 		"shortDesc": "40% chance to poison the target.",
@@ -2946,7 +2940,7 @@
 		"priority": 0,
 		"secondary": null,
 		"shortDesc": "Lowers the foe(s) Speed by 2.",
-		"target": "allAdjacentFoes",
+		"target": "normal",
 		"type": "Bug"
 	},
 	"struggle": {
@@ -2972,7 +2966,7 @@
 		"secondary": null,
 		"shortDesc": "User loses 1/2 the HP lost by the target.",
 		"struggleRecoil": true,
-		"target": "randomNormal",
+		"target": "normal",
 		"type": "Normal"
 	},
 	"stunspore": {
@@ -3098,7 +3092,7 @@
 		"priority": 0,
 		"secondary": null,
 		"shortDesc": "Hits adjacent Pokemon. Double damage on Dive.",
-		"target": "allAdjacent",
+		"target": "normal",
 		"type": "Water"
 	},
 	"swift": {
@@ -3117,7 +3111,7 @@
 		"priority": 0,
 		"secondary": null,
 		"shortDesc": "Never misses, even against Dig and Fly.",
-		"target": "allAdjacentFoes",
+		"target": "normal",
 		"type": "Normal"
 	},
 	"swordsdance": {
@@ -3181,7 +3175,7 @@
 		"priority": 0,
 		"secondary": null,
 		"shortDesc": "Lowers the foe(s) Defense by 1.",
-		"target": "allAdjacentFoes",
+		"target": "normal",
 		"type": "Normal"
 	},
 	"takedown": {
@@ -3246,7 +3240,7 @@
 			"volatileStatus": "lockedmove"
 		},
 		"shortDesc": "Lasts 3-4 turns. Confuses the user afterwards.",
-		"target": "randomNormal",
+		"target": "normal",
 		"type": "Normal"
 	},
 	"thunder": {
@@ -3499,10 +3493,6 @@
 		"num": 127,
 		"pp": 15,
 		"priority": 0,
-		"secondary": {
-			"chance": 20,
-			"volatileStatus": "flinch"
-		},
 		"shortDesc": "20% chance to flinch the target.",
 		"target": "normal",
 		"type": "Water"
@@ -3564,7 +3554,7 @@
 		"priority": 0,
 		"secondary": null,
 		"shortDesc": "No additional effect.",
-		"target": "any",
+		"target": "normal",
 		"type": "Flying"
 	},
 	"withdraw": {

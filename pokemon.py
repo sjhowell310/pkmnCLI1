@@ -21,12 +21,16 @@ class Pokemon():
 		self.height = pokemon["heightm"]
 		self.weight = pokemon["weightkg"]
 		self.active = False
-		self.idtag = int(100000000 * random.random())
+		self.idtag = random.randint(0, 100000000)
 		#calculate IVs and EVs for stat calculation, battStats are for manipulation with move multipliers during battle
 		self.ivs = self.calcIVs()
 		self.evs = self.calcEVs(isRandom)
 		self.statHP , self.statAtk, self. statDef, self.statSpa, self.statSpe =  self.calcStats(self.ivs, self.evs)
 		self.battHP, self.battAtk, self.battDef, self.battSpa, self.battSpe = self.statHP , self.statAtk, self. statDef, self.statSpa, self.statSpe
+		self.statAcc = -1
+		self.statEva = -1
+		self.battAcc = 255
+		self.battEva = 255
 		self.nonVolatileStatus = None
 		self.nonVolatileCount = 0
 		self.volatileStatus = "None"
@@ -35,6 +39,7 @@ class Pokemon():
 		self.isCharging = False
 		self.isConfused = False
 		self.isConfusedCount = 0
+		self.willFlinch = False
 		self.disabledMove = [0, 0]
 		self.isFocusEnergy = False
 
@@ -52,7 +57,7 @@ class Pokemon():
 
 	#randomly samples a number between 0 and 15 for Atk, Def, Spa, and Spa. Takes final bit of binary representations of all 4 stats to form final binary representation of HP IV value 		
 	def calcIVs(self):
-		IVs = [int(15 * random.random()) for i in range(4)]
+		IVs = [random.randint(0, 16) for i in range(4)]
 		hpiv  = ""
 		for i in range(4):
 			hpiv += str(bin(IVs[i]))[-1]
@@ -66,7 +71,7 @@ class Pokemon():
 		EVs = [0,0,0,0,0]
 		if isRandom == "y":
 			for i in range(len(EVs)):
-				EVs[i] = int(random.random() * 65535)
+				EVs[i] = random.randint(0, 65535)
 		else:
 			for i in range(len(EVs)):
 				EVs[i] = 65535
@@ -124,4 +129,5 @@ class Pokemon():
 		out = "\n".join("{pos: <9}{name: <15}{mtype: <10}{pp: <8}".format(pos = letters[i] + ")", name = self.moves[i].name, mtype = self.moves[i].type, pp = str(self.moves[i].pp)) for i in range(len(self.moves)))
 		out = header + out
 		print(out)
+
 
