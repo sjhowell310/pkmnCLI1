@@ -14,6 +14,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "drain",
 		"name": "Absorb",
 		"num": 71,
 		"pp": 20,
@@ -33,6 +34,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStat",
 		"name": "Acid",
 		"num": 51,
 		"pp": 30,
@@ -59,6 +61,7 @@
 		"flags": {
 			"snatch": 1
 		},
+		"movetype": "selfStat",
 		"name": "Acid Armor",
 		"num": 151,
 		"pp": 40,
@@ -80,6 +83,7 @@
 		"flags": {
 			"snatch": 1
 		},
+		"movetype": "selfStat",
 		"name": "Agility",
 		"num": 97,
 		"pp": 30,
@@ -101,6 +105,7 @@
 		"flags": {
 			"snatch": 1
 		},
+		"movetype": "selfStat",
 		"name": "Amnesia",
 		"num": 133,
 		"pp": 20,
@@ -120,6 +125,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStat",
 		"name": "Aurora Beam",
 		"num": 62,
 		"pp": 20,
@@ -146,6 +152,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "multiHit",
 		"multihit": [
 			2,
 			5
@@ -172,6 +179,7 @@
 			"snatch": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "selfStat",
 		"name": "Barrier",
 		"num": 112,
 		"pp": 30,
@@ -194,6 +202,7 @@
 		"ignoreEvasion": true,
 		"ignoreImmunity": true,
 		"isNonstandard": "Past",
+		"movetype": "other",
 		"name": "Bide",
 		"num": 117,
 		"pp": 10,
@@ -216,6 +225,7 @@
 			"protect": 1
 		},
 		"ignoreImmunity": true,
+		"movetype": "multiTurn",
 		"name": "Bind",
 		"num": 20,
 		"pp": 20,
@@ -241,6 +251,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Bite",
 		"num": 44,
 		"pp": 25,
@@ -263,6 +274,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Blizzard",
 		"num": 59,
 		"pp": 5,
@@ -287,6 +299,7 @@
 			"nonsky": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Body Slam",
 		"num": 34,
 		"pp": 15,
@@ -310,6 +323,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "dmgStatus",
 		"name": "Bone Club",
 		"num": 125,
 		"pp": 20,
@@ -335,6 +349,7 @@
 		"maxMove": {
 			"basePower": 130
 		},
+		"movetype": "multiHit",
 		"multihit": 2,
 		"name": "Bonemerang",
 		"num": 155,
@@ -356,6 +371,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "dmgStat",
 		"name": "Bubble",
 		"num": 145,
 		"pp": 30,
@@ -380,6 +396,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStat",
 		"name": "Bubble Beam",
 		"num": 61,
 		"pp": 20,
@@ -406,6 +423,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "multiTurn",
 		"name": "Clamp",
 		"num": 128,
 		"pp": 10,
@@ -435,6 +453,7 @@
 		"maxMove": {
 			"basePower": 100
 		},
+		"movetype": "multiHit",
 		"multihit": [
 			2,
 			5
@@ -459,6 +478,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "offStatus",
 		"name": "Confuse Ray",
 		"num": 109,
 		"pp": 10,
@@ -479,6 +499,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Confusion",
 		"num": 93,
 		"pp": 25,
@@ -503,6 +524,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "dmgStat",
 		"name": "Constrict",
 		"num": 132,
 		"pp": 35,
@@ -526,6 +548,7 @@
 		"flags": {
 			"snatch": 1
 		},
+		"movetype": "other",
 		"name": "Conversion",
 		"num": 160,
 		"pp": 30,
@@ -550,6 +573,7 @@
 		"maxMove": {
 			"basePower": 75
 		},
+		"movetype": "other",
 		"name": "Counter",
 		"num": 68,
 		"pp": 20,
@@ -572,6 +596,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Crabhammer",
 		"num": 152,
 		"pp": 10,
@@ -591,6 +616,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Cut",
 		"num": 15,
 		"pp": 30,
@@ -612,6 +638,7 @@
 		"flags": {
 			"snatch": 1
 		},
+		"movetype": "selfStat",
 		"name": "Defense Curl",
 		"num": 111,
 		"pp": 40,
@@ -635,6 +662,7 @@
 			"nonsky": 1,
 			"protect": 1
 		},
+		"movetype": "multiTurn",
 		"name": "Dig",
 		"num": 91,
 		"pp": 10,
@@ -656,6 +684,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "other",
 		"name": "Disable",
 		"num": 50,
 		"pp": 20,
@@ -679,6 +708,7 @@
 			"punch": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "dmgOnly",
 		"name": "Dizzy Punch",
 		"num": 146,
 		"pp": 10,
@@ -699,6 +729,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "recoil",
 		"name": "Double-Edge",
 		"num": 38,
 		"pp": 15,
@@ -726,6 +757,7 @@
 		"maxMove": {
 			"basePower": 80
 		},
+		"movetype": "multiHit",
 		"multihit": 2,
 		"name": "Double Kick",
 		"num": 24,
@@ -748,6 +780,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "multiHit",
 		"multihit": [
 			2,
 			5
@@ -773,6 +806,7 @@
 		"flags": {
 			"snatch": 1
 		},
+		"movetype": "selfStat",
 		"name": "Double Team",
 		"num": 104,
 		"pp": 15,
@@ -793,6 +827,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "dmgOnly",
 		"name": "Dragon Rage",
 		"num": 82,
 		"pp": 10,
@@ -817,6 +852,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "other",
 		"name": "Dream Eater",
 		"num": 138,
 		"pp": 15,
@@ -837,6 +873,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Drill Peck",
 		"num": 65,
 		"pp": 20,
@@ -857,6 +894,7 @@
 			"nonsky": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Earthquake",
 		"num": 89,
 		"pp": 10,
@@ -877,6 +915,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "dmgOnly",
 		"name": "Egg Bomb",
 		"num": 121,
 		"pp": 10,
@@ -896,6 +935,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Ember",
 		"num": 52,
 		"pp": 25,
@@ -918,6 +958,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "other",
 		"name": "Explosion",
 		"num": 153,
 		"pp": 5,
@@ -938,6 +979,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Fire Blast",
 		"num": 126,
 		"pp": 5,
@@ -962,6 +1004,7 @@
 			"protect": 1,
 			"punch": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Fire Punch",
 		"num": 7,
 		"pp": 15,
@@ -984,6 +1027,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "multiTurn",
 		"name": "Fire Spin",
 		"num": 83,
 		"pp": 15,
@@ -1011,6 +1055,7 @@
 		"maxMove": {
 			"basePower": 130
 		},
+		"movetype": "dmgOnly",
 		"name": "Fissure",
 		"num": 90,
 		"ohko": true,
@@ -1031,6 +1076,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Flamethrower",
 		"num": 53,
 		"pp": 15,
@@ -1058,6 +1104,7 @@
 			"reflectable": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "offStat",
 		"name": "Flash",
 		"num": 148,
 		"pp": 20,
@@ -1081,6 +1128,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "multiTurn",
 		"name": "Fly",
 		"num": 19,
 		"pp": 15,
@@ -1099,6 +1147,7 @@
 		"flags": {
 			"snatch": 1
 		},
+		"movetype": "other",
 		"name": "Focus Energy",
 		"num": 116,
 		"pp": 30,
@@ -1120,6 +1169,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "multiHit",
 		"multihit": [
 			2,
 			5
@@ -1147,6 +1197,7 @@
 		"maxMove": {
 			"basePower": 100
 		},
+		"movetype": "multiHit",
 		"multihit": [
 			2,
 			5
@@ -1172,6 +1223,7 @@
 			"reflectable": 1
 		},
 		"ignoreImmunity": true,
+		"movetype": "offStatus",
 		"name": "Glare",
 		"num": 137,
 		"pp": 30,
@@ -1198,6 +1250,7 @@
 			"reflectable": 1,
 			"sound": 1
 		},
+		"movetype": "offStat",
 		"name": "Growl",
 		"num": 45,
 		"pp": 40,
@@ -1219,6 +1272,7 @@
 		"flags": {
 			"snatch": 1
 		},
+		"movetype": "selfStat",
 		"name": "Growth",
 		"num": 74,
 		"pp": 40,
@@ -1242,6 +1296,7 @@
 		"maxMove": {
 			"basePower": 130
 		},
+		"movetype": "dmgOnly",
 		"name": "Guillotine",
 		"num": 12,
 		"ohko": true,
@@ -1263,6 +1318,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Gust",
 		"num": 16,
 		"pp": 35,
@@ -1284,6 +1340,7 @@
 		"flags": {
 			"snatch": 1
 		},
+		"movetype": "selfStat",
 		"name": "Harden",
 		"num": 106,
 		"pp": 30,
@@ -1302,6 +1359,7 @@
 		"flags": {
 			"authentic": 1
 		},
+		"movetype": "other",
 		"name": "Haze",
 		"num": 114,
 		"pp": 30,
@@ -1322,6 +1380,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Headbutt",
 		"num": 29,
 		"pp": 15,
@@ -1347,6 +1406,7 @@
 			"protect": 1
 		},
 		"hasCrashDamage": true,
+		"movetype": "dmgIfMiss",
 		"name": "High Jump Kick",
 		"num": 136,
 		"pp": 20,
@@ -1366,6 +1426,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Horn Attack",
 		"num": 30,
 		"pp": 25,
@@ -1389,6 +1450,7 @@
 		"maxMove": {
 			"basePower": 130
 		},
+		"movetype": "dmgOnly",
 		"name": "Horn Drill",
 		"num": 32,
 		"ohko": true,
@@ -1408,6 +1470,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Hydro Pump",
 		"num": 56,
 		"pp": 5,
@@ -1428,6 +1491,7 @@
 			"protect": 1,
 			"recharge": 1
 		},
+		"movetype": "recharge",
 		"name": "Hyper Beam",
 		"num": 63,
 		"pp": 5,
@@ -1453,6 +1517,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "dmgStatus",
 		"name": "Hyper Fang",
 		"num": 158,
 		"pp": 15,
@@ -1475,6 +1540,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "offStatus",
 		"name": "Hypnosis",
 		"num": 95,
 		"pp": 20,
@@ -1495,6 +1561,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Ice Beam",
 		"num": 58,
 		"pp": 10,
@@ -1519,6 +1586,7 @@
 			"protect": 1,
 			"punch": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Ice Punch",
 		"num": 8,
 		"pp": 15,
@@ -1545,6 +1613,7 @@
 		},
 		"hasCrashDamage": true,
 		"isNonstandard": "Past",
+		"movetype": "dmgIfMiss",
 		"name": "Jump Kick",
 		"num": 26,
 		"pp": 20,
@@ -1567,6 +1636,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "dmgOnly",
 		"name": "Karate Chop",
 		"num": 2,
 		"pp": 25,
@@ -1590,6 +1660,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "offStat",
 		"name": "Kinesis",
 		"num": 134,
 		"pp": 15,
@@ -1615,6 +1686,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "drain",
 		"name": "Leech Life",
 		"num": 141,
 		"pp": 15,
@@ -1635,6 +1707,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "other",
 		"name": "Leech Seed",
 		"num": 73,
 		"pp": 10,
@@ -1659,6 +1732,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "offStat",
 		"name": "Leer",
 		"num": 43,
 		"pp": 30,
@@ -1679,6 +1753,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Lick",
 		"num": 122,
 		"pp": 30,
@@ -1698,6 +1773,7 @@
 		"desc": "While the user remains active, its Special is doubled when taking damage. Critical hits ignore this effect. If any Pokemon uses Haze, this effect ends.",
 		"effect": "the user receives 1/2 damage from special attacks until it switches out or either pokemon uses haze.",
 		"flags": {},
+		"movetype": "other",
 		"name": "Light Screen",
 		"num": 113,
 		"pp": 30,
@@ -1720,6 +1796,7 @@
 			"reflectable": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "offStatus",
 		"name": "Lovely Kiss",
 		"num": 142,
 		"pp": 10,
@@ -1741,11 +1818,15 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Low Kick",
 		"num": 67,
 		"pp": 20,
 		"priority": 0,
-		"secondary": null,
+		"secondary": {
+			"chance": 30,
+			"volatileStatus": "flinch"
+		},
 		"shortDesc": "More power the heavier the target.",
 		"target": "normal",
 		"type": "Fighting"
@@ -1763,6 +1844,7 @@
 			"snatch": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "selfStat",
 		"name": "Meditate",
 		"num": 96,
 		"pp": 40,
@@ -1787,6 +1869,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "drain",
 		"name": "Mega Drain",
 		"num": 72,
 		"pp": 10,
@@ -1806,6 +1889,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Mega Kick",
 		"num": 25,
 		"pp": 5,
@@ -1826,6 +1910,7 @@
 			"protect": 1,
 			"punch": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Mega Punch",
 		"num": 5,
 		"pp": 20,
@@ -1842,6 +1927,7 @@
 		"desc": "A random move is selected for use, other than Metronome or Struggle.",
 		"effect": "the user performs a randomly selected move; almost any move in the game could be picked. metronome cannot generate itself, struggle or any move that the user already knows.",
 		"flags": {},
+		"movetype": "other",
 		"name": "Metronome",
 		"noMetronome": [
 			"Metronome",
@@ -1866,6 +1952,7 @@
 			"mystery": 1,
 			"protect": 1
 		},
+		"movetype": "other",
 		"name": "Mimic",
 		"num": 102,
 		"pp": 10,
@@ -1887,6 +1974,7 @@
 		"flags": {
 			"snatch": 1
 		},
+		"movetype": "selfStat",
 		"name": "Minimize",
 		"num": 107,
 		"pp": 20,
@@ -1905,6 +1993,7 @@
 		"effect": "the user performs the last move executed by its target; if applicable, an attack's damage is calculated with the user's stats, level and type(s). this moves fails if the target has not yet used a move. mirror move also cannot copy itself.",
 		"flags": {},
 		"isNonstandard": "Past",
+		"movetype": "other",
 		"name": "Mirror Move",
 		"num": 119,
 		"pp": 20,
@@ -1923,6 +2012,7 @@
 		"flags": {
 			"snatch": 1
 		},
+		"movetype": "other",
 		"name": "Mist",
 		"num": 54,
 		"pp": 30,
@@ -1945,6 +2035,7 @@
 			"protect": 1
 		},
 		"ignoreImmunity": true,
+		"movetype": "dmgOnly",
 		"name": "Night Shade",
 		"num": 101,
 		"pp": 15,
@@ -1964,6 +2055,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Pay Day",
 		"num": 6,
 		"pp": 20,
@@ -1980,10 +2072,11 @@
 		"effect": "damages the target.",
 		"flags": {
 			"contact": 1,
-			"distance": 1,
+			"distance": 1, 
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Peck",
 		"num": 64,
 		"pp": 35,
@@ -2005,6 +2098,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "multiTurn",
 		"name": "Petal Dance",
 		"num": 80,
 		"pp": 20,
@@ -2030,6 +2124,7 @@
 		"maxMove": {
 			"basePower": 130
 		},
+		"movetype": "multiHit",
 		"multihit": [
 			2,
 			5
@@ -2054,6 +2149,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "offStatus",
 		"name": "Poison Gas",
 		"num": 139,
 		"pp": 40,
@@ -2076,6 +2172,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "offStatus",
 		"name": "Poison Powder",
 		"num": 77,
 		"pp": 35,
@@ -2096,6 +2193,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Poison Sting",
 		"num": 40,
 		"pp": 35,
@@ -2118,6 +2216,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Pound",
 		"num": 1,
 		"pp": 35,
@@ -2137,6 +2236,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Psybeam",
 		"num": 60,
 		"pp": 20,
@@ -2145,7 +2245,7 @@
 			"chance": 10,
 			"volatileStatus": "confusion"
 		},
-		"shortDesc": "10% chance to confuse the target.",
+		"shortDesc": "10% c hance to confuse the target.",
 		"target": "normal",
 		"type": "Psychic"
 	},
@@ -2159,6 +2259,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStat",
 		"name": "Psychic",
 		"num": 94,
 		"pp": 10,
@@ -2184,6 +2285,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "dmgOnly",
 		"name": "Psywave",
 		"num": 149,
 		"pp": 15,
@@ -2204,6 +2306,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Quick Attack",
 		"num": 98,
 		"pp": 30,
@@ -2225,6 +2328,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "other",
 		"name": "Rage",
 		"num": 99,
 		"pp": 20,
@@ -2248,6 +2352,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Razor Leaf",
 		"num": 75,
 		"pp": 25,
@@ -2270,6 +2375,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "multiTurn",
 		"name": "Razor Wind",
 		"num": 13,
 		"pp": 10,
@@ -2290,6 +2396,7 @@
 			"snatch": 1
 		},
 		"heal": null,
+		"movetype": "restore",
 		"name": "Recover",
 		"num": 105,
 		"pp": 20,
@@ -2306,6 +2413,7 @@
 		"desc": "While the user remains active, its Defense is doubled when taking damage. Critical hits ignore this protection. This effect can be removed by Haze.",
 		"effect": "the user receives 1/2 damage from physical attacks until it switches out or either pokemon uses haze.",
 		"flags": {},
+		"movetype": "other",
 		"name": "Reflect",
 		"num": 115,
 		"pp": 20,
@@ -2327,6 +2435,7 @@
 			"heal": 1,
 			"snatch": 1
 		},
+		"movetype": "restore",
 		"name": "Rest",
 		"num": 156,
 		"pp": 10,
@@ -2335,29 +2444,6 @@
 		"shortDesc": "User sleeps 2 turns and restores HP and status.",
 		"target": "self",
 		"type": "Psychic"
-	},
-	"roar": {
-		"accuracy": 100,
-		"basePower": 0,
-		"category": "Status",
-		"desc": "No competitive use.",
-		"effect": "escapes from wild battles; fails automatically in trainer and link battles.",
-		"flags": {
-			"authentic": 1,
-			"mirror": 1,
-			"mystery": 1,
-			"reflectable": 1,
-			"sound": 1
-		},
-		"forceSwitch": false,
-		"name": "Roar",
-		"num": 46,
-		"pp": 20,
-		"priority": 0,
-		"secondary": null,
-		"shortDesc": "No competitive use.",
-		"target": "normal",
-		"type": "Normal"
 	},
 	"rockslide": {
 		"accuracy": 90,
@@ -2369,6 +2455,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Rock Slide",
 		"num": 157,
 		"pp": 10,
@@ -2387,6 +2474,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Rock Throw",
 		"num": 88,
 		"pp": 15,
@@ -2408,6 +2496,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "dmgStatus",
 		"name": "Rolling Kick",
 		"num": 27,
 		"pp": 15,
@@ -2435,6 +2524,7 @@
 			"reflectable": 1
 		},
 		"ignoreImmunity": true,
+		"movetype": "offStat",
 		"name": "Sand Attack",
 		"num": 28,
 		"pp": 15,
@@ -2454,6 +2544,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Scratch",
 		"num": 10,
 		"pp": 35,
@@ -2480,6 +2571,7 @@
 			"reflectable": 1,
 			"sound": 1
 		},
+		"movetype": "offStat",
 		"name": "Screech",
 		"num": 103,
 		"pp": 10,
@@ -2506,6 +2598,7 @@
 		"maxMove": {
 			"basePower": 75
 		},
+		"movetype": "dmgOnly",
 		"name": "Seismic Toss",
 		"num": 69,
 		"pp": 20,
@@ -2525,6 +2618,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "other",
 		"name": "Self-Destruct",
 		"num": 120,
 		"pp": 5,
@@ -2548,6 +2642,7 @@
 			"snatch": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "selfStat",
 		"name": "Sharpen",
 		"num": 159,
 		"pp": 30,
@@ -2569,6 +2664,7 @@
 			"reflectable": 1,
 			"sound": 1
 		},
+		"movetype": "offStatus",
 		"name": "Sing",
 		"num": 47,
 		"pp": 15,
@@ -2591,6 +2687,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "multiTurn",
 		"name": "Skull Bash",
 		"num": 130,
 		"pp": 15,
@@ -2613,11 +2710,12 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "multiTurn",
 		"name": "Sky Attack",
 		"num": 143,
 		"pp": 5,
 		"priority": 0,
-
+		"secondary": null,
 		"shortDesc": "Charges, then hits turn 2. 30% flinch. High crit.",
 		"target": "normal",
 		"type": "Flying"
@@ -2633,6 +2731,7 @@
 			"nonsky": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Slam",
 		"num": 21,
 		"pp": 20,
@@ -2654,6 +2753,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Slash",
 		"num": 163,
 		"pp": 20,
@@ -2674,6 +2774,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "offStatus",
 		"name": "Sleep Powder",
 		"num": 79,
 		"pp": 15,
@@ -2689,11 +2790,12 @@
 		"basePower": 65,
 		"category": "Physical",
 		"desc": "Has a 40% chance to poison the target.",
-		"effect": "has a ~30% chance to poison the target.",
+		"effect": "has a ~40% chance to poison the target.",
 		"flags": {
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Sludge",
 		"num": 124,
 		"pp": 20,
@@ -2716,6 +2818,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Smog",
 		"num": 123,
 		"pp": 20,
@@ -2742,6 +2845,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "offStat",
 		"name": "Smokescreen",
 		"num": 108,
 		"pp": 20,
@@ -2762,6 +2866,7 @@
 			"snatch": 1
 		},
 		"heal": null,
+		"movetype": "restore",
 		"name": "Soft-Boiled",
 		"num": 135,
 		"pp": 10,
@@ -2782,6 +2887,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "multiTurn",
 		"name": "Solar Beam",
 		"num": 76,
 		"pp": 10,
@@ -2803,6 +2909,7 @@
 			"protect": 1
 		},
 		"isNonstandard": "Past",
+		"movetype": "dmgOnly",
 		"name": "Sonic Boom",
 		"num": 49,
 		"pp": 20,
@@ -2826,6 +2933,7 @@
 		"maxMove": {
 			"basePower": 120
 		},
+		"movetype": "multiHit",
 		"multihit": [
 			2,
 			5
@@ -2847,6 +2955,7 @@
 		"flags": {
 			"gravity": 1
 		},
+		"movetype": "other",
 		"name": "Splash",
 		"num": 150,
 		"pp": 40,
@@ -2867,6 +2976,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "offStatus",
 		"name": "Spore",
 		"num": 147,
 		"pp": 15,
@@ -2889,6 +2999,7 @@
 			"nonsky": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Stomp",
 		"num": 23,
 		"pp": 20,
@@ -2911,6 +3022,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Strength",
 		"num": 70,
 		"pp": 15,
@@ -2934,6 +3046,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "offStat",
 		"name": "String Shot",
 		"num": 81,
 		"pp": 40,
@@ -2953,6 +3066,7 @@
 			"contact": 1,
 			"protect": 1
 		},
+		"movetype": "other",
 		"name": "Struggle",
 		"noPPBoosts": true,
 		"noSketch": true,
@@ -2981,6 +3095,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "offStatus",
 		"name": "Stun Spore",
 		"num": 78,
 		"pp": 30,
@@ -3002,6 +3117,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "recoil",
 		"name": "Submission",
 		"num": 66,
 		"pp": 20,
@@ -3022,6 +3138,7 @@
 		"desc": "The user takes 1/4 of its maximum HP, rounded down, and puts it into a substitute to take its place in battle. The substitute has 1 HP plus the HP used to create it, and is removed once enough damage is inflicted on it or 255 damage is inflicted at once, or if the user switches out or faints. Until the substitute is broken, it receives damage from all attacks made by the opposing Pokemon and shields the user from status effects and stat stage changes caused by the opponent, unless the effect is Disable, Leech Seed, sleep, primary paralysis, or secondary confusion and the user's substitute did not break. The user still takes normal damage from status effects while behind its substitute, unless the effect is confusion damage, which is applied to the opposing Pokemon's substitute instead. If the substitute breaks during a multi-hit attack, the attack ends. Fails if the user does not have enough HP remaining to create a substitute, or if it already has a substitute. The user will create a substitute and then faint if its current HP is exactly 1/4 of its maximum HP.",
 		"effect": "the user takes one-fourth of its maximum hp to create a substitute; this move fails if the user does not have enough hp for this. until the substitute is broken, it receives damage from all attacks made by other pokemon. in-game, the user can still be inflicted with status effects and stat modifiers from other pokemon, but this is fixed in pokemon stadium. if a substitute breaks from a hit during a multistrike move such as fury attack, the user takes damage from the remaining strikes.",
 		"flags": {},
+		"movetype": "other",
 		"name": "Substitute",
 		"num": 164,
 		"pp": 10,
@@ -3044,6 +3161,7 @@
 			"protect": 1
 		},
 		"ignoreImmunity": true,
+		"movetype": "dmgOnly",
 		"name": "Super Fang",
 		"num": 162,
 		"pp": 10,
@@ -3065,6 +3183,7 @@
 			"reflectable": 1,
 			"sound": 1
 		},
+		"movetype": "offStatus",
 		"name": "Supersonic",
 		"num": 48,
 		"pp": 20,
@@ -3086,6 +3205,7 @@
 			"nonsky": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Surf",
 		"num": 57,
 		"pp": 15,
@@ -3105,6 +3225,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Swift",
 		"num": 129,
 		"pp": 20,
@@ -3127,6 +3248,7 @@
 			"dance": 1,
 			"snatch": 1
 		},
+		"movetype": "selfStat",
 		"name": "Swords Dance",
 		"num": 14,
 		"pp": 30,
@@ -3146,6 +3268,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Tackle",
 		"num": 33,
 		"pp": 35,
@@ -3169,6 +3292,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "offStat",
 		"name": "Tail Whip",
 		"num": 39,
 		"pp": 30,
@@ -3189,6 +3313,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "recoil",
 		"name": "Take Down",
 		"num": 36,
 		"pp": 20,
@@ -3202,24 +3327,6 @@
 		"target": "normal",
 		"type": "Normal"
 	},
-	"teleport": {
-		"accuracy": 0,
-		"basePower": 0,
-		"category": "Special",
-		"desc": "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members.",
-		"effect": "escapes from wild battles; fails automatically in trainer and link battles.",
-		"flags": {},
-		"name": "Teleport",
-		"num": 100,
-		"onTryHit": true,
-		"pp": 20,
-		"priority": -6,
-		"secondary": null,
-		"selfSwitch": true,
-		"shortDesc": "User switches out.",
-		"target": "self",
-		"type": "Psychic"
-	},
 	"thrash": {
 		"accuracy": 100,
 		"basePower": 90,
@@ -3231,6 +3338,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "multiTurn",
 		"name": "Thrash",
 		"num": 37,
 		"pp": 20,
@@ -3253,6 +3361,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Thunder",
 		"num": 87,
 		"pp": 10,
@@ -3275,6 +3384,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Thunderbolt",
 		"num": 85,
 		"pp": 15,
@@ -3299,6 +3409,7 @@
 			"protect": 1,
 			"punch": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Thunder Punch",
 		"num": 9,
 		"pp": 15,
@@ -3321,6 +3432,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgStatus",
 		"name": "Thunder Shock",
 		"num": 84,
 		"pp": 30,
@@ -3345,6 +3457,7 @@
 			"reflectable": 1
 		},
 		"ignoreImmunity": false,
+		"movetype": "offStatus",
 		"name": "Thunder Wave",
 		"num": 86,
 		"pp": 20,
@@ -3366,6 +3479,7 @@
 			"protect": 1,
 			"reflectable": 1
 		},
+		"movetype": "offStatus",
 		"name": "Toxic",
 		"num": 92,
 		"pp": 10,
@@ -3385,6 +3499,7 @@
 		"flags": {
 			"mystery": 1
 		},
+		"movetype": "other",
 		"name": "Transform",
 		"num": 144,
 		"pp": 10,
@@ -3404,6 +3519,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Tri Attack",
 		"num": 161,
 		"pp": 10,
@@ -3427,6 +3543,7 @@
 		"maxMove": {
 			"basePower": 100
 		},
+		"movetype": "multiHit",
 		"multihit": 2,
 		"name": "Twineedle",
 		"num": 41,
@@ -3450,6 +3567,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Vine Whip",
 		"num": 22,
 		"pp": 10,
@@ -3459,7 +3577,7 @@
 		"target": "normal",
 		"type": "Grass"
 	},
-	"visegrip": {
+	"vicegrip": {
 		"accuracy": 100,
 		"basePower": 55,
 		"category": "Physical",
@@ -3469,7 +3587,8 @@
 			"mirror": 1,
 			"protect": 1
 		},
-		"name": "Vice Grip",
+		"movetype": "dmgOnly",
+		"name": "ViceGrip",
 		"num": 11,
 		"pp": 30,
 		"priority": 0,
@@ -3489,10 +3608,12 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Waterfall",
 		"num": 127,
 		"pp": 15,
 		"priority": 0,
+		"secondary": null,
 		"shortDesc": "20% chance to flinch the target.",
 		"target": "normal",
 		"type": "Water"
@@ -3506,6 +3627,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Water Gun",
 		"num": 55,
 		"pp": 25,
@@ -3514,28 +3636,6 @@
 		"shortDesc": "No additional effect.",
 		"target": "normal",
 		"type": "Water"
-	},
-	"whirlwind": {
-		"accuracy": 100,
-		"basePower": 0,
-		"category": "Status",
-		"desc": "No competitive use.",
-		"effect": "escapes from wild battles; fails automatically in trainer and link battles.",
-		"flags": {
-			"authentic": 1,
-			"mirror": 1,
-			"mystery": 1,
-			"reflectable": 1
-		},
-		"forceSwitch": false,
-		"name": "Whirlwind",
-		"num": 18,
-		"pp": 20,
-		"priority": 0,
-		"secondary": null,
-		"shortDesc": "No competitive use.",
-		"target": "normal",
-		"type": "Normal"
 	},
 	"wingattack": {
 		"accuracy": 100,
@@ -3548,6 +3648,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
+		"movetype": "dmgOnly",
 		"name": "Wing Attack",
 		"num": 17,
 		"pp": 35,
@@ -3569,6 +3670,7 @@
 		"flags": {
 			"snatch": 1
 		},
+		"movetype": "selfStat",
 		"name": "Withdraw",
 		"num": 110,
 		"pp": 40,
@@ -3590,6 +3692,7 @@
 			"protect": 1
 		},
 		"ignoreImmunity": true,
+		"movetype": "multiHit",
 		"name": "Wrap",
 		"num": 35,
 		"pp": 20,

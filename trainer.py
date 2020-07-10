@@ -70,6 +70,7 @@ class Trainer():
 			self.activePokemon.active = False
 			self.activePokemon.isConfused = False
 			self.activePokemon.isConfusedCount = 0
+			self.activePokemon.willFlinch = False
 			pokemon.active = True
 			self.activePokemon = pokemon
 			holder = self.party[0]

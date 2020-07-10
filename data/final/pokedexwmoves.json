@@ -32,7 +32,7 @@
 			"submission": "Submission",
 			"substitute": "Substitute",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunderwave": "Thunder Wave",
 			"toxic": "Toxic",
 			"triattack": "Tri Attack"
@@ -76,7 +76,7 @@
 			"swift": "Swift",
 			"takedown": "Take Down",
 			"toxic": "Toxic",
-			"whirlwind": "Whirlwind",
+
 			"wingattack": "Wing Attack"
 		},
 		"name": "Aerodactyl",
@@ -126,7 +126,7 @@
 			"submission": "Submission",
 			"substitute": "Substitute",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunderwave": "Thunder Wave",
 			"toxic": "Toxic",
 			"triattack": "Tri Attack"
@@ -209,12 +209,12 @@
 			"rage": "Rage",
 			"reflect": "Reflect",
 			"rest": "Rest",
-			"roar": "Roar",
+
 			"skullbash": "Skull Bash",
 			"substitute": "Substitute",
 			"swift": "Swift",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"toxic": "Toxic"
 		},
 		"name": "Arcanine",
@@ -257,8 +257,8 @@
 			"swift": "Swift",
 			"takedown": "Take Down",
 			"toxic": "Toxic",
-			"watergun": "Water Gun",
-			"whirlwind": "Whirlwind"
+			"watergun": "Water Gun"
+			
 		},
 		"name": "Articuno",
 		"types": [
@@ -487,9 +487,9 @@
 			"supersonic": "Supersonic",
 			"swift": "Swift",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
-			"toxic": "Toxic",
-			"whirlwind": "Whirlwind"
+
+			"toxic": "Toxic"
+			
 		},
 		"name": "Butterfree",
 		"types": [
@@ -570,7 +570,7 @@
 			"substitute": "Substitute",
 			"tailwhip": "Tail Whip",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thunderwave": "Thunder Wave",
@@ -785,7 +785,7 @@
 			"submission": "Submission",
 			"substitute": "Substitute",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thunderwave": "Thunder Wave",
@@ -845,7 +845,7 @@
 			"submission": "Submission",
 			"substitute": "Substitute",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thunderwave": "Thunder Wave",
@@ -893,7 +893,7 @@
 			"surf": "Surf",
 			"swift": "Swift",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"toxic": "Toxic",
 			"triattack": "Tri Attack",
 			"watergun": "Water Gun",
@@ -1096,8 +1096,8 @@
 			"substitute": "Substitute",
 			"takedown": "Take Down",
 			"toxic": "Toxic",
-			"triattack": "Tri Attack",
-			"whirlwind": "Whirlwind"
+			"triattack": "Tri Attack"
+			
 		},
 		"name": "Dodrio",
 		"types": [
@@ -1138,8 +1138,8 @@
 			"substitute": "Substitute",
 			"takedown": "Take Down",
 			"toxic": "Toxic",
-			"triattack": "Tri Attack",
-			"whirlwind": "Whirlwind"
+			"triattack": "Tri Attack"
+			
 		},
 		"name": "Doduo",
 		"types": [
@@ -1338,7 +1338,7 @@
 			"submission": "Submission",
 			"substitute": "Substitute",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunderwave": "Thunder Wave",
 			"toxic": "Toxic",
 			"triattack": "Tri Attack"
@@ -1513,7 +1513,7 @@
 			"substitute": "Substitute",
 			"swift": "Swift",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thunderpunch": "Thunder Punch",
@@ -1558,7 +1558,7 @@
 			"swift": "Swift",
 			"tackle": "Tackle",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thunderwave": "Thunder Wave",
@@ -1604,7 +1604,7 @@
 			"stunspore": "Stun Spore",
 			"substitute": "Substitute",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"toxic": "Toxic"
 		},
 		"name": "Exeggcute",
@@ -1648,7 +1648,7 @@
 			"strength": "Strength",
 			"substitute": "Substitute",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"toxic": "Toxic"
 		},
 		"name": "Exeggutor",
@@ -1693,8 +1693,8 @@
 			"swift": "Swift",
 			"swordsdance": "Swords Dance",
 			"takedown": "Take Down",
-			"toxic": "Toxic",
-			"whirlwind": "Whirlwind"
+			"toxic": "Toxic"
+			
 		},
 		"name": "Farfetch\u2019d",
 		"types": [
@@ -1737,8 +1737,8 @@
 			"substitute": "Substitute",
 			"swift": "Swift",
 			"takedown": "Take Down",
-			"toxic": "Toxic",
-			"whirlwind": "Whirlwind"
+			"toxic": "Toxic"
+			
 		},
 		"name": "Fearow",
 		"types": [
@@ -2005,7 +2005,7 @@
 			"swift": "Swift",
 			"takedown": "Take Down",
 			"toxic": "Toxic",
-			"whirlwind": "Whirlwind",
+
 			"wingattack": "Wing Attack"
 		},
 		"name": "Golbat",
@@ -2280,7 +2280,7 @@
 			"rage": "Rage",
 			"reflect": "Reflect",
 			"rest": "Rest",
-			"roar": "Roar",
+
 			"skullbash": "Skull Bash",
 			"substitute": "Substitute",
 			"swift": "Swift",
@@ -2553,7 +2553,7 @@
 			"submission": "Submission",
 			"substitute": "Substitute",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunderwave": "Thunder Wave",
 			"toxic": "Toxic",
 			"triattack": "Tri Attack"
@@ -2651,7 +2651,7 @@
 			"submission": "Submission",
 			"substitute": "Substitute",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thunderwave": "Thunder Wave",
@@ -2753,7 +2753,7 @@
 			"submission": "Submission",
 			"substitute": "Substitute",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thrash": "Thrash",
 			"toxic": "Toxic",
 			"watergun": "Water Gun"
@@ -2898,7 +2898,7 @@
 			"submission": "Submission",
 			"substitute": "Substitute",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunderwave": "Thunder Wave",
 			"toxic": "Toxic",
 			"triattack": "Tri Attack"
@@ -3022,7 +3022,7 @@
 			"swordsdance": "Swords Dance",
 			"takedown": "Take Down",
 			"toxic": "Toxic",
-			"visegrip": "Vice Grip",
+			"vicegrip": "ViceGrip",
 			"watergun": "Water Gun"
 		},
 		"name": "Kingler",
@@ -3104,7 +3104,7 @@
 			"swordsdance": "Swords Dance",
 			"takedown": "Take Down",
 			"toxic": "Toxic",
-			"visegrip": "Vice Grip",
+			"vicegrip": "ViceGrip",
 			"watergun": "Water Gun"
 		},
 		"name": "Krabby",
@@ -3428,7 +3428,7 @@
 			"submission": "Submission",
 			"substitute": "Substitute",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"toxic": "Toxic"
 		},
 		"name": "Magmar",
@@ -3465,7 +3465,7 @@
 			"swift": "Swift",
 			"tackle": "Tackle",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thundershock": "Thunder Shock",
@@ -3508,7 +3508,7 @@
 			"swift": "Swift",
 			"tackle": "Tackle",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thundershock": "Thunder Shock",
@@ -3753,15 +3753,15 @@
 			"swift": "Swift",
 			"swordsdance": "Swords Dance",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thunderwave": "Thunder Wave",
 			"toxic": "Toxic",
 			"transform": "Transform",
 			"triattack": "Tri Attack",
-			"watergun": "Water Gun",
-			"whirlwind": "Whirlwind"
+			"watergun": "Water Gun"
+			
 		},
 		"name": "Mew",
 		"types": [
@@ -3816,7 +3816,7 @@
 			"substitute": "Substitute",
 			"swift": "Swift",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thunderwave": "Thunder Wave",
@@ -3863,7 +3863,7 @@
 			"substitute": "Substitute",
 			"swordsdance": "Swords Dance",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderwave": "Thunder Wave",
 			"toxic": "Toxic",
@@ -3909,8 +3909,8 @@
 			"substitute": "Substitute",
 			"swift": "Swift",
 			"takedown": "Take Down",
-			"toxic": "Toxic",
-			"whirlwind": "Whirlwind"
+			"toxic": "Toxic"
+			
 		},
 		"name": "Moltres",
 		"types": [
@@ -3959,7 +3959,7 @@
 			"submission": "Submission",
 			"substitute": "Substitute",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thunderwave": "Thunder Wave",
@@ -4336,7 +4336,7 @@
 			"rage": "Rage",
 			"reflect": "Reflect",
 			"rest": "Rest",
-			"roar": "Roar",
+
 			"skullbash": "Skull Bash",
 			"substitute": "Substitute",
 			"swift": "Swift",
@@ -4691,7 +4691,7 @@
 			"swift": "Swift",
 			"takedown": "Take Down",
 			"toxic": "Toxic",
-			"whirlwind": "Whirlwind",
+
 			"wingattack": "Wing Attack"
 		},
 		"name": "Pidgeot",
@@ -4733,7 +4733,7 @@
 			"swift": "Swift",
 			"takedown": "Take Down",
 			"toxic": "Toxic",
-			"whirlwind": "Whirlwind",
+
 			"wingattack": "Wing Attack"
 		},
 		"name": "Pidgeotto",
@@ -4775,7 +4775,7 @@
 			"swift": "Swift",
 			"takedown": "Take Down",
 			"toxic": "Toxic",
-			"whirlwind": "Whirlwind",
+
 			"wingattack": "Wing Attack"
 		},
 		"name": "Pidgey",
@@ -4870,7 +4870,7 @@
 			"swordsdance": "Swords Dance",
 			"takedown": "Take Down",
 			"toxic": "Toxic",
-			"visegrip": "Vice Grip"
+			"vicegrip": "ViceGrip"
 		},
 		"name": "Pinsir",
 		"types": [
@@ -5101,7 +5101,7 @@
 			"swift": "Swift",
 			"tackle": "Tackle",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thunderwave": "Thunder Wave",
@@ -5798,7 +5798,7 @@
 			"swift": "Swift",
 			"tackle": "Tackle",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"toxic": "Toxic",
 			"triattack": "Tri Attack",
 			"watergun": "Water Gun",
@@ -5859,7 +5859,7 @@
 			"surf": "Surf",
 			"swift": "Swift",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunderwave": "Thunder Wave",
 			"toxic": "Toxic",
 			"triattack": "Tri Attack",
@@ -5916,7 +5916,7 @@
 			"surf": "Surf",
 			"swift": "Swift",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunderwave": "Thunder Wave",
 			"toxic": "Toxic",
 			"triattack": "Tri Attack",
@@ -6020,8 +6020,8 @@
 			"substitute": "Substitute",
 			"swift": "Swift",
 			"takedown": "Take Down",
-			"toxic": "Toxic",
-			"whirlwind": "Whirlwind"
+			"toxic": "Toxic"
+			
 		},
 		"name": "Spearow",
 		"types": [
@@ -6114,7 +6114,7 @@
 			"swift": "Swift",
 			"tackle": "Tackle",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thunderwave": "Thunder Wave",
@@ -6166,7 +6166,7 @@
 			"swift": "Swift",
 			"tackle": "Tackle",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thunderwave": "Thunder Wave",
@@ -6455,9 +6455,9 @@
 			"swift": "Swift",
 			"tackle": "Tackle",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
-			"toxic": "Toxic",
-			"whirlwind": "Whirlwind"
+
+			"toxic": "Toxic"
+			
 		},
 		"name": "Venomoth",
 		"types": [
@@ -6670,7 +6670,7 @@
 			"swift": "Swift",
 			"tackle": "Tackle",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thunderwave": "Thunder Wave",
@@ -6710,7 +6710,7 @@
 			"rage": "Rage",
 			"reflect": "Reflect",
 			"rest": "Rest",
-			"roar": "Roar",
+
 			"skullbash": "Skull Bash",
 			"substitute": "Substitute",
 			"swift": "Swift",
@@ -6922,7 +6922,7 @@
 			"submission": "Submission",
 			"substitute": "Substitute",
 			"takedown": "Take Down",
-			"teleport": "Teleport",
+
 			"thunder": "Thunder",
 			"thunderbolt": "Thunderbolt",
 			"thunderwave": "Thunder Wave",
@@ -6972,8 +6972,8 @@
 			"thunderbolt": "Thunderbolt",
 			"thundershock": "Thunder Shock",
 			"thunderwave": "Thunder Wave",
-			"toxic": "Toxic",
-			"whirlwind": "Whirlwind"
+			"toxic": "Toxic"
+			
 		},
 		"name": "Zapdos",
 		"types": [
@@ -7012,7 +7012,7 @@
 			"swift": "Swift",
 			"takedown": "Take Down",
 			"toxic": "Toxic",
-			"whirlwind": "Whirlwind",
+
 			"wingattack": "Wing Attack"
 		},
 		"name": "Zubat",

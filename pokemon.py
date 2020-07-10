@@ -33,7 +33,7 @@ class Pokemon():
 		self.battEva = 255
 		self.nonVolatileStatus = None
 		self.nonVolatileCount = 0
-		self.volatileStatus = "None"
+		self.volatileStatus = None
 		self.volatileCount = 0
 		self.isRecharging = False
 		self.isCharging = False

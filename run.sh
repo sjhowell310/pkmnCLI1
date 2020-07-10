@@ -3,30 +3,44 @@ python3 main.py <<'ENDOFINPUT'
 n
 steve
 mewtwo
-icebeam,psychic,rest,reflect
+icebeam,psychic,doubleteam,doubleedge
 mew
 psychic,surf,fireblast,thunder
 moltres
-fly,agility, bide, toxic
+fireblast,agility, swift, toxic
 articuno
-ice beam, swift, skyattack, razor wind
+ice beam, swift, peck, watergun
 raichu
 thunderbolt, mega kick, toxic, thunder
 arcanine
-dig,doubleteam,fireblast,takedown
+swift,doubleteam,fireblast,takedown
 jon
 charizard
-flamethrower,fireblast,ember,fly
+flamethrower,fireblast,ember,megakick
 blastoise
 surf,strength,icebeam,withdraw
 venusaur
-razorleaf,sleeppowder,solarbeam,megadrain
+razorleaf,sleeppowder,growth,megadrain
 gengar
-nightshade,hypnosis,dreameater, thunderbolt
+nightshade,hypnosis,psychic,thunderbolt
 muk
 fireblast,sludge,toxic,harden
 lapras
-ice beam, solarbeam,psychic,bodyslam
+ice beam, surf ,psychic,bodyslam
 3
 4
+2
+c
+1
+b
+1
+b
+1
+c
+1
+c
+1
+d
+1
+d
 ENDOFINPUT

@@ -25,8 +25,8 @@ def printDex():
 
 
 try:
-	with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/final/gen1moves.json") as pdex:
-		g1moves = json.load(pdex)
+	with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/final/gen1moves.json") as g1mdex:
+		g1moves = json.load(g1mdex)
 
 	with open("/home/stephen/Documents/coding/python3/pkmnCLI1/data/final/pokedexwmoves.json") as pdex:
 		dex = json.load(pdex)
@@ -184,11 +184,9 @@ try:
 	print("{tname} sent {current} into battle!".format(tname = t2.name, current = t2.activePokemon.name))
 
 	# cease input from stdin, idk why this works but it does, took me ages to find it...
-	sys.stdin.close()
-	sys.stdin = os.fdopen(1)
-	i = 0
-	while not battle.isWhiteOut() and i < 1:
-		i += 1
+	# sys.stdin.close()
+	# sys.stdin = os.fdopen(1)
+	while not battle.isWhiteOut():
 		battle.printBattle()
 		isFinished = False
 		while not isFinished:

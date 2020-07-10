@@ -79,6 +79,11 @@ class Move():
 			elif "maxMove" not in g1moves[movename]:
 				self.maxMove = None
 
+			if "movetype" in g1moves[movename]:
+				self.movetype = g1moves[movename]["movetype"]
+			elif "movetype" not in g1moves[movename]:
+				self.movetype = None
+
 			if "multihit" in g1moves[movename]:
 				self.multihit = g1moves[movename]["multihit"]
 			elif "multihit" not in g1moves[movename]:
