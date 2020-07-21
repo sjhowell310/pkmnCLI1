@@ -40,12 +40,12 @@ print(sorted(movestargettypes))
 # ['acidarmor', 'agility', 'amnesia', 'barrier', 'defensecurl', 'doubleteam', 'flash', 'growl', 'growth', 'harden', 'kinesis', 'leer', 'meditate', 'minimize', 'sandattack', 'screech', 'sharpen', 'smokescreen', 'stringshot', 'swordsdance', 'tailwhip', 'withdraw']
 movestargettypes = []
 for key in g1m.keys():
-	if "movetype" not in g1m[key].keys():
-		movestargettypes.append(key)
+	if "multihit" in g1m[key].keys():
+		movestargettypes.append(g1m[key]["multihit"])
 	
 
 
-print(sorted(movestargettypes))
+print(movestargettypes)
 status = None
 
 if not status:

@@ -171,7 +171,7 @@ try:
 	if pokechoice in validPos:
 		i = int(pokechoice) - 1
 	t1.switchIn(t1.party[i])
-	
+	SORT OUT CONFIG CODE ALL OF THIS FILE RE:SWITCHING AND TAKING INPUT
 	t2.showParty()
 	pokechoice = input("{tname}, which pokemon would you like to send into battle first?\nPlease enter the pokemon's current position in the party\n".format(tname = t2.name))
 	pokechoice = pokechoice.capitalize()
@@ -184,8 +184,8 @@ try:
 	print("{tname} sent {current} into battle!".format(tname = t2.name, current = t2.activePokemon.name))
 
 	# cease input from stdin, idk why this works but it does, took me ages to find it...
-	# sys.stdin.close()
-	# sys.stdin = os.fdopen(1)
+	sys.stdin.close()
+	sys.stdin = os.fdopen(1)
 	while not battle.isWhiteOut():
 		battle.printBattle()
 		isFinished = False
@@ -218,7 +218,7 @@ try:
 						t1action = "attack-2"
 						isFinished = True
 				elif a1 == "d":
-					if t1.activePokemon.moves[2].pp > 0:
+					if t1.activePokemon.moves[3].pp > 0:
 						t1action = "attack-3"
 						isFinished = True
 				else:
@@ -238,42 +238,42 @@ try:
 						a1 = input()
 						a1 = a1.lower()
 					if a1 == "a":
-						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
+						if t1.party[validChoices.index(a1)-1].active:
 							print("{name} is already in battle!\n".format(name = t1.activePokemon.name))
 						else:
 							t1action = "switch-0"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "b":
-						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
+						if t1.party[validChoices.index(a1)-1].active:
 							print("{name} is already in battle!\n".format(name = t1.activePokemon.name))
 						else:
 							t1action = "switch-1"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "c":
-						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
+						if t1.party[validChoices.index(a1)-1].active:
 							print("{name} is already in battle!\n".format(name = t1.activePokemon.name))	
 						else:
 							t1action = "switch-2"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "d":
-						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
+						if t1.party[validChoices.index(a1)-1].active:
 							print("{name} is already in battle!\n".format(name = t1.activePokemon.name))						
 						else:
 							t1action = "switch-3"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "e":
-						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
+						if t1.party[validChoices.index(a1)-1].active:
 							print("{name} is already in battle!\n".format(name = t1.activePokemon.name))						
 						else:
 							t1action = "switch-4"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "f":
-						if t1.activePokemon.idtag == t1.party[validChoices.index(a1)-1].idtag and t1.activePokemon.battHP == t1.party[validChoices.index(a1)-1].battHP:
+						if t1.party[validChoices.index(a1)-1].active:
 							print("{name} is already in battle!\n".format(name = t1.activePokemon.name))						
 						else:
 							t1action = "switch-5"
@@ -311,8 +311,8 @@ try:
 						t2action = "attack-2"
 						isFinished = True
 				elif a1 == "d":
-					if t2.activePokemon.moves[2].pp > 0:
-						t1action = "attack-3"
+					if t2.activePokemon.moves[3].pp > 0:
+						t2action = "attack-3"
 						isFinished = True
 				else:
 					pass
@@ -331,42 +331,42 @@ try:
 						a1 = input()
 						a1 = a1.lower()
 					if a1 == "a":
-						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
+						if t2.party[validChoices.index(a1)-1].active:
 							print("{name} is already in battle!\n".format(name = t2.activePokemon.name))
 						else:
 							t2action = "switch-0"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "b":
-						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
+						if t2.party[validChoices.index(a1)-1].active:
 							print("{name} is already in battle!\n".format(name = t2.activePokemon.name))
 						else:
 							t2action = "switch-1"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "c":
-						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
+						if t2.party[validChoices.index(a1)-1].active:
 							print("{name} is already in battle!\n".format(name = t2.activePokemon.name))	
 						else:
 							t2action = "switch-2"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "d":
-						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
+						if t2.party[validChoices.index(a1)-1].active:
 							print("{name} is already in battle!\n".format(name = t2.activePokemon.name))						
 						else:
 							t2action = "switch-3"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "e":
-						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
+						if t2.party[validChoices.index(a1)-1].active:
 							print("{name} is already in battle!\n".format(name = t2.activePokemon.name))						
 						else:
 							t2action = "switch-4"
 							isFinished = True
 							madeChoice = True
 					elif a1 == "f":
-						if t2.activePokemon.idtag == t2.party[validChoices.index(a1)-1].idtag and t2.activePokemon.battHP == t2.party[validChoices.index(a1)-1].battHP:
+						if t2.party[validChoices.index(a1)-1].active:
 							print("{name} is already in battle!\n".format(name = t2.activePokemon.name))						
 						else:
 							t2action = "switch-5"

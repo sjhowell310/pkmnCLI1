@@ -735,8 +735,8 @@
 		"pp": 15,
 		"priority": 0,
 		"recoil": [
-			33,
-			100
+			1,
+			4
 		],
 		"secondary": null,
 		"shortDesc": "Has 33% recoil.",
@@ -852,7 +852,7 @@
 			"mirror": 1,
 			"protect": 1
 		},
-		"movetype": "other",
+		"movetype": "drain",
 		"name": "Dream Eater",
 		"num": 138,
 		"pp": 15,
@@ -3692,7 +3692,7 @@
 			"protect": 1
 		},
 		"ignoreImmunity": true,
-		"movetype": "multiHit",
+		"movetype": "multiTurn",
 		"name": "Wrap",
 		"num": 35,
 		"pp": 20,
