@@ -21,15 +21,15 @@ class Battle():
 
 	#function prints the name of each trainer, their in battle pokemon, and their hp to terminal before moves are decided upon
 	def printBattle(self):
-		print("\n{name1: <30}{name2: >30}".format(name1 = self.t1.name, name2 = self.t2.name))
-		print("{name1: <30}{name2: >30}".format(name1 = self.t1.activePokemon.name, name2 = self.t2.activePokemon.name))
-		print("{hp: <3}{currhp1: >4}/{tothp1: <4}{status1: >7}{stat1: <4}{space: >14}{hp: >3}{currhp2: >4}/{tothp2: <4}{status1: >7}{stat2: >4}".format(hp = "HP:", currhp1 = str(self.t1.activePokemon.battHP), tothp1 = str(self.t1.activePokemon.statHP), status1 = "Status:", stat1 = str(self.t1.activePokemon.nonVolatileStatus), currhp2 = str(self.t2.activePokemon.battHP), tothp2 = str(self.t2.activePokemon.statHP), stat2 = str(self.t2.activePokemon.nonVolatileStatus), space = ""))
-		print("{statone: <4}:{stat1: <3} {batt1: <16}{stat2: >16} {batt2: >3}:{stattwo: >4}".format(statone = "Atk", stat1 = self.t1.activePokemon.statAtk, batt1 = self.t1.activePokemon.battAtk, stattwo = "Atk", stat2 = self.t2.activePokemon.statAtk, batt2 = self.t2.activePokemon.battAtk))
-		print("{statone: <4}:{stat1: <3} {batt1: <16}{stat2: >16} {batt2: >3}:{stattwo: >4}".format(statone = "Def", stat1 = self.t1.activePokemon.statDef, batt1 = self.t1.activePokemon.battDef, stattwo = "Def", stat2 = self.t2.activePokemon.statDef, batt2 = self.t2.activePokemon.battDef))
-		print("{statone: <4}:{stat1: <3} {batt1: <16}{stat2: >16} {batt2: >3}:{stattwo: >4}".format(statone = "Spa", stat1 = self.t1.activePokemon.statSpa, batt1 = self.t1.activePokemon.battSpa, stattwo = "Spa", stat2 = self.t2.activePokemon.statSpa, batt2 = self.t2.activePokemon.battSpa))
-		print("{statone: <4}:{stat1: <3} {batt1: <16}{stat2: >16} {batt2: >3}:{stattwo: >4}".format(statone = "Spe", stat1 = self.t1.activePokemon.statSpe, batt1 = self.t1.activePokemon.battSpe, stattwo = "Spe", stat2 = self.t2.activePokemon.statSpe, batt2 = self.t2.activePokemon.battSpe))
-		print("{statone: <4}:{stat1: <3} {batt1: <16}{stat2: >16} {batt2: >3}:{stattwo: >4}".format(statone = "Acc", stat1 = self.t1.activePokemon.statAcc, batt1 = self.t1.activePokemon.battAcc, stattwo = "Acc", stat2 = self.t2.activePokemon.statAcc, batt2 = self.t2.activePokemon.battAcc))
-		print("{statone: <4}:{stat1: <3} {batt1: <16}{stat2: >16} {batt2: >3}:{stattwo: >4}".format(statone = "Eva", stat1 = self.t1.activePokemon.statEva, batt1 = self.t1.activePokemon.battEva, stattwo = "Eva", stat2 = self.t2.activePokemon.statEva, batt2 = self.t2.activePokemon.battEva))
+		print("\n{name1: <30}{name2: >30}\n".format(name1 = self.t1.name, name2 = self.t2.name))
+		print("{name1: <30}{name2: >30}\n".format(name1 = self.t1.activePokemon.name, name2 = self.t2.activePokemon.name))
+		print("{hp: <3}{currhp1: >4}/{tothp1: <4}{status1: >7}{stat1: <4}{space: >14}{hp: >3}{currhp2: >4}/{tothp2: <4}{status1: >7}{stat2: >4}\n".format(hp = "HP:", currhp1 = str(self.t1.activePokemon.battHP), tothp1 = str(self.t1.activePokemon.statHP), status1 = "Status:", stat1 = str(self.t1.activePokemon.nonVolatileStatus), currhp2 = str(self.t2.activePokemon.battHP), tothp2 = str(self.t2.activePokemon.statHP), stat2 = str(self.t2.activePokemon.nonVolatileStatus), space = ""))
+		print("{statone: <4}:{stat1: <3} {batt1: <16}{stat2: >16} {batt2: >3}:{stattwo: >4}\n".format(statone = "Atk", stat1 = self.t1.activePokemon.statAtk, batt1 = self.t1.activePokemon.battAtk, stattwo = "Atk", stat2 = self.t2.activePokemon.statAtk, batt2 = self.t2.activePokemon.battAtk))
+		print("{statone: <4}:{stat1: <3} {batt1: <16}{stat2: >16} {batt2: >3}:{stattwo: >4}\n".format(statone = "Def", stat1 = self.t1.activePokemon.statDef, batt1 = self.t1.activePokemon.battDef, stattwo = "Def", stat2 = self.t2.activePokemon.statDef, batt2 = self.t2.activePokemon.battDef))
+		print("{statone: <4}:{stat1: <3} {batt1: <16}{stat2: >16} {batt2: >3}:{stattwo: >4}\n".format(statone = "Spa", stat1 = self.t1.activePokemon.statSpa, batt1 = self.t1.activePokemon.battSpa, stattwo = "Spa", stat2 = self.t2.activePokemon.statSpa, batt2 = self.t2.activePokemon.battSpa))
+		print("{statone: <4}:{stat1: <3} {batt1: <16}{stat2: >16} {batt2: >3}:{stattwo: >4}\n".format(statone = "Spe", stat1 = self.t1.activePokemon.statSpe, batt1 = self.t1.activePokemon.battSpe, stattwo = "Spe", stat2 = self.t2.activePokemon.statSpe, batt2 = self.t2.activePokemon.battSpe))
+		print("{statone: <4}:{stat1: <3} {batt1: <16}{stat2: >16} {batt2: >3}:{stattwo: >4}\n".format(statone = "Acc", stat1 = self.t1.activePokemon.statAcc, batt1 = self.t1.activePokemon.battAcc, stattwo = "Acc", stat2 = self.t2.activePokemon.statAcc, batt2 = self.t2.activePokemon.battAcc))
+		print("{statone: <4}:{stat1: <3} {batt1: <16}{stat2: >16} {batt2: >3}:{stattwo: >4}\n".format(statone = "Eva", stat1 = self.t1.activePokemon.statEva, batt1 = self.t1.activePokemon.battEva, stattwo = "Eva", stat2 = self.t2.activePokemon.statEva, batt2 = self.t2.activePokemon.battEva))
 
 
 
@@ -73,13 +73,13 @@ class Battle():
 				if self.t1.activePokemon.battHP == 0:
 					if not self.isWhiteOut():
 						time.sleep(1)
-						print("{pname} fainted!".format(self.t1.activePokemon.name))
+						print("{pname} fainted!\n".format(self.t1.activePokemon.name))
 						self.battleSwitch(self.t1)
 					else:
 						time.sleep(1)
-						print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+						print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
 						time.sleep(1)
-						print("{name} whited out!".format(name = self.t1.name))
+						print("{name} whited out!\n".format(name = self.t1.name))
 						return
 
 			elif t1a == "attack" and t2a == "switch":		
@@ -88,13 +88,13 @@ class Battle():
 				if self.t2.activePokemon.battHP == 0:
 					if not self.isWhiteOut():
 						time.sleep(1)
-						print("{pname} fainted!".format(pname = self.t2.activePokemon.name))
+						print("{pname} fainted!\n".format(pname = self.t2.activePokemon.name))
 						self.battleSwitch(self.t2)
 					else:
 						time.sleep(1)
-						print("{pname} fainted!".format(pname = self.t2.activePokemon.name))
+						print("{pname} fainted!\n".format(pname = self.t2.activePokemon.name))
 						time.sleep(1)
-						print("{name} whited out!".format(name = self.t2.name))
+						print("{name} whited out!\n".format(name = self.t2.name))
 						return
 			elif t1a == "switch" and t2a == "switch":
 				self.t1.switchIn(self.t1.party[t1c])
@@ -105,25 +105,27 @@ class Battle():
 				if self.t2.activePokemon.battHP == 0:
 					if not self.isWhiteOut():
 						time.sleep(1)
-						print("{pname} fainted!".format(pname = self.t2.activePokemon.name))
+						print("{pname} fainted!\n".format(pname = self.t2.activePokemon.name))
 						self.battleSwitch(self.t2)
+						return
 					else:
 						time.sleep(1)
-						print("{pname} fainted!".format(pname = self.t2.activePokemon.name))
+						print("{pname} fainted!\n".format(pname = self.t2.activePokemon.name))
 						time.sleep(1)
-						print("{name} whited out!".format(name = self.t2.name))
+						print("{name} whited out!\n".format(name = self.t2.name))
 						return
 				self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 2)
 				if self.t1.activePokemon.battHP == 0:
 					if not self.isWhiteOut():
 						time.sleep(1)
-						print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+						print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
 						self.battleSwitch(self.t1)
+						return
 					else:
 						time.sleep(1)
-						print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+						print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
 						time.sleep(1)
-						print("{name} whited out!".format(name = self.t1.name))
+						print("{name} whited out!\n".format(name = self.t1.name))
 						return
 
 			elif self.t1.activePokemon.moves[t1c].priority < self.t2.activePokemon.moves[t2c].priority:				
@@ -131,25 +133,27 @@ class Battle():
 				if self.t1.activePokemon.battHP == 0:
 					if not self.isWhiteOut():
 						time.sleep(1)
-						print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+						print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
 						self.battleSwitch(self.t1)
+						return
 					else:
 						time.sleep(1)
-						print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+						print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
 						time.sleep(1)
-						print("{name} whited out!".format(name = self.t1.name))
+						print("{name} whited out!\n".format(name = self.t1.name))
 						return
 				self.attack(self.t1.activePokemon, self.t1.activePokemon.moves[t1c], self.t2.activePokemon, 2)
 				if self.t2.activePokemon.battHP == 0:
 					if not self.isWhiteOut():
 						time.sleep(1)
-						print("{pname} fainted!".format(pname = self.t2.activePokemon.name))
+						print("{pname} fainted!\n".format(pname = self.t2.activePokemon.name))
 						self.battleSwitch(self.t2)
+						return					
 					else:
 						time.sleep(1)
-						print("{pname} fainted!".format(pname = self.t2.activePokemon.name))
+						print("{pname} fainted!\n".format(pname = self.t2.activePokemon.name))
 						time.sleep(1)
-						print("{name} whited out!".format(name = self.t2.name))
+						print("{name} whited out!\n".format(name = self.t2.name))
 						return
 
 			elif self.t1.activePokemon.moves[t1c].priority == self.t2.activePokemon.moves[t2c].priority:
@@ -158,25 +162,27 @@ class Battle():
 					if self.t2.activePokemon.battHP == 0:
 						if not self.isWhiteOut():
 							time.sleep(1)
-							print("{pname} fainted!".format(pname = self.t2.activePokemon.name))
+							print("{pname} fainted!\n".format(pname = self.t2.activePokemon.name))
 							self.battleSwitch(self.t2)
+							return
 						else:
 							time.sleep(1)
-							print("{pname} fainted!".format(pname = self.t2.activePokemon.name))
+							print("{pname} fainted!\n".format(pname = self.t2.activePokemon.name))
 							time.sleep(1)
-							print("{name} whited out!".format(name = self.t2.name))
+							print("{name} whited out!\n".format(name = self.t2.name))
 							return		
 					self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 2)
 					if self.t1.activePokemon.battHP == 0:
 						if not self.isWhiteOut():
 							time.sleep(1)
-							print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+							print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
 							self.battleSwitch(self.t1)
+							return
 						else:
 							time.sleep(1)
-							print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+							print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
 							time.sleep(1)
-							print("{name} whited out!".format(name = self.t1.name))
+							print("{name} whited out!\n".format(name = self.t1.name))
 							return
 
 				elif t1s < t2s:					
@@ -184,24 +190,27 @@ class Battle():
 					if self.t1.activePokemon.battHP == 0:
 						if not self.isWhiteOut():
 							time.sleep(1)
-							print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+							print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
 							self.battleSwitch(self.t1)
+							return
 						else:
 							time.sleep(1)
-							print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+							print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
 							time.sleep(1)
-							print("{name} whited out!".format(name = self.t1.name))
+							print("{name} whited out!\n".format(name = self.t1.name))
 							return
 					self.attack(self.t1.activePokemon, self.t1.activePokemon.moves[t1c], self.t2.activePokemon, 2)
 					if self.t2.activePokemon.battHP == 0:
 						if not self.isWhiteOut():
 							time.sleep(1)
-							print("{pname} fainted!".format(pname = self.t2.activePokemon.name))
+							print("{pname} fainted!\n".format(pname = self.t2.activePokemon.name))
+							self.battleSwitch(self.t2)
+							return
 						else:
 							time.sleep(1)
-							print("{pname} fainted!".format(pname = self.t2.activePokemon.name))
+							print("{pname} fainted!\n".format(pname = self.t2.activePokemon.name))
 							time.sleep(1)
-							print("{name} whited out!".format(name = self.t2.name))
+							print("{name} whited out!\n".format(name = self.t2.name))
 							return
 
 				elif t1s == t2s:
@@ -211,47 +220,54 @@ class Battle():
 						if self.t2.activePokemon.battHP == 0:
 							if not self.isWhiteOut():
 								time.sleep(1)
-								print("{pname} fainted!".format(pname = self.t2.activePokemon.name))
+								print("{pname} fainted!\n".format(pname = self.t2.activePokemon.name))
+								self.battleSwitch(self.t2)
+								return
 							else:
 								time.sleep(1)
-								print("{pname} fainted!".format(pname = self.t2.activePokemon.name))
+								print("{pname} fainted!\n".format(pname = self.t2.activePokemon.name))
 								time.sleep(1)
-								print("{name} whited out!".format(name = self.t2.name))
-								self.battleSwitch(self.t2)
+								print("{name} whited out!\n".format(name = self.t2.name))
 								return			
 						self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 2)
 						if self.t1.activePokemon.battHP == 0:
 							if not self.isWhiteOut():
 								time.sleep(1)
-								print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+								print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
+								self.battleSwitch(self.t1)
+								return
 							else:
 								time.sleep(1)
-								print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+								print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
 								time.sleep(1)
-								print("{name} whited out!".format(name = self.t1.name))
+								print("{name} whited out!\n".format(name = self.t1.name))
 								return
 					else:
 						self.attack(self.t2.activePokemon, self.t2.activePokemon.moves[t2c], self.t1.activePokemon, 1)
 						if self.t1.activePokemon.battHP == 0:
 							if not self.isWhiteOut():
 								time.sleep(1)
-								print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+								print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
+								self.battleSwitch(self.t1)
+								return
 							else:
 								time.sleep(1)
-								print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+								print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
 								time.sleep(1)
-								print("{name} whited out!".format(name = self.t1.name))
+								print("{name} whited out!\n".format(name = self.t1.name))
 								return				
 						self.attack(self.t1.activePokemon, self.t1.activePokemon.moves[t1c], self.t2.activePokemon, 2)	
 						if self.t2.activePokemon.battHP == 0:
 							if not self.isWhiteOut():
 								time.sleep(1)
-								print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+								print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
+								self.battleSwitch(self.t2)
+								return
 							else:
 								time.sleep(1)
-								print("{pname} fainted!".format(pname = self.t1.activePokemon.name))
+								print("{pname} fainted!\n".format(pname = self.t1.activePokemon.name))
 								time.sleep(1)
-								print("{name} whited out!".format(name = self.t1.name))
+								print("{name} whited out!\n".format(name = self.t1.name))
 								return					
 
 
@@ -280,7 +296,7 @@ class Battle():
 					cantAttack = True
 				else:
 					time.sleep(1)
-					off.nonVolatileStatus = "None"
+					off.nonVolatileStatus = None
 					off.nonVolatileCount = 0
 					print("{name} woke up!\n".format(name = off.name))
 					cantAttack = True
@@ -374,13 +390,13 @@ class Battle():
 						stat = "Evasion"
 					if mod == 0:
 						time.sleep(1)
-						print("Nothing happened!")
+						print("Nothing happened!\n")
 					elif mod == 1:
 						time.sleep(1)
-						print("{pname}'s {stat} rose!".format(pname = off.name, stat = stat))
+						print("{pname}'s {stat} rose!\n".format(pname = off.name, stat = stat))
 					elif mod == 2:
 						time.sleep(1)
-						print("{pname}'s {stat} greatly rose!".format(pname = off.name, stat = stat))
+						print("{pname}'s {stat} greatly rose!\n".format(pname = off.name, stat = stat))
 				elif att.movetype == "offStat":
 					if "atk" in att.boosts.keys():
 						mod = self.statMod(dfn, "atk", att.boosts["atk"])
@@ -402,39 +418,39 @@ class Battle():
 						stat = "Evasion"
 					if mod == 0:
 						time.sleep(1)
-						print("Nothing happened!")
+						print("Nothing happened!\n")
 					elif mod == 1:
 						time.sleep(1)
-						print("{pname}'s {stat} fell!".format(pname = dfn.name, stat = stat))
+						print("{pname}'s {stat} fell!\n".format(pname = dfn.name, stat = stat))
 					elif mod == 2:
 						time.sleep(1)
-						print("{pname}'s {stat} greatly fell!".format(pname = dfn.name, stat = stat))
+						print("{pname}'s {stat} greatly fell!\n".format(pname = dfn.name, stat = stat))
 				elif att.movetype == "dmgOnly":
 					damage, crit, mult = self.getDamage(off, att, dfn)
 				
 					if damage == "failed":
 						time.sleep(1)
-						print("{movename} failed!".format(movename = att.name))
+						print("{movename} failed!\n".format(movename = att.name))
 					elif damage == 65535:
 						time.sleep(1)
-						print("One Hit KO!")
+						print("One Hit KO!\n")
 					elif damage == "noEffect" or mult == 0:
 						time.sleep(1)
-						print("{movename} doesn't effect {opponent}!".format(movename = att.name, opponent = dfn.name))
+						print("{movename} doesn't effect {opponent}!\n".format(movename = att.name, opponent = dfn.name))
 					elif damage >= 0 and mult > 0:
 						damage = self.takeHP(dfn, damage)
 						if crit:
 							time.sleep(1)
-							print("Critical hit!")
+							print("Critical hit!\n")
 						if mult > 10:
 							time.sleep(1)
-							print("It was super effective! {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+							print("It was super effective! {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						elif mult < 10:
 							time.sleep(1)
-							print("It wasn't very effective... {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+							print("It wasn't very effective... {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						elif mult == 10:
 							time.sleep(1)
-							print("{hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+							print("{hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						if dfn.battHP == 0:
 							return
 				elif att.movetype == "dmgStat":
@@ -442,27 +458,27 @@ class Battle():
 				
 					if damage == "failed":
 						time.sleep(1)
-						print("{movename} failed!".format(movename = att.name))
+						print("{movename} failed!\n".format(movename = att.name))
 					elif damage == 65535:
 						time.sleep(1)
-						print("One Hit KO!")
+						print("One Hit KO!\n")
 					elif damage == "noEffect" or mult == 0:
 						time.sleep(1)
-						print("{movename} doesn't effect {opponent}!".format(movename = att.name, opponent = dfn.name))
+						print("{movename} doesn't effect {opponent}!\n".format(movename = att.name, opponent = dfn.name))
 					elif damage >= 0 and mult > 0:
 						damage = self.takeHP(dfn, damage)
 						if crit:
 							time.sleep(1)
-							print("Critical hit!")
+							print("Critical hit!\n")
 						if mult > 10:
 							time.sleep(1)
-							print("It was super effective! {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+							print("It was super effective! {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						elif mult < 10:
 							time.sleep(1)
-							print("It wasn't very effective... {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+							print("It wasn't very effective... {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						elif mult == 10:
 							time.sleep(1)
-							print("{hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+							print("{hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						if dfn.battHP == 0:
 							return
 						rand = random.randint(0,101)
@@ -487,38 +503,38 @@ class Battle():
 								stat = "Evasion"
 							if mod == 0:
 								time.sleep(1)
-								print("Nothing happened!")
+								print("Nothing happened!\n")
 							elif mod == 1:
 								time.sleep(1)
-								print("{pname}'s {stat} fell!".format(pname = dfn.name, stat = stat))
+								print("{pname}'s {stat} fell!\n".format(pname = dfn.name, stat = stat))
 							elif mod == 2:
 								time.sleep(1)
-								print("{pname}'s {stat} greatly fell!".format(pname = dfn.name, stat = stat))
+								print("{pname}'s {stat} greatly fell!\n".format(pname = dfn.name, stat = stat))
 				elif att.movetype == "offStatus":
 					if att.status:
 						if dfn.nonVolatileStatus:
 							time.sleep(1)
-							print("But it failed!")
+							print("But it failed!\n")
 						else:
 							if att.status == "par":
 								if att.type == "Electric" and "Electric" in dfn.type:
 									time.sleep(1)
-									print("But it failed!")
+									print("But it failed!\n")
 								else:
 									time.sleep(1)
-									print("{pname} became Paralyzed! It may not attack!".format(pname = dfn.name))
+									print("{pname} became Paralyzed! It may not attack!\n".format(pname = dfn.name))
 									dfn.nonVolatileStatus = "Paralyzed"
 							elif att.status == "psn":
 								if "Poison" in dfn.type:
 									time.sleep(1)
-									print("But it failed!")
+									print("But it failed!\n")
 								else:
 									time.sleep(1)
-									print("{pname} was poisoned!".format(pname = dfn.name))
+									print("{pname} was poisoned!\n".format(pname = dfn.name))
 									dfn.nonVolatileStatus = "Poisoned"
 							elif att.status == "slp":
 								time.sleep(1)
-								print("{pname} fell asleep!".format(pname = dfn.name))
+								print("{pname} fell asleep!\n".format(pname = dfn.name))
 								dfn.nonVolatileStatus = "Asleep"
 								rand = random.randint(0,7)
 								if rand == 0:
@@ -538,15 +554,15 @@ class Battle():
 							elif att.status == "tox":
 								if "Poison" in dfn.type:
 									time.sleep(1)
-									print("But it failed!")
+									print("But it failed!\n")
 								else:
 									time.sleep(1)
-									print("{pname} was badly poisoned!".format(pname = dfn.name))
+									print("{pname} was badly poisoned!\n".format(pname = dfn.name))
 									dfn.nonVolatileStatus = "Toxic"
 					elif att.volatileStatus == "confusion":
 						if dfn.isConfused:
 							time.sleep(1)
-							print("{pname} is already confused!".format(pname = dfn.name))
+							print("{pname} is already confused!\n".format(pname = dfn.name))
 						else:
 							rand = random.randint(0, 256)
 							if rand < 64:
@@ -558,33 +574,33 @@ class Battle():
 							elif rand > 191 and rand < 256:
 								dfn.isConfusedCount = 5
 							time.sleep(1)
-							print("{pname} became confused!")
+							print("{pname} became confused!\n")
 				elif att.movetype == "dmgStatus":
 					damage, crit, mult = self.getDamage(off, att, dfn)
 				
 					if damage == "failed":
 						time.sleep(1)
-						print("{movename} failed!".format(movename = att.name))
+						print("{movename} failed!\n".format(movename = att.name))
 					elif damage == 65535:
 						time.sleep(1)
-						print("One Hit KO!")
+						print("One Hit KO!\n")
 					elif damage == "noEffect" or mult == 0:
 						time.sleep(1)
-						print("{movename} doesn't effect {opponent}!".format(movename = att.name, opponent = dfn.name))
+						print("{movename} doesn't effect {opponent}!\n".format(movename = att.name, opponent = dfn.name))
 					elif damage >= 0 and mult > 0:
 						damage = self.takeHP(dfn, damage)
 						if crit:
 							time.sleep(1)
-							print("Critical hit!")
+							print("Critical hit!\n")
 						if mult > 10:
 							time.sleep(1)
-							print("It was super effective! {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+							print("It was super effective! {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						elif mult < 10:
 							time.sleep(1)
-							print("It wasn't very effective... {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+							print("It wasn't very effective... {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						elif mult == 10:
 							time.sleep(1)
-							print("{hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+							print("{hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						if dfn.battHP == 0:
 							return
 						rand = random.randint(0, 255)
@@ -598,32 +614,32 @@ class Battle():
 										pass
 									else:
 										time.sleep(1)
-										print("{pname} became Paralyzed! It may not attack!".format(pname = dfn.name))
+										print("{pname} became Paralyzed! It may not attack!\n".format(pname = dfn.name))
 										dfn.nonVolatileStatus = "Paralyzed"
 							elif att.secondary["status"] == "psn":
 								if "Poison" in dfn.type:
 									pass
 								else:
 									time.sleep(1)
-									print("{pname} was poisoned!".format(pname = dfn.name))
+									print("{pname} was poisoned!\n".format(pname = dfn.name))
 									dfn.nonVolatileStatus = "Poisoned"
 							elif att.secondary["status"] == "frz":
 								if "Ice" in dfn.type:
 									pass
 								else:
 									time.sleep(1)
-									print("{pname} was frozen!".format(pname = dfn.name))
+									print("{pname} was frozen!\n".format(pname = dfn.name))
 									dfn.nonVolatileStatus = "Frozen"
 							elif att.secondary["status"] == "brn":
 								if "Fire" in dfn.type:
 									pass
 								else:
 									time.sleep(1)
-									print("{pname} was burned!".format(pname = dfn.name))
+									print("{pname} was burned!\n".format(pname = dfn.name))
 									dfn.nonVolatileStatus = "Burned"
 							elif att.secondary["status"] == "slp":
 								time.sleep(1)
-								print("{pname} fell asleep!".format(pname = dfn.name))
+								print("{pname} fell asleep!\n".format(pname = dfn.name))
 								dfn.nonVolatileStatus = "Asleep"
 								rand = random.randint(0,7)
 								if rand == 0:
@@ -654,7 +670,7 @@ class Battle():
 									elif rand > 191 and rand < 256:
 										dfn.isConfusedCount = 5
 									time.sleep(1)
-									print("{pname} became confused!".format(pname = dfn.name))
+									print("{pname} became confused!\n".format(pname = dfn.name))
 							elif att.secondary["volatileStatus"] == "flinch":
 								dfn.willFlinch = True
 				elif att.movetype == "recoil":
@@ -662,29 +678,29 @@ class Battle():
 					
 						if damage == "failed":
 							time.sleep(1)
-							print("{movename} failed!".format(movename = att.name))
+							print("{movename} failed!\n".format(movename = att.name))
 						elif damage == 65535:
 							time.sleep(1)
-							print("One Hit KO!")
+							print("One Hit KO!\n")
 						elif damage == "noEffect" or mult == 0:
 							time.sleep(1)
-							print("{movename} doesn't effect {opponent}!".format(movename = att.name, opponent = dfn.name))
+							print("{movename} doesn't effect {opponent}!\n".format(movename = att.name, opponent = dfn.name))
 						elif damage >= 0 and mult > 0:
 							damage = self.takeHP(dfn, damage)
 							if crit:
 								time.sleep(1)
-								print("Critical hit!")
+								print("Critical hit!\n")
 							if mult > 10:
 								time.sleep(1)
-								print("It was super effective! {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+								print("It was super effective! {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 							elif mult < 10:
 								time.sleep(1)
-								print("It wasn't very effective... {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+								print("It wasn't very effective... {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 							elif mult == 10:
 								time.sleep(1)
-								print("{hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+								print("{hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 							damage = self.takeHP(off, math.floor((damage * att.recoil[0])/att.recoil[1]))
-							print("{hplost} recoil damage taken by {pname}".format(hplost = str(damage), pname = off.name))
+							print("{hplost} recoil damage taken by {pname}\n".format(hplost = str(damage), pname = off.name))
 							if dfn.battHP == 0:
 								return
 				elif att.movetype == "drain":
@@ -697,32 +713,32 @@ class Battle():
 							damage, crit, mult = "failed", False, 10
 					if damage == "failed":
 						time.sleep(1)
-						print("{movename} failed!".format(movename = att.name))
+						print("{movename} failed!\n".format(movename = att.name))
 					elif damage == 65535:
 						time.sleep(1)
-						print("One Hit KO!")
+						print("One Hit KO!\n")
 					elif damage == "noEffect" or mult == 0:
 						time.sleep(1)
-						print("{movename} doesn't effect {opponent}!".format(movename = att.name, opponent = dfn.name))
+						print("{movename} doesn't effect {opponent}!\n".format(movename = att.name, opponent = dfn.name))
 					elif damage >= 0 and mult > 0:
 						damage = self.takeHP(dfn, damage)
 						if crit:
 							time.sleep(1)
-							print("Critical hit!")
+							print("Critical hit!\n")
 						if mult > 10:
 							time.sleep(1)
-							print("It was super effective! {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+							print("It was super effective! {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						elif mult < 10:
 							time.sleep(1)
-							print("It wasn't very effective... {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+							print("It wasn't very effective... {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						elif mult == 10:
 							time.sleep(1)
-							print("{hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
-						damage = self.takeHP(off, max(-1, -1 * math.floor(damage/2)))
+							print("{hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
+						damage = self.takeHP(off, -1 * max(1, math.floor(damage/2)))
 						if damage > 0:
-							print("{hplost} damage recovered by {pname}".format(hplost = str(damage), pname = off.name))
+							print("{hplost} damage recovered by {pname}\n".format(hplost = str(damage), pname = off.name))
 						if damage == 0:
-							print("{pname}'s HP is already full!".format(pname = off.name))
+							print("{pname}'s HP is already full!\n".format(pname = off.name))
 						if dfn.battHP == 0:
 							return
 				elif att.movetype == "recharge":
@@ -730,27 +746,27 @@ class Battle():
 					off.isRecharging = True
 					if damage == "failed":
 						time.sleep(1)
-						print("{movename} failed!".format(movename = att.name))
+						print("{movename} failed!\n".format(movename = att.name))
 					elif damage == 65535:
 						time.sleep(1)
-						print("One Hit KO!")
+						print("One Hit KO!\n")
 					elif damage == "noEffect" or mult == 0:
 						time.sleep(1)
-						print("{movename} doesn't effect {opponent}!".format(movename = att.name, opponent = dfn.name))
+						print("{movename} doesn't effect {opponent}!\n".format(movename = att.name, opponent = dfn.name))
 					elif damage >= 0 and mult > 0:
 						damage = self.takeHP(dfn, damage)
 						if crit:
 							time.sleep(1)
-							print("Critical hit!")
+							print("Critical hit!\n")
 						if mult > 10:
 							time.sleep(1)
-							print("It was super effective! {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+							print("It was super effective! {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						elif mult < 10:
 							time.sleep(1)
-							print("It wasn't very effective... {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+							print("It wasn't very effective... {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						elif mult == 10:
 							time.sleep(1)
-							print("{hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+							print("{hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						if dfn.battHP == 0:
 							return
 				elif att.movetype == "multiHit":
@@ -758,57 +774,57 @@ class Battle():
 					if type(att.multihit) == int:
 						if damage == "failed":
 							time.sleep(1)
-							print("{movename} failed!".format(movename = att.name))
+							print("{movename} failed!\n".format(movename = att.name))
 						elif damage == 65535:
 							time.sleep(1)
-							print("One Hit KO!")
+							print("One Hit KO!\n")
 						elif damage == "noEffect" or mult == 0:
 							time.sleep(1)
-							print("{movename} doesn't effect {opponent}!".format(movename = att.name, opponent = dfn.name))
+							print("{movename} doesn't effect {opponent}!\n".format(movename = att.name, opponent = dfn.name))
 						elif damage >= 0 and mult > 0:
 							if crit:
 								time.sleep(1)
-								print("Critical hit!")
+								print("Critical hit!\n")
 							hits = 2
 							j = 0
 							for i in range(hits):
 								damage = self.takeHP(dfn, damage)
 								if mult > 10:
 									time.sleep(1)
-									print("It was super effective! {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+									print("It was super effective! {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 								elif mult < 10:
 									time.sleep(1)
-									print("It wasn't very effective... {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+									print("It wasn't very effective... {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 								elif mult == 10:
 									time.sleep(1)
-									print("{hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+									print("{hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 								if dfn.battHP == 0:
 									time.sleep(1)
-									print("Hit {pname} {hits} times!".format(pname = dfn.name, hits = str(j + 1)))
+									print("Hit {pname} {hits} times!\n".format(pname = dfn.name, hits = str(j + 1)))
 									return
 								if i == 1 and att.name == "Twineedle":
 									rand = random.randint(0, 256)
 									if rand < math.floor(att.secondary["chance"]):
 										if "Poison" not in dfn.type and not nonVolatileStatus:
 											time.sleep(1)
-											print("{pname} was poisoned!".format(pname = dfn.name))
+											print("{pname} was poisoned!\n".format(pname = dfn.name))
 											dfn.nonVolatileStatus = "Poisoned"
 								j += 1
-							print("Hit {pname} {hits} times!".format(pname = dfn.name, hits = str(j + 1)))
+							print("Hit {pname} {hits} times!\n".format(pname = dfn.name, hits = str(j + 1)))
 					else:
 						if damage == "failed":
 							time.sleep(1)
-							print("{movename} failed!".format(movename = att.name))
+							print("{movename} failed!\n".format(movename = att.name))
 						elif damage == 65535:
 							time.sleep(1)
-							print("One Hit KO!")
+							print("One Hit KO!\n")
 						elif damage == "noEffect" or mult == 0:
 							time.sleep(1)
-							print("{movename} doesn't effect {opponent}!".format(movename = att.name, opponent = dfn.name))
+							print("{movename} doesn't effect {opponent}!\n".format(movename = att.name, opponent = dfn.name))
 						elif damage >= 0 and mult > 0:
 							if crit:
 								time.sleep(1)
-								print("Critical hit!")
+								print("Critical hit!\n")
 							rand = random.randint(0, 255)
 							if rand < 96:
 								hits = 2
@@ -823,19 +839,19 @@ class Battle():
 								damage = self.takeHP(dfn, damage)
 								if mult > 10:
 									time.sleep(1)
-									print("It was super effective! {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+									print("It was super effective! {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 								elif mult < 10:
 									time.sleep(1)
-									print("It wasn't very effective... {hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+									print("It wasn't very effective... {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 								elif mult == 10:
 									time.sleep(1)
-									print("{hplost} damage taken by {pname}".format(hplost = str(damage), pname = dfn.name))
+									print("{hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 								if dfn.battHP == 0:
 									time.sleep(1)
-									print("Hit {pname} {hits} times!".format(pname = dfn.name, hits = str(j + 1)))
+									print("Hit {pname} {hits} times!\n".format(pname = dfn.name, hits = str(j + 1)))
 									return
 								j += 1
-							print("Hit {pname} {hits} times!".format(pname = dfn.name, hits = str(j + 1)))
+							print("Hit {pname} {hits} times!\n".format(pname = dfn.name, hits = str(j + 1)))
 			
 		
 		if off.nonVolatileStatus:
@@ -862,72 +878,33 @@ class Battle():
 	def battleSwitch(self, trainer):
 		madeChoice = False
 		while not madeChoice:
-			print("Choose a member of your party to switch in:")
+			print("{name}! You must choose a member of your party to switch in:\n".format(name = trainer.name))
 			trainer.battleShowParty()
 			options = len(trainer.party)
 			validChoices = ["a","b","c","d", "e", "f"]
-			print("\n(Enter letter of desired option)\n")
+			print("(Enter letter of desired option)\n")
 			a1 = input()
 			a1 = a1.lower()
-			while a1 not in validChoices[:options+1]:
-				print("\n(Enter letter of desired option)\n")
+			while a1 not in validChoices[:options]:
+				print("\n(Enter letter of desired option, X to go back)\n")
 				a1 = input()
 				a1 = a1.lower()
-			if a1 == "a":
-				if trainer.party[validChoices.index(a1)].active:
+			if a1 in validChoices and a1 != "x":
+				if trainer.party[validChoices.index(a1)].battHP == 0:
+					print("{name} doesn't have any energy left to battle!\n".format(name = trainer.party[validChoices.index(a1)].name))
+				elif trainer.party[validChoices.index(a1)].active == True:
 					print("{name} is already in battle!\n".format(name = trainer.activePokemon.name))
-				elif trainer.party[validChoices.index(a1)].battHP == 0:
-					print("{name} doesn't have any energy left to battle!\n".format(name = trainer.party[validChoices.index(a1)].name))
 				else:
-					trainer.switchIn(trainer.party[validChoices.index(a1)])
-					madeChoice = True
-					return
-			elif a1 == "b":
-				if trainer.party[validChoices.index(a1)].active:
-					print("{name} is already in battle!\n".format(name = trainer.activePokemon.name))
-				elif trainer.party[validChoices.index(a1)].battHP == 0:
-					print("{name} doesn't have any energy left to battle!\n".format(name = trainer.party[validChoices.index(a1)].name))
-				else:
-					trainer.switchIn(trainer.party[validChoices.index(a1)])
-					madeChoice = True
-					return
-			elif a1 == "c":
-				if trainer.party[validChoices.index(a1)].active:
-					print("{name} is already in battle!\n".format(name = trainer.activePokemon.name))	
-				elif trainer.party[validChoices.index(a1)].battHP == 0:
-					print("{name} doesn't have any energy left to battle!\n".format(name = trainer.party[validChoices.index(a1)].name))
-				else:
-					trainer.switchIn(trainer.party[validChoices.index(a1)])
-					madeChoice = True
-					return
-			elif a1 == "d":
-				if trainer.party[validChoices.index(a1)].active:
-					print("{name} is already in battle!\n".format(name = trainer.activePokemon.name))						
-				elif trainer.party[validChoices.index(a1)].battHP == 0:
-					print("{name} doesn't have any energy left to battle!\n".format(name = trainer.party[validChoices.index(a1)].name))
-				else:
-					trainer.switchIn(trainer.party[validChoices.index(a1)])
-					madeChoice = True
-					return
-			elif a1 == "e":
-				if trainer.party[validChoices.index(a1)].active:
-					print("{name} is already in battle!\n".format(name = trainer.activePokemon.name))						
-				elif trainer.party[validChoices.index(a1)].battHP == 0:
-					print("{name} doesn't have any energy left to battle!\n".format(name = trainer.party[validChoices.index(a1)].name))
-				else:
-					trainer.switchIn(trainer.party[validChoices.index(a1)])
-					madeChoice = True
-					return
-			elif a1 == "f":
-				if trainer.party[validChoices.index(a1)].active:
-					print("{name} is already in battle!\n".format(name = trainer.activePokemon.name))						
-				elif trainer.party[validChoices.index(a1)].battHP == 0:
-					print("{name} doesn't have any energy left to battle!\n".format(name = trainer.party[validChoices.index(a1)].name))
-				else:
-					trainer.switchIn(trainer.party[validChoices.index(a1)])
-					madeChoice = True
-					return
-
+					isSure = ""
+					while isSure.lower() != "y" and isSure.lower() != "n":
+						isSure = input("You're about to switch {name} into battle. Are you sure? [y/n]\n".format(name = trainer.party[validChoices.index(a1)].name))
+					isSure = isSure.lower()
+					if isSure == "n":
+						madeChoice = False
+					elif isSure == "y":
+						trainer.switchIn(trainer.party[validChoices.index(a1)])
+						madeChoice = True
+		
 	def takeHP(self, dfn, damage):
 		if damage < 0 and dfn.battHP == dfn.statHP:
 			return 0
@@ -994,9 +971,7 @@ class Battle():
 			return 20, False, 10
 
 		if att.name == "Night Shade":
-			P = off.level
-			if T == 0:
-				T = 10
+			return off.level, False, 10
 
 		if att.name == "Psywave":
 			return max(1, math.floor((off.level * (random.randint(0,101) + 50))/100)), False, 10

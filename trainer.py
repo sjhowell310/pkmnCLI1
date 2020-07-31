@@ -54,29 +54,31 @@ class Trainer():
 		if self.activePokemon == None and pokemon.battHP != 0:
 			self.activePokemon = pokemon
 			pokemon.active = True
-			print("{tname} placed {current} at the front of their party!".format(tname = self.name, current = self.activePokemon.name))
+			index = self.party.index(pokemon)
+			time.sleep(1)
+			print("{tname} placed {current} at the front of their party!\n".format(tname = self.name, current = self.activePokemon.name))
 			holder = self.party[0]
 			self.party[0] = pokemon
 			if len(self.party) > 1:
 				for i in range(1, len(self.party)):
-					if self.party[i].name == pokemon.name:
-						self.party[i] = holder
+					self.party[index] = holder
 		elif pokemon.battHP <=0:
-			print("{name} has fainted and doesn't have any energy to battle!".format(name = pokemon.name))
+			print("{name} has fainted and doesn't have any energy to battle!\n".format(name = pokemon.name))
 		elif self.activePokemon.idtag == pokemon.idtag and self.activePokemon.battHP == pokemon.battHP:
-			print("{name} is already in battle!".format(name = pokemon.name))
+			print("{name} is already in battle!\n".format(name = pokemon.name))
 		else:
-			print("{tname} switched {current} out for {switch}!".format(tname = self.name, current = self.activePokemon.name, switch = pokemon.name))
+			time.sleep(1)
+			print("{tname} switched {current} out for {switch}!\n".format(tname = self.name, current = self.activePokemon.name, switch = pokemon.name))
 			self.activePokemon.active = False
 			self.activePokemon.isConfused = False
 			self.activePokemon.isConfusedCount = 0
 			self.activePokemon.willFlinch = False
+			index = self.party.index(pokemon)
 			pokemon.active = True
 			self.activePokemon = pokemon
 			holder = self.party[0]
 			self.party[0] = pokemon
 			if len(self.party) > 1:
 				for i in range(1, len(self.party)):
-					if self.party[i].name == pokemon.name:
-						self.party[i] = holder
+					self.party[index] = holder
 
