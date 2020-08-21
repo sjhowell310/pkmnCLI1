@@ -340,7 +340,7 @@ class Battle():
 					if rand < 128:
 						time.sleep(1)
 						print("{name} hurt itself in its confusion!\n".format(name = off.name))
-						off.takeConfusionDamage()
+						self.takeConfusionDamage(off)
 						cantAttack = True
 						if off.battHP == 0:
 							return
@@ -368,6 +368,10 @@ class Battle():
 				elif dfn.Evalvl > off.Acclvl:
 					time.sleep(1)
 					print("{name} evaded the attack!\n".format(name = dfn.name))
+				if att.movetype == "dmgIfMiss" and "Ghost" not in dfn.type:
+					time.sleep(1)
+					print("{name} kept going and crashed, taking damage!\n".format(name = off.name))
+					damage = self.takeHP(off, 1)
 			else:
 				if att.movetype == "selfStat":
 					if "atk" in att.boosts.keys():
@@ -419,13 +423,13 @@ class Battle():
 					if mod == 0:
 						time.sleep(1)
 						print("Nothing happened!\n")
-					elif mod == 1:
+					elif mod == -1:
 						time.sleep(1)
 						print("{pname}'s {stat} fell!\n".format(pname = dfn.name, stat = stat))
-					elif mod == 2:
+					elif mod == -2:
 						time.sleep(1)
 						print("{pname}'s {stat} greatly fell!\n".format(pname = dfn.name, stat = stat))
-				elif att.movetype == "dmgOnly":
+				elif att.movetype == "dmgOnly" or "dmgIfMiss":
 					damage, crit, mult = self.getDamage(off, att, dfn)
 				
 					if damage == "failed":
@@ -481,8 +485,8 @@ class Battle():
 							print("{hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						if dfn.battHP == 0:
 							return
-						rand = random.randint(0,101)
-						if rand < att.secondary["chance"]:
+						rand = random.randint(0,256)
+						if rand < math.floor(att.secondary["chance"] * 2.55):
 							if "atk" in att.secondary["boosts"].keys():
 								mod = self.statMod(dfn, "atk", att.secondary["boosts"]["atk"])
 								stat = "Attack"
@@ -501,13 +505,10 @@ class Battle():
 							elif "evasion" in att.secondary["boosts"].keys():
 								mod = self.statMod(dfn, "evasion", att.secondary["boosts"]["evasion"])
 								stat = "Evasion"
-							if mod == 0:
-								time.sleep(1)
-								print("Nothing happened!\n")
-							elif mod == 1:
+							if mod == -1:
 								time.sleep(1)
 								print("{pname}'s {stat} fell!\n".format(pname = dfn.name, stat = stat))
-							elif mod == 2:
+							elif mod == -2:
 								time.sleep(1)
 								print("{pname}'s {stat} greatly fell!\n".format(pname = dfn.name, stat = stat))
 				elif att.movetype == "offStatus":
@@ -574,7 +575,8 @@ class Battle():
 							elif rand > 191 and rand < 256:
 								dfn.isConfusedCount = 5
 							time.sleep(1)
-							print("{pname} became confused!\n")
+							dfn.isConfused = True
+							print("{pname} became confused!\n".format(pname = dfn.name))
 				elif att.movetype == "dmgStatus":
 					damage, crit, mult = self.getDamage(off, att, dfn)
 				
@@ -603,76 +605,80 @@ class Battle():
 							print("{hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
 						if dfn.battHP == 0:
 							return
-						rand = random.randint(0, 255)
-						if rand < math.floor(att.secondary["chance"]):
-							if att.secondary["status"] == "par":
-									if att.type == "Electric" and "Electric" in dfn.type:
-										pass
-									elif att.name == "Body Slam" and "Normal" in dfn.type:
-										pass
-									elif att.name == "Lick" and "Ghost" in dfn.type:
+						rand = random.randint(0, 256)
+						# print("sampling, {sample}, suucess {success}".format(sample = rand, success = math.floor(att.secondary["chance"] * 2.55)))
+						if rand < math.floor(att.secondary["chance"] * 2.55):
+							if "status" in att.secondary.keys():
+								if att.secondary["status"] == "par":
+										if att.type == "Electric" and "Electric" in dfn.type:
+											pass
+										elif att.name == "Body Slam" and "Normal" in dfn.type:
+											pass
+										elif att.name == "Lick" and "Ghost" in dfn.type:
+											pass
+										else:
+											time.sleep(1)
+											print("{pname} became Paralyzed! It may not attack!\n".format(pname = dfn.name))
+											dfn.nonVolatileStatus = "Paralyzed"
+								elif att.secondary["status"] == "psn":
+									if "Poison" in dfn.type:
 										pass
 									else:
 										time.sleep(1)
-										print("{pname} became Paralyzed! It may not attack!\n".format(pname = dfn.name))
-										dfn.nonVolatileStatus = "Paralyzed"
-							elif att.secondary["status"] == "psn":
-								if "Poison" in dfn.type:
-									pass
-								else:
+										print("{pname} was poisoned!\n".format(pname = dfn.name))
+										dfn.nonVolatileStatus = "Poisoned"
+								elif att.secondary["status"] == "frz":
+									if "Ice" in dfn.type:
+										pass
+									else:
+										time.sleep(1)
+										print("{pname} was frozen!\n".format(pname = dfn.name))
+										dfn.nonVolatileStatus = "Frozen"
+								elif att.secondary["status"] == "brn":
+									if "Fire" in dfn.type:
+										pass
+									else:
+										time.sleep(1)
+										print("{pname} was burned!\n".format(pname = dfn.name))
+										dfn.nonVolatileStatus = "Burned"
+								elif att.secondary["status"] == "slp":
 									time.sleep(1)
-									print("{pname} was poisoned!\n".format(pname = dfn.name))
-									dfn.nonVolatileStatus = "Poisoned"
-							elif att.secondary["status"] == "frz":
-								if "Ice" in dfn.type:
-									pass
-								else:
-									time.sleep(1)
-									print("{pname} was frozen!\n".format(pname = dfn.name))
-									dfn.nonVolatileStatus = "Frozen"
-							elif att.secondary["status"] == "brn":
-								if "Fire" in dfn.type:
-									pass
-								else:
-									time.sleep(1)
-									print("{pname} was burned!\n".format(pname = dfn.name))
-									dfn.nonVolatileStatus = "Burned"
-							elif att.secondary["status"] == "slp":
-								time.sleep(1)
-								print("{pname} fell asleep!\n".format(pname = dfn.name))
-								dfn.nonVolatileStatus = "Asleep"
-								rand = random.randint(0,7)
-								if rand == 0:
-									dfn.nonVolatileCount = 1
-								elif rand == 1:
-									dfn.nonVolatileCount = 2
-								elif rand == 2:
-									dfn.nonVolatileCount = 3
-								elif rand == 3:
-									dfn.nonVolatileCount = 4
-								elif rand == 4:
-									dfn.nonVolatileCount = 5
-								elif rand == 5:
-									dfn.nonVolatileCount = 6
-								elif rand == 6:
-									dfn.nonVolatileCount = 7
-							elif att.secondary["volatileStatus"] == "confusion":
-								if dfn.isConfused:
-									pass
-								else:
-									rand = random.randint(0, 256)
-									if rand < 64:
-										dfn.isConfusedCount = 2
-									elif rand > 63 and rand < 128:
-										dfn.isConfusedCount = 3
-									elif rand > 127 and rand < 192:
-										dfn.isConfusedCount = 4
-									elif rand > 191 and rand < 256:
-										dfn.isConfusedCount = 5
-									time.sleep(1)
-									print("{pname} became confused!\n".format(pname = dfn.name))
-							elif att.secondary["volatileStatus"] == "flinch":
-								dfn.willFlinch = True
+									print("{pname} fell asleep!\n".format(pname = dfn.name))
+									dfn.nonVolatileStatus = "Asleep"
+									rand = random.randint(0,7)
+									if rand == 0:
+										dfn.nonVolatileCount = 1
+									elif rand == 1:
+										dfn.nonVolatileCount = 2
+									elif rand == 2:
+										dfn.nonVolatileCount = 3
+									elif rand == 3:
+										dfn.nonVolatileCount = 4
+									elif rand == 4:
+										dfn.nonVolatileCount = 5
+									elif rand == 5:
+										dfn.nonVolatileCount = 6
+									elif rand == 6:
+										dfn.nonVolatileCount = 7
+							elif "volatileStatus" in att.secondary.keys():
+								if att.secondary["volatileStatus"] == "confusion":
+									if dfn.isConfused:
+										pass
+									else:
+										rand = random.randint(0, 256)
+										if rand < 64:
+											dfn.isConfusedCount = 2
+										elif rand > 63 and rand < 128:
+											dfn.isConfusedCount = 3
+										elif rand > 127 and rand < 192:
+											dfn.isConfusedCount = 4
+										elif rand > 191 and rand < 256:
+											dfn.isConfusedCount = 5
+										time.sleep(1)
+										dfn.isConfused = True
+										print("{pname} became confused!\n".format(pname = dfn.name))
+								elif att.secondary["volatileStatus"] == "flinch":
+									dfn.willFlinch = True
 				elif att.movetype == "recoil":
 						damage, crit, mult = self.getDamage(off, att, dfn)
 					
@@ -770,61 +776,22 @@ class Battle():
 						if dfn.battHP == 0:
 							return
 				elif att.movetype == "multiHit":
+					# FIX THIS PRINTING ISSUE AND CRITICAL HIT DAMAGE
 					damage, crit, mult = self.getDamage(off, att, dfn)
-					if type(att.multihit) == int:
-						if damage == "failed":
+					if damage == "failed":
+						time.sleep(1)
+						print("{movename} failed!\n".format(movename = att.name))
+					elif damage == 65535:
+						time.sleep(1)
+						print("One Hit KO!\n")
+					elif damage == "noEffect" or mult == 0:
+						time.sleep(1)
+						print("{movename} doesn't effect {opponent}!\n".format(movename = att.name, opponent = dfn.name))
+					elif damage >= 0 and mult > 0:
+						if crit:
 							time.sleep(1)
-							print("{movename} failed!\n".format(movename = att.name))
-						elif damage == 65535:
-							time.sleep(1)
-							print("One Hit KO!\n")
-						elif damage == "noEffect" or mult == 0:
-							time.sleep(1)
-							print("{movename} doesn't effect {opponent}!\n".format(movename = att.name, opponent = dfn.name))
-						elif damage >= 0 and mult > 0:
-							if crit:
-								time.sleep(1)
-								print("Critical hit!\n")
-							hits = 2
-							j = 0
-							for i in range(hits):
-								damage = self.takeHP(dfn, damage)
-								if mult > 10:
-									time.sleep(1)
-									print("It was super effective! {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
-								elif mult < 10:
-									time.sleep(1)
-									print("It wasn't very effective... {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
-								elif mult == 10:
-									time.sleep(1)
-									print("{hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
-								if dfn.battHP == 0:
-									time.sleep(1)
-									print("Hit {pname} {hits} times!\n".format(pname = dfn.name, hits = str(j + 1)))
-									return
-								if i == 1 and att.name == "Twineedle":
-									rand = random.randint(0, 256)
-									if rand < math.floor(att.secondary["chance"]):
-										if "Poison" not in dfn.type and not nonVolatileStatus:
-											time.sleep(1)
-											print("{pname} was poisoned!\n".format(pname = dfn.name))
-											dfn.nonVolatileStatus = "Poisoned"
-								j += 1
-							print("Hit {pname} {hits} times!\n".format(pname = dfn.name, hits = str(j + 1)))
-					else:
-						if damage == "failed":
-							time.sleep(1)
-							print("{movename} failed!\n".format(movename = att.name))
-						elif damage == 65535:
-							time.sleep(1)
-							print("One Hit KO!\n")
-						elif damage == "noEffect" or mult == 0:
-							time.sleep(1)
-							print("{movename} doesn't effect {opponent}!\n".format(movename = att.name, opponent = dfn.name))
-						elif damage >= 0 and mult > 0:
-							if crit:
-								time.sleep(1)
-								print("Critical hit!\n")
+							print("Critical hit!\n")
+						if type(att.multihit) != int:
 							rand = random.randint(0, 255)
 							if rand < 96:
 								hits = 2
@@ -834,24 +801,75 @@ class Battle():
 								hits = 4
 							elif rand > 223 and rand < 256:
 								hits = 5
-							j = 0
-							for i in range(hits):
-								damage = self.takeHP(dfn, damage)
-								if mult > 10:
-									time.sleep(1)
-									print("It was super effective! {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
-								elif mult < 10:
-									time.sleep(1)
-									print("It wasn't very effective... {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
-								elif mult == 10:
-									time.sleep(1)
-									print("{hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
-								if dfn.battHP == 0:
-									time.sleep(1)
-									print("Hit {pname} {hits} times!\n".format(pname = dfn.name, hits = str(j + 1)))
-									return
-								j += 1
-							print("Hit {pname} {hits} times!\n".format(pname = dfn.name, hits = str(j + 1)))
+						else:
+							hits = 2
+						j = 0
+						for i in range(hits):
+							damage = self.takeHP(dfn, damage)
+							if mult > 10:
+								time.sleep(1)
+								print("It was super effective! {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
+							elif mult < 10:
+								time.sleep(1)
+								print("It wasn't very effective... {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
+							elif mult == 10:
+								time.sleep(1)
+								print("{hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
+							if i == 1 and att.name == "Twineedle" and dfn.battHP > 0:
+								rand = random.randint(0, 256)
+								if rand < math.floor(att.secondary["chance"] * 2.55):
+									if "Poison" not in dfn.type and not dfn.nonVolatileStatus:
+										time.sleep(1)
+										print("{pname} was poisoned!\n".format(pname = dfn.name))
+										dfn.nonVolatileStatus = "Poisoned"
+							if dfn.battHP == 0:
+								time.sleep(1)
+								print("Hit {pname} {hits} times!\n".format(pname = dfn.name, hits = str(j + 1)))
+								return
+							j += 1
+						print("Hit {pname} {hits} times!\n".format(pname = dfn.name, hits = str(j)))
+
+						# else:
+						# 	if damage == "failed":
+						# 		time.sleep(1)
+						# 		print("{movename} failed!\n".format(movename = att.name))
+						# 	elif damage == 65535:
+						# 		time.sleep(1)
+						# 		print("One Hit KO!\n")
+						# 	elif damage == "noEffect" or mult == 0:
+						# 		time.sleep(1)
+						# 		print("{movename} doesn't effect {opponent}!\n".format(movename = att.name, opponent = dfn.name))
+						# 	elif damage >= 0 and mult > 0:
+						# 		if crit:
+						# 			time.sleep(1)
+						# 			print("Critical hit!\n")
+						# 		rand = random.randint(0, 255)
+						# 		if rand < 96:
+						# 			hits = 2
+						# 		elif rand > 95 and rand < 192:
+						# 			hits = 3
+						# 		elif rand > 191 and rand < 224:
+						# 			hits = 4
+						# 		elif rand > 223 and rand < 256:
+						# 			hits = 5
+						# 		j = 0
+						# 		for i in range(hits):
+						# 			damage = self.takeHP(dfn, damage)
+						# 			if mult > 10:
+						# 				time.sleep(1)
+						# 				print("It was super effective! {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
+						# 			elif mult < 10:
+						# 				time.sleep(1)
+						# 				print("It wasn't very effective... {hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
+						# 			elif mult == 10:
+						# 				time.sleep(1)
+						# 				print("{hplost} damage taken by {pname}\n".format(hplost = str(damage), pname = dfn.name))
+						# 			if dfn.battHP == 0:
+						# 				time.sleep(1)
+						# 				print("Hit {pname} {hits} times!\n".format(pname = dfn.name, hits = str(j + 1)))
+						# 				return
+						# 			j += 1
+						# 		print("Hit {pname} {hits} times!\n".format(pname = dfn.name, hits = str(j)))
 			
 		
 		if off.nonVolatileStatus:
@@ -878,6 +896,7 @@ class Battle():
 	def battleSwitch(self, trainer):
 		madeChoice = False
 		while not madeChoice:
+			time.sleep(1)
 			print("{name}! You must choose a member of your party to switch in:\n".format(name = trainer.name))
 			trainer.battleShowParty()
 			options = len(trainer.party)
@@ -974,7 +993,7 @@ class Battle():
 			return off.level, False, 10
 
 		if att.name == "Psywave":
-			return max(1, math.floor((off.level * (random.randint(0,101) + 50))/100)), False, 10
+			return max(1, math.floor((off.level * (random.randint(0,151)))/100)), False, 10
 
 		if att.name == "Seismic Toss":
 			return off.level, False, 10
@@ -1067,10 +1086,10 @@ class Battle():
 		elif stat == "evasion":
 			lvl = poke.Evalvl
 
-		if lvl + mod < -6:
-			mod = 6 + lvl
+		if lvl + mod <= -6:
+			mod = -6 - lvl
 			lvl = -6
-		elif lvl + mod > 6:
+		elif lvl + mod >= 6:
 			mod = 6 - lvl
 			lvl = 6
 		else:

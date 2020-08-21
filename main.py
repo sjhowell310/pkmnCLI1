@@ -58,9 +58,10 @@ try:
 
 	trainers = [t1, t2]
 	battle = battle.Battle(t1, t2)
-	printDex()
+	
 
 	for player in trainers:
+		printDex()
 		for i in range(partySize):
 			#prompt user for name of pokemon they'd like to add, if not contained in pokedex, reprompt until valid input is passed
 			pname = input("{name}, please enter your choice of pokemon #{number} for your party:\n".format(name = player.name, number=len(player.party)+1))
@@ -168,7 +169,7 @@ try:
 	# 			print("{name} has 4 or less moves in their moveset, you can have 'em all!\n".format(name = dex[pname]["name"]))
 	# 	pname = ""
 	# 	movechoices = "buffer"
-	
+
 	for player in trainers:
 		if partySize > 1:
 			player.showParty()
@@ -180,12 +181,12 @@ try:
 			if pokechoice in validPos:
 				i = int(pokechoice) - 1
 			player.switchIn(player.party[i])
-			time.sleep(1)
-			print("{tname} sent {current} into battle!".format(tname = player.name, current = player.activePokemon.name))
 		else:
 			player.switchIn(player.party[0])
-			time.sleep(1)
-			print("{tname} sent {current} into battle!".format(tname = player.name, current = player.activePokemon.name))
+
+	for player in trainers:
+		time.sleep(1)
+		print("{tname} sent {current} into battle!\n".format(tname = player.name, current = player.activePokemon.name))
 
 	# cease input from stdin, idk why this works but it does, took me ages to find it...
 	sys.stdin.close()
@@ -255,7 +256,8 @@ try:
 									isFinished = True
 						else:
 							madeChoice = True
-		battle.action(choices[0], choices[1])					
+		battle.action(choices[0], choices[1])
+
 		# time.sleep(1)
 		# isFinished = False
 		# while not isFinished:

@@ -50,7 +50,6 @@ class Trainer():
 
 	#function that switches a party member into battle
 	def switchIn(self, pokemon):
-		time.sleep(1)
 		if self.activePokemon == None and pokemon.battHP != 0:
 			self.activePokemon = pokemon
 			pokemon.active = True
@@ -63,8 +62,10 @@ class Trainer():
 				for i in range(1, len(self.party)):
 					self.party[index] = holder
 		elif pokemon.battHP <=0:
+			time.sleep(1)
 			print("{name} has fainted and doesn't have any energy to battle!\n".format(name = pokemon.name))
 		elif self.activePokemon.idtag == pokemon.idtag and self.activePokemon.battHP == pokemon.battHP:
+			time.sleep(1)
 			print("{name} is already in battle!\n".format(name = pokemon.name))
 		else:
 			time.sleep(1)
